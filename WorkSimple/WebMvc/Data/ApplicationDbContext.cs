@@ -13,6 +13,9 @@ namespace WebMvc.Data
             : base(options)
         {
         }
+      
+        public DbSet<WebUser> WebUsers { get; set; }
         public DbSet<WebMvc.Models.Movie> Movie { get; set; }
+        public DbSet<WebMvc.Data.EProduct> Productss { get; set; }
     }
 }

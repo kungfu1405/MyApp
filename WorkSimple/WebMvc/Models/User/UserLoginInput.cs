@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebMvc.Models.User
 {
-    public class UserInput
+    public class UserLoginInput
     {
         [Required(ErrorMessage = "Email is required")]
         [EmailAddress(ErrorMessage = "Invalid email address")]
