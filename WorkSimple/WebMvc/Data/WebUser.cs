@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebMvc.Data
 {
+    
     public class WebUser:IdentityUser
     {
         public string CustomTag { get; set; }

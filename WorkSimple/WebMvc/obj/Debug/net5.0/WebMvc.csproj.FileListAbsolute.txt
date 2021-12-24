@@ -509,3 +509,5 @@ D:\Git\learning\MyApp\WorkSimple\WebMvc\obj\Debug\net5.0\WebMvc.RazorTargetAssem
 D:\Git\learning\MyApp\WorkSimple\WebMvc\obj\Debug\net5.0\WebMvc.Views.pdb
 D:\Git\learning\MyApp\WorkSimple\WebMvc\obj\Debug\net5.0\WebMvc.csproj.CopyComplete
 D:\Git\learning\MyApp\WorkSimple\WebMvc\obj\Debug\net5.0\WebMvc.genruntimeconfig.cache
+D:\Git\learning\MyApp\WorkSimple\WebMvc\bin\Debug\net5.0\Core.Entity.dll
+D:\Git\learning\MyApp\WorkSimple\WebMvc\bin\Debug\net5.0\Core.Entity.pdb
