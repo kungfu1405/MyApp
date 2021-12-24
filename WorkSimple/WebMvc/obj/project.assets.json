@@ -7814,19 +7814,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git-2\\MyApp\\WorkSimple\\WebMvc\\WebMvc.csproj",
+      "projectUniqueName": "D:\\Git\\learning\\MyApp\\WorkSimple\\WebMvc\\WebMvc.csproj",
       "projectName": "WebMvc",
-      "projectPath": "D:\\Git-2\\MyApp\\WorkSimple\\WebMvc\\WebMvc.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\Git-2\\MyApp\\WorkSimple\\WebMvc\\obj\\",
+      "projectPath": "D:\\Git\\learning\\MyApp\\WorkSimple\\WebMvc\\WebMvc.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Git\\learning\\MyApp\\WorkSimple\\WebMvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7905,7 +7905,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -88,36 +88,43 @@ namespace WebMvc.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByEmailAsync(input.Email);
-                if (user != null && !user.EmailConfirmed)
+                try
                 {
-                    ModelState.AddModelError("message", "Email not confirmed yet");
-                    return View(input);
 
-                }
-                if (await _userManager.CheckPasswordAsync(user, input.Password) == false)
-                {
-                    ModelState.AddModelError("message", "Invalid credentials");
-                    return View(input);
 
-                }
+                    var user = await _userManager.FindByEmailAsync(input.Email);
+                    if (user != null && !user.EmailConfirmed)
+                    {
+                        ModelState.AddModelError("message", "Email not confirmed yet");
+                        return View(input);
 
-                var result = await _signInManager.PasswordSignInAsync(input.Email, input.Password, input.RememberMe, true);
+                    }
+                    if (await _userManager.CheckPasswordAsync(user, input.Password) == false)
+                    {
+                        ModelState.AddModelError("message", "Invalid credentials");
+                        return View(input);
 
-                if (result.Succeeded)
-                {
-                    await _userManager.AddClaimAsync(user, new Claim("UserRole", "Admin"));
-                    return RedirectToAction("Dashboard");
+                    }
+
+                    var result = await _signInManager.PasswordSignInAsync(input.Email, input.Password, input.RememberMe, true);
+
+                    if (result.Succeeded)
+                    {
+                        await _userManager.AddClaimAsync(user, new Claim("UserRole", "Admin"));
+                        return RedirectToAction("Dashboard");
+                    }
+                    else if (result.IsLockedOut)
+                    {
+                        return View("AccountLocked");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("message", "Invalid login attempt");
+                        return View(input);
+                    }
                 }
-                else if (result.IsLockedOut)
-                {
-                    return View("AccountLocked");
-                }
-                else
-                {
-                    ModelState.AddModelError("message", "Invalid login attempt");
-                    return View(input);
-                }
+                catch(Exception ex)
+                { }
             }
             return View(input);
         }

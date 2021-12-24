@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "WebApplic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{37CF7752-6CD0-4769-BA48-CF2EA4E04425}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvc", "WebMvc\WebMvc.csproj", "{DDC06E1F-EBA5-4098-81AF-601F32D542EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMvc", "WebMvc\WebMvc.csproj", "{DDC06E1F-EBA5-4098-81AF-601F32D542EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Entity", "Core.Entity\Core.Entity.csproj", "{D68D5800-43BF-4EF8-85A6-EC86813B2169}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{DDC06E1F-EBA5-4098-81AF-601F32D542EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDC06E1F-EBA5-4098-81AF-601F32D542EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDC06E1F-EBA5-4098-81AF-601F32D542EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D68D5800-43BF-4EF8-85A6-EC86813B2169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68D5800-43BF-4EF8-85A6-EC86813B2169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68D5800-43BF-4EF8-85A6-EC86813B2169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68D5800-43BF-4EF8-85A6-EC86813B2169}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

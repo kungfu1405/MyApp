@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace WebMvc.Data
 {
+
     public class EProduct
     {
         public int Id { get; set; }
