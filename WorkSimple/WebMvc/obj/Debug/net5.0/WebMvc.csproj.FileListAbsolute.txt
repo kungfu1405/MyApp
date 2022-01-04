@@ -511,3 +511,8 @@ D:\Git\learning\MyApp\WorkSimple\WebMvc\obj\Debug\net5.0\WebMvc.csproj.CopyCompl
 D:\Git\learning\MyApp\WorkSimple\WebMvc\obj\Debug\net5.0\WebMvc.genruntimeconfig.cache
 D:\Git\learning\MyApp\WorkSimple\WebMvc\bin\Debug\net5.0\Core.Entity.dll
 D:\Git\learning\MyApp\WorkSimple\WebMvc\bin\Debug\net5.0\Core.Entity.pdb
+D:\Git\learning\MyApp\WorkSimple\WebMvc\obj\Debug\net5.0\Razor\Views\ECategories\Create.cshtml.g.cs
+D:\Git\learning\MyApp\WorkSimple\WebMvc\obj\Debug\net5.0\Razor\Views\ECategories\Delete.cshtml.g.cs
+D:\Git\learning\MyApp\WorkSimple\WebMvc\obj\Debug\net5.0\Razor\Views\ECategories\Details.cshtml.g.cs
+D:\Git\learning\MyApp\WorkSimple\WebMvc\obj\Debug\net5.0\Razor\Views\ECategories\Edit.cshtml.g.cs
+D:\Git\learning\MyApp\WorkSimple\WebMvc\obj\Debug\net5.0\Razor\Views\ECategories\Index.cshtml.g.cs
