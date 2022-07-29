@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "msgDbDataCommon.proto";
+import "msgCountry.proto";
+
+message StateStruct{
+    int32 id = 1;
+    string name = 2;
+
+    int32 countryId = 3;
+    string countryCode = 4;
+
+    google.protobuf.StringValue fipsCode = 5;
+    google.protobuf.StringValue iso2 = 6;
+    google.protobuf.StringValue wikiDataId = 7;
+
+    CountryStruct country = 8;
+}
+
+message StateFilter {
+    PagingType paging = 1;
+    SortType sort = 2;
+    
+    google.protobuf.StringValue name = 3;
+    int32 countryId = 4;
+}
+
+message ListStateResponse {
+    int32 totalRecords = 1;
+    repeated StateStruct data = 2;
+}

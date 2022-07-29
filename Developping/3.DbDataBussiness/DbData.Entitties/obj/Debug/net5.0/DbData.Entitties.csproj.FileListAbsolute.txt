@@ -1,0 +1,12 @@
+D:\Developping\3.DbDataBussiness\DbData.Entitties\bin\Debug\net5.0\DbData.Entitties.deps.json
+D:\Developping\3.DbDataBussiness\DbData.Entitties\bin\Debug\net5.0\DbData.Entitties.dll
+D:\Developping\3.DbDataBussiness\DbData.Entitties\bin\Debug\net5.0\ref\DbData.Entitties.dll
+D:\Developping\3.DbDataBussiness\DbData.Entitties\bin\Debug\net5.0\DbData.Entitties.pdb
+D:\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.AssemblyInfoInputs.cache
+D:\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.AssemblyInfo.cs
+D:\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.csproj.CoreCompileInputs.cache
+D:\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.dll
+D:\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\ref\DbData.Entitties.dll
+D:\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.pdb
+D:\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.csproj.AssemblyReference.cache

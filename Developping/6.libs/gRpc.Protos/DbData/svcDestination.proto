@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgDestination.proto";
+
+// service definition.
+service DestinationServices {
+  rpc Get (IdLangRequest) returns (DestinationStruct);  // Id: RouteUri
+  rpc GetBy (IdRequest) returns (DestinationStruct);  // Id: Guid
+  rpc GetList (DestinationFilter) returns (ListDestinationResponse); 
+    rpc Add(DestinationStruct) returns (ResponseMessage);
+  rpc Edit(DestinationStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

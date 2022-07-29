@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserDb.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+
+// service definition.
+service WebNavigatorServices {
+}

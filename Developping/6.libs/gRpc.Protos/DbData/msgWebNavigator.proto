@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserDb.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+import "msgDbDataCommon.proto";
+
+message WebNavigatorStruct{
+    string id = 1;
+    google.protobuf.StringValue parentId = 2;
+    google.protobuf.StringValue webPageId = 3;
+
+    string name = 4;
+    google.protobuf.StringValue params = 5;
+    google.protobuf.StringValue redirectUrl = 6;
+    google.protobuf.StringValue cssIcon = 7;
+    google.protobuf.StringValue description = 8;
+
+    int32 ordinal = 9;
+    bool isCollapsed = 10;
+    bool isDisplay = 11;
+}
+
+message ListWebNavigatorResponse {
+    int32 totalRecords = 1;
+    repeated WebNavigatorStruct WebNavigators = 2;
+}

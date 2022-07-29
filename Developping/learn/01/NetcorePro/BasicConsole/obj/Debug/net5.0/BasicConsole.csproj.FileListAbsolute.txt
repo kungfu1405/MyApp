@@ -1,0 +1,16 @@
+D:\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\BasicConsole.exe
+D:\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\BasicConsole.deps.json
+D:\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\BasicConsole.runtimeconfig.json
+D:\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\BasicConsole.runtimeconfig.dev.json
+D:\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\BasicConsole.dll
+D:\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\ref\BasicConsole.dll
+D:\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\BasicConsole.pdb
+D:\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\BasicConsole.csproj.AssemblyReference.cache
+D:\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\BasicConsole.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\BasicConsole.AssemblyInfoInputs.cache
+D:\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\BasicConsole.AssemblyInfo.cs
+D:\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\BasicConsole.csproj.CoreCompileInputs.cache
+D:\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\BasicConsole.dll
+D:\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\ref\BasicConsole.dll
+D:\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\BasicConsole.pdb
+D:\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\BasicConsole.genruntimeconfig.cache

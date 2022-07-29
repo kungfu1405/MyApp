@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgCity.proto";
+
+// service definition.
+service CityServices {
+  rpc Get (IdRequest) returns (CityStruct); 
+  rpc GetList (CityFilter) returns (ListCityResponse); 
+  
+  rpc Add(CityStruct) returns (ResponseMessage);
+  rpc Edit(CityStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

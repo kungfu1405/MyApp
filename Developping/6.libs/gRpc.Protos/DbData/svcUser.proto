@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserDb.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgUser.proto";
+
+// service definition.
+service UserServices {
+  rpc Get (IdRequest) returns (UserStruct); 
+  rpc GetList (UserFilter) returns (ListUserResponse); 
+  
+  rpc Add(UserStruct) returns (ResponseMessage);
+  rpc Edit(UserStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

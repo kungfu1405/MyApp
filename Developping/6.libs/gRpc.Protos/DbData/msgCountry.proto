@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "msgDbDataCommon.proto";
+import "msgContinent.proto";
+
+message CountryStruct{
+    int32 id = 1;
+    int32 continentId = 2;
+    string name = 3;
+
+    google.protobuf.StringValue iso2 = 4;
+    google.protobuf.StringValue iso3 = 5;
+    google.protobuf.StringValue native = 8;
+    google.protobuf.StringValue capital = 6;
+    google.protobuf.StringValue currency = 7;
+    google.protobuf.StringValue phoneCode = 12;
+    google.protobuf.StringValue emoji = 9;
+    google.protobuf.StringValue emojiU = 10;
+    google.protobuf.StringValue wikiDataId = 11;
+
+    ContinentStruct continent = 13;
+}
+
+message CountryFilter {
+    PagingType paging = 1;
+    SortType sort = 2;
+    
+    google.protobuf.StringValue name = 3;
+    int32 continentId = 4;
+}
+
+message ListCountryResponse {
+    int32 totalRecords = 1;
+    repeated CountryStruct data = 2;
+}

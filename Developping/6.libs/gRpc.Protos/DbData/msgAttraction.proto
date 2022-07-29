@@ -1,0 +1,91 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+import "msgDbDataCommon.proto";
+import "msgDestination.proto";
+message AttractionStruct{
+    google.protobuf.StringValue id = 1;
+    string DestinationId = 2;
+    string RouteUri = 3;
+    string DefaultName = 4;
+    google.protobuf.StringValue Description = 5;
+    int32 AttractionTypes = 6;
+    int32 TouristClasses = 7;
+    int32 TouristObjects = 8;
+    int32 PropertyGroups = 9;
+    google.protobuf.StringValue ThumbnailUrl = 10;
+    google.protobuf.StringValue DefaultGalleryId = 11;
+    google.protobuf.StringValue DefaultExperienceId = 12;
+
+    google.protobuf.StringValue Address = 13;
+    google.protobuf.StringValue Contact = 14;
+    google.protobuf.StringValue Website = 15;
+    int32 VisitDuration = 16;
+    float PriceFrom = 17;
+    google.protobuf.StringValue Currency = 18;
+
+    double Latitude = 19;
+    double Longitude = 20;
+    google.protobuf.StringValue MapImageUri = 21;
+
+    int32 TotalLikes = 22;
+    int32 TotalComments = 23;
+    int32 TotalRates = 24;
+    int32 AvgRates = 25;
+
+    google.protobuf.StringValue Author = 26;
+    google.protobuf.StringValue AuthorId = 27;
+    google.protobuf.Timestamp CreateDate = 28;
+    bool FromExperience = 29;
+    int32 Priority = 30;
+    int32 Status = 31;
+
+    DestinationStruct Destination = 32;
+    repeated AttractionTagStruct AttractionTags = 33;   
+    AttractionLanguageStruct AttractionLanguage = 34;
+    repeated AttractionLanguageStruct AttractionLanguages = 35;
+    repeated TagStruct Tags = 36;   
+    
+
+}
+
+message AttractionLanguageStruct{
+    google.protobuf.StringValue id = 1;
+    google.protobuf.StringValue attractionId = 2;
+    string langCode = 3;
+
+    string name = 4;
+    google.protobuf.StringValue description = 5;
+}
+
+message AttractionFilter {
+    PagingType paging = 1;
+    SortType sort = 2;
+    
+    google.protobuf.StringValue name = 3;
+    google.protobuf.StringValue destinationId = 4;
+
+    int32 attractionTypes = 5;
+    int32 touristClasses = 6;
+    int32 touristObjects = 7;
+    int32 propertyGroups = 8;
+
+    google.protobuf.StringValue tags = 9;
+
+    google.protobuf.StringValue langCode = 10;
+    google.protobuf.StringValue defaultLang = 11;
+}
+
+message ListAttractionResponse {
+    int32 totalRecords = 1;
+    repeated AttractionStruct Data = 2;
+}
+message AttractionTagStruct {
+
+    google.protobuf.StringValue attractionId = 1;
+    google.protobuf.StringValue tagId = 2;
+}

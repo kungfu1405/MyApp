@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserDb.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+
+message LanguageStruct{
+    string langCode = 1;
+    string name = 2;
+    google.protobuf.StringValue native = 3;
+    google.protobuf.StringValue iconUrl = 4;
+
+    bool isDefault = 5;
+    bool isRtl = 6;
+    int32 ordinal = 7;
+    bool isActive = 8;
+}
+
+message LanguageDataStruct{
+    string langKey = 1;
+    string langCode = 2;
+
+    google.protobuf.StringValue value = 3;
+    bool isGroup = 4;
+}
+
+message ListLanguageResponse {
+    int32 totalRecords = 1;
+    repeated LanguageStruct Languages = 2;
+}
+
+message LanguageDataFilter {
+    string langKey = 1;
+    string langCode = 2;
+    bool isGroupOnly = 3;
+}
+
+message ListLanguageDataResponse {
+    int32 totalRecords = 1;
+    repeated LanguageDataStruct Data = 2;
+}

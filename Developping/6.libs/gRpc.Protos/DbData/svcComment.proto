@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+
+// service definition.
+service CommentServices {
+  rpc Get (IdLangRequest) returns (EmptyRequest); 
+}

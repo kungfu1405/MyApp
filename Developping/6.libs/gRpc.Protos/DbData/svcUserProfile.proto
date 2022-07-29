@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "msgDbDataCommon.proto";
+
+// service definition.
+service UserProfileServices {
+  rpc Get(IdRequest) returns (UserProfileStruct); 
+  
+  rpc Add(UserProfileStruct) returns (ResponseMessage);
+  rpc Edit(UserProfileStruct) returns (ResponseMessage);
+
+  rpc GetFollowers (IdRequest) returns (ListUserFollowResponse); 
+  rpc GetFollowings (IdRequest) returns (ListUserFollowResponse); 
+  rpc AddFollow(UserFollowStruct) returns (ResponseMessage);
+  rpc RemoveFollow(UserFollowStruct) returns (ResponseMessage);
+}
+
+message UserProfileStruct{
+    google.protobuf.StringValue id = 1;
+    google.protobuf.StringValue BannerUrl = 2;
+    google.protobuf.StringValue Intro = 3;
+
+    int32 TotalExperiences = 4;
+    int32 TotalPlans = 5;
+    int32 TotalComments = 6;
+    int32 TotalRates = 7;
+    int32 AvgRates = 8;
+    int32 TotalFollowers = 9;
+    int32 TotalFollowings = 10;
+}
+
+message UserFollowStruct{
+    google.protobuf.StringValue UserId = 1;
+    google.protobuf.StringValue UserFollowingId = 2;
+}
+
+message UserFollowFilter {
+    PagingType paging = 1;    
+    google.protobuf.StringValue userId = 3;
+}
+message ListUserFollowResponse {
+    int32 totalRecords = 1;
+    repeated UserFollowStruct data = 2;
+}

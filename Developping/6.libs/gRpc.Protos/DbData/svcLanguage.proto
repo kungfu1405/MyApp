@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserDb.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgLanguage.proto";
+
+// service definition.
+service LanguageServices {
+  rpc Get (IdRequest) returns (LanguageStruct); 
+  rpc GetDefault (EmptyRequest) returns (LanguageStruct); 
+
+  rpc GetAll (EmptyRequest) returns (ListLanguageResponse); 
+  rpc GetAllActive (EmptyRequest) returns (ListLanguageResponse); 
+  
+  rpc Add(LanguageStruct) returns (ResponseMessage);
+  rpc Edit(LanguageStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

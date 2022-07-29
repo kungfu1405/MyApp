@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option csharp_namespace = "DynamicData.Protos";
+package ddata;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+import "msgCommon.proto";
+import "msgColumn.proto";
+import "msgCustomType.proto";
+
+message SysTableStruct{
+    string id = 1;
+    string name = 2;
+    string displayName = 3;
+    int32 permissions = 4;
+    int32 status = 5;
+    google.protobuf.StringValue statusNote = 6;
+    google.protobuf.Timestamp lastSyncDate = 7;
+    bool enabled = 8;
+}
+
+message TableResponse {
+    SysTableStruct table = 1;
+    repeated SysColumnStruct columns = 2;
+    repeated SysCustomTypeStruct customTypes = 3;
+}
+
+message ListTableFilter {
+    google.protobuf.StringValue name = 1;
+    bool viewEnabled = 2;
+    PagingType paging = 3;
+    SortType sort = 4;
+}
+
+message ListTableResponse {
+    int32 totalRecords = 1;
+    repeated SysTableStruct tables = 2;
+}

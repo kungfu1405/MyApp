@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "DynamicData.Protos";
+package ddata;
+
+import "msgCommon.proto";
+import "msgCustomType.proto";
+
+// service definition.
+service SysCustomType {
+  rpc Get (IdRequest) returns (SysCustomTypeStruct); //input custom typeId
+  rpc GetAll (EmptyRequest) returns (ListCustomTypeResponse);
+
+  rpc Add(SysCustomTypeStruct) returns (ResponseMessage);
+  rpc Edit(SysCustomTypeStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

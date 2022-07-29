@@ -1,0 +1,15 @@
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\bin\Debug\net5.0\DbData.Dal.MsSql.deps.json
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\bin\Debug\net5.0\DbData.Dal.MsSql.runtimeconfig.json
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\bin\Debug\net5.0\DbData.Dal.MsSql.runtimeconfig.dev.json
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\bin\Debug\net5.0\DbData.Dal.MsSql.dll
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\bin\Debug\net5.0\ref\DbData.Dal.MsSql.dll
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\bin\Debug\net5.0\DbData.Dal.MsSql.pdb
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\obj\Debug\net5.0\DbData.Dal.MsSql.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\obj\Debug\net5.0\DbData.Dal.MsSql.AssemblyInfoInputs.cache
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\obj\Debug\net5.0\DbData.Dal.MsSql.AssemblyInfo.cs
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\obj\Debug\net5.0\DbData.Dal.MsSql.csproj.CoreCompileInputs.cache
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\obj\Debug\net5.0\DbData.Dal.MsSql.dll
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\obj\Debug\net5.0\ref\DbData.Dal.MsSql.dll
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\obj\Debug\net5.0\DbData.Dal.MsSql.pdb
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\obj\Debug\net5.0\DbData.Dal.MsSql.genruntimeconfig.cache
+D:\Developping\3.DbDataBussiness\DbData.Dal.MsSql\obj\Debug\net5.0\DbData.Dal.MsSql.csproj.AssemblyReference.cache

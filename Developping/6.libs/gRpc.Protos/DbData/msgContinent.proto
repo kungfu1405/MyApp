@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+
+message ContinentStruct{
+    string id = 1;
+    string name = 2;
+}
+message ListContinentResponse{
+    repeated ContinentStruct data = 1;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "DynamicData.Protos";
+package ddata;
+
+import "msgCommon.proto";
+import "msgTable.proto";
+
+// service definition.
+service SysTable {
+  rpc Get (IdRequest) returns (TableResponse); 
+  rpc GetSingle (IdRequest) returns (SysTableStruct); 
+  rpc GetList (ListTableFilter) returns (ListTableResponse);
+  rpc GetEnabledList (EmptyRequest) returns (ListTableResponse);
+
+  rpc Edit(SysTableStruct) returns (ResponseMessage);
+  rpc ReScan(EmptyRequest) returns (ResponseMessage);
+}

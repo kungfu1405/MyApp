@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgContinent.proto";
+
+// service definition.
+service ContinentServices {
+  rpc GetAll (EmptyRequest) returns (ListContinentResponse); 
+}

@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserDb.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+import "msgDbDataCommon.proto";
+import "msgRole.proto";
+import "msgUsergroup.proto";
+
+message UserStruct{
+    string id = 1;
+    string usergroupId = 2;
+    string userName = 3;
+    string password = 4;
+
+    string email = 5;
+    bool emailVerified = 6;
+    google.protobuf.StringValue phoneNumber = 7;
+    bool phoneNumberVerified = 8;
+
+    google.protobuf.StringValue picture = 9;
+    google.protobuf.StringValue fullName = 10;
+    google.protobuf.StringValue givenName = 11;
+    google.protobuf.StringValue familyName = 12;
+    google.protobuf.StringValue address = 13;
+
+    string langCode = 14;
+    int32 timeout = 15;
+    int32 timezone = 16;
+
+    bool mustChangePassword = 17;
+    google.protobuf.Timestamp lastChangePassword = 18;
+    google.protobuf.Timestamp lastActivity = 19;
+    google.protobuf.Timestamp createdDate = 20;
+    bool isActive = 21;
+
+    UsergroupStruct usergroup = 22;
+    repeated RoleStruct roles = 23;
+}
+
+message UserFilter {
+    PagingType paging = 1;
+    SortType sort = 2;
+    
+    string email = 3;
+    string userName = 4;
+    string roleId = 5;
+    string userGroupId = 6;
+}
+
+message ListUserResponse {
+    int32 totalRecords = 1;
+    repeated UserStruct Users = 2;
+}

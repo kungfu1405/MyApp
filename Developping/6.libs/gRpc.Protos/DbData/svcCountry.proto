@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgCountry.proto";
+
+// service definition.
+service CountryServices {
+  rpc Get (IdRequest) returns (CountryStruct); 
+  rpc GetList (CountryFilter) returns (ListCountryResponse); 
+  
+  rpc Add(CountryStruct) returns (ResponseMessage);
+  rpc Edit(CountryStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

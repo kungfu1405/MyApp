@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "DynamicData.Protos";
+package ddata;
+
+import "msgCommon.proto";
+import "msgDData.proto";
+
+// service definition.
+service DData {
+  rpc Get (QueryRequest) returns (QueryRowData); //input condition fields
+  rpc GetList (QueryFilter) returns (QueryTableData); //input condition fields and paging
+  rpc Search (QueryFilter) returns (QueryTableData); //search in single table
+  rpc Export (QueryFilter) returns (FileExportResponse); 
+
+  rpc Add(QueryRowData) returns (ResponseMessage);
+  rpc Edit(QueryRowData) returns (ResponseMessage);
+  rpc Delete(QueryRequest) returns (ResponseMessage);
+}

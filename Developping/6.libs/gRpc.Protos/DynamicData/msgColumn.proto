@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+option csharp_namespace = "DynamicData.Protos";
+package ddata;
+
+import "google/protobuf/wrappers.proto";
+
+message SysColumnStruct{
+    string id = 1;
+    string tableId = 2;
+
+    string name = 3;
+    int32 dataType = 4;
+    int32 maxLength = 5;
+    google.protobuf.StringValue defaultValue = 6;
+
+    google.protobuf.StringValue customTypeId = 7;
+    bool isNulable = 8;
+    int32 fieldOptions = 9;
+
+    string displayName = 10;
+    int32 displayType = 11;
+    google.protobuf.StringValue placeHolder = 12;
+    google.protobuf.StringValue tooltip = 13;
+    int32 fieldType = 14;
+    
+    google.protobuf.StringValue ReferenceTableId = 15;
+    google.protobuf.StringValue referenceColumnId = 16;
+    google.protobuf.StringValue referenceText1Id = 17;
+    google.protobuf.StringValue referenceText2Id = 18;
+    int32 ordinal = 19;
+    int32 filterOrdinal = 20;
+}
+
+message ListColumnResponse {
+    int32 totalRecords = 1;
+    repeated SysColumnStruct columns = 2;
+}

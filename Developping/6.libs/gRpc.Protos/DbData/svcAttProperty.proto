@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgAttProperty.proto";
+
+// service definition.
+service AttPropertyServices {
+  rpc Get (IdRequest) returns (AttPropertyStruct); 
+  rpc GetList (AttPropertyFilter) returns (ListAttPropertyResponse); 
+  
+  rpc Add(AttPropertyStruct) returns (ResponseMessage);
+  rpc Edit(AttPropertyStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserDb.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgRole.proto";
+
+// service definition.
+service RoleServices {
+  rpc Get (IdRequest) returns (RoleStruct); 
+  rpc GetAll (EmptyRequest) returns (ListRoleResponse); 
+  
+  rpc Add(RoleStruct) returns (ResponseMessage);
+  rpc Edit(RoleStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

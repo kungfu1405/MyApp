@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+import "msgDbDataCommon.proto";
+
+message CommentStruct{
+    string id = 1;
+}

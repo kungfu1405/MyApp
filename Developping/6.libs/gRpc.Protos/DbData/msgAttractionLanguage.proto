@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+import "msgDbDataCommon.proto";
+import "msgDestination.proto";
+import "msgAttraction.proto";
+
+  message AttractionLanguageFilter {    
+    google.protobuf.StringValue id= 1;
+    google.protobuf.StringValue name = 2;
+    google.protobuf.StringValue description = 3;
+    PagingType paging = 4;
+    SortType sort = 5;
+    
+}
+
+message AttractionLanguageResponse {
+    int32 totalRecords = 1;
+    repeated AttractionLanguageStruct data = 2;
+}

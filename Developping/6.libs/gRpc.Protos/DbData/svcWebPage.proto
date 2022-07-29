@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserDb.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgWebPage.proto";
+
+// service definition.
+service WebPageServices {
+  rpc Get (IdRequest) returns (WebPageStruct); 
+  rpc GetList (WebPageFilter) returns (ListWebPageResponse); 
+  
+  rpc Add(WebPageStruct) returns (ResponseMessage);
+  rpc Edit(WebPageStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+  
+  rpc AllControllers (EmptyRequest) returns (ListWebControllerResponse); 
+}

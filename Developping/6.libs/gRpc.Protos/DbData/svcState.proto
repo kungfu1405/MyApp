@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgState.proto";
+
+// service definition.
+service StateServices {
+  rpc Get (IdRequest) returns (StateStruct); 
+  rpc GetList (StateFilter) returns (ListStateResponse); 
+  
+  rpc Add(StateStruct) returns (ResponseMessage);
+  rpc Edit(StateStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

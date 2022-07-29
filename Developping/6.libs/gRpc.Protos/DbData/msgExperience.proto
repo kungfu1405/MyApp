@@ -1,0 +1,77 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+import "msgDbDataCommon.proto";
+import "msgExperienceSession.proto";
+
+message ExperienceStruct{
+    google.protobuf.StringValue id = 1;
+    google.protobuf.StringValue destinationId = 2;
+
+    string routeUri = 3;
+    google.protobuf.StringValue defaultName = 4;
+    google.protobuf.StringValue description = 5;
+    google.protobuf.StringValue thumbnailUrl = 6;
+    google.protobuf.StringValue refPlanId = 7;
+
+    google.protobuf.Timestamp fromDate = 8;
+    google.protobuf.Timestamp toDate = 9;
+    google.protobuf.StringValue author = 10;
+    string authorId = 11;
+
+    int32 totalComments = 12;
+    int32 totalLikes = 13;
+    int32 totalRates = 14;
+    float avgRates = 15;
+
+    google.protobuf.Timestamp createDate = 16;
+    google.protobuf.Timestamp publishDate = 17;
+    int32 status = 18;
+
+    ExperienceLanguageStruct experienceLanguage = 19;
+    repeated ExperienceLanguageStruct experienceLanguages = 20;
+    repeated ExperienceSessionStruct experienceSessions = 21;
+    repeated TagStruct Tags = 22;
+}
+
+message ExperienceLanguageStruct{
+    google.protobuf.StringValue id = 1;
+    google.protobuf.StringValue experienceId = 2;
+    string langCode = 3;
+
+    string title = 4;
+    google.protobuf.StringValue description = 5;
+}
+
+message ExperienceResponse{
+    ExperienceStruct experience = 1;
+    ResponseMessage message = 2;
+}
+
+message ExperienceFilter {
+    PagingType paging = 1;
+    SortType sort = 2;
+    
+    google.protobuf.StringValue destinationId = 3;
+    google.protobuf.StringValue attractionId = 4;
+    google.protobuf.StringValue authorId = 5;
+
+    google.protobuf.StringValue title = 6;
+    google.protobuf.StringValue tags = 7;
+
+    google.protobuf.Timestamp fromDate = 8;
+    google.protobuf.Timestamp toDate = 9;
+    google.protobuf.StringValue status = 10;
+
+    google.protobuf.StringValue langCode = 11;
+    google.protobuf.StringValue defaultLang = 12;
+}
+
+message ListExperienceResponse {
+    int32 totalRecords = 1;
+    repeated ExperienceStruct Data = 2;
+}

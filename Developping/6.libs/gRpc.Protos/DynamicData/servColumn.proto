@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "DynamicData.Protos";
+package ddata;
+
+import "msgCommon.proto";
+import "msgColumn.proto";
+
+// service definition.
+service SysColumn {
+  rpc Get (IdRequest) returns (SysColumnStruct); //input columnId
+  rpc GetList (IdRequest) returns (ListColumnResponse);  //input tableId
+  rpc GetEnabledList (EmptyRequest) returns (ListColumnResponse);
+
+  rpc Edit(SysColumnStruct) returns (ResponseMessage);
+}

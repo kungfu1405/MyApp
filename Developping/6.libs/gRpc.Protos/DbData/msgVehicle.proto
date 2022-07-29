@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "msgDbDataCommon.proto";
+
+
+message VehicleStruct {
+    google.protobuf.StringValue id = 1;
+    string name = 2;    
+    string cssIcon = 3;
+    int32 ordinal = 4;    
+}
+
+message VehicleFilterStruct {
+    PagingType paging = 1;
+    SortType sort = 2;
+    
+    google.protobuf.StringValue name = 3;
+ 
+}
+
+message ListVehicleResponse {
+    int32 totalRecords = 1;
+    repeated VehicleStruct data = 2;
+}
+
+service VehicleServices {
+    rpc Get (IdRequest) returns (VehicleStruct); 
+    rpc GetList (VehicleFilterStruct) returns (ListVehicleResponse); 
+    
+    rpc Add(VehicleStruct) returns (ResponseMessage);
+    rpc Edit(VehicleStruct) returns (ResponseMessage);
+    rpc Delete(IdRequest) returns (ResponseMessage);
+  }

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+
+// service definition.
+service TagServices {
+  rpc Get (IdRequest) returns (TagStruct); 
+  
+  rpc Add(TagStruct) returns (ResponseMessage);
+  rpc Edit(TagStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

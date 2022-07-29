@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserDb.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+import "msgDbDataCommon.proto";
+
+message WebControllerStruct{
+    string id = 1;
+    string code = 2;
+    string displayName = 3;
+    google.protobuf.StringValue description = 4;
+}
+
+message WebPageStruct{
+    string id = 1;
+    string webControllerId = 2;
+
+    string action = 3;
+    string displayName = 4;
+    google.protobuf.StringValue description = 5;
+    bool allowAnonymous = 6;
+    int32 permissions = 7;
+
+    google.protobuf.Timestamp CreateDate = 8;
+    google.protobuf.Timestamp ModifyDate = 9;
+    WebControllerStruct WebController = 10;
+}
+
+message WebPageFilter {
+    PagingType paging = 1;
+    SortType sort = 2;    
+    string name = 3;
+    string webControllerId = 4;
+}
+
+message ListWebPageResponse {
+    int32 totalRecords = 1;
+    repeated WebPageStruct WebPages = 2;
+}
+
+message ListWebControllerResponse {
+    int32 totalRecords = 1;
+    repeated WebControllerStruct WebControllers = 2;
+}

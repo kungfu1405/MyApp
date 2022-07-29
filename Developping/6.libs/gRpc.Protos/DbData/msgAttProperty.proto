@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "msgDbDataCommon.proto";
+
+message AttPropertyStruct {
+    google.protobuf.StringValue id = 1;
+    string propertyGroup = 2;
+    int32 dataType = 3;
+    string name = 4;
+    string description = 5;
+    string cssIcon = 6;
+    int32 ordinal = 7;
+    
+}
+
+message AttPropertyFilter {    
+    google.protobuf.StringValue id= 1;
+    google.protobuf.StringValue name = 2;
+    google.protobuf.StringValue description = 3;
+    PagingType paging = 4;
+    SortType sort = 5;
+    
+}
+
+message ListAttPropertyResponse {
+    int32 totalRecords = 1;
+    repeated AttPropertyStruct data = 2;
+}

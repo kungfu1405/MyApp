@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "DynamicData.Protos";
+package ddata;
+import "google/protobuf/wrappers.proto";
+
+message SysCustomTypeStruct{
+    string id = 1;
+    string name = 2;
+    google.protobuf.StringValue description = 3;
+    string jsonKeyValue = 4;
+}
+
+message ListCustomTypeResponse {
+    int32 totalRecords = 1;
+    repeated SysCustomTypeStruct customTypes = 2;
+}

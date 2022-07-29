@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgExperienceSession.proto";
+
+// service definition.
+service ExperienceSessionServices {
+  rpc Get (IdLangRequest) returns (ExperienceSessionStruct);  // Id: Session ID
+  rpc GetAllLanguage (IdRequest) returns (ListExperienceSessionResponse);  // Id: Session ID
+  rpc GetList (IdLangRequest) returns (ListExperienceSessionResponse); // Id: Experience ID
+
+  rpc Add(ExperienceSessionStruct) returns (ExperienceSessionResponse);
+  rpc Edit(ExperienceSessionStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

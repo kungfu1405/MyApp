@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+import "msgDbDataCommon.proto";
+import "msgAttraction.proto";
+
+message ExperienceSessionStruct{
+    google.protobuf.StringValue id = 1;
+    google.protobuf.StringValue experienceId = 2;
+    string langCode = 3;
+    google.protobuf.StringValue attractionId = 4;
+    google.protobuf.StringValue defaultGalleryId = 5;
+    int32 imageDisplayType = 6;
+
+    google.protobuf.StringValue title = 7;
+    google.protobuf.StringValue subTitle = 8;
+    google.protobuf.StringValue detail = 9;
+
+    google.protobuf.StringValue translateBy = 10;
+    google.protobuf.StringValue userId = 11;
+    int32 status = 12;
+    int32 ordinal = 13;
+    repeated ExperienceSessionImageStruct images = 14;
+    AttractionStruct attraction = 15;
+    google.protobuf.Timestamp createDate = 16;
+}
+
+message ExperienceSessionImageStruct{
+    google.protobuf.StringValue id = 1;
+    google.protobuf.StringValue experienceId = 2;
+    google.protobuf.StringValue experienceSessionId = 3;
+
+    string ImagerUrl = 4;
+    int32 ordinal = 5;
+}
+
+message ExperienceSessionResponse{
+    ExperienceSessionStruct session = 1;
+    ResponseMessage message = 2;
+}
+
+message ListExperienceSessionResponse {
+    int32 totalRecords = 1;
+    repeated ExperienceSessionStruct Data = 2;
+}

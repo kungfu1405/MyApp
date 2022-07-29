@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserDb.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "msgDbDataCommon.proto";
+
+// service definition.
+service UserAuthenticateServices {
+	rpc Signin(SigninRequest) returns (SigninResponse);
+    rpc Signup(SignupRequest) returns (ResponseMessage);
+    rpc Forgot(ForgotRequest) returns (ResponseMessage);
+}
+
+
+message SigninRequest{
+    string userName = 1;
+    string password = 2;
+}
+
+message SigninResponse{
+    string id = 1;
+    string userName = 2;
+    string fullName = 3;
+    repeated string roles = 4;
+    int32 timeout = 5;
+    ResponseMessage message = 6;
+}
+
+message ForgotRequest{
+    string userName = 1;
+    string email = 2;
+}
+
+message SignupRequest{
+    string userName = 1;
+    string password = 2;
+    string email = 3;
+
+    google.protobuf.StringValue fullName = 4;
+    google.protobuf.StringValue givenName = 5;
+    google.protobuf.StringValue familyName = 6;
+    google.protobuf.StringValue address = 7;
+
+    int32 timezone = 8;
+}

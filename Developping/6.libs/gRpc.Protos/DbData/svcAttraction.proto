@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgAttraction.proto";
+
+// service definition.
+service AttractionServices {
+  rpc Get (IdLangRequest) returns (AttractionStruct);  // Id: RouteUri
+  rpc GetBy (IdRequest) returns (AttractionStruct); // Id: GuId Attraction
+
+  rpc GetList (AttractionFilter) returns (ListAttractionResponse); 
+    rpc Add(AttractionStruct) returns (ResponseMessage);
+  rpc Edit(AttractionStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

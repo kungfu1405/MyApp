@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "msgDbDataCommon.proto";
+import "msgAttraction.proto";
+import "msgAttractionLanguage.proto";
+
+// service definition.
+service AttractionLanguageServices {
+  rpc Get (IdLangRequest) returns (AttractionLanguageStruct); 
+  rpc GetById (IdRequest) returns (AttractionLanguageStruct); 
+  rpc GetList (AttractionLanguageFilter) returns (AttractionLanguageResponse); 
+  rpc GetListById (IdRequest) returns (AttractionLanguageResponse); 
+  
+  rpc Add(AttractionLanguageStruct) returns (ResponseMessage);
+  rpc Edit(AttractionLanguageStruct) returns (ResponseMessage);
+  rpc Delete(IdRequest) returns (ResponseMessage);
+}

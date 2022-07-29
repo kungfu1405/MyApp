@@ -1,0 +1,89 @@
+syntax = "proto3";
+
+option csharp_namespace = "DbData.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+import "msgDbDataCommon.proto";
+
+message DestinationStruct{
+    google.protobuf.StringValue id = 1;
+    google.protobuf.StringValue continent = 2;
+    int32 countryId = 3;
+    string countryName = 4;
+    int32 stateId = 5;
+    google.protobuf.StringValue stateName = 6;
+    int32 cityId = 7;
+    google.protobuf.StringValue cityName = 8;
+
+    string defaultName = 9;
+    google.protobuf.StringValue description = 10;
+    string routeUri = 11;
+    google.protobuf.StringValue thumbnailUrl = 12;
+    google.protobuf.StringValue bannerUrl = 13;
+    google.protobuf.StringValue destinationOverviewId = 14;
+    google.protobuf.StringValue defaultGalleryId = 15;
+
+    double latitude = 16;
+    double longitude = 17;
+    google.protobuf.StringValue mapImageUri = 18;
+
+    int32 totalLikes = 19;
+    int32 totalRates = 20;
+    int32 avgRates = 21;
+
+    DestinationLanguageStruct destinationLanguage = 22;
+    repeated DestinationLanguageStruct destinationLanguages = 23;
+    DestinationOverviewStruct destinationOverview = 24;
+    repeated DestinationOverviewStruct destinationOverviews = 25;
+    repeated TagStruct tags = 26;
+}
+
+message DestinationLanguageStruct{
+    google.protobuf.StringValue id = 1;
+    google.protobuf.StringValue destinationId = 2;
+    string langCode = 3;
+
+    string name = 4;
+    google.protobuf.StringValue description = 5;
+}
+
+message DestinationOverviewStruct{
+    google.protobuf.StringValue id = 1;
+    string langCode = 2;
+    string RouteUri = 3;
+
+    string Title = 4;
+    google.protobuf.StringValue SubTitle = 5;
+    google.protobuf.StringValue Description = 6;
+    google.protobuf.StringValue Detail = 7;
+    google.protobuf.StringValue ThumbnailUrl = 8;
+    string Author = 9;
+    string AuthorId = 10;
+    google.protobuf.Timestamp CreateDate = 11;
+    int32 Status = 12;
+}
+
+message DestinationFilter {
+    PagingType paging = 1;
+    SortType sort = 2;
+    
+    google.protobuf.StringValue Name = 3;
+    google.protobuf.StringValue Continent = 4;
+    google.protobuf.StringValue Country = 5;
+    int32 CountryId = 6;
+    google.protobuf.StringValue State = 7;
+    int32 StateId = 8;
+    google.protobuf.StringValue City = 9;
+    int32 CityId = 10;
+    google.protobuf.StringValue Tags = 11;
+
+    google.protobuf.StringValue langCode = 12;
+    google.protobuf.StringValue defaultLang = 13;
+}
+
+message ListDestinationResponse {
+    int32 totalRecords = 1;
+    repeated DestinationStruct Data = 2;
+}

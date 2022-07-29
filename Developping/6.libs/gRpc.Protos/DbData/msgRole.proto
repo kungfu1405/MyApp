@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserDb.Protos";
+package dbdata;
+
+import "google/protobuf/wrappers.proto";
+import "msgDbDataCommon.proto";
+
+message RoleStruct{
+    string id = 1;
+    string name = 2;
+    google.protobuf.StringValue description =3;
+
+    int32 priority = 4;
+    bool isDefault = 5;
+    bool isRoot = 6;
+}
+
+message ListRoleResponse {
+    int32 totalRecords = 1;
+    repeated RoleStruct Roles = 2;
+}

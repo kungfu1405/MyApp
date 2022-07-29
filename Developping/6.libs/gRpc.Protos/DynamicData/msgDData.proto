@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+option csharp_namespace = "DynamicData.Protos";
+package ddata;
+
+import "google/protobuf/wrappers.proto";
+import "msgCommon.proto";
+
+message QueryColData{
+    string columnId = 1;
+    string value = 2;
+}
+
+message QueryRowData{
+    string tableId = 1;
+    repeated QueryColData Columns = 2;
+}
+
+message QueryTableData {
+    string tableId = 1;
+    bool cacheable = 2;
+    int32 totalRecords = 3;
+    repeated QueryRowData rows = 4;
+    QueryColData sort = 5;
+}
+
+
+message QueryRequest {
+    string tableId = 1;
+    repeated QueryColData Conditions = 2;
+}
+
+message QueryFilter {
+    string tableId = 1;
+    repeated QueryColData conditions = 2;
+    bool activedOnly = 3;
+    PagingType paging = 4;
+    QueryColData sort = 5;
+}
+message FileExportResponse{
+    bytes Content = 1;
+}
