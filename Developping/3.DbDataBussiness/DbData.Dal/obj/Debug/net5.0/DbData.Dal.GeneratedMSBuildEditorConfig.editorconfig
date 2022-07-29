@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = DbData.Dal
-build_property.ProjectDir = D:\Developping\3.DbDataBussiness\DbData.Dal\
+build_property.ProjectDir = D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Dal\
