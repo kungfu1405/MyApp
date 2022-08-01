@@ -10,17 +10,20 @@ namespace DbData.Dal
 {
     public class CityDal
     {
-        private readonly DbDataContext _context;
+        public DbDataContext _context { get; set; }
         //private readonly DbDataContext _context = new DbDataContext();
         public CityDal()
-        {
-            //_context = context;
+        {            
         }
         public async Task<ECity> Get(object id)
         {
             return await _context.Cities
                 .Where(e => e.Id == (int)id)                
                 .SingleOrDefaultAsync();
+        }
+        public async Task<List<ECity>> GetAll()
+        {
+            return await _context.Cities.ToListAsync();
         }
     }
 }

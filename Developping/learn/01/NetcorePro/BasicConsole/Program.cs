@@ -35,8 +35,7 @@ namespace BasicConsole
             hashCode.Dequeue();
             Console.WriteLine("Total elements in queue are {0}", hashCode.Count);
             Console.WriteLine("Total elements in queue are {0}", (string)days.Peek());
-            object[] newarr = days.ToArray();
-            int i = 214748364745;
+            object[] newarr = days.ToArray();            
 
 
         }

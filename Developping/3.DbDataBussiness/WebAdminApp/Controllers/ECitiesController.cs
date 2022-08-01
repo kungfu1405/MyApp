@@ -14,8 +14,10 @@ namespace WebAdminApp.Controllers
     {
         private readonly DbDataContext _context;
 
-        public ECitiesController(DbDataContext context)
+        DbDataContext ob = new DbDataContext();
+        public ECitiesController(DbDataContext context )
         {
+
             _context = context;
         }
 

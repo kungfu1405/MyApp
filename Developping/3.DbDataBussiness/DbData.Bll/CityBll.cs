@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 namespace DbData.Bll
 {
     public class CityBll
-    {
-      //  private  DbDataContext _context = new DbDataContext();
-        private readonly CityDal context ;
-
+    {      
+        CityDal cityDal;
+        public DbDataContext Context { get; set; }
         public CityBll()
-        {            
-            context = new CityDal();
+        {
+            cityDal = new CityDal();
+            cityDal._context = Context;
         }
         public async Task<ECity> Get(object id)
         {
@@ -24,7 +24,11 @@ namespace DbData.Bll
             //    .Include(e => e.Country)
             //    .Include(e => e.State)
             //    .SingleOrDefaultAsync();
-            return await context.Get(id);
+            return await cityDal.Get(id);
+        }
+        public async Task<IList<ECity>> GetAll()
+        {
+            return await cityDal.GetAll();
         }
 
     }

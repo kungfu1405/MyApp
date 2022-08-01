@@ -10,3 +10,15 @@ D:\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitt
 D:\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\ref\DbData.Entitties.dll
 D:\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.pdb
 D:\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.csproj.AssemblyReference.cache
+D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Entitties\bin\Debug\net5.0\DbData.Entitties.deps.json
+D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Entitties\bin\Debug\net5.0\DbData.Entitties.dll
+D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Entitties\bin\Debug\net5.0\ref\DbData.Entitties.dll
+D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Entitties\bin\Debug\net5.0\DbData.Entitties.pdb
+D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.csproj.AssemblyReference.cache
+D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.AssemblyInfoInputs.cache
+D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.AssemblyInfo.cs
+D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.csproj.CoreCompileInputs.cache
+D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.dll
+D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\ref\DbData.Entitties.dll
+D:\Git\MyApp\Developping\3.DbDataBussiness\DbData.Entitties\obj\Debug\net5.0\DbData.Entitties.pdb

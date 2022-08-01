@@ -17,8 +17,9 @@ namespace MvcMovie.Models
         [Required]
         public DateTime ReleaseDate { get; set; }
         public string? Genre { get; set; }
+
         [Column(TypeName = "decimal(5, 2)")]
         public decimal? Price { get; set; }
-        //public DateTime TimeShow { get; set; }        
+        public DateTime TimeShow { get; set; }        
     }
 }

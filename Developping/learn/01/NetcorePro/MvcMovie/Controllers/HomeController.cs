@@ -15,7 +15,7 @@ namespace MvcMovie.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        //IMyDependency _dependency = new MyDependency();
+        IMyDependency _dependency = new MyDependency();
         private readonly IMyDependency _myDependency;
         public HomeController(ILogger<HomeController> logger, IMyDependency myDependency)
         {

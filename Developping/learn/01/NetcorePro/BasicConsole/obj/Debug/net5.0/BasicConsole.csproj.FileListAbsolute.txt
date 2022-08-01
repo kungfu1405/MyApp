@@ -22,3 +22,11 @@ D:\Git\MyApp\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\Basic
 D:\Git\MyApp\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\BasicConsole.dll
 D:\Git\MyApp\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\ref\BasicConsole.dll
 D:\Git\MyApp\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\BasicConsole.pdb
+D:\Git\MyApp\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\BasicConsole.exe
+D:\Git\MyApp\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\BasicConsole.deps.json
+D:\Git\MyApp\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\BasicConsole.runtimeconfig.json
+D:\Git\MyApp\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\BasicConsole.runtimeconfig.dev.json
+D:\Git\MyApp\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\BasicConsole.dll
+D:\Git\MyApp\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\ref\BasicConsole.dll
+D:\Git\MyApp\Developping\learn\01\NetcorePro\BasicConsole\bin\Debug\net5.0\BasicConsole.pdb
+D:\Git\MyApp\Developping\learn\01\NetcorePro\BasicConsole\obj\Debug\net5.0\BasicConsole.genruntimeconfig.cache
