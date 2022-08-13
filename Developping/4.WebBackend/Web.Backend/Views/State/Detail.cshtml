@@ -1,0 +1,74 @@
+﻿@model EState
+
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">State</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.Name</span>
+    </span>
+</div>
+
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Country</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.Country.Name</span>
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Country Code</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.CountryCode</span>
+    </span>
+</div>
+
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Fips Code</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrEmpty(Model.FipsCode))
+        {
+            <span class="text-muted">N/A</span>
+        }
+        else
+        {
+            <span>@Model.FipsCode</span>
+        }
+    </span>
+</div>
+
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">ISO 2</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrEmpty(Model.Iso2))
+        {
+            <span class="text-muted">N/A</span>
+        }
+        else
+        {
+            <span>@Model.Iso2</span>
+        }
+    </span>
+</div>
+
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">WikiData ID</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrEmpty(Model.WikiDataId))
+        {
+            <span class="text-muted">N/A</span>
+        }
+        else
+        {
+            <span>@Model.WikiDataId</span>
+        }
+    </span>
+</div>
+
+<div class="separator separator-dashed my-3"></div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <a href="@(Url.Action("AddEdit", new { id = Model.Id }))" class="btn btn-primary">
+        <i class="la la-edit"></i>Edit
+    </a>
+    <a href="#" data-link="@(Url.Action("Delete", new { id = Model.Id }))"
+       data-toggle="confirmation" class="btn btn-danger btn-delete">
+        <i class="flaticon-delete-1"></i> Delete
+    </a>
+</div>

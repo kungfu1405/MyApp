@@ -1,0 +1,244 @@
+2021-04-15T10:09:46.7928146+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-15T10:09:46.9769643+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-15T10:09:46.9819680+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-15T10:09:47.0046693+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-15T10:09:47.0088742+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-15T10:10:27.9672499+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-15T10:10:28.1180359+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-15T10:10:28.1202395+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-15T10:10:28.1222244+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-15T10:10:28.1239815+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-15T10:17:22.4460500+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-15T10:17:22.5767260+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-15T10:17:22.5811512+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-15T10:17:22.5898345+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-15T10:17:22.5931418+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-15T10:25:45.3900376+07:00 0HM7VNK2CP0O5:00000019 [ERR] Get Attraction List failed!. ERROR: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)") (53546c75)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.AttractionController.GetDatatable(AttractionListViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 55
+2021-04-15T11:03:01.4827063+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-15T11:03:01.5924002+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-15T11:03:01.5958299+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-15T11:03:01.6003578+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-15T11:03:01.6050344+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-15T11:09:21.5295403+07:00 0HM7VODEFF2U3:00000001 [ERR] Delete Destination ID '2d063087-2cc7-4b2e-b5bb-f93240be7b65' failed!. ERROR: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)") (84b32ba2)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.DestinationController.Delete(String id) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\DestinationController.cs:line 220
+2021-04-15T11:09:24.7593038+07:00 0HM7VODEFF2U3:00000003 [ERR] Get Destination List failed!. ERROR: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.199:8211) SocketException: No connection could be made because the target machine actively refused it.", DebugException="System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.199:8211)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)") (8e29f97c)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.199:8211) SocketException: No connection could be made because the target machine actively refused it.", DebugException="System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.199:8211)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.DestinationController.GetDatatable(DestinationListViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\DestinationController.cs:line 54
+2021-04-15T11:12:49.1378689+07:00 0HM7VODEFF2U8:00000001 [ERR] The partial view '"Detail"' was not found. Searched locations: ["/Views/Destination/Detail.cshtml", "/Views/Shared/Detail.cshtml", "/Pages/Shared/Detail.cshtml"] (a36fdbb6)
+2021-04-15T11:12:49.1799750+07:00 0HM7VODEFF2U8:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'Detail' was not found. The following locations were searched:
+/Views/Destination/Detail.cshtml
+/Views/Shared/Detail.cshtml
+/Pages/Shared/Detail.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.PartialViewResultExecutor.ExecuteAsync(ActionContext context, PartialViewResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-15T12:00:17.9526458+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-15T12:00:18.0467697+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-15T12:00:18.0493764+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-15T12:00:18.0513945+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-15T12:00:18.0530840+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-15T12:12:05.4866536+07:00 0HM7VPDHULN9H:00000001 [ERR] Edit Destination failed! (4be75677)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.DestinationController.AddEdit(DestinationViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\DestinationController.cs:line 140
+2021-04-15T12:12:07.5371749+07:00 0HM7VPDHULN9H:00000003 [ERR] AddEdit:: Get RecordID '733c8ac3-a9d4-409d-9371-00fe2761d85e' failed! (506f2162)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.199:8211) SocketException: No connection could be made because the target machine actively refused it.", DebugException="System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.199:8211)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.DestinationController.AddEdit(String id, String msg) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\DestinationController.cs:line 88
+2021-04-15T12:31:58.5157712+07:00 0HM7VPDHULN9N:00000001 [ERR] Edit Destination failed! (4be75677)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.DestinationController.AddEdit(DestinationViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\DestinationController.cs:line 140
+2021-04-15T12:32:00.5600190+07:00 0HM7VPDHULN9N:00000003 [ERR] AddEdit:: Get RecordID 'ff98bdea-2094-4253-9272-015f6b0a1175' failed! (04d54be0)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.199:8211) SocketException: No connection could be made because the target machine actively refused it.", DebugException="System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.199:8211)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.DestinationController.AddEdit(String id, String msg) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\DestinationController.cs:line 88
+2021-04-15T12:34:55.6948599+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-15T12:34:55.7744790+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-15T12:34:55.7761031+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-15T12:34:55.7773436+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-15T12:34:55.7786476+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-15T12:41:32.3625782+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-15T12:41:32.4402500+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-15T12:41:32.4432847+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-15T12:41:32.4457292+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-15T12:41:32.4478306+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)

@@ -1,0 +1,149 @@
+﻿@model ECountry
+
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Continent</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (Model.ContinentId > 0)
+        {
+            <span>@Model.Continent.Name</span>
+        }
+        else
+        {
+            <span class="text-muted">N/A</span>
+        }
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Name</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.Name</span>
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">ISO 2</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrEmpty(Model.Iso2))
+        {
+            <span class="text-muted">N/A</span>
+        }
+        else
+        {
+            <span>@Model.Iso2</span>
+        }
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">ISO 3</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrEmpty(Model.Iso3))
+        {
+            <span class="text-muted">N/A</span>
+        }
+        else
+        {
+            <span>@Model.Iso3</span>
+        }
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Native</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrEmpty(Model.Native))
+        {
+            <span class="text-muted">N/A</span>
+        }
+        else
+        {
+            <span>@Model.Native</span>
+        }
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Capital</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrEmpty(Model.Capital))
+        {
+            <span class="text-muted">N/A</span>
+        }
+        else
+        {
+            <span>@Model.Capital</span>
+        }
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">PhoneCode</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrEmpty(Model.PhoneCode))
+        {
+            <span class="text-muted">N/A</span>
+        }
+        else
+        {
+            <span>@Model.PhoneCode</span>
+        }
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Currency</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrEmpty(Model.Currency))
+        {
+            <span class="text-muted">N/A</span>
+        }
+        else
+        {
+            <span>@Model.Currency</span>
+        }
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Emoji</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrEmpty(Model.Emoji))
+        {
+            <span class="text-muted">N/A</span>
+        }
+        else
+        {
+            <span>@Model.Emoji</span>
+        }
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">EmojiU</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrEmpty(Model.EmojiU))
+        {
+            <span class="text-muted">N/A</span>
+        }
+        else
+        {
+            <span>@Model.EmojiU</span>
+        }
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">WikiData ID</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrEmpty(Model.WikiDataId))
+        {
+            <span class="text-muted">N/A</span>
+        }
+        else
+        {
+            <span>@Model.WikiDataId</span>
+        }
+    </span>
+</div>
+
+<div class="separator separator-dashed my-3"></div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <a href="@(Url.Action("AddEdit", new { id = Model.Id }))" class="btn btn-primary">
+        <i class="la la-edit"></i>Edit
+    </a>
+    <a href="#" data-link="@(Url.Action("Delete", new { id = Model.Id }))"
+       data-toggle="confirmation" class="btn btn-danger btn-delete">
+        <i class="flaticon-delete-1"></i> Delete
+    </a>
+</div>

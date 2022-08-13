@@ -1,0 +1,230 @@
+﻿<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="./../wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/html/style-draft.css">
+
+    </head>
+
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+    <h2>Collapsed Sidebar</h2>
+    <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+  </div>
+ <script src="/html/draft-js.js"></script>
+</body>
+
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../wwwroot/css/swiper-bundle.css">
+    <script src="../wwwroot/js/swiper-bundle.min.js"></script>
+    <!-- Demo styles -->
+   <style>
+       html,
+       body {
+           position: relative;
+           height: 100%;
+       }
+
+       body {
+           background: #eee;
+           font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+           font-size: 14px;
+           color: #000;
+           margin: 0;
+           padding: 0;
+       }
+
+       .swiper-container {
+           /* width: 100%;
+           height: 100%;
+           margin-left: auto;
+           margin-right: auto;*/
+           
+           margin-top: 30px;
+           width: 600px;
+           height: 300px;
+           background-color:gray;
+       }
+
+       .swiper-slide {
+           text-align: center;
+           font-size: 18px;
+           background: #fff;
+           height: calc((100% - 30px) / 1);
+      
+           display: -webkit-box;
+           display: -ms-flexbox;
+           display: -webkit-flex;
+           display: flex;
+           -webkit-box-pack: center;
+           -ms-flex-pack: center;
+           -webkit-justify-content: center;
+           justify-content: center;
+           -webkit-box-align: center;
+           -ms-flex-align: center;
+           -webkit-align-items: center;
+           align-items: center;
+       }
+       .swiper-slide{
+           background-color:aqua
+       }
+       .swiper-wrapper{
+           /*background-color:brown;*/
+           width:100%;
+       }
+       .swiper-pagination-bullet {
+           width: 20px;
+           height: 20px;
+           text-align: center;
+           line-height: 20px;
+           font-size: 12px;
+           color: #000;
+           opacity: 1;
+           background: rgba(0, 0, 0, 0.2);
+       }
+
+       .swiper-pagination-bullet-active {
+           color: #fff;
+           background: #007aff;
+       }
+   </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="../wwwroot/js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    
+    <script>
+     
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            slidesPerColumn: 1,
+            //spaceBetween: 15,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },  
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    //return '<span class="' + className + '">' + (index + 1) + '</span>';
+                    return '<span class="' + className + '" onclick="BulletClick('+index+')">' +  (index + 1) + '</span>';
+                },
+            },
+        });
+        
+        var bullets = document.getElementsByClassName('swiper-pagination-bullet');
+        var displayBullets;
+        var activeBullet;
+        var iPointer;
+        for (var i = 0; i < bullets.length; i++) {
+
+            if (bullets[i].classList.contains('swiper-pagination-bullet-active')) {
+                activeBullet = bullets[i];
+                activeBullet.style.display = "inline-block";
+                iPointer = i;
+             
+            }
+            if (i > (iPointer + 3) && i < (bullets.length-1)) {
+                bullets[i].style.display = "none";
+
+            }
+
+         
+        }
+
+        
+        function BulletClick(index) {
+            debugger
+            //activeBullet = btn;
+            //console.log(activeBullet);
+            iPointer = index;
+
+            for (var i = 0; i < bullets.length; i++) {
+                if (i < iPointer || (i > (iPointer + 3) && i < (bullets.length-1))) {
+                    bullets[i].style.visibility = "hidden";
+
+                }
+                if (i > iPointer && i < (iPointer + 4)) {
+                    bullets[i].style.display = "inline-block";
+
+                }
+            }
+        }
+      
+    </script>
+
+
+
+
+</body>
+
+</html>

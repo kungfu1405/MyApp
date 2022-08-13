@@ -1,0 +1,177 @@
+﻿@using DbData.Entities.Enums;
+@using Mic.Core.DataTypes;
+@model SearchModel
+@{
+    ViewData["Title"] = Model.keyword + " - Travelhub Search";
+}
+
+<div class="container-xxl m-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="pillar_banner position-relative">
+                    <img src="~/img/Artboard – 1.png"/>
+                    <h2 class="position-absolute text-center">
+                        A community platform for the Travel Lover, <br>Adventure Seeker or the Casual Traveler
+                    </h2>
+                    <div class="position-absolute text-center row w-100">
+                        <div class="col-xl-8 mx-auto form-group">
+                            <form id="frmSearch" action="/search" class="position-relative">
+                                <label class="placeholder"><ion-icon name="search-outline"></ion-icon> Search anything & explore the world out there!</label>
+                                <input class="form-control w-100 position-absolute top-0" id="inpSearch" value="@(Model.keyword)" autocomplete="off" name="q" type="text" placeholder="" />
+                                <input type="submit"
+                                       style="position: absolute; left: -9999px; width: 1px; height: 1px;"
+                                       tabindex="-1" />
+                                <input type="hidden" name="type" id="txtTypeSearch" value="@(EnumTypeSearch.Story.ToString())"/>
+                                <input type="hidden" name="page" id="txtPage" value="1"/>
+                            </form>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="home-txt">
+            <h3>Small Steps. Big Discoveries.</h3>
+            <p class="text-center">@(Model.CountResult) Results</p>
+        </div>
+        <div class="home-tab-top row mb-xl-5">
+            <div class="col-12 text-center">
+                @foreach (EnumTypeSearch type in (EnumTypeSearch[])Enum.GetValues(typeof(EnumTypeSearch)))
+                {
+                    if (Model.TypeSearch.Equals(type))
+                    {
+                        <a class="btn mx-2 my-2 btn-toppick active">@(dEnum.GetDescription(type))</a>
+                    }
+                    else
+                    {
+                        <a class="btn mx-2 my-2 btn-toppick btn-type-search" data-type="@(type.ToString())">@(dEnum.GetDescription(type))</a>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row stories-list">
+            @if (Model.TypeSearch.Equals(EnumTypeSearch.Story))
+            {
+                foreach (var itm in Model.ListExperience)
+                {
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-48">
+                        <div class="home-item">
+                            <div class="w-100">
+                                <div class="thumb m-auto">
+                                    <a class="" href="@string.Format("/Experience/{0}", itm.RouteUri)">
+                                        @if (!string.IsNullOrEmpty(itm.ThumbnailUrl))
+                                        {
+                                            <img class="rounded" onerror="imgError(this)" src="@string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)" />
+                                        }
+                                        else
+                                        {
+                                            <img class="rounded" src="~/img/icon-no-image.svg" />
+                                        }
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>#N of N Category</p>
+                                <h3><a href="@string.Format("/Experience/{0}", itm.RouteUri)">@itm.ExperienceLanguage.Title</a></h3>
+                                <p>10.8km from Center Point . 15h </p>
+                                <p>N Stops By . N Saves . @string.Format("{0} Comments", itm.TotalComments)</p>
+                                
+                            </div>
+                            <span class="fea-rating">
+                                <label class="like"><i></i> 128</label>
+                                <label class="comment"><i></i> 100</label>
+                            </span>
+                        </div>
+                    </div>
+                }
+            }
+            else if (!Model.TypeSearch.Equals(EnumTypeSearch.Collection))
+            {
+                foreach (var itm in Model.ListAttraction)
+                {
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="home-item home-item-horizontal row mb-0">
+                            <div class="col-6 py-0 px-2">
+                                <div class="thumb">
+                                    <a class="" href="@(string.Format("/Attraction/{0}", itm.RouteUri))">
+                                        <img class="rounded" onerror="imgError(this)" src="@string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)" />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="content col-6">
+                                <a class="mb-2 d-block font-size-14">@(dEnum.GetDescription(Model.TypeSearch))</a>
+                                <h3><a href="@(string.Format("/Attraction/{0}", itm.RouteUri))">@itm.DefaultName</a></h3>
+                                <p>#N of N Category</p>
+                                <p>N Have been there</p>
+                                <p>N Saves . @string.Format("{0} Comments", itm.TotalComments)</p>
+                            </div>
+                            <span class="fea-rating">
+                                <label>92</label>
+                                <label>95</label>
+                            </span>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        @if (Model.CountResult > 0)
+        {
+            <div class="pagination-list stories-paging text-center mt-5" id="paging"></div>
+            <script type="text/javascript">
+                $('.stories-paging').pagination({
+                    items: @(Model.CountResult),
+                    itemsOnPage: 6,
+                    currentPage: @(Model.page),
+                    displayedPages: 3,
+                    cssStyle: '',
+                    prevText: '<ion-icon name="caret-back-outline"></ion-icon>',
+                    nextText: '<ion-icon name="caret-forward-outline"></ion-icon>',
+                    //hrefTextPrefix: "",
+                    selectOnClick: false,
+                    onInit: function () {
+                        // fire first page loading
+                    },
+                    onPageClick: function (page, evt) {
+                        $("#txtPage").val(page);
+                        $("#frmSearch").submit();
+                    }
+                });
+            </script>
+        }
+    </div>
+</div>
+<style>
+    @if (!string.IsNullOrEmpty(Model.keyword))
+    {
+        <text>
+        .pillar_banner div input:valid {
+            background-color: #fff;
+        }
+        </text>
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        activeNavBar("nav_search");        
+
+        $(".btn-type-search").on("click", function () {
+            var typeS = $(this).attr("data-type");
+            $("#txtTypeSearch").val(typeS);
+            $("#frmSearch").submit();
+        });
+
+        $("#inpSearch").on("keyup", function () {
+            if($(this).val().length > 0)
+                $(this).css("background-color", "#fff");
+            else
+                $(this).css("background-color", "transparent");
+        });
+    });
+
+</script>

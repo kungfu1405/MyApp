@@ -1,0 +1,262 @@
+2021-03-19T09:34:47.0795391+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-19T09:34:47.2052524+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-19T09:34:47.2086572+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-19T09:34:47.2109306+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-19T09:34:47.2138980+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-19T09:41:32.4651607+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-19T09:41:32.5603169+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-19T09:41:32.5623784+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-19T09:41:32.5642979+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-19T09:41:32.5661512+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-19T10:00:57.9126202+07:00 0HM7AG20TBPE4:0000008B [ERR] The view '"Index"' was not found. Searched locations: ["/Views/Collection/Index.cshtml", "/Views/Shared/Index.cshtml", "/Pages/Shared/Index.cshtml"] (9bb2756c)
+2021-03-19T10:00:57.9748519+07:00 0HM7AG20TBPE4:0000008B [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Collection/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-19T10:01:00.2731344+07:00 0HM7AG20TBPE4:0000008D [ERR] The view '"Index"' was not found. Searched locations: ["/Views/Collection/Index.cshtml", "/Views/Shared/Index.cshtml", "/Pages/Shared/Index.cshtml"] (9bb2756c)
+2021-03-19T10:01:00.2806655+07:00 0HM7AG20TBPE4:0000008D [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Collection/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-19T10:47:32.1653861+07:00 0HM7AG20TBPEC:0000000D [ERR] The view '"Index"' was not found. Searched locations: ["/Views/Collection/Index.cshtml", "/Views/Shared/Index.cshtml", "/Pages/Shared/Index.cshtml"] (9bb2756c)
+2021-03-19T10:47:32.1949977+07:00 0HM7AG20TBPEC:0000000D [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Collection/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-19T10:47:32.2024835+07:00 0HM7AG20TBPE6:0000006B [ERR] Get User profile detail failed. Message: Error mapping types.
+
+Mapping types:
+UserStruct -> EUser
+UserDb.Protos.UserStruct -> Mic.UserDb.Entities.EUser
+
+Type Map configuration:
+UserStruct -> EUser
+UserDb.Protos.UserStruct -> Mic.UserDb.Entities.EUser
+
+Destination Member:
+Id
+ (5a218ff7)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+UserStruct -> EUser
+UserDb.Protos.UserStruct -> Mic.UserDb.Entities.EUser
+
+Type Map configuration:
+UserStruct -> EUser
+UserDb.Protos.UserStruct -> Mic.UserDb.Entities.EUser
+
+Destination Member:
+Id
+
+ ---> System.FormatException: Unrecognized Guid format.
+   at System.Guid.GuidResult.SetFailure(Boolean overflow, String failureMessageID)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid..ctor(String g)
+   at System.ComponentModel.GuidConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+   at AutoMapper.Mappers.TypeConverterMapper.Map[TSource,TDestination](TSource source)
+   at lambda_method9(Closure , Object , EUser , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method9(Closure , Object , EUser , ResolutionContext )
+   at Web.Frontend.Controllers.AccountController.Profile(String Id) in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Controllers\AccountController.cs:line 50
+2021-03-19T10:47:32.2025458+07:00 0HM7AG20TBPE6:00000069 [ERR] Get User profile detail failed. Message: Error mapping types.
+
+Mapping types:
+UserStruct -> EUser
+UserDb.Protos.UserStruct -> Mic.UserDb.Entities.EUser
+
+Type Map configuration:
+UserStruct -> EUser
+UserDb.Protos.UserStruct -> Mic.UserDb.Entities.EUser
+
+Destination Member:
+Id
+ (5a218ff7)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+UserStruct -> EUser
+UserDb.Protos.UserStruct -> Mic.UserDb.Entities.EUser
+
+Type Map configuration:
+UserStruct -> EUser
+UserDb.Protos.UserStruct -> Mic.UserDb.Entities.EUser
+
+Destination Member:
+Id
+
+ ---> System.FormatException: Unrecognized Guid format.
+   at System.Guid.GuidResult.SetFailure(Boolean overflow, String failureMessageID)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid..ctor(String g)
+   at System.ComponentModel.GuidConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+   at AutoMapper.Mappers.TypeConverterMapper.Map[TSource,TDestination](TSource source)
+   at lambda_method9(Closure , Object , EUser , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method9(Closure , Object , EUser , ResolutionContext )
+   at Web.Frontend.Controllers.AccountController.Profile(String Id) in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Controllers\AccountController.cs:line 50
+2021-03-19T13:20:22.8672881+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-19T13:20:22.9388853+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-19T13:20:22.9404976+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-19T13:20:22.9419209+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-19T13:20:22.9436412+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-19T16:50:57.8308712+07:00 0HM7AJSAI085J:00000031 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.196:8100)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleChallengeAsyncInternal(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.ChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-19T17:40:20.7335015+07:00 0HM7AJSAI085U:00000025 [ERR] Get Experience detail failed. Message: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)") (9358feb0)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Frontend.Controllers.ExperienceController.Preview(String routeUri) in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Controllers\ExperienceController.cs:line 162
+2021-03-19T17:40:20.7633881+07:00 0HM7AJSAI085U:00000025 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'Web.Frontend.Models.ErrorViewModel', but this ViewDataDictionary instance requires a model item of type 'Web.Frontend.Models.ExperienceDetailModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method310(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

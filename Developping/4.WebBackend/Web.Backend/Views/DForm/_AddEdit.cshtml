@@ -1,0 +1,430 @@
+﻿@using DynamicData.Entities
+@using Mic.Core.DataTypes
+@model Web.Backend.Models.DynamicForm.DFormViewModel
+
+<form asp-controller="DForm" asp-action="AddEdit" id="@Model.TableId" method="post" class="form-vertical">
+    @foreach (var col in Model.Columns.OrderBy(e => e.Ordinal))
+    {
+        string colval = "";
+        if (Model.Data != null)
+        {
+            colval = Model.Data[col.Id];
+        }
+        if ((int)EnumFieldDisplayType.Hidden == col.DisplayType)
+        {
+            <input type="hidden" name="@col.Id" value="@colval" />
+            continue;
+        }
+
+        <div class="form-group">
+            @if (!string.IsNullOrEmpty(col.CustomTypeId))
+            {
+                var custType = Model.CustomTypes.SingleOrDefault(e => e.Id == col.CustomTypeId);
+                if (custType != null && !string.IsNullOrEmpty(custType.JsonKeyValue))
+                {
+                    var custItems = Newtonsoft.Json.JsonConvert.DeserializeObject<List<CustomTypeStruct>>(custType.JsonKeyValue);
+
+                    switch ((EnumFieldDisplayType)col.DisplayType)
+                    {
+                        case EnumFieldDisplayType.Dropdown:
+                            <label class="font-weight-bold" for="@col.Id">
+                                @col.DisplayName
+                                @if (!col.IsNulable && col.DataType != (int)EnumDataType.Bool)
+                                {
+                                    <span class="text-danger">*</span>
+                                }
+                            </label>
+                            <select name="@col.Id" id="@col.Id" class="form-control select2" style="width: 100%"
+                                    @(col.IsNulable ? "" : "required")
+                                    @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "")>
+                                <option></option>
+                                @{
+                                    foreach (var citem in custItems.OrderBy(e => e.Ordinal))
+                                    {
+                                        if (citem.Value == colval)
+                                        {
+                                            <option value="@citem.Value" selected>@citem.Text</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@citem.Value">@citem.Text</option>
+                                        }
+                                    }
+                                }
+                            </select>
+                            <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $('#@col.Id').select2({
+                                            placeholder: "@(string.IsNullOrEmpty(col.PlaceHolder) ? "Select " + @custType.Name : col.PlaceHolder)",
+                                            allowClear: @(col.IsNulable ? "true" : "false"),
+                                            minimumResultsForSearch: 15
+                                        }).on('change', function () {
+                                            $(this).trigger('blur');
+                                        });
+                                    });
+                            </script>
+                            break;
+                        case EnumFieldDisplayType.RadioButtonList:
+                            <label class="font-weight-bold" for="@col.Id">
+                                @col.DisplayName
+                                @if (!col.IsNulable && col.DataType != (int)EnumDataType.Bool)
+                                {
+                                    <span class="text-danger">*</span>
+                                }
+                            </label>
+                            <div class="radio-inline mt-3" id="_@col.Id">
+                                @{
+                                    foreach (var citem in custItems.OrderBy(e => e.Ordinal))
+                                    {
+                                        <label class="radio @(string.IsNullOrEmpty(citem.ColorCode) ? "" : "radio-" + citem.ColorCode)">
+                                            <input type="radio" name="_@col.Id" value="@citem.Value"
+                                                   @(citem.Value == colval ? "checked" : "")
+                                                   @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "") />
+                                            <span></span>
+                                            @citem.Text
+                                        </label>
+                                    }
+                                }
+                            </div>
+                            <input type="hidden" name="@col.Id" id="@col.Id" @(col.IsNulable ? "" : "required") />
+                            <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $('#_@(col.Id) input[name="_@col.Id"]').click(function () {
+                                            $('#@col.Id').val($(this).val());
+                                        });
+                                    });
+                            </script>
+                            break;
+                    }
+                }
+            }
+            else
+            {
+                switch ((EnumFieldDisplayType)col.DisplayType)
+                {
+                    case EnumFieldDisplayType.Email:
+                        <label class="font-weight-bold" for="@col.Id">
+                            @col.DisplayName
+                            @if (!col.IsNulable && col.DataType != (int)EnumDataType.Bool)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <div class="input-group input-group-solid">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="la la-at"></i>
+                                </span>
+                            </div>
+                            <input type="text" name="@col.Id" id="@col.Id" value="@colval"
+                                   class="form-control" autocomplete="off"
+                                   maxlength="@col.MaxLength"
+                                   placeholder="@col.PlaceHolder"
+                                   @(col.IsNulable ? "" : "required")
+                                   @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "") />
+                        </div>
+                        <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $("#@col.Id").inputmask({
+                                        mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@@*{1,20}[.*{2,6}][.*{1,2}]",
+                                        greedy: false,
+                                        onBeforePaste: function (pastedValue, opts) {
+                                            pastedValue = pastedValue.toLowerCase();
+                                            return pastedValue.replace("mailto:", "");
+                                        },
+                                        definitions: {
+                                            '*': {
+                                                validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+                                                cardinality: 1,
+                                                casing: "lower"
+                                            }
+                                        }
+                                    });
+                                });
+                        </script>
+                        break;
+                    case EnumFieldDisplayType.Number:
+                        <label class="font-weight-bold" for="@col.Id">
+                            @col.DisplayName
+                            @if (!col.IsNulable && col.DataType != (int)EnumDataType.Bool)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <input type="number" name="@col.Id" id="@col.Id" value="@colval"
+                               class="form-control" autocomplete="off"
+                               placeholder="@col.PlaceHolder"
+                               @(col.IsNulable ? "" : "required")
+                               @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "") />
+                        break;
+                    case EnumFieldDisplayType.TextArea:
+                        <label class="font-weight-bold" for="@col.Id">
+                            @col.DisplayName
+                            @if (!col.IsNulable && col.DataType != (int)EnumDataType.Bool)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <textarea name="@col.Id" id="@col.Id" rows="3"
+                                  class="form-control" placeholder="@col.PlaceHolder"
+                                  @(col.IsNulable ? "" : "required")
+                                  @(col.MaxLength == -1 ? "" : "maxlength=" + col.MaxLength + "")
+                                  @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "")>@colval</textarea>
+                        <script type="text/javascript">
+                                $(document).ready(function () {
+                                    autosize($('#@col.Id'));
+                                });
+                        </script>
+                        break;
+                    case EnumFieldDisplayType.Checkbox:
+                        <div class="d-flex flex-fill align-items-center">
+                            <label class="font-weight-bold mr-3 mb-0" for="@col.Id">
+                                @col.DisplayName
+                            </label>
+                            <span class="switch switch-outline switch-icon switch-brand">
+                                <label>
+                                    <input type="checkbox" id="_@col.Id"
+                                           @(dBin.ToBoolean(colval) ? "checked" : "")
+                                           @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "") />
+                                    <input type="hidden" name="@col.Id" id="@col.Id" value="@colval" />
+                                    <span></span>
+                                </label>
+                            </span>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $('#_@col.Id').click(function () {
+                                        $('#@col.Id').val($('#_@col.Id').is(":checked"));
+                                    });
+                                });
+                            </script>
+                        </div>
+                        break;
+                    case EnumFieldDisplayType.RadioButtonList:
+                        <label class="font-weight-bold" for="@col.Id">
+                            @col.DisplayName
+                            @if (!col.IsNulable && col.DataType != (int)EnumDataType.Bool)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <div class="radio-inline mt-3" id="_@col.Id">
+                            @if (Model.RefTables != null && Model.RefTables[col.ReferenceTableId] != null)
+                            {
+                                var refdata = Model.RefTables[col.ReferenceTableId].Results;
+                                foreach (var row in refdata)
+                                {
+                                    <label class="radio">
+                                        <input type="radio" name="_@col.Id" value="@row.Id"
+                                               @(row.Id == colval ? "checked" : "")
+                                               @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "") />
+                                        <span></span>
+                                        @row.Text
+                                    </label>
+                                }
+                            }
+                        </div>
+                        <input type="hidden" name="@col.Id" id="@col.Id" @(col.IsNulable ? "" : "required") />
+                        <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $('#_@(col.Id) input[name="_@col.Id"]').click(function () {
+                                        $('#@col.Id').val($(this).val());
+                                    });
+                                });
+                        </script>
+                        break;
+                    case EnumFieldDisplayType.Dropdown:
+                        <label class="font-weight-bold" for="@col.Id">
+                            @col.DisplayName
+                            @if (!col.IsNulable && col.DataType != (int)EnumDataType.Bool)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <select name="@col.Id" id="@col.Id" class="form-control select2" style="width: 100%"
+                                @(col.IsNulable ? "" : "required")
+                                @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "")>
+                            <option></option>
+                            @if (Model.RefTables != null && Model.RefTables[col.ReferenceTableId] != null)
+                            {
+                                var refdata = Model.RefTables[col.ReferenceTableId].Results;
+                                foreach (var row in refdata)
+                                {
+                                    <option value="@row.Id">@row.Text</option>
+                                    if (row.Id == colval)
+                                    {
+                                        <option value="@row.Id" selected>@row.Text</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@row.Id">@row.Text</option>
+                                    }
+                                }
+                            }
+                        </select>
+                        <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $('#@col.Id').select2({
+                                        placeholder: "@(string.IsNullOrEmpty(col.PlaceHolder) ? "Select item" : col.PlaceHolder)",
+                                        allowClear: @(col.IsNulable ? "true" : "false"),
+                                        minimumResultsForSearch: 15
+                                    }).on('change', function () {
+                                        $(this).trigger('blur');
+                                    });
+                                });
+                        </script>
+                        break;
+                    case EnumFieldDisplayType.DropdownAjax:
+                        <label class="font-weight-bold" for="@col.Id">
+                            @col.DisplayName
+                            @if (!col.IsNulable && col.DataType != (int)EnumDataType.Bool)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <select name="@col.Id" id="@col.Id" class="form-control" style="width: 100%"
+                                @(col.IsNulable ? "" : "required")
+                                @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "")>
+                            <option></option>
+                            @if (Model.ActionMode == FormActionMode.Edit && !string.IsNullOrWhiteSpace(colval))
+                            {
+                                <option value="@colval" selected>@colval</option>
+                            }
+                        </select>
+                        <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $("#@col.Id").select2({
+                                        minimumInputLength: 2,
+                                        placeholder: "@(string.IsNullOrEmpty(col.PlaceHolder) ? "Search item" : col.PlaceHolder)",
+                                        allowClear: true,
+                                        ajax: {
+                                            url: '@Url.Action("Search", "DForm")',
+                                            dataType: 'json',
+                                            delay: 250,
+                                            cache: true,
+                                            data: function (params) {
+                                                var queryParameters = {
+                                                    keyword: params.term,
+                                                    ReferenceTableId: "@col.ReferenceTableId",
+                                                    ReferenceColumnId: "@col.ReferenceColumnId",
+                                                    ReferenceText1Id: "@col.ReferenceText1Id",
+                                                    ReferenceText2Id: "@col.ReferenceText2Id"
+                                                }
+                                                return queryParameters;
+                                            }
+                                        }
+                                    }).on('change', function () {
+                                        $(this).trigger('blur');
+                                    });
+                                });
+                        </script>
+                        break;
+                    case EnumFieldDisplayType.DateTime:
+                        <label class="font-weight-bold" for="@col.Id">
+                            @col.DisplayName
+                            @if (!col.IsNulable && col.DataType != (int)EnumDataType.Bool)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <div class='input-group date' id='datetimepicker_@col.Id' data-target-input="nearest">
+                            <input type='text' class="form-control datetimepicker-input" name="@col.Id" id="@col.Id"
+                                   data-toggle="datetimepicker" autocomplete="off"
+                                   value="@(string.IsNullOrEmpty(colval) ? "" : dDat.ToDateTime(colval).ToString("dd-MMM-yyyy HH:mm"))"
+                                   data-target="#datetimepicker_@col.Id"
+                                   placeholder="@col.PlaceHolder"
+                                   @(col.IsNulable ? "" : "required")
+                                   @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "") />
+                            <div class="input-group-append" data-target="#datetimepicker_@col.Id" data-toggle="datetimepicker">
+                                <span class="input-group-text"><i class="ki ki-calendar"></i></span>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $('#datetimepicker_@col.Id').datetimepicker({
+                                        format: 'DD-MMM-YYYY HH:mm'
+                                    });
+                                });
+                        </script>
+                        break;
+                    case EnumFieldDisplayType.Date:
+                        <label class="font-weight-bold" for="@col.Id">
+                            @col.DisplayName
+                            @if (!col.IsNulable && col.DataType != (int)EnumDataType.Bool)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <div class='input-group date' id='datetimepicker_@col.Id' data-target-input="nearest">
+                            <input type='text' class="form-control datetimepicker-input" name="@col.Id" id="@col.Id"
+                                   data-toggle="datetimepicker" autocomplete="off"
+                                   value="@(string.IsNullOrEmpty(colval) ? "" : dDat.ToDateTime(colval).ToString("dd-MMM-yyyy"))"
+                                   data-target="#datetimepicker_@col.Id"
+                                   placeholder="@col.PlaceHolder"
+                                   @(col.IsNulable ? "" : "required")
+                                   @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "") />
+                            <div class="input-group-append" data-target="#datetimepicker_@col.Id" data-toggle="datetimepicker">
+                                <span class="input-group-text"><i class="ki ki-calendar"></i></span>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $('#datetimepicker_@col.Id').datetimepicker({
+                                        format: 'DD-MMM-YYYY'
+                                    });
+                                });
+                        </script>
+                        break;
+                    case EnumFieldDisplayType.Time:
+                        <label class="font-weight-bold" for="@col.Id">
+                            @col.DisplayName
+                            @if (!col.IsNulable && col.DataType != (int)EnumDataType.Bool)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <div class='input-group date' id='datetimepicker_@col.Id' data-target-input="nearest">
+                            <input type='text' class="form-control datetimepicker-input" name="@col.Id" id="@col.Id"
+                                   data-toggle="datetimepicker" autocomplete="off"
+                                   value="@(string.IsNullOrEmpty(colval) ? "" : dDat.ToDateTime(colval).ToString("HH:mm:ss"))"
+                                   data-target="#datetimepicker_@col.Id"
+                                   placeholder="@col.PlaceHolder"
+                                   @(col.IsNulable ? "" : "required")
+                                   @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "") />
+                            <div class="input-group-append" data-target="#datetimepicker_@col.Id" data-toggle="datetimepicker">
+                                <span class="input-group-text"><i class="ki ki-clock"></i></span>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $('#datetimepicker_@col.Id').datetimepicker({
+                                        format: 'HH:mm:ss'
+                                    });
+                                });
+                        </script>
+                        break;
+                    default:
+                        <label class="font-weight-bold" for="@col.Id">
+                            @col.DisplayName
+                            @if (!col.IsNulable && col.DataType != (int)EnumDataType.Bool)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <input type="text" name="@col.Id" id="@col.Id"
+                               value="@colval"
+                               class="form-control" autocomplete="off"
+                               placeholder="@col.PlaceHolder"
+                               @(col.IsNulable ? "" : "required")
+                               @(col.DataType == (int)EnumDataType.String && col.MaxLength != -1 ? "maxlength=" + col.MaxLength : "")
+                               @(((int)EnumFieldOption.ReadOnly & col.FieldOptions) > 0 ? "readonly" : "") />
+                        break;
+                }
+            }
+        </div>
+    }
+    <input type="hidden" asp-for="ActionMode" />
+    <input type="hidden" asp-for="TableId" />
+    <input type="hidden" asp-for="ColumnsJson" />
+    <input type="hidden" asp-for="ReturnUrl" />
+    <input type="hidden" asp-for="CommandName" />
+</form>

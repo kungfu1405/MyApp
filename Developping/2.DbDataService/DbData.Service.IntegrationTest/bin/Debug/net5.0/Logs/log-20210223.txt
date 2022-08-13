@@ -1,0 +1,49 @@
+2021-02-23T11:16:56.3472330+07:00  [INF] User profile is available. Using '"C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2021-02-23T11:16:56.5182515+07:00 0HM6NM7DODALG [INF] Request starting HTTP/2 POST http://localhost/dbdata.DestinationServices/Get application/grpc - (ca22a1cb)
+2021-02-23T11:16:56.5669196+07:00 0HM6NM7DODALG [INF] Executing endpoint '"gRPC - /dbdata.DestinationServices/Get"' (500cc934)
+2021-02-23T11:16:56.6432614+07:00 0HM6NM7DODALG [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-02-23T11:16:56.8560415+07:00 0HM6NM7DODALG [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-02-23T11:16:56.8744535+07:00 0HM6NM7DODALG [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-02-23T11:16:56.9266461+07:00 0HM6NM7DODALG [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-02-23T11:16:56.9638110+07:00 0HM6NM7DODALG [INF] Executed DbCommand ("20"ms) [Parameters=["@__ToLower_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[AvgRates], [d].[BannerUrl], [d].[CityId], [d].[CityName], [d].[Continent], [d].[CountryId], [d].[CountryName], [d].[DefaultGalleryId], [d].[DefaultName], [d].[Description], [d].[DestinationOverviewId], [d].[Latitude], [d].[Longitude], [d].[MapImageUri], [d].[RouteUri], [d].[StateId], [d].[StateName], [d].[ThumbnailUrl], [d].[TotalLikes], [d].[TotalRates]
+FROM [Destination] AS [d]
+WHERE [d].[RouteUri] = @__ToLower_0" (0723d8ff)
+2021-02-23T11:16:57.0884648+07:00 0HM6NM7DODALG [INF] Executed DbCommand ("12"ms) [Parameters=["@__itm_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Name]
+FROM [DestinationTag] AS [d]
+INNER JOIN [Tag] AS [t] ON [d].[TagId] = [t].[Id]
+WHERE [d].[DestinationId] = @__itm_Id_0" (0723d8ff)
+2021-02-23T11:16:57.1032650+07:00 0HM6NM7DODALG [INF] Executed DbCommand ("7"ms) [Parameters=["@__destinationId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[Description], [d].[DestinationId], [d].[LangCode], [d].[Name]
+FROM [DestinationLanguage] AS [d]
+WHERE ([d].[DestinationId] = @__destinationId_0) AND ([d].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-02-23T11:16:57.1731348+07:00 0HM6NM7DODALG [INF] Executed endpoint '"gRPC - /dbdata.DestinationServices/Get"' (99874f2b)
+2021-02-23T11:16:57.1789423+07:00 0HM6NM7DODALG [INF] Request finished HTTP/2 POST http://localhost/dbdata.DestinationServices/Get application/grpc - - 200 - application/grpc 662.9898ms (791a596a)
+2021-02-23T11:22:30.7418324+07:00  [INF] User profile is available. Using '"C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2021-02-23T11:22:30.8715768+07:00 0HM6NMAHD1I78 [INF] Request starting HTTP/2 POST http://localhost/dbdata.DestinationServices/Get application/grpc - (ca22a1cb)
+2021-02-23T11:22:30.9164094+07:00 0HM6NMAHD1I78 [INF] Executing endpoint '"gRPC - /dbdata.DestinationServices/Get"' (500cc934)
+2021-02-23T11:22:30.9840586+07:00 0HM6NMAHD1I78 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-02-23T11:22:31.1735597+07:00 0HM6NMAHD1I78 [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-02-23T11:22:31.1908316+07:00 0HM6NMAHD1I78 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-02-23T11:22:31.2396673+07:00 0HM6NMAHD1I78 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-02-23T11:22:31.2897783+07:00 0HM6NMAHD1I78 [INF] Executed DbCommand ("34"ms) [Parameters=["@__ToLower_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[AvgRates], [d].[BannerUrl], [d].[CityId], [d].[CityName], [d].[Continent], [d].[CountryId], [d].[CountryName], [d].[DefaultGalleryId], [d].[DefaultName], [d].[Description], [d].[DestinationOverviewId], [d].[Latitude], [d].[Longitude], [d].[MapImageUri], [d].[RouteUri], [d].[StateId], [d].[StateName], [d].[ThumbnailUrl], [d].[TotalLikes], [d].[TotalRates]
+FROM [Destination] AS [d]
+WHERE [d].[RouteUri] = @__ToLower_0" (0723d8ff)
+2021-02-23T11:22:31.3037396+07:00 0HM6NMAHD1I78 [INF] Executed endpoint '"gRPC - /dbdata.DestinationServices/Get"' (99874f2b)
+2021-02-23T11:22:31.3093093+07:00 0HM6NMAHD1I78 [INF] Request finished HTTP/2 POST http://localhost/dbdata.DestinationServices/Get application/grpc - - 200 - application/grpc 440.6395ms (791a596a)

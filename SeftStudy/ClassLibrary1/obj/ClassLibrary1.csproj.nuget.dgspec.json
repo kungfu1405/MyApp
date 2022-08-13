@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\SeftStudy\\ClassLibrary1\\ClassLibrary1.csproj": {}
+    "D:\\Git\\MyApp\\SeftStudy\\ClassLibrary1\\ClassLibrary1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\SeftStudy\\ClassLibrary1\\ClassLibrary1.csproj": {
+    "D:\\Git\\MyApp\\SeftStudy\\ClassLibrary1\\ClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectUniqueName": "D:\\Git\\MyApp\\SeftStudy\\ClassLibrary1\\ClassLibrary1.csproj",
         "projectName": "ClassLibrary1",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectPath": "D:\\Git\\MyApp\\SeftStudy\\ClassLibrary1\\ClassLibrary1.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\ClassLibrary1\\obj\\",
+        "outputPath": "D:\\Git\\MyApp\\SeftStudy\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

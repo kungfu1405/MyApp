@@ -1,0 +1,6 @@
+obj\Debug\net5.0/MsgExperienceSession.cs: C:/Users/Admin/.nuget/packages/grpc.tools/2.34.0/build/native/include/google/protobuf/wrappers.proto\
+ C:/Users/Admin/.nuget/packages/grpc.tools/2.34.0/build/native/include/google/protobuf/timestamp.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgDbDataCommon.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgDestination.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgAttraction.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgExperienceSession.proto

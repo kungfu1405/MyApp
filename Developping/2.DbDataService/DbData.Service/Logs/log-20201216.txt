@@ -1,0 +1,905 @@
+2020-12-16T18:29:17.6874938+07:00  [WRN] Overriding address(es) '"http://localhost:6100, https://localhost:6101"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-16T18:29:17.8156017+07:00  [INF] Now listening on: "http://localhost:5101" (d826f4b8)
+2020-12-16T18:29:17.8197205+07:00  [INF] Now listening on: "https://[::]:5100" (d826f4b8)
+2020-12-16T18:29:17.8235975+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-16T18:29:17.8268431+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-16T18:29:17.8298270+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-16T18:29:18.4544405+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:29:18.5656706+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:29:18.7267797+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:29:18.8187953+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:29:18.9861947+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:29:19.0482564+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:31:44.1969889+07:00  [WRN] Overriding address(es) '"http://localhost:6100, https://localhost:6101"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-16T18:31:44.3569813+07:00  [INF] Now listening on: "http://localhost:5101" (d826f4b8)
+2020-12-16T18:31:44.3886159+07:00  [INF] Now listening on: "https://[::]:5100" (d826f4b8)
+2020-12-16T18:31:44.3949289+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-16T18:31:44.3976045+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-16T18:31:44.4001067+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-16T18:40:25.6020446+07:00  [WRN] Overriding address(es) '"http://localhost:6100, https://localhost:6101"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-16T18:40:25.7405566+07:00  [INF] Now listening on: "http://localhost:5101" (d826f4b8)
+2020-12-16T18:40:25.7433022+07:00  [INF] Now listening on: "https://[::]:5100" (d826f4b8)
+2020-12-16T18:40:25.7461447+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-16T18:40:25.7487917+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-16T18:40:25.7512563+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-16T18:41:15.8461239+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:15.9165830+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:16.0578247+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:16.0973484+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:16.2451686+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:16.3207425+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:16.4695078+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:16.5195262+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:16.6859704+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:16.7330519+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:16.8799798+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:16.9206844+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:17.0076596+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:17.0589358+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:17.2110116+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:17.2450391+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:17.4235105+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:17.4565371+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:17.6165193+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:17.6678542+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:17.8223790+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:17.8632352+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:18.0590305+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:18.1103125+07:00  [ERR] HTTP/2 over TLS was not negotiated on an HTTP/2-only endpoint. (a7faa15a)
+2020-12-16T18:41:36.8923821+07:00  [INF] Application is shutting down... (90f52c38)
+2020-12-16T18:42:19.0077511+07:00  [WRN] Overriding address(es) '"http://localhost:6100, https://localhost:6101"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-16T18:42:19.1233309+07:00  [INF] Now listening on: "https://[::]:5100" (d826f4b8)
+2020-12-16T18:42:19.1272604+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-16T18:42:19.1300937+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-16T18:42:19.1323365+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-16T19:12:47.7034231+07:00 0HM51NFJA72S2:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-16T19:12:47.7965511+07:00 0HM51NFJA72S2:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-16T19:12:47.9011446+07:00 0HM51NFJA72S2:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:12:48.4285673+07:00 0HM51NFJA72S2:00000001 [INF] Executed DbCommand ("89"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:12:48.9289411+07:00 0HM51NFJA72S2:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:12:49.0601306+07:00 0HM51NFJA72S2:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-16T19:12:49.0953943+07:00 0HM51NFJA72S2:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 1395.7339ms (791a596a)
+2020-12-16T19:12:49.6475834+07:00 0HM51NFJA72S2:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-16T19:12:49.6583992+07:00 0HM51NFJA72S2:00000003 [INF] Executing endpoint '"gRPC - /ddata.DData/Search"' (500cc934)
+2020-12-16T19:12:54.1428396+07:00 0HM51NFJA72S2:00000003 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:12:54.1815362+07:00 0HM51NFJA72S2:00000003 [INF] Executed DbCommand ("7"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:12:54.2364109+07:00 0HM51NFJA72S2:00000003 [INF] Executed endpoint '"gRPC - /ddata.DData/Search"' (99874f2b)
+2020-12-16T19:12:54.2410270+07:00 0HM51NFJA72S2:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - - 200 - application/grpc 4599.6426ms (791a596a)
+2020-12-16T19:12:56.1551630+07:00 0HM51NFJA72S3:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-16T19:12:56.1631371+07:00 0HM51NFJA72S3:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-16T19:12:56.1885488+07:00 0HM51NFJA72S3:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:12:56.2233627+07:00 0HM51NFJA72S3:00000001 [INF] Executed DbCommand ("24"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:12:56.2519993+07:00 0HM51NFJA72S3:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:12:56.2817584+07:00 0HM51NFJA72S3:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@__refCol_ReferenceTableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__refCol_ReferenceTableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:12:56.3685790+07:00 0HM51NFJA72S3:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:12:56.6279381+07:00 0HM51NFJA72S3:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-16T19:12:56.6349444+07:00 0HM51NFJA72S3:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 476.8905ms (791a596a)
+2020-12-16T19:13:14.1154744+07:00 0HM51NFJA72S4:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-16T19:13:14.1195735+07:00 0HM51NFJA72S4:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-16T19:13:14.1237648+07:00 0HM51NFJA72S4:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:14.1370391+07:00 0HM51NFJA72S4:00000001 [INF] Executed DbCommand ("10"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:13:14.1467959+07:00 0HM51NFJA72S4:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:13:14.1504089+07:00 0HM51NFJA72S4:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-16T19:13:14.1535407+07:00 0HM51NFJA72S4:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 37.7908ms (791a596a)
+2020-12-16T19:13:14.1819219+07:00 0HM51NFJA72S4:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-16T19:13:14.1856865+07:00 0HM51NFJA72S4:00000003 [INF] Executing endpoint '"gRPC - /ddata.DData/Search"' (500cc934)
+2020-12-16T19:13:14.1920293+07:00 0HM51NFJA72S4:00000003 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:14.2071878+07:00 0HM51NFJA72S4:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:14.2139374+07:00 0HM51NFJA72S4:00000003 [INF] Executed endpoint '"gRPC - /ddata.DData/Search"' (99874f2b)
+2020-12-16T19:13:14.2173565+07:00 0HM51NFJA72S4:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - - 200 - application/grpc 34.6379ms (791a596a)
+2020-12-16T19:13:15.6464313+07:00 0HM51NFJA72S5:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-16T19:13:15.6494374+07:00 0HM51NFJA72S5:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-16T19:13:15.6534423+07:00 0HM51NFJA72S5:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:15.6799671+07:00 0HM51NFJA72S5:00000001 [INF] Executed DbCommand ("21"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:13:15.6910331+07:00 0HM51NFJA72S5:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:15.6996166+07:00 0HM51NFJA72S5:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__refCol_ReferenceTableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__refCol_ReferenceTableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:15.7187884+07:00 0HM51NFJA72S5:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:13:15.7261960+07:00 0HM51NFJA72S5:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-16T19:13:15.7296604+07:00 0HM51NFJA72S5:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 82.8554ms (791a596a)
+2020-12-16T19:13:37.7842441+07:00 0HM51NFJA72S6:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-16T19:13:37.7872206+07:00 0HM51NFJA72S6:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-16T19:13:37.7907552+07:00 0HM51NFJA72S6:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:37.8138506+07:00 0HM51NFJA72S6:00000001 [INF] Executed DbCommand ("20"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:13:37.8221369+07:00 0HM51NFJA72S6:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:13:37.8254702+07:00 0HM51NFJA72S6:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-16T19:13:37.8279834+07:00 0HM51NFJA72S6:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 44.7915ms (791a596a)
+2020-12-16T19:13:37.8559598+07:00 0HM51NFJA72S6:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-16T19:13:37.8588235+07:00 0HM51NFJA72S6:00000003 [INF] Executing endpoint '"gRPC - /ddata.DData/Search"' (500cc934)
+2020-12-16T19:13:37.8620592+07:00 0HM51NFJA72S6:00000003 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:37.8694519+07:00 0HM51NFJA72S6:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:37.8775201+07:00 0HM51NFJA72S6:00000003 [INF] Executed endpoint '"gRPC - /ddata.DData/Search"' (99874f2b)
+2020-12-16T19:13:37.8811163+07:00 0HM51NFJA72S6:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - - 200 - application/grpc 25.4079ms (791a596a)
+2020-12-16T19:13:38.9292134+07:00 0HM51NFJA72S7:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-16T19:13:38.9317310+07:00 0HM51NFJA72S7:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-16T19:13:38.9348567+07:00 0HM51NFJA72S7:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:38.9529749+07:00 0HM51NFJA72S7:00000001 [INF] Executed DbCommand ("13"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:13:38.9639186+07:00 0HM51NFJA72S7:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:38.9748282+07:00 0HM51NFJA72S7:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__refCol_ReferenceTableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__refCol_ReferenceTableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:38.9919326+07:00 0HM51NFJA72S7:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:13:38.9949587+07:00 0HM51NFJA72S7:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-16T19:13:38.9979667+07:00 0HM51NFJA72S7:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 68.1886ms (791a596a)
+2020-12-16T19:13:50.2309496+07:00 0HM51NFJA72S8:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-16T19:13:50.2336219+07:00 0HM51NFJA72S8:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-16T19:13:50.2369019+07:00 0HM51NFJA72S8:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:50.2614765+07:00 0HM51NFJA72S8:00000001 [INF] Executed DbCommand ("18"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:13:50.2718731+07:00 0HM51NFJA72S8:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:13:50.2793247+07:00 0HM51NFJA72S8:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-16T19:13:50.2832495+07:00 0HM51NFJA72S8:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 51.2827ms (791a596a)
+2020-12-16T19:13:50.3032769+07:00 0HM51NFJA72S8:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-16T19:13:50.3072973+07:00 0HM51NFJA72S8:00000003 [INF] Executing endpoint '"gRPC - /ddata.DData/Search"' (500cc934)
+2020-12-16T19:13:50.3106036+07:00 0HM51NFJA72S8:00000003 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:50.3171436+07:00 0HM51NFJA72S8:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:50.3255487+07:00 0HM51NFJA72S8:00000003 [INF] Executed endpoint '"gRPC - /ddata.DData/Search"' (99874f2b)
+2020-12-16T19:13:50.3283412+07:00 0HM51NFJA72S8:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - - 200 - application/grpc 25.5297ms (791a596a)
+2020-12-16T19:13:51.1019978+07:00 0HM51NFJA72S9:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-16T19:13:51.1056880+07:00 0HM51NFJA72S9:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-16T19:13:51.1090241+07:00 0HM51NFJA72S9:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:51.1143807+07:00 0HM51NFJA72S9:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:13:51.1197449+07:00 0HM51NFJA72S9:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:51.1275527+07:00 0HM51NFJA72S9:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__refCol_ReferenceTableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__refCol_ReferenceTableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:51.1415191+07:00 0HM51NFJA72S9:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:13:51.1451632+07:00 0HM51NFJA72S9:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-16T19:13:51.1506334+07:00 0HM51NFJA72S9:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 46.4711ms (791a596a)
+2020-12-16T19:13:53.4582276+07:00 0HM51NFJA72SA:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-16T19:13:53.4606917+07:00 0HM51NFJA72SA:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-16T19:13:53.4639385+07:00 0HM51NFJA72SA:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:53.4694207+07:00 0HM51NFJA72SA:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:13:53.4777004+07:00 0HM51NFJA72SA:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:13:53.4814572+07:00 0HM51NFJA72SA:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-16T19:13:53.4852713+07:00 0HM51NFJA72SA:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 28.1985ms (791a596a)
+2020-12-16T19:13:53.5102118+07:00 0HM51NFJA72SA:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-16T19:13:53.5130031+07:00 0HM51NFJA72SA:00000003 [INF] Executing endpoint '"gRPC - /ddata.DData/Search"' (500cc934)
+2020-12-16T19:13:53.5161393+07:00 0HM51NFJA72SA:00000003 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:53.5234355+07:00 0HM51NFJA72SA:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:53.5286772+07:00 0HM51NFJA72SA:00000003 [INF] Executed endpoint '"gRPC - /ddata.DData/Search"' (99874f2b)
+2020-12-16T19:13:53.5316490+07:00 0HM51NFJA72SA:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - - 200 - application/grpc 21.3042ms (791a596a)
+2020-12-16T19:13:54.1338811+07:00 0HM51NFJA72SB:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-16T19:13:54.1369146+07:00 0HM51NFJA72SB:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-16T19:13:54.1414613+07:00 0HM51NFJA72SB:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:54.1482558+07:00 0HM51NFJA72SB:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:13:54.1558165+07:00 0HM51NFJA72SB:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:54.1624457+07:00 0HM51NFJA72SB:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__refCol_ReferenceTableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__refCol_ReferenceTableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:54.1714840+07:00 0HM51NFJA72SB:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:13:54.1772154+07:00 0HM51NFJA72SB:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-16T19:13:54.1844292+07:00 0HM51NFJA72SB:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 48.6069ms (791a596a)
+2020-12-16T19:13:55.4085517+07:00 0HM51NFJA72SC:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-16T19:13:55.4138122+07:00 0HM51NFJA72SC:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-16T19:13:55.4202835+07:00 0HM51NFJA72SC:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:55.4268649+07:00 0HM51NFJA72SC:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:13:55.4341189+07:00 0HM51NFJA72SC:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:13:55.4394133+07:00 0HM51NFJA72SC:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-16T19:13:55.4423548+07:00 0HM51NFJA72SC:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 35.7256ms (791a596a)
+2020-12-16T19:13:55.4530112+07:00 0HM51NFJA72SC:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-16T19:13:55.4566588+07:00 0HM51NFJA72SC:00000003 [INF] Executing endpoint '"gRPC - /ddata.DData/Search"' (500cc934)
+2020-12-16T19:13:55.4597796+07:00 0HM51NFJA72SC:00000003 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:55.4638688+07:00 0HM51NFJA72SC:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:55.4703577+07:00 0HM51NFJA72SC:00000003 [INF] Executed endpoint '"gRPC - /ddata.DData/Search"' (99874f2b)
+2020-12-16T19:13:55.4737651+07:00 0HM51NFJA72SC:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - - 200 - application/grpc 20.1449ms (791a596a)
+2020-12-16T19:13:56.5204637+07:00 0HM51NFJA72SD:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-16T19:13:56.5242443+07:00 0HM51NFJA72SD:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-16T19:13:56.5273458+07:00 0HM51NFJA72SD:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:13:56.5334009+07:00 0HM51NFJA72SD:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:13:56.5415667+07:00 0HM51NFJA72SD:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:56.5468159+07:00 0HM51NFJA72SD:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__refCol_ReferenceTableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__refCol_ReferenceTableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:13:56.5540953+07:00 0HM51NFJA72SD:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:13:56.5590639+07:00 0HM51NFJA72SD:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-16T19:13:56.5625961+07:00 0HM51NFJA72SD:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 41.4864ms (791a596a)
+2020-12-16T19:14:04.1253222+07:00 0HM51NFJA72SE:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-16T19:14:04.1276019+07:00 0HM51NFJA72SE:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-16T19:14:04.1305029+07:00 0HM51NFJA72SE:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:14:04.1358480+07:00 0HM51NFJA72SE:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:14:04.1511458+07:00 0HM51NFJA72SE:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:14:04.1545368+07:00 0HM51NFJA72SE:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-16T19:14:04.1590643+07:00 0HM51NFJA72SE:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 35.0408ms (791a596a)
+2020-12-16T19:14:04.1698600+07:00 0HM51NFJA72SE:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-16T19:14:04.1726927+07:00 0HM51NFJA72SE:00000003 [INF] Executing endpoint '"gRPC - /ddata.DData/Search"' (500cc934)
+2020-12-16T19:14:04.1759634+07:00 0HM51NFJA72SE:00000003 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:14:04.1794240+07:00 0HM51NFJA72SE:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:14:04.1859781+07:00 0HM51NFJA72SE:00000003 [INF] Executed endpoint '"gRPC - /ddata.DData/Search"' (99874f2b)
+2020-12-16T19:14:04.1891869+07:00 0HM51NFJA72SE:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - - 200 - application/grpc 18.9561ms (791a596a)
+2020-12-16T19:14:05.6064675+07:00 0HM51NFJA72SF:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-16T19:14:05.6093405+07:00 0HM51NFJA72SF:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-16T19:14:05.6127047+07:00 0HM51NFJA72SF:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:14:05.6185842+07:00 0HM51NFJA72SF:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:14:05.6263922+07:00 0HM51NFJA72SF:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:14:05.6305478+07:00 0HM51NFJA72SF:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__refCol_ReferenceTableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__refCol_ReferenceTableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:14:05.6401453+07:00 0HM51NFJA72SF:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:14:05.6431826+07:00 0HM51NFJA72SF:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-16T19:14:05.6459304+07:00 0HM51NFJA72SF:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 40.5338ms (791a596a)
+2020-12-16T19:17:44.3568244+07:00 0HM51NFJA72SG:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-16T19:17:44.3602300+07:00 0HM51NFJA72SG:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-16T19:17:44.3632806+07:00 0HM51NFJA72SG:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:17:44.3815068+07:00 0HM51NFJA72SG:00000001 [INF] Executed DbCommand ("15"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:17:44.3934231+07:00 0HM51NFJA72SG:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:17:44.3970323+07:00 0HM51NFJA72SG:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-16T19:17:44.3998770+07:00 0HM51NFJA72SG:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 43.5375ms (791a596a)
+2020-12-16T19:17:44.4157217+07:00 0HM51NFJA72SG:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-16T19:17:44.4202261+07:00 0HM51NFJA72SG:00000003 [INF] Executing endpoint '"gRPC - /ddata.DData/Search"' (500cc934)
+2020-12-16T19:17:44.4231804+07:00 0HM51NFJA72SG:00000003 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:17:44.4313521+07:00 0HM51NFJA72SG:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:17:44.4394000+07:00 0HM51NFJA72SG:00000003 [INF] Executed endpoint '"gRPC - /ddata.DData/Search"' (99874f2b)
+2020-12-16T19:17:44.4441571+07:00 0HM51NFJA72SG:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - - 200 - application/grpc 26.8680ms (791a596a)
+2020-12-16T19:17:45.1067231+07:00 0HM51NFJA72SH:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-16T19:17:45.1097028+07:00 0HM51NFJA72SH:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-16T19:17:45.1128792+07:00 0HM51NFJA72SH:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:17:45.1189952+07:00 0HM51NFJA72SH:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:17:45.1363295+07:00 0HM51NFJA72SH:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:17:45.1463033+07:00 0HM51NFJA72SH:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__refCol_ReferenceTableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__refCol_ReferenceTableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:17:45.1727739+07:00 0HM51NFJA72SH:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:17:45.1766991+07:00 0HM51NFJA72SH:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-16T19:17:45.1835152+07:00 0HM51NFJA72SH:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 72.9270ms (791a596a)
+2020-12-16T19:17:55.3253480+07:00 0HM51NFJA72SI:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-16T19:17:55.3312615+07:00 0HM51NFJA72SI:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-16T19:17:55.3363462+07:00 0HM51NFJA72SI:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:17:55.3653239+07:00 0HM51NFJA72SI:00000001 [INF] Executed DbCommand ("25"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:17:55.3749879+07:00 0HM51NFJA72SI:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:17:55.3797933+07:00 0HM51NFJA72SI:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-16T19:17:55.3830222+07:00 0HM51NFJA72SI:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 59.6479ms (791a596a)
+2020-12-16T19:17:55.3995535+07:00 0HM51NFJA72SI:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-16T19:17:55.4023426+07:00 0HM51NFJA72SI:00000003 [INF] Executing endpoint '"gRPC - /ddata.DData/Search"' (500cc934)
+2020-12-16T19:17:55.4052985+07:00 0HM51NFJA72SI:00000003 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:17:55.4135035+07:00 0HM51NFJA72SI:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:17:55.4203313+07:00 0HM51NFJA72SI:00000003 [INF] Executed endpoint '"gRPC - /ddata.DData/Search"' (99874f2b)
+2020-12-16T19:17:55.4234072+07:00 0HM51NFJA72SI:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - - 200 - application/grpc 23.4064ms (791a596a)
+2020-12-16T19:17:55.9307512+07:00 0HM51NFJA72SJ:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-16T19:17:55.9347277+07:00 0HM51NFJA72SJ:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-16T19:17:55.9388814+07:00 0HM51NFJA72SJ:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:17:55.9499535+07:00 0HM51NFJA72SJ:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:17:55.9559566+07:00 0HM51NFJA72SJ:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:17:55.9906573+07:00 0HM51NFJA72SJ:00000001 [INF] Executed DbCommand ("10"ms) [Parameters=["@__refCol_ReferenceTableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__refCol_ReferenceTableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:17:56.0073797+07:00 0HM51NFJA72SJ:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:17:56.0126148+07:00 0HM51NFJA72SJ:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-16T19:17:56.0161015+07:00 0HM51NFJA72SJ:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 86.1342ms (791a596a)
+2020-12-16T19:18:00.4696737+07:00 0HM51NFJA72SK:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-16T19:18:00.4769516+07:00 0HM51NFJA72SK:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-16T19:18:00.4826538+07:00 0HM51NFJA72SK:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:18:00.4919370+07:00 0HM51NFJA72SK:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:18:00.4972729+07:00 0HM51NFJA72SK:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-16T19:18:00.5019690+07:00 0HM51NFJA72SK:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 31.9386ms (791a596a)
+2020-12-16T19:18:01.2184659+07:00 0HM51NFJA72SL:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-16T19:18:01.2222086+07:00 0HM51NFJA72SL:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-16T19:18:01.2291436+07:00 0HM51NFJA72SL:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:18:01.2369985+07:00 0HM51NFJA72SL:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:18:01.2467992+07:00 0HM51NFJA72SL:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:18:01.2719825+07:00 0HM51NFJA72SL:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-16T19:18:01.2757890+07:00 0HM51NFJA72SL:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 58.8381ms (791a596a)
+2020-12-16T19:18:02.9110610+07:00 0HM51NFJA72SM:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-16T19:18:02.9145451+07:00 0HM51NFJA72SM:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-16T19:18:02.9196252+07:00 0HM51NFJA72SM:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:18:02.9291340+07:00 0HM51NFJA72SM:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:18:02.9370433+07:00 0HM51NFJA72SM:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:18:02.9411025+07:00 0HM51NFJA72SM:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-16T19:18:02.9543729+07:00 0HM51NFJA72SM:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 34.8702ms (791a596a)
+2020-12-16T19:18:02.9682264+07:00 0HM51NFJA72SM:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-16T19:18:02.9708611+07:00 0HM51NFJA72SM:00000003 [INF] Executing endpoint '"gRPC - /ddata.DData/Search"' (500cc934)
+2020-12-16T19:18:02.9736939+07:00 0HM51NFJA72SM:00000003 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:18:02.9828171+07:00 0HM51NFJA72SM:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:18:02.9892112+07:00 0HM51NFJA72SM:00000003 [INF] Executed endpoint '"gRPC - /ddata.DData/Search"' (99874f2b)
+2020-12-16T19:18:02.9923721+07:00 0HM51NFJA72SM:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/Search application/grpc - - 200 - application/grpc 23.4631ms (791a596a)
+2020-12-16T19:18:03.4897447+07:00 0HM51NFJA72SN:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-16T19:18:03.4927297+07:00 0HM51NFJA72SN:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-16T19:18:03.4956795+07:00 0HM51NFJA72SN:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:18:03.5010575+07:00 0HM51NFJA72SN:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:18:03.5056721+07:00 0HM51NFJA72SN:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:18:03.5123680+07:00 0HM51NFJA72SN:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__refCol_ReferenceTableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__refCol_ReferenceTableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:18:03.5195676+07:00 0HM51NFJA72SN:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-16T19:18:03.5235347+07:00 0HM51NFJA72SN:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-16T19:18:03.5287076+07:00 0HM51NFJA72SN:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 36.6263ms (791a596a)
+2020-12-16T19:18:05.6749912+07:00 0HM51NFJA72SO:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-16T19:18:05.6778288+07:00 0HM51NFJA72SO:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-16T19:18:05.6822704+07:00 0HM51NFJA72SO:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:18:05.6883566+07:00 0HM51NFJA72SO:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:18:05.6922632+07:00 0HM51NFJA72SO:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-16T19:18:05.7021894+07:00 0HM51NFJA72SO:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 20.5091ms (791a596a)
+2020-12-16T19:18:06.2793529+07:00 0HM51NFJA72SP:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-16T19:18:06.2825155+07:00 0HM51NFJA72SP:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-16T19:18:06.2872119+07:00 0HM51NFJA72SP:00000001 [INF] Entity Framework Core "5.0.0" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-16T19:18:06.2931101+07:00 0HM51NFJA72SP:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-16T19:18:06.2997901+07:00 0HM51NFJA72SP:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-16T19:18:06.3126482+07:00 0HM51NFJA72SP:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-16T19:18:06.3167516+07:00 0HM51NFJA72SP:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 36.3828ms (791a596a)
+2020-12-16T19:18:12.6753870+07:00  [INF] Application is shutting down... (90f52c38)

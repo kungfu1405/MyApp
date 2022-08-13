@@ -1,0 +1,482 @@
+2020-12-22T15:52:10.1698797+07:00  [WRN] Overriding address(es) '"http://localhost:6100, https://localhost:6101"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-22T15:52:10.2334204+07:00  [INF] Now listening on: "https://[::]:5100" (d826f4b8)
+2020-12-22T15:52:10.2354057+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-22T15:52:10.2368294+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-22T15:52:10.2382642+07:00  [INF] Content root path: "C:\Projects\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-22T15:58:39.0294831+07:00  [WRN] Overriding address(es) '"http://localhost:6100, https://localhost:6101"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-22T15:58:39.0858702+07:00  [INF] Now listening on: "https://[::]:5100" (d826f4b8)
+2020-12-22T15:58:39.0883912+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-22T15:58:39.0900405+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-22T15:58:39.0913448+07:00  [INF] Content root path: "C:\Projects\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-22T16:00:18.8675071+07:00 0HM56B00PLJP3:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T16:00:18.9771362+07:00 0HM56B00PLJP3:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Endpoint gRPC - /ddata.SysTable/Get contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-22T16:00:19.0288336+07:00 0HM56B00PLJP3:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 500 - text/plain 163.4033ms (791a596a)
+2020-12-22T16:00:42.7344462+07:00 0HM56B00PLJP4:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T16:00:42.7448824+07:00 0HM56B00PLJP4:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Endpoint gRPC - /ddata.SysTable/Get contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-22T16:00:42.7497710+07:00 0HM56B00PLJP4:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 500 - text/plain 15.1229ms (791a596a)
+2020-12-22T16:19:16.0246383+07:00 0HM56B00PLJP5:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T16:19:16.0284567+07:00 0HM56B00PLJP5:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Endpoint gRPC - /ddata.SysTable/Get contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-22T16:19:16.0311017+07:00 0HM56B00PLJP5:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 500 - text/plain 7.0500ms (791a596a)
+2020-12-22T16:46:54.5328991+07:00 0HM56B00PLJP6:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T16:46:54.5384181+07:00 0HM56B00PLJP6:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Endpoint gRPC - /ddata.SysTable/Get contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-22T16:46:54.5423219+07:00 0HM56B00PLJP6:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 500 - text/plain 10.7903ms (791a596a)
+2020-12-22T16:51:15.3665666+07:00  [WRN] Overriding address(es) '"http://localhost:6100, https://localhost:6101"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-22T16:51:15.4259416+07:00  [INF] Now listening on: "https://[::]:5100" (d826f4b8)
+2020-12-22T16:51:15.4292331+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-22T16:51:15.4312940+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-22T16:51:15.4330458+07:00  [INF] Content root path: "C:\Projects\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-22T16:52:57.9126392+07:00 0HM56BTE9112M:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T16:52:57.9447537+07:00 0HM56BTE9112M:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-22T16:52:58.0044449+07:00 0HM56BTE9112M:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-22T16:52:58.2415649+07:00 0HM56BTE9112M:00000001 [INF] Executed DbCommand ("47"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-22T16:52:58.4180406+07:00 0HM56BTE9112M:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-22T16:52:58.4797270+07:00 0HM56BTE9112M:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-22T16:52:58.4936946+07:00 0HM56BTE9112M:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 583.4057ms (791a596a)
+2020-12-22T16:53:02.8975066+07:00 0HM56BTE9112M:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-22T16:53:02.9293710+07:00 0HM56BTE9112M:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Endpoint gRPC - /ddata.DData/Search contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-22T16:53:02.9404070+07:00 0HM56BTE9112M:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/Search application/grpc - - 500 - text/plain 43.1602ms (791a596a)
+2020-12-22T16:53:03.9817476+07:00 0HM56BTE9112N:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-22T16:53:03.9857205+07:00 0HM56BTE9112N:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Endpoint gRPC - /ddata.DData/GetList contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-22T16:53:03.9882755+07:00 0HM56BTE9112N:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - - 500 - text/plain 7.3396ms (791a596a)
+2020-12-22T16:53:06.0698496+07:00 0HM56BTE9112O:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T16:53:06.0746379+07:00 0HM56BTE9112O:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-22T16:53:06.1093115+07:00 0HM56BTE9112O:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-22T16:53:06.1346671+07:00 0HM56BTE9112O:00000001 [INF] Executed DbCommand ("18"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-22T16:53:06.1426437+07:00 0HM56BTE9112O:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-22T16:53:06.1455056+07:00 0HM56BTE9112O:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-22T16:53:06.1492195+07:00 0HM56BTE9112O:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 78.8544ms (791a596a)
+2020-12-22T16:53:06.1521211+07:00 0HM56BTE9112O:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-22T16:53:06.1559741+07:00 0HM56BTE9112O:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Endpoint gRPC - /ddata.DData/Search contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-22T16:53:06.1588566+07:00 0HM56BTE9112O:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/Search application/grpc - - 500 - text/plain 6.5456ms (791a596a)
+2020-12-22T16:53:06.6726804+07:00 0HM56BTE9112P:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-22T16:53:06.6763593+07:00 0HM56BTE9112P:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Endpoint gRPC - /ddata.DData/GetList contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-22T16:53:06.6789566+07:00 0HM56BTE9112P:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - - 500 - text/plain 5.8730ms (791a596a)
+2020-12-22T16:53:40.8305757+07:00  [WRN] Overriding address(es) '"http://localhost:6100, https://localhost:6101"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-22T16:53:40.8907697+07:00  [INF] Now listening on: "https://[::]:5100" (d826f4b8)
+2020-12-22T16:53:40.8927458+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-22T16:53:40.8949030+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-22T16:53:40.8964936+07:00  [INF] Content root path: "C:\Projects\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-22T16:53:45.0492433+07:00 0HM56BTSAHDE3:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T16:53:45.0854330+07:00 0HM56BTSAHDE3:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-22T16:53:45.1221770+07:00 0HM56BTSAHDE3:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-22T16:53:45.2282943+07:00 0HM56BTSAHDE3:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-22T16:53:45.2775896+07:00 0HM56BTSAHDE3:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Description], [s].[JsonKeyValue], [s].[Name]
+FROM [syscustomtype] AS [s]
+WHERE [s].[Id] = @__p_0" (0723d8ff)
+2020-12-22T16:53:45.3316578+07:00 0HM56BTSAHDE3:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-22T16:53:45.3451197+07:00 0HM56BTSAHDE3:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 295.9577ms (791a596a)
+2020-12-22T16:53:45.3463266+07:00 0HM56BTSAHDE3:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/Search application/grpc - (ca22a1cb)
+2020-12-22T16:53:45.3980295+07:00 0HM56BTSAHDE3:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Endpoint gRPC - /ddata.DData/Search contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-22T16:53:45.4078114+07:00 0HM56BTSAHDE3:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/Search application/grpc - - 500 - text/plain 64.3086ms (791a596a)
+2020-12-22T16:53:45.8793040+07:00 0HM56BTSAHDE4:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-22T16:53:45.8871879+07:00 0HM56BTSAHDE4:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Endpoint gRPC - /ddata.DData/GetList contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-22T16:53:45.8910346+07:00 0HM56BTSAHDE4:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - - 500 - text/plain 12.9904ms (791a596a)
+2020-12-22T16:53:47.8245891+07:00 0HM56BTSAHDE5:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T16:53:47.8304442+07:00 0HM56BTSAHDE5:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-22T16:53:47.8628876+07:00 0HM56BTSAHDE5:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-22T16:53:47.8729938+07:00 0HM56BTSAHDE5:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-22T16:53:47.8763092+07:00 0HM56BTSAHDE5:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-22T16:53:47.8797561+07:00 0HM56BTSAHDE5:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 54.6448ms (791a596a)
+2020-12-22T16:53:48.2338554+07:00 0HM56BTSAHDE6:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-22T16:53:48.2387130+07:00 0HM56BTSAHDE6:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Endpoint gRPC - /ddata.DData/GetList contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-22T16:53:48.2410493+07:00 0HM56BTSAHDE6:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - - 500 - text/plain 7.5053ms (791a596a)
+2020-12-22T17:24:24.4907170+07:00  [WRN] Overriding address(es) '"http://localhost:6100, https://localhost:6101"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-22T17:24:24.5642434+07:00  [INF] Now listening on: "https://[::]:5100" (d826f4b8)
+2020-12-22T17:24:24.5671890+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-22T17:24:24.5696875+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-22T17:24:24.5718348+07:00  [INF] Content root path: "C:\Projects\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-22T17:24:37.2427409+07:00 0HM56CF4ABKVR:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T17:24:38.2207519+07:00 0HM56CF4ABKVR:00000001 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-22T17:24:38.2302086+07:00 0HM56CF4ABKVR:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'." (48071232)
+2020-12-22T17:24:38.2446379+07:00 0HM56CF4ABKVR:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-22T17:24:38.2784327+07:00 0HM56CF4ABKVR:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-22T17:24:38.4974559+07:00 0HM56CF4ABKVR:00000001 [INF] Executed DbCommand ("39"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-22T17:24:38.7064931+07:00 0HM56CF4ABKVR:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-22T17:24:38.7166646+07:00 0HM56CF4ABKVR:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 1477.4865ms (791a596a)
+2020-12-22T17:24:39.6005375+07:00 0HM56CF4ABKVS:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-22T17:24:39.6068929+07:00 0HM56CF4ABKVS:00000001 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-22T17:24:39.6097694+07:00 0HM56CF4ABKVS:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'." (48071232)
+2020-12-22T17:24:39.6120453+07:00 0HM56CF4ABKVS:00000001 [INF] Executing endpoint '"gRPC - /ddata.DData/GetList"' (500cc934)
+2020-12-22T17:24:39.6755710+07:00 0HM56CF4ABKVS:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-22T17:24:39.6896109+07:00 0HM56CF4ABKVS:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-22T17:24:39.7280293+07:00 0HM56CF4ABKVS:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@__tableId_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__tableId_0
+) AS [t]
+LEFT JOIN [syscolumn] AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id]" (0723d8ff)
+2020-12-22T17:24:39.7773946+07:00 0HM56CF4ABKVS:00000001 [INF] Executed endpoint '"gRPC - /ddata.DData/GetList"' (99874f2b)
+2020-12-22T17:24:39.7813888+07:00 0HM56CF4ABKVS:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - - 200 - application/grpc 179.1470ms (791a596a)
+2020-12-22T17:25:21.8967676+07:00  [WRN] Overriding address(es) '"http://localhost:6100, https://localhost:6101"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-22T17:25:21.9476209+07:00  [INF] Now listening on: "https://[::]:5100" (d826f4b8)
+2020-12-22T17:25:21.9500329+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-22T17:25:21.9524177+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-22T17:25:21.9539697+07:00  [INF] Content root path: "C:\Projects\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-22T17:25:25.9145467+07:00 0HM56CFIQNULO:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T17:25:26.6123458+07:00 0HM56CFIQNULO:00000001 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-22T17:25:26.6220224+07:00 0HM56CFIQNULO:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'." (48071232)
+2020-12-22T17:25:26.6291414+07:00 0HM56CFIQNULO:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-22T17:25:26.6619422+07:00 0HM56CFIQNULO:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-22T17:25:26.8813750+07:00 0HM56CFIQNULO:00000001 [INF] Executed DbCommand ("33"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-22T17:25:27.0889894+07:00 0HM56CFIQNULO:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-22T17:25:27.1014609+07:00 0HM56CFIQNULO:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 1188.9240ms (791a596a)
+2020-12-22T17:25:27.8044742+07:00 0HM56CFIQNULP:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-22T17:25:27.8106243+07:00 0HM56CFIQNULP:00000001 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-22T17:25:27.8126762+07:00 0HM56CFIQNULP:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'." (48071232)
+2020-12-22T17:25:27.8224411+07:00 0HM56CFIQNULP:00000001 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (svc.ddata)" (d3883ae7)
+2020-12-22T17:25:27.8332747+07:00 0HM56CFIQNULP:00000001 [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2020-12-22T17:25:27.8381605+07:00 0HM56CFIQNULP:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - - 401 0 - 33.3606ms (791a596a)
+2020-12-22T17:25:29.0843501+07:00 0HM56CFIQNULQ:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T17:25:29.0902359+07:00 0HM56CFIQNULQ:00000001 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-22T17:25:29.0923916+07:00 0HM56CFIQNULQ:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'." (48071232)
+2020-12-22T17:25:29.0950535+07:00 0HM56CFIQNULQ:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-22T17:25:29.1305030+07:00 0HM56CFIQNULQ:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-22T17:25:29.1441484+07:00 0HM56CFIQNULQ:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-22T17:25:29.1467754+07:00 0HM56CFIQNULQ:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-22T17:25:29.1511046+07:00 0HM56CFIQNULQ:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 66.7604ms (791a596a)
+2020-12-22T17:25:29.4945772+07:00 0HM56CFIQNULR:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-22T17:25:29.4989106+07:00 0HM56CFIQNULR:00000001 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-22T17:25:29.5044866+07:00 0HM56CFIQNULR:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'." (48071232)
+2020-12-22T17:25:29.5071960+07:00 0HM56CFIQNULR:00000001 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (svc.ddata)" (d3883ae7)
+2020-12-22T17:25:29.5100676+07:00 0HM56CFIQNULR:00000001 [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2020-12-22T17:25:29.5124182+07:00 0HM56CFIQNULR:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - - 401 0 - 18.1367ms (791a596a)
+2020-12-22T17:25:45.2675936+07:00  [WRN] Overriding address(es) '"http://localhost:6100, https://localhost:6101"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-22T17:25:45.3491718+07:00  [INF] Now listening on: "https://[::]:5100" (d826f4b8)
+2020-12-22T17:25:45.3520731+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-22T17:25:45.3534991+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-22T17:25:45.3550691+07:00  [INF] Content root path: "C:\Projects\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-22T17:25:50.0577097+07:00 0HM56CFQ0V0MV:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T17:25:50.6779805+07:00 0HM56CFQ0V0MV:00000001 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-22T17:25:50.6893388+07:00 0HM56CFQ0V0MV:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'." (48071232)
+2020-12-22T17:25:50.7012361+07:00 0HM56CFQ0V0MV:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-22T17:25:50.7330529+07:00 0HM56CFQ0V0MV:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-22T17:25:50.9482811+07:00 0HM56CFQ0V0MV:00000001 [INF] Executed DbCommand ("35"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-22T17:25:51.1254736+07:00 0HM56CFQ0V0MV:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-22T17:25:51.1364240+07:00 0HM56CFQ0V0MV:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 1081.5279ms (791a596a)
+2020-12-22T17:25:51.5095140+07:00 0HM56CFQ0V0N0:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-22T17:25:51.5277014+07:00 0HM56CFQ0V0N0:00000001 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-22T17:25:51.5341478+07:00 0HM56CFQ0V0N0:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'." (48071232)
+2020-12-22T17:25:51.5420697+07:00 0HM56CFQ0V0N0:00000001 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (d3883ae7)
+2020-12-22T17:25:51.5562737+07:00 0HM56CFQ0V0N0:00000001 [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2020-12-22T17:25:51.5729664+07:00 0HM56CFQ0V0N0:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - - 401 0 - 62.7628ms (791a596a)
+2020-12-22T17:26:45.1259418+07:00  [WRN] Overriding address(es) '"http://localhost:6100, https://localhost:6101"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-22T17:26:45.1838902+07:00  [INF] Now listening on: "https://[::]:5100" (d826f4b8)
+2020-12-22T17:26:45.1859144+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-22T17:26:45.1873083+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-22T17:26:45.1888757+07:00  [INF] Content root path: "C:\Projects\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-22T17:27:19.1563432+07:00 0HM56CGKIOE4E:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T17:27:19.8882233+07:00 0HM56CGKIOE4E:00000001 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-22T17:27:19.8973297+07:00 0HM56CGKIOE4E:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'." (48071232)
+2020-12-22T17:27:19.9045129+07:00 0HM56CGKIOE4E:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-22T17:27:19.9366723+07:00 0HM56CGKIOE4E:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-22T17:27:20.1445040+07:00 0HM56CGKIOE4E:00000001 [INF] Executed DbCommand ("32"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-22T17:27:20.3253293+07:00 0HM56CGKIOE4E:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-22T17:27:20.3365617+07:00 0HM56CGKIOE4E:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 1183.5915ms (791a596a)
+2020-12-22T17:27:20.7067959+07:00 0HM56CGKIOE4F:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-22T17:27:20.7124834+07:00 0HM56CGKIOE4F:00000001 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-22T17:27:20.7148018+07:00 0HM56CGKIOE4F:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'." (48071232)
+2020-12-22T17:27:20.7258361+07:00 0HM56CGKIOE4F:00000001 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (d3883ae7)
+2020-12-22T17:27:20.7429228+07:00 0HM56CGKIOE4F:00000001 [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2020-12-22T17:27:20.7498220+07:00 0HM56CGKIOE4F:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - - 401 0 - 40.4259ms (791a596a)
+2020-12-22T17:27:22.2885303+07:00 0HM56CGKIOE4G:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - (ca22a1cb)
+2020-12-22T17:27:22.2945308+07:00 0HM56CGKIOE4G:00000001 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-22T17:27:22.2962663+07:00 0HM56CGKIOE4G:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'." (48071232)
+2020-12-22T17:27:22.2986818+07:00 0HM56CGKIOE4G:00000001 [INF] Executing endpoint '"gRPC - /ddata.SysTable/Get"' (500cc934)
+2020-12-22T17:27:22.3521950+07:00 0HM56CGKIOE4G:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2020-12-22T17:27:22.3677257+07:00 0HM56CGKIOE4G:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__key_0='?' (Size = 8) (DbType = AnsiStringFixedLength)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[DisplayName], [t].[Enabled], [t].[LastSyncDate], [t].[Name], [t].[Permissions], [t].[Status], [t].[StatusNote], [t0].[Id], [t0].[CustomTypeId], [t0].[DataType], [t0].[DefaultValue], [t0].[DisplayName], [t0].[DisplayType], [t0].[FieldOptions], [t0].[FieldType], [t0].[FilterOrdinal], [t0].[IsNulable], [t0].[MaxLength], [t0].[Name], [t0].[Ordinal], [t0].[PlaceHolder], [t0].[ReferenceColumnId], [t0].[ReferenceTableId], [t0].[ReferenceText1Id], [t0].[ReferenceText2Id], [t0].[TableId], [t0].[Tooltip], [t0].[Id0], [t0].[CustomTypeId0], [t0].[DataType0], [t0].[DefaultValue0], [t0].[DisplayName0], [t0].[DisplayType0], [t0].[FieldOptions0], [t0].[FieldType0], [t0].[FilterOrdinal0], [t0].[IsNulable0], [t0].[MaxLength0], [t0].[Name0], [t0].[Ordinal0], [t0].[PlaceHolder0], [t0].[ReferenceColumnId0], [t0].[ReferenceTableId0], [t0].[ReferenceText1Id0], [t0].[ReferenceText2Id0], [t0].[TableId0], [t0].[Tooltip0]
+FROM (
+    SELECT TOP(2) [s].[Id], [s].[DisplayName], [s].[Enabled], [s].[LastSyncDate], [s].[Name], [s].[Permissions], [s].[Status], [s].[StatusNote]
+    FROM [systable] AS [s]
+    WHERE [s].[Id] = @__key_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[Id], [s0].[CustomTypeId], [s0].[DataType], [s0].[DefaultValue], [s0].[DisplayName], [s0].[DisplayType], [s0].[FieldOptions], [s0].[FieldType], [s0].[FilterOrdinal], [s0].[IsNulable], [s0].[MaxLength], [s0].[Name], [s0].[Ordinal], [s0].[PlaceHolder], [s0].[ReferenceColumnId], [s0].[ReferenceTableId], [s0].[ReferenceText1Id], [s0].[ReferenceText2Id], [s0].[TableId], [s0].[Tooltip], [s1].[Id] AS [Id0], [s1].[CustomTypeId] AS [CustomTypeId0], [s1].[DataType] AS [DataType0], [s1].[DefaultValue] AS [DefaultValue0], [s1].[DisplayName] AS [DisplayName0], [s1].[DisplayType] AS [DisplayType0], [s1].[FieldOptions] AS [FieldOptions0], [s1].[FieldType] AS [FieldType0], [s1].[FilterOrdinal] AS [FilterOrdinal0], [s1].[IsNulable] AS [IsNulable0], [s1].[MaxLength] AS [MaxLength0], [s1].[Name] AS [Name0], [s1].[Ordinal] AS [Ordinal0], [s1].[PlaceHolder] AS [PlaceHolder0], [s1].[ReferenceColumnId] AS [ReferenceColumnId0], [s1].[ReferenceTableId] AS [ReferenceTableId0], [s1].[ReferenceText1Id] AS [ReferenceText1Id0], [s1].[ReferenceText2Id] AS [ReferenceText2Id0], [s1].[TableId] AS [TableId0], [s1].[Tooltip] AS [Tooltip0]
+    FROM [syscolumn] AS [s0]
+    LEFT JOIN [syscolumn] AS [s1] ON [s0].[ReferenceColumnId] = [s1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[TableId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]" (0723d8ff)
+2020-12-22T17:27:22.3734597+07:00 0HM56CGKIOE4G:00000001 [INF] Executed endpoint '"gRPC - /ddata.SysTable/Get"' (99874f2b)
+2020-12-22T17:27:22.3763993+07:00 0HM56CGKIOE4G:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.SysTable/Get application/grpc - - 200 - application/grpc 89.2032ms (791a596a)
+2020-12-22T17:27:22.6895250+07:00 0HM56CGKIOE4H:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - (ca22a1cb)
+2020-12-22T17:27:22.7025402+07:00 0HM56CGKIOE4H:00000001 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-12-22T17:27:22.7062773+07:00 0HM56CGKIOE4H:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'." (48071232)
+2020-12-22T17:27:22.7108919+07:00 0HM56CGKIOE4H:00000001 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (d3883ae7)
+2020-12-22T17:27:22.7137248+07:00 0HM56CGKIOE4H:00000001 [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2020-12-22T17:27:22.7163264+07:00 0HM56CGKIOE4H:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.22:5100/ddata.DData/GetList application/grpc - - 401 0 - 26.6549ms (791a596a)
+2020-12-22T18:24:28.3885157+07:00  [INF] Application is shutting down... (90f52c38)

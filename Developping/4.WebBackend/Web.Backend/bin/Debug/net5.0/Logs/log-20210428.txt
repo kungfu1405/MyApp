@@ -1,0 +1,5 @@
+2021-04-28T09:21:09.5498443+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-28T09:21:09.7390735+07:00  [INF] Now listening on: "https://localhost:8310" (d826f4b8)
+2021-04-28T09:21:09.7422972+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-28T09:21:09.7443844+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-28T09:21:09.7462224+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)

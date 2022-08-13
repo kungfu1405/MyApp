@@ -1,0 +1,8 @@
+obj\Debug\net5.0/ServTable.cs \
+obj\Debug\net5.0/ServTableGrpc.cs: C:/Users/Admin/.nuget/packages/grpc.tools/2.34.0/build/native/include/google/protobuf/wrappers.proto\
+ ../../6.libs/gRpc.Protos/DynamicData/msgCommon.proto\
+ C:/Users/Admin/.nuget/packages/grpc.tools/2.34.0/build/native/include/google/protobuf/timestamp.proto\
+ ../../6.libs/gRpc.Protos/DynamicData/msgColumn.proto\
+ ../../6.libs/gRpc.Protos/DynamicData/msgCustomType.proto\
+ ../../6.libs/gRpc.Protos/DynamicData/msgTable.proto\
+ ../../6.libs/gRpc.Protos/DynamicData/servTable.proto

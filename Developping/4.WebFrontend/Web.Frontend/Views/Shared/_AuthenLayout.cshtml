@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/destination.css" />
+    <link rel="stylesheet" href="~/css/site2.css" />
+    <link rel="stylesheet" href="~/css/site-media.css" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <link rel="stylesheet" href="~/css/site-v2.css" />
+</head>
+<body>
+    <style>
+        .field-validation-error {
+            color: #E16C5D
+        }
+
+        .validation-summary-errors li {
+
+        {
+            list-style: none;
+        }
+
+        .validation-summary-errors {
+            color: #E16C5D
+        }
+      
+    </style>
+    <div class="login-container">
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,406 @@
+2021-04-23T11:57:22.9504982+07:00  [WRN] Overriding address(es) '"http://localhost:6200, https://localhost:6201"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-23T11:57:23.0807952+07:00  [INF] Now listening on: "https://localhost:8211" (d826f4b8)
+2021-04-23T11:57:23.0847377+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-23T11:57:23.0879209+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-23T11:57:23.0924211+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\2.DbDataService\DbData.Service\bin\Debug\net5.0\" (b5d60022)
+2021-04-23T12:05:55.5785383+07:00 0HM862LSOM2AA:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-23T12:05:55.7711759+07:00 0HM862LSOM2AA:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-23T12:05:56.1042205+07:00 0HM862LSOM2AA:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T12:05:56.5651964+07:00 0HM862LSOM2AA:00000001 [INF] Executed DbCommand ("96"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-23T12:05:56.6791972+07:00 0HM862LSOM2AA:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-23T12:05:56.7865492+07:00 0HM862LSOM2AA:00000001 [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-23T12:05:56.8817094+07:00 0HM862LSOM2AA:00000001 [INF] Executed DbCommand ("52"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-23T12:05:57.0472260+07:00 0HM862LSOM2AA:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-23T12:05:57.0659598+07:00 0HM862LSOM2AA:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 1494.3233ms (791a596a)
+2021-04-23T12:05:57.4288738+07:00 0HM862LSOM2AB:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-04-23T12:05:57.4389724+07:00 0HM862LSOM2AB:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-04-23T12:05:57.4550689+07:00 0HM862LSOM2AB:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T12:05:57.4793048+07:00 0HM862LSOM2AB:00000001 [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-04-23T12:05:57.5025189+07:00 0HM862LSOM2AB:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-04-23T12:05:57.5062776+07:00 0HM862LSOM2AB:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 78.1187ms (791a596a)
+2021-04-23T12:06:07.4221308+07:00 0HM862LSOM2AC:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signin application/grpc - (ca22a1cb)
+2021-04-23T12:06:07.4281926+07:00 0HM862LSOM2AC:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (500cc934)
+2021-04-23T12:06:07.4398732+07:00 0HM862LSOM2AC:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T12:06:07.8461801+07:00 0HM862LSOM2AC:00000001 [INF] Executed DbCommand ("176"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-04-23T12:06:08.0840792+07:00 0HM862LSOM2AC:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (99874f2b)
+2021-04-23T12:06:08.0865079+07:00 0HM862LSOM2AC:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signin application/grpc - - 200 - application/grpc 664.3832ms (791a596a)
+2021-04-23T12:09:22.7633486+07:00 0HM862LSOM2AD:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signin application/grpc - (ca22a1cb)
+2021-04-23T12:09:22.7670206+07:00 0HM862LSOM2AD:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (500cc934)
+2021-04-23T12:09:22.7698787+07:00 0HM862LSOM2AD:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T12:09:22.7866845+07:00 0HM862LSOM2AD:00000001 [INF] Executed DbCommand ("12"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-04-23T12:09:22.8343179+07:00 0HM862LSOM2AD:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (99874f2b)
+2021-04-23T12:09:22.8381216+07:00 0HM862LSOM2AD:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signin application/grpc - - 200 - application/grpc 74.3625ms (791a596a)
+2021-04-23T12:10:38.1465871+07:00 0HM862LSOM2AE:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signin application/grpc - (ca22a1cb)
+2021-04-23T12:10:38.1501942+07:00 0HM862LSOM2AE:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (500cc934)
+2021-04-23T12:10:38.1589501+07:00 0HM862LSOM2AE:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T12:10:38.1720035+07:00 0HM862LSOM2AE:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-04-23T12:10:38.2207326+07:00 0HM862LSOM2AE:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (99874f2b)
+2021-04-23T12:10:38.2269399+07:00 0HM862LSOM2AE:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signin application/grpc - - 200 - application/grpc 79.5238ms (791a596a)
+2021-04-23T12:10:49.9104778+07:00 0HM862LSOM2AF:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signin application/grpc - (ca22a1cb)
+2021-04-23T12:10:49.9125440+07:00 0HM862LSOM2AF:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (500cc934)
+2021-04-23T12:10:49.9163261+07:00 0HM862LSOM2AF:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T12:10:49.9248759+07:00 0HM862LSOM2AF:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-04-23T12:10:49.9849055+07:00 0HM862LSOM2AF:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (99874f2b)
+2021-04-23T12:10:49.9878626+07:00 0HM862LSOM2AF:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signin application/grpc - - 200 - application/grpc 77.1662ms (791a596a)
+2021-04-23T15:54:31.6130608+07:00 0HM862LSOM2AG:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-23T15:54:31.6398253+07:00 0HM862LSOM2AG:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-23T15:54:31.6904457+07:00 0HM862LSOM2AG:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T15:54:32.0184569+07:00 0HM862LSOM2AG:00000001 [INF] Executed DbCommand ("242"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-23T15:54:32.0390887+07:00 0HM862LSOM2AG:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-23T15:54:32.1725085+07:00 0HM862LSOM2AG:00000001 [INF] Executed DbCommand ("114"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-23T15:54:32.2011242+07:00 0HM862LSOM2AG:00000001 [INF] Executed DbCommand ("19"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-23T15:54:32.2046331+07:00 0HM862LSOM2AG:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-23T15:54:32.2074300+07:00 0HM862LSOM2AG:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 607.0843ms (791a596a)
+2021-04-23T15:54:32.2375123+07:00 0HM862LSOM2AH:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-04-23T15:54:32.2454649+07:00 0HM862LSOM2AH:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-04-23T15:54:32.2491042+07:00 0HM862LSOM2AH:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T15:54:32.2627709+07:00 0HM862LSOM2AH:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-04-23T15:54:32.2653462+07:00 0HM862LSOM2AH:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-04-23T15:54:32.2677183+07:00 0HM862LSOM2AH:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 32.4832ms (791a596a)
+2021-04-23T17:53:50.6266928+07:00 0HM862LSOM2AI:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-23T17:53:50.6359347+07:00 0HM862LSOM2AI:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-23T17:53:50.6781837+07:00 0HM862LSOM2AI:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T17:53:50.8474355+07:00 0HM862LSOM2AI:00000001 [INF] Executed DbCommand ("98"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-23T17:53:50.8577637+07:00 0HM862LSOM2AI:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-23T17:53:50.9153832+07:00 0HM862LSOM2AI:00000001 [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-23T17:53:50.9371655+07:00 0HM862LSOM2AI:00000001 [INF] Executed DbCommand ("16"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-23T17:53:50.9400166+07:00 0HM862LSOM2AI:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-23T17:53:50.9436267+07:00 0HM862LSOM2AI:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 323.7803ms (791a596a)
+2021-04-23T17:53:50.9622320+07:00 0HM862LSOM2AJ:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-04-23T17:53:50.9646891+07:00 0HM862LSOM2AJ:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-04-23T17:53:50.9683736+07:00 0HM862LSOM2AJ:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T17:53:50.9789268+07:00 0HM862LSOM2AJ:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-04-23T17:53:50.9821396+07:00 0HM862LSOM2AJ:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-04-23T17:53:50.9848848+07:00 0HM862LSOM2AJ:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 22.0487ms (791a596a)
+2021-04-23T18:13:31.4413546+07:00 0HM862LSOM2AK:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signup application/grpc - (ca22a1cb)
+2021-04-23T18:13:31.4550645+07:00 0HM862LSOM2AK:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signup"' (500cc934)
+2021-04-23T18:13:31.5189011+07:00 0HM862LSOM2AK:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T18:13:31.8254256+07:00 0HM862LSOM2AK:00000001 [INF] Executed DbCommand ("262"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-04-23T18:13:31.9706863+07:00 0HM862LSOM2AK:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@__entry_UserName_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE ([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[UserName] = @__entry_UserName_0)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2021-04-23T18:13:31.9974036+07:00 0HM862LSOM2AK:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Deleted] <> CAST(1 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2021-04-23T18:13:32.4465960+07:00 0HM862LSOM2AK:00000001 [ERR] Add User test-user failed! Error: Email  Existed. (4773b247)
+Mic.Core.Exceptions.DuplicatedDataException: Email  Existed.
+   at Mic.UserDb.Dal.UserDal.CheckExists(EUser entry, Nullable`1 excerptId) in D:\BaseProjects\SVN\dotNet5Templates\5.SharedProjects\Mic.UserDb.Dal\UserDal.cs:line 144
+   at Mic.UserDb.Dal.UserDal.Add(EUser entry) in D:\BaseProjects\SVN\dotNet5Templates\5.SharedProjects\Mic.UserDb.Dal\UserDal.cs:line 21
+   at Mic.UserDb.Bll.UserBll.Add(EUser entry) in D:\BaseProjects\SVN\dotNet5Templates\5.SharedProjects\Mic.UserDb.Bll\UserBll.cs:line 24
+   at DbData.Service.Services.UserAuthenticateService.Signup(SignupRequest request, ServerCallContext context) in E:\Microtec\Project\travel-hub\svn\2.DbDataService\DbData.Service\Services\UserDb\UserAuthenticateService.cs:line 114
+2021-04-23T18:13:32.4503957+07:00 0HM862LSOM2AK:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signup"' (99874f2b)
+2021-04-23T18:13:32.4541985+07:00 0HM862LSOM2AK:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signup application/grpc - - 200 - application/grpc 1019.2404ms (791a596a)
+2021-04-23T18:16:52.0077061+07:00 0HM862LSOM2AL:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signup application/grpc - (ca22a1cb)
+2021-04-23T18:16:52.0098399+07:00 0HM862LSOM2AL:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signup"' (500cc934)
+2021-04-23T18:16:52.0130549+07:00 0HM862LSOM2AL:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T18:16:52.0245092+07:00 0HM862LSOM2AL:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-04-23T18:16:52.0292785+07:00 0HM862LSOM2AL:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__entry_UserName_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE ([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[UserName] = @__entry_UserName_0)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2021-04-23T18:16:52.0334938+07:00 0HM862LSOM2AL:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Deleted] <> CAST(1 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2021-04-23T18:16:52.1692169+07:00 0HM862LSOM2AL:00000001 [ERR] Add User admin123 failed! Error: Email  Existed. (cf6c2205)
+Mic.Core.Exceptions.DuplicatedDataException: Email  Existed.
+   at Mic.UserDb.Dal.UserDal.CheckExists(EUser entry, Nullable`1 excerptId) in D:\BaseProjects\SVN\dotNet5Templates\5.SharedProjects\Mic.UserDb.Dal\UserDal.cs:line 144
+   at Mic.UserDb.Dal.UserDal.Add(EUser entry) in D:\BaseProjects\SVN\dotNet5Templates\5.SharedProjects\Mic.UserDb.Dal\UserDal.cs:line 21
+   at Mic.UserDb.Bll.UserBll.Add(EUser entry) in D:\BaseProjects\SVN\dotNet5Templates\5.SharedProjects\Mic.UserDb.Bll\UserBll.cs:line 24
+   at DbData.Service.Services.UserAuthenticateService.Signup(SignupRequest request, ServerCallContext context) in E:\Microtec\Project\travel-hub\svn\2.DbDataService\DbData.Service\Services\UserDb\UserAuthenticateService.cs:line 114
+2021-04-23T18:16:52.1715225+07:00 0HM862LSOM2AL:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signup"' (99874f2b)
+2021-04-23T18:16:52.1745754+07:00 0HM862LSOM2AL:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signup application/grpc - - 200 - application/grpc 166.1174ms (791a596a)
+2021-04-23T18:19:57.0141809+07:00 0HM862LSOM2AM:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signup application/grpc - (ca22a1cb)
+2021-04-23T18:19:57.0166860+07:00 0HM862LSOM2AM:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signup"' (500cc934)
+2021-04-23T18:20:01.9818559+07:00 0HM862LSOM2AM:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T18:20:02.0413722+07:00 0HM862LSOM2AM:00000001 [INF] Executed DbCommand ("12"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-04-23T18:20:32.2432098+07:00 0HM862LSOM2AM:00000001 [INF] Executed DbCommand ("28"ms) [Parameters=["@__entry_UserName_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE ([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[UserName] = @__entry_UserName_0)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2021-04-23T18:20:32.2523804+07:00 0HM862LSOM2AM:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Deleted] <> CAST(1 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2021-04-23T18:21:26.5925320+07:00 0HM862LSOM2AM:00000001 [ERR] Add User admin123 failed! Error: Email  Existed. (cf6c2205)
+Mic.Core.Exceptions.DuplicatedDataException: Email  Existed.
+   at Mic.UserDb.Dal.UserDal.CheckExists(EUser entry, Nullable`1 excerptId) in D:\BaseProjects\SVN\dotNet5Templates\5.SharedProjects\Mic.UserDb.Dal\UserDal.cs:line 144
+   at Mic.UserDb.Dal.UserDal.Add(EUser entry) in D:\BaseProjects\SVN\dotNet5Templates\5.SharedProjects\Mic.UserDb.Dal\UserDal.cs:line 21
+   at Mic.UserDb.Bll.UserBll.Add(EUser entry) in D:\BaseProjects\SVN\dotNet5Templates\5.SharedProjects\Mic.UserDb.Bll\UserBll.cs:line 24
+   at DbData.Service.Services.UserAuthenticateService.Signup(SignupRequest request, ServerCallContext context) in E:\Microtec\Project\travel-hub\svn\2.DbDataService\DbData.Service\Services\UserDb\UserAuthenticateService.cs:line 114
+2021-04-23T18:21:26.5951044+07:00 0HM862LSOM2AM:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signup"' (99874f2b)
+2021-04-23T18:21:26.5996789+07:00 0HM862LSOM2AM:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signup application/grpc - - 200 - application/grpc 89584.1888ms (791a596a)
+2021-04-23T18:22:01.2897676+07:00 0HM862LSOM2AN:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signup application/grpc - (ca22a1cb)
+2021-04-23T18:22:01.2920118+07:00 0HM862LSOM2AN:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signup"' (500cc934)
+2021-04-23T18:22:06.4687373+07:00 0HM862LSOM2AN:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T18:22:06.5104574+07:00 0HM862LSOM2AN:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-04-23T18:25:53.9704466+07:00 0HM862LSOM2AN:00000001 [INF] Executed DbCommand ("15"ms) [Parameters=["@__entry_UserName_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE ([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[UserName] = @__entry_UserName_0)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2021-04-23T18:25:53.9748728+07:00 0HM862LSOM2AN:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Deleted] <> CAST(1 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2021-04-23T18:25:54.1130541+07:00 0HM862LSOM2AN:00000001 [ERR] Add User admin123 failed! Error: Email  Existed. (cf6c2205)
+Mic.Core.Exceptions.DuplicatedDataException: Email  Existed.
+   at Mic.UserDb.Dal.UserDal.CheckExists(EUser entry, Nullable`1 excerptId) in D:\BaseProjects\SVN\dotNet5Templates\5.SharedProjects\Mic.UserDb.Dal\UserDal.cs:line 144
+   at Mic.UserDb.Dal.UserDal.Add(EUser entry) in D:\BaseProjects\SVN\dotNet5Templates\5.SharedProjects\Mic.UserDb.Dal\UserDal.cs:line 21
+   at Mic.UserDb.Bll.UserBll.Add(EUser entry) in D:\BaseProjects\SVN\dotNet5Templates\5.SharedProjects\Mic.UserDb.Bll\UserBll.cs:line 24
+   at DbData.Service.Services.UserAuthenticateService.Signup(SignupRequest request, ServerCallContext context) in E:\Microtec\Project\travel-hub\svn\2.DbDataService\DbData.Service\Services\UserDb\UserAuthenticateService.cs:line 114
+2021-04-23T18:25:54.1150994+07:00 0HM862LSOM2AN:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signup"' (99874f2b)
+2021-04-23T18:25:54.1178289+07:00 0HM862LSOM2AN:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signup application/grpc - - 200 - application/grpc 232827.8924ms (791a596a)
+2021-04-23T18:27:29.5582917+07:00 0HM862LSOM2AO:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signup application/grpc - (ca22a1cb)
+2021-04-23T18:27:29.5607556+07:00 0HM862LSOM2AO:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signup"' (500cc934)
+2021-04-23T18:27:32.3648699+07:00 0HM862LSOM2AO:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T18:27:32.3844961+07:00 0HM862LSOM2AO:00000001 [INF] Executed DbCommand ("14"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-04-23T18:27:36.5462988+07:00 0HM862LSOM2AO:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__entry_UserName_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE ([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[UserName] = @__entry_UserName_0)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2021-04-23T18:27:36.5694023+07:00 0HM862LSOM2AO:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__entry_Email_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE ([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[Email] = @__entry_Email_0)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2021-04-23T18:27:36.8499719+07:00 0HM862LSOM2AO:00000001 [INF] Executed DbCommand ("58"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 500), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 200), @p5='?' (DbType = Boolean), @p6='?' (Size = 50), @p7='?' (Size = 100), @p8='?' (Size = 50), @p9='?' (DbType = Boolean), @p10='?' (Size = 10), @p11='?' (DbType = DateTime2), @p12='?' (DbType = DateTime2), @p13='?' (DbType = Boolean), @p14='?' (Size = 500), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 200), @p18='?' (DbType = Int32), @p19='?' (DbType = Int32), @p20='?' (Size = 50), @p21='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [User] ([Id], [Address], [CreatedDate], [Deleted], [Email], [EmailVerified], [FamilyName], [FullName], [GivenName], [IsActive], [LangCode], [LastActivity], [LastChangePassword], [MustChangePassword], [Password], [PhoneNumber], [PhoneNumberVerified], [Picture], [Timeout], [Timezone], [UserName], [UsergroupId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);" (0723d8ff)
+2021-04-23T18:27:36.8788556+07:00 0HM862LSOM2AO:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signup"' (99874f2b)
+2021-04-23T18:27:36.8820773+07:00 0HM862LSOM2AO:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signup application/grpc - - 200 - application/grpc 7357.3648ms (791a596a)
+2021-04-23T18:28:25.4166864+07:00 0HM862LSOM2AP:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signup application/grpc - (ca22a1cb)
+2021-04-23T18:28:25.4184322+07:00 0HM862LSOM2AP:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signup"' (500cc934)
+2021-04-23T18:28:29.1476058+07:00 0HM862LSOM2AP:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T18:28:29.1850812+07:00 0HM862LSOM2AP:00000001 [INF] Executed DbCommand ("34"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-04-23T18:28:29.1927996+07:00 0HM862LSOM2AP:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signup"' (99874f2b)
+2021-04-23T18:28:29.1971320+07:00 0HM862LSOM2AP:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signup application/grpc - - 200 - application/grpc 3778.8786ms (791a596a)
+2021-04-23T18:32:33.3815622+07:00 0HM862LSOM2AQ:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signin application/grpc - (ca22a1cb)
+2021-04-23T18:32:33.3833227+07:00 0HM862LSOM2AQ:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (500cc934)
+2021-04-23T18:32:33.3863980+07:00 0HM862LSOM2AQ:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-23T18:32:33.4291224+07:00 0HM862LSOM2AQ:00000001 [INF] Executed DbCommand ("28"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-04-23T18:32:33.4795585+07:00 0HM862LSOM2AQ:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (99874f2b)
+2021-04-23T18:32:33.4838622+07:00 0HM862LSOM2AQ:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.UserAuthenticateServices/Signin application/grpc - - 200 - application/grpc 101.0518ms (791a596a)

@@ -1,0 +1,119 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Crc32.NET" Version="1.2.0" />
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Google.Protobuf" Version="3.14.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.34.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.34.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.34.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="Xunit.Extensions.Ordering" Version="1.4.5" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="1.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mic.Core">
+      <HintPath>..\..\6.libs\packages\Mic.Core\net5.0\Mic.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mic.Core.Entities">
+      <HintPath>..\..\6.libs\packages\Mic.Core.Entities\net5.0\Mic.Core.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Mic.UserDb.Dal">
+      <HintPath>..\..\6.libs\packages\Mic.UserDb.Dal\net5.0\Mic.UserDb.Dal.dll</HintPath>
+    </Reference>
+    <Reference Include="Mic.UserDb.Entities">
+      <HintPath>..\..\6.libs\packages\Mic.UserDb.Entities\net5.0\Mic.UserDb.Entities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DbData.Service\DbData.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcAttraction.proto" GrpcServices="Client">
+      <Link>Protos\DbData\svcAttraction.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcCity.proto" GrpcServices="Client">
+      <Link>Protos\DbData\svcCity.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcComment.proto" GrpcServices="Client">
+      <Link>Protos\DbData\svcComment.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcContinent.proto" GrpcServices="Client">
+      <Link>Protos\DbData\svcContinent.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcCountry.proto" GrpcServices="Client">
+      <Link>Protos\DbData\svcCountry.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcDestination.proto" GrpcServices="Client">
+      <Link>Protos\DbData\svcDestination.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcExperience.proto" GrpcServices="Client">
+      <Link>Protos\DbData\svcExperience.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcExperienceSession.proto" GrpcServices="Client">
+      <Link>Protos\DbData\svcExperienceSession.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcLanguage.proto" GrpcServices="Client">
+      <Link>Protos\userDb\svcLanguage.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcLanguageData.proto" GrpcServices="Client">
+      <Link>Protos\userDb\svcLanguageData.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcLanguageDataLocal.proto" GrpcServices="Client">
+      <Link>Protos\userDb\svcLanguageDataLocal.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcRole.proto" GrpcServices="Client">
+      <Link>Protos\userDb\svcRole.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcState.proto" GrpcServices="Client">
+      <Link>Protos\DbData\svcState.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcUser.proto" GrpcServices="Client">
+      <Link>Protos\userDb\svcUser.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcUserAuthenticate.proto" GrpcServices="Client">
+      <Link>Protos\userDb\svcUserAuthenticate.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcUsergroup.proto" GrpcServices="Client">
+      <Link>Protos\userDb\svcUsergroup.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcUserProfile.proto" GrpcServices="Client">
+      <Link>Protos\DbData\svcUserProfile.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcWebNavigator.proto" GrpcServices="Client">
+      <Link>Protos\userDb\svcWebNavigator.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcWebPage.proto" GrpcServices="Client">
+      <Link>Protos\userDb\svcWebPage.proto</Link>
+    </Protobuf>
+  </ItemGroup>
+
+</Project>

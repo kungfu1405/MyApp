@@ -1,0 +1,155 @@
+﻿@model StateViewModel
+@{
+    ViewData["Title"] = "State";
+    Model.ReturnUrl = string.Format("{0}{1}", Context.Request.Path, Context.Request.QueryString);
+}
+
+<div class="row" id="pnlForms">
+    <div class="col-lg-5">
+        <div class="card card-custom">
+            <div class="card-header">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        @Model.ActionMode.ToString() State
+
+                        @if (FormActionMode.Edit.Equals(Model.ActionMode))
+                        {
+                            <small>@Model.State.Name</small>
+                        }
+                    </h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form asp-action="AddEdit" method="post" class="form-vertical">
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="State.Name">
+                            State Name
+                            <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" asp-for="State.Name"
+                               class="form-control" autocomplete="off"
+                               placeholder="State Name" required maxlength="50" />
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="State.CountryId">
+                            Country
+                            <span class="text-danger">*</span>
+                        </label>
+                        <select asp-for="State.CountryId" required
+                                asp-items="@(new SelectList(Model.Countries,"Id","Name"))"
+                                class="form-control select2">
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label class="font-weight-bold" asp-for="State.FipsCode">
+                                Fips Code
+                            </label>
+                            <input type="text" asp-for="State.FipsCode"
+                                   class="form-control" autocomplete="off" maxlength="50" />
+                        </div>
+                        <div class="col-6">
+                            <label class="font-weight-bold" asp-for="State.Iso2">
+                                ISO 2
+                            </label>
+                            <input type="text" asp-for="State.Iso2"
+                                   class="form-control" autocomplete="off" maxlength="50" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="State.WikiDataId">
+                            WikiData ID
+                        </label>
+                        <input type="text" asp-for="State.WikiDataId"
+                               class="form-control" autocomplete="off"
+                               placeholder="Wiki Data ID" maxlength="50" />
+                    </div>
+                    <input type="hidden" asp-for="State.Id" />
+                    <input type="hidden" asp-for="ActionMode" />
+                    <input type="hidden" asp-for="ReturnUrl" />
+                    <input type="hidden" asp-for="CommandName" />
+                    <input type="hidden" asp-for="State.CountryCode" />
+                </form>
+            </div>
+        </div>
+    </div>
+    @if (FormActionMode.Edit.Equals(Model.ActionMode))
+    {
+        <div class="col-lg-7 invisible">
+            <div class="card card-custom">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h3 class="card-label">
+                            Sub panel
+                            <small></small>
+                        </h3>
+                    </div>
+                </div>
+                <div class="card-body">
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+
+<partial name="_Partials/_alertMessage" model="Model.AlertMessages" />
+
+@section Toolbar{
+    <a asp-action="Index" class="btn btn-secondary mr-2">
+        <i class="la la-undo"></i> Return
+    </a>
+    @if (Model.ActionMode == FormActionMode.Edit)
+    {
+        <a class="btn btn-danger btn-delete mr-2" data-command="delete">
+            <i class="flaticon-delete-1"></i> Delete
+        </a>
+    }
+    <a class="btn btn-warning btn-reset mr-2">
+        <i class="la la-undo-alt"></i> Reset
+    </a>
+    <div class="btn-group">
+        <a class="btn btn-primary btn-submit"><i class="la la-save"></i> Save</a>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Save Options</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item btn-submit" href="#"><i class="la la-save"></i> Save & Back</a>
+            <a class="dropdown-item btn-submit" href="#" data-command="continue"><i class="la la-save"></i> Save & Continue</a>
+        </div>
+    </div>
+}
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.select2').select2({
+                placeholder: "Select Country",
+                allowClear: "true",
+                minimumResultsForSearch: 15
+            }).on('change', function () {
+                $(this).trigger('blur');
+            });
+
+            $('.btn-reset').click(function (e) {
+                e.preventDefault();
+                $('#pnlForms form').trigger("reset");
+                $('#pnlForms .select2').trigger("change");
+            });
+            $('.btn-submit').click(function (e) {
+                e.preventDefault();
+                SubmitForm($(this), '#pnlForms');
+            });
+            $('.btn-delete').click(function (e) {
+                e.preventDefault();
+                var btDelete = $(this);
+                ConfirmDelete(function () {
+                    SubmitForm(btDelete, '#pnlForms');
+                });
+            });
+        });
+    </script>
+}

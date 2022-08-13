@@ -1,0 +1,301 @@
+2021-04-28T09:21:52.2414491+07:00  [WRN] Overriding address(es) '"http://localhost:6200, https://localhost:6201"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-28T09:21:52.3485180+07:00  [INF] Now listening on: "https://localhost:8211" (d826f4b8)
+2021-04-28T09:21:52.3512847+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-28T09:21:52.3540846+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-28T09:21:52.3561772+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\2.DbDataService\DbData.Service\bin\Debug\net5.0\" (b5d60022)
+2021-04-28T09:22:22.2029878+07:00 0HM89THQ6AEBQ:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-04-28T09:22:22.5089058+07:00 0HM89THQ6AEBQ:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-04-28T09:22:22.7603175+07:00 0HM89THQ6AEBQ:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T09:22:23.6132126+07:00 0HM89THQ6AEBQ:00000001 [INF] Executed DbCommand ("88"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-04-28T09:22:23.9409911+07:00 0HM89THQ6AEBQ:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-04-28T09:22:23.9608760+07:00 0HM89THQ6AEBQ:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 1764.6752ms (791a596a)
+2021-04-28T09:33:59.8478681+07:00 0HM89THQ6AEBR:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-28T09:33:59.8979575+07:00 0HM89THQ6AEBR:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-28T09:34:00.1165435+07:00 0HM89THQ6AEBR:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T09:34:00.3463925+07:00 0HM89THQ6AEBR:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-28T09:34:00.4039212+07:00 0HM89THQ6AEBR:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-28T09:34:00.6177884+07:00 0HM89THQ6AEBR:00000001 [INF] Executed DbCommand ("132"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-28T09:34:00.7514756+07:00 0HM89THQ6AEBR:00000001 [INF] Executed DbCommand ("59"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-28T09:34:00.9164459+07:00 0HM89THQ6AEBR:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-28T09:34:00.9227075+07:00 0HM89THQ6AEBR:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 1078.0225ms (791a596a)
+2021-04-28T09:34:01.5364106+07:00 0HM89THQ6AEBS:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-04-28T09:34:01.5532134+07:00 0HM89THQ6AEBS:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-04-28T09:34:01.5611033+07:00 0HM89THQ6AEBS:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T09:34:01.5835433+07:00 0HM89THQ6AEBS:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-04-28T09:34:01.5895882+07:00 0HM89THQ6AEBS:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-04-28T09:34:01.5950891+07:00 0HM89THQ6AEBS:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 61.4895ms (791a596a)
+2021-04-28T09:40:29.1775689+07:00 0HM89THQ6AEBT:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-28T09:40:29.1867138+07:00 0HM89THQ6AEBT:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-28T09:40:29.2004151+07:00 0HM89THQ6AEBT:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T09:40:29.2122079+07:00 0HM89THQ6AEBT:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-28T09:40:29.2170126+07:00 0HM89THQ6AEBT:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-28T09:40:29.2306143+07:00 0HM89THQ6AEBT:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-28T09:40:29.2431825+07:00 0HM89THQ6AEBT:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-28T09:40:29.2460450+07:00 0HM89THQ6AEBT:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-28T09:40:29.2491295+07:00 0HM89THQ6AEBT:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 74.6063ms (791a596a)
+2021-04-28T09:42:36.8996928+07:00 0HM89THQ6AEBU:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-28T09:42:36.9058945+07:00 0HM89THQ6AEBU:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-28T09:42:36.9116356+07:00 0HM89THQ6AEBU:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T09:42:36.9269581+07:00 0HM89THQ6AEBU:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-28T09:42:36.9346590+07:00 0HM89THQ6AEBU:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-28T09:42:36.9491692+07:00 0HM89THQ6AEBU:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-28T09:42:36.9634640+07:00 0HM89THQ6AEBU:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-28T09:42:36.9679744+07:00 0HM89THQ6AEBU:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-28T09:42:36.9724384+07:00 0HM89THQ6AEBU:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 77.9373ms (791a596a)
+2021-04-28T09:42:37.8166652+07:00 0HM89THQ6AEBV:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-04-28T09:42:37.8220067+07:00 0HM89THQ6AEBV:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-04-28T09:42:37.8278735+07:00 0HM89THQ6AEBV:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T09:42:37.8398300+07:00 0HM89THQ6AEBV:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-04-28T09:42:37.8469335+07:00 0HM89THQ6AEBV:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-04-28T09:42:37.8526869+07:00 0HM89THQ6AEBV:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 37.7333ms (791a596a)
+2021-04-28T10:03:01.1788707+07:00 0HM89THQ6AEC0:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-28T10:03:01.1932290+07:00 0HM89THQ6AEC0:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-28T10:03:01.2259942+07:00 0HM89THQ6AEC0:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T10:03:01.3350706+07:00 0HM89THQ6AEC0:00000001 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-28T10:03:01.3612841+07:00 0HM89THQ6AEC0:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-28T10:03:01.4330624+07:00 0HM89THQ6AEC0:00000001 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-28T10:03:01.5575200+07:00 0HM89THQ6AEC0:00000001 [INF] Executed DbCommand ("71"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-28T10:03:01.5660455+07:00 0HM89THQ6AEC0:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-28T10:03:01.5856057+07:00 0HM89THQ6AEC0:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 406.2486ms (791a596a)
+2021-04-28T10:03:02.2804668+07:00 0HM89THQ6AEC1:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-04-28T10:03:02.2860399+07:00 0HM89THQ6AEC1:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-04-28T10:03:02.2928026+07:00 0HM89THQ6AEC1:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T10:03:02.3238239+07:00 0HM89THQ6AEC1:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-04-28T10:03:02.3285323+07:00 0HM89THQ6AEC1:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-04-28T10:03:02.3380530+07:00 0HM89THQ6AEC1:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 57.5961ms (791a596a)
+2021-04-28T10:43:20.7255983+07:00 0HM89THQ6AEC2:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-28T10:43:20.7353991+07:00 0HM89THQ6AEC2:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-28T10:43:20.7566868+07:00 0HM89THQ6AEC2:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T10:43:20.8657695+07:00 0HM89THQ6AEC2:00000001 [INF] Executed DbCommand ("76"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-28T10:43:20.8799969+07:00 0HM89THQ6AEC2:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-28T10:43:20.9108230+07:00 0HM89THQ6AEC2:00000001 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-28T10:43:20.9213877+07:00 0HM89THQ6AEC2:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-28T10:43:20.9265383+07:00 0HM89THQ6AEC2:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-28T10:43:20.9297845+07:00 0HM89THQ6AEC2:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 270.8247ms (791a596a)
+2021-04-28T11:03:11.0016030+07:00 0HM89THQ6AEC3:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-04-28T11:03:11.0245889+07:00 0HM89THQ6AEC3:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-04-28T11:03:11.0527291+07:00 0HM89THQ6AEC3:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T11:03:11.2143943+07:00 0HM89THQ6AEC3:00000001 [INF] Executed DbCommand ("82"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-04-28T11:03:11.2566834+07:00 0HM89THQ6AEC3:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-04-28T11:03:11.2867032+07:00 0HM89THQ6AEC3:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 268.5958ms (791a596a)
+2021-04-28T11:18:42.4714629+07:00 0HM89THQ6AEC4:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-28T11:18:42.4800873+07:00 0HM89THQ6AEC4:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-28T11:18:42.4946808+07:00 0HM89THQ6AEC4:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T11:18:42.5268535+07:00 0HM89THQ6AEC4:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-28T11:18:42.5334221+07:00 0HM89THQ6AEC4:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-28T11:18:42.5624028+07:00 0HM89THQ6AEC4:00000001 [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-28T11:18:42.5795169+07:00 0HM89THQ6AEC4:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-28T11:18:42.5823632+07:00 0HM89THQ6AEC4:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-28T11:18:42.5857241+07:00 0HM89THQ6AEC4:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 117.3704ms (791a596a)
+2021-04-28T11:22:03.9311199+07:00 0HM89THQ6AEC5:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-28T11:22:03.9337247+07:00 0HM89THQ6AEC5:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-28T11:22:03.9380757+07:00 0HM89THQ6AEC5:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T11:22:03.9714788+07:00 0HM89THQ6AEC5:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-28T11:22:04.0309140+07:00 0HM89THQ6AEC5:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-28T11:22:04.0406136+07:00 0HM89THQ6AEC5:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-28T11:22:04.0529225+07:00 0HM89THQ6AEC5:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-28T11:22:04.0567032+07:00 0HM89THQ6AEC5:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-28T11:22:04.0615022+07:00 0HM89THQ6AEC5:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 129.9469ms (791a596a)
+2021-04-28T11:22:36.7879708+07:00 0HM89THQ6AEC6:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-28T11:22:36.7913990+07:00 0HM89THQ6AEC6:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-28T11:22:36.7940956+07:00 0HM89THQ6AEC6:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T11:22:36.7974980+07:00 0HM89THQ6AEC6:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-28T11:22:36.8022959+07:00 0HM89THQ6AEC6:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-28T11:22:36.8109785+07:00 0HM89THQ6AEC6:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-28T11:22:36.8172488+07:00 0HM89THQ6AEC6:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-28T11:22:36.8467292+07:00 0HM89THQ6AEC6:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-28T11:22:36.8505135+07:00 0HM89THQ6AEC6:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 61.4948ms (791a596a)
+2021-04-28T11:35:11.4395057+07:00 0HM89THQ6AEC7:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-28T11:35:11.4456591+07:00 0HM89THQ6AEC7:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-28T11:35:11.4513445+07:00 0HM89THQ6AEC7:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T11:35:11.5336102+07:00 0HM89THQ6AEC7:00000001 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-28T11:35:11.5407880+07:00 0HM89THQ6AEC7:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-28T11:35:11.5504740+07:00 0HM89THQ6AEC7:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-28T11:35:11.5635094+07:00 0HM89THQ6AEC7:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-28T11:35:11.5695061+07:00 0HM89THQ6AEC7:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-28T11:35:11.5732542+07:00 0HM89THQ6AEC7:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 140.7351ms (791a596a)
+2021-04-28T11:35:12.2342441+07:00 0HM89THQ6AEC8:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-28T11:35:12.2509019+07:00 0HM89THQ6AEC8:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-28T11:35:12.2574106+07:00 0HM89THQ6AEC8:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T11:35:12.2653477+07:00 0HM89THQ6AEC8:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-28T11:35:12.2706856+07:00 0HM89THQ6AEC8:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-28T11:35:12.2856112+07:00 0HM89THQ6AEC8:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-28T11:35:12.3082497+07:00 0HM89THQ6AEC8:00000001 [INF] Executed DbCommand ("10"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-28T11:35:12.3156546+07:00 0HM89THQ6AEC8:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-28T11:35:12.3200757+07:00 0HM89THQ6AEC8:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 86.1218ms (791a596a)
+2021-04-28T15:40:32.0311229+07:00 0HM89THQ6AEC9:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-04-28T15:40:32.0445467+07:00 0HM89THQ6AEC9:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-04-28T15:40:32.0716883+07:00 0HM89THQ6AEC9:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T15:40:32.1962218+07:00 0HM89THQ6AEC9:00000001 [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-04-28T15:40:32.2077698+07:00 0HM89THQ6AEC9:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-04-28T15:40:32.2119893+07:00 0HM89THQ6AEC9:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 185.7028ms (791a596a)
+2021-04-28T15:42:14.1508818+07:00 0HM89THQ6AECA:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-28T15:42:14.1544261+07:00 0HM89THQ6AECA:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-28T15:42:14.1837229+07:00 0HM89THQ6AECA:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T15:42:14.1934776+07:00 0HM89THQ6AECA:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-28T15:42:14.1986229+07:00 0HM89THQ6AECA:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-28T15:42:14.3079688+07:00 0HM89THQ6AECA:00000001 [INF] Executed DbCommand ("98"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-28T15:42:14.3879096+07:00 0HM89THQ6AECA:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-28T15:42:14.3900307+07:00 0HM89THQ6AECA:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-28T15:42:14.3927039+07:00 0HM89THQ6AECA:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 241.3975ms (791a596a)
+2021-04-28T16:53:27.2550157+07:00 0HM89THQ6AECB:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-04-28T16:53:27.2632216+07:00 0HM89THQ6AECB:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-04-28T16:53:27.2869779+07:00 0HM89THQ6AECB:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T16:53:27.3855318+07:00 0HM89THQ6AECB:00000001 [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-04-28T16:53:27.3925429+07:00 0HM89THQ6AECB:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-04-28T16:53:27.3956318+07:00 0HM89THQ6AECB:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 148.0806ms (791a596a)
+2021-04-28T18:28:46.2922329+07:00 0HM89THQ6AECC:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-04-28T18:28:46.3097691+07:00 0HM89THQ6AECC:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-04-28T18:28:46.3797525+07:00 0HM89THQ6AECC:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T18:28:46.5750569+07:00 0HM89THQ6AECC:00000001 [INF] Executed DbCommand ("112"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-04-28T18:28:46.5868246+07:00 0HM89THQ6AECC:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-04-28T18:28:46.5943607+07:00 0HM89THQ6AECC:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 312.6321ms (791a596a)
+2021-04-28T18:33:35.5527943+07:00 0HM89THQ6AECD:00000001 [INF] Request starting HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-04-28T18:33:35.5634816+07:00 0HM89THQ6AECD:00000001 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-04-28T18:33:35.5975162+07:00 0HM89THQ6AECD:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-04-28T18:33:35.6820706+07:00 0HM89THQ6AECD:00000001 [INF] Executed DbCommand ("67"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-04-28T18:33:35.6956474+07:00 0HM89THQ6AECD:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-04-28T18:33:35.7726334+07:00 0HM89THQ6AECD:00000001 [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]" (0723d8ff)
+2021-04-28T18:33:35.7979765+07:00 0HM89THQ6AECD:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+ORDER BY [e].[CreateDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2021-04-28T18:33:35.8040402+07:00 0HM89THQ6AECD:00000001 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-04-28T18:33:35.8079966+07:00 0HM89THQ6AECD:00000001 [INF] Request finished HTTP/2 POST https://localhost:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 263.9537ms (791a596a)

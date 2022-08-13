@@ -1,0 +1,7 @@
+obj\Debug\net5.0/SvcState.cs \
+obj\Debug\net5.0/SvcStateGrpc.cs: C:/Users/Dell/.nuget/packages/grpc.tools/2.34.1/build/native/include/google/protobuf/wrappers.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgDbDataCommon.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgContinent.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgCountry.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgState.proto\
+ ../../6.libs/gRpc.Protos/DbData/svcState.proto

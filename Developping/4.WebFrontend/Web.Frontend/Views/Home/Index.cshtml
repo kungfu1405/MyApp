@@ -1,0 +1,439 @@
+﻿@model HomeModel
+@{
+    ViewData["Title"] = "Home Page";
+    Model.ListItemDiscover = new List<ItemDiscover>();
+    Model.ListItemDiscover.Add(new ItemDiscover { Tag = "WellnessRetreats", Thumbnail = "/img/home hashtag/wellness&retreats.png", Pillar = EnumPillar.WellnessAndRetreats });
+    Model.ListItemDiscover.Add(new ItemDiscover { Tag = "WineDine", Thumbnail = "/img/home hashtag/wine&dine.png", Pillar = EnumPillar.WineAndDine });
+    Model.ListItemDiscover.Add(new ItemDiscover { Tag = "CitiesCulture", Thumbnail = "/img/home hashtag/cities&culture.png", Pillar = EnumPillar.CitiesAndCulture });
+    Model.ListItemDiscover.Add(new ItemDiscover { Tag = "Activities", Thumbnail = "/img/home hashtag/adventure&exploration.png", Pillar = EnumPillar.AdventureAndExploration });
+    Model.ListItemDiscover.Add(new ItemDiscover { Tag = "Nature", Thumbnail = "/img/home hashtag/nature&preservation.png", Pillar = EnumPillar.NatureAndPreservation });
+    var top = 0;
+
+    Model.ListConsultant = new List<ItemConsultant>();
+    Model.ListConsultant.Add(new ItemConsultant { Name = "Jovel Chan", ObjectName = "Keen Observer", Description = "Award-winning twitter lover. Passionate beer aficionado.", Thumbnail = "/img/Consultant/asset-1.png" });
+    Model.ListConsultant.Add(new ItemConsultant { Name = "Bế Duy Kiên", ObjectName = "Adventurous Guy", Description = "Bacon guru. Proud explorer. Certified troublemaker.", Thumbnail = "/img/Consultant/asset-2.png" });
+    Model.ListConsultant.Add(new ItemConsultant { Name = "Đặng Thanh Phong", ObjectName = "Professional Traveler", Description = "Pop culture practitioner. Social media enthusiast.", Thumbnail = "/img/Consultant/asset-3.png" });
+    Model.ListConsultant.Add(new ItemConsultant { Name = "Bùi Bảo Trâm", ObjectName = "Timely Exploration", Description = "Food enthusiast. Organizer. Devoted beer trailblazer.", Thumbnail = "/img/Consultant/234241.png" });
+}
+
+<div class="container-xxl p-0 m-auto">
+    <div class="row px-15">
+        <div class="home_banner position-relative slider-auto">
+            <div class="swiper-wrapper">
+                <img class="swiper-slide" src="~/img/banner/Group 8890.png" />
+                <img class="swiper-slide" src="~/img/banner/Group 8888.png" />
+                <img class="swiper-slide" src="~/img/banner/Group 8889.png" />
+                <img class="swiper-slide" src="~/img/banner/Group 8891.png" />
+                <img class="swiper-slide" src="~/img/banner/Group 8892.png" />
+                <img class="swiper-slide" src="~/img/banner/Group 8893.png" />
+            </div>
+
+            <div class="position-absolute text-center row w-100 home-search">
+                <div class="col-xl-8 mx-auto form-group">
+                    <form id="frmSearch" action="/search" class="position-relative">
+                        <label class="placeholder"><ion-icon name="search-outline"></ion-icon> Search & explore the world!</label>
+                        <input class="form-control w-100 position-absolute top-0" id="inpSearch" autocomplete="off" name="q" type="text" placeholder="" />
+                        <input type="submit"
+                               style="position: absolute; left: -9999px; width: 1px; height: 1px;"
+                               tabindex="-1" />
+                        <input type="hidden" name="type" id="txtTypeSearch" value="@(EnumTypeSearch.Story.ToString())" />
+                        <input type="hidden" name="page" id="txtPage" value="1" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row px-15 px-sm-30">
+        <div class="home-txt">
+            <h3 class="text-left">A unique community platform</h3>
+            <p class="text-left">for travelers to meet, share and discover new travel adventures and memorable experiences.</p>
+        </div>
+    </div>
+    <div class="row position-relative">
+        <div class="div-lst-bg">
+            <label>Featured Experience.</label>
+        </div>
+        <div class="home-list div-lst mt-24 overflow-x-hidden" id="toppick">
+            <div class="swiper-wrapper">
+                @foreach (var itm in Model.ListExperience.Take(12).ToList())
+                {
+                    top++;
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-48 swiper-slide">
+                    <div class="home-item">
+                        <div class="w-100 p-0">
+                            <div class="thumb m-auto">
+                                <a class="" href="@string.Format("/Experience/{0}", itm.RouteUri)">
+                                    @if (!string.IsNullOrEmpty(itm.ThumbnailUrl))
+                                        {
+                                    <img class="rounded" onerror="imgError(this)" src="@string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)" />
+                                        }
+                                        else
+                                        {
+                                    <img class="rounded" src="~/img/icon-no-image.svg" />
+                                        }
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>#@(top) of 319 in Viet nam</p>
+                            <h3><a href="@string.Format("/Experience/{0}", itm.RouteUri)">@itm.ExperienceLanguage.Title</a></h3>
+                            <p>10.8km from Center Point . 15h </p>
+                            <p>N Stops By . N Saves . @string.Format("{0} Comments", itm.TotalComments)</p>
+                            <p>
+                                @foreach(var tag in itm.Tags)
+                                {
+                                    <label>@(string.Format("#{0} ", tag.Name))</label>
+                                }
+                            </p>
+                        </div>
+                        <span class="fea-rating">
+                            <label class="like"><i></i> 128</label>
+                            <label class="comment"><i></i> 100</label>
+                        </span>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+        <div class="swiper-control-toolbar">
+            <div class="swiper-control-prev swiper-featured swiper-control"><ion-icon name="caret-back-outline"></ion-icon></div>
+            <div class="swiper-control-next swiper-featured swiper-control"><ion-icon name="caret-forward-outline"></ion-icon></div>
+        </div>        
+    </div>
+
+    <div class="row px-15 px-sm-30">
+        <div class="home-txt">
+            <h3 class="text-left">Discover New Experiences</h3>
+            <p class="text-left">Plan your journey</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="discover_list mt-48 w-100">
+        <div class="swiper-wrapper">
+            @foreach (var itmDis in Model.ListItemDiscover)
+                {
+            <div class="col-xxl-20 col-xl-4 col-md-6 col-sm-12 swiper-slide">
+                <div class="discover_item text-center">
+                    <a class="discover_thumb" href="@(string.Format("Pillars/{0}", itmDis.Tag))">
+                        <img class="w-100" onerror="imgError(this)" src="@(itmDis.Thumbnail)" />
+                    </a>
+                    <div class="discover_content mt-12 text-left px-24">
+                        <a href="@(string.Format("/Pillars/{0}", itmDis.Tag))" class="mt-0">@(string.Format("#{0}", itmDis.Tag))</a>
+                        <p>
+                            152 Items . 12 Collections . 1M3 Following
+                        </p>
+                    </div>
+                </div>
+            </div>
+                }
+        </div>
+        @*<div class="swiper-button-next swiper-discover"></div>
+            <div class="swiper-button-prev swiper-discover"></div>*@
+    </div>
+</div>
+<div class="container-xxl p-0 m-auto">
+    <div class="row px-15 px-sm-30">
+        <div class="home-txt">
+            <h3 class="text-left">Reach Out to Our Consultants!</h3>
+            <p class="text-left">Connect with locals whenever and wherever!</p>
+        </div>
+    </div>
+    <div class="row position-relative">
+        <div class="div-lst-bg">
+            <label>Be Inspired.</label>
+        </div>
+        <div class="ambassadors_list d-flex mt-24 w-100 overflow-hidden">
+            <div class="swiper-wrapper">
+                @foreach(var cons in Model.ListConsultant)
+                {
+                <div class="col-xl-3 col-md-6 col-sm-12 mb-48  swiper-slide">
+                    <div class="ambassador_item position-relative">
+                        <a class="ambassador_thumb">
+                            <img onerror="imgError(this)" src="@(cons.Thumbnail)" />
+                        </a>
+                        <div class="ambassador_content">
+                            <div class="ambassador_ava"></div>
+                            <h4><a>@(cons.Name)</a></h4>
+                            <p><label>@(cons.ObjectName)</label></p>
+                            <p>@(cons.Description)</p>
+                            <p>155 Followers . Joined 1y ago</p>
+                        </div>
+                        <a class="btn-view-profile">View Profile</a>
+                    </div>
+                </div>
+                }
+            </div>
+            @*<div class="swiper-control-next swiper-ambassadors swiper-control"></div>
+                <div class="swiper-control-prev swiper-ambassadors swiper-control"></div>*@
+        </div>
+    </div>
+
+    <div class="row px-15 px-sm-30">
+        <div class="home-txt">
+            <h3 class="text-left">Dream. Explore. Discover.</h3>
+            <p class="text-left">Favorites you may have missed.</p>
+        </div>
+    </div>
+
+    <div class="row home-list mt-48">
+        @foreach (var itm in Model.ListExperience.Skip(12))
+        {
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-48">
+            <div class="home-item">
+                <div class="w-100">
+                    <div class="thumb m-auto">
+                        <a class="" href="@string.Format("/Experience/{0}", itm.RouteUri)">
+                            @if (!string.IsNullOrEmpty(itm.ThumbnailUrl))
+                                {
+                            <img class="rounded" onerror="imgError(this)" src="@string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)" />
+                                }
+                                else
+                                {
+                            <img class="rounded" src="~/img/icon-no-image.svg" />
+                                }
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>#N of N Category</p>
+                    <h3><a href="@string.Format("/Experience/{0}", itm.RouteUri)">@itm.ExperienceLanguage.Title</a></h3>
+                    <p>10.8km from Center Point . 15h </p>
+                    <p>N Stops By . N Saves . @string.Format("{0} Comments", itm.TotalComments)</p>
+                    <p>
+                        @foreach(var tag in itm.Tags)
+                        {
+                            <label>@(string.Format("#{0} ", tag.Name))</label>
+                        }
+                    </p>
+                </div>
+                <span class="fea-rating">
+                    <label class="like"><i></i> 128</label>
+                    <label class="comment"><i></i> 100</label>
+                </span>
+            </div>
+        </div>
+        }
+
+        <div class="row w-100 mb-5 mt-0 list-bottom">
+            <div class="text-center w-100">
+                <a data-p="1" href="javascript:;" onclick="getDataHomeList(this)" class="m-auto d-inline-block btn-th-white">See More</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    $(window).on('resize load', function () {
+
+        if ($(window).width() < 768) {
+            console.log("< 768");
+            var swiper_discover1 = new Swiper('.home-list', {
+                slidesPerView: 1,
+                pagination: {
+                    el: '.home-list-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + '</span>';
+                    },
+                },
+                navigation: {
+                    nextEl: '.swiper-control-next.swiper-featured',
+                    prevEl: '.swiper-control-prev.swiper-featured',
+                },
+            });
+            var ambassadors_list = new Swiper('.ambassadors_list', {
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: '.swiper-control-next.swiper-ambassadors',
+                    prevEl: '.swiper-control-prev.swiper-ambassadors',
+                },
+            });
+            var swiper_discover = new Swiper('.discover_list', {
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: '.swiper-button-next.swiper-discover',
+                    prevEl: '.swiper-button-prev.swiper-discover',
+                },
+            });
+        }
+        else if ($(window).width() < 1280) {
+            console.log("< 1280");
+            var swiper_discover1 = new Swiper('.home-list', {
+                slidesPerView: 2,
+                pagination: {
+                    el: '.home-list-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + '</span>';
+                    },
+                },
+                navigation: {
+                    nextEl: '.swiper-control-next.swiper-featured',
+                    prevEl: '.swiper-control-prev.swiper-featured',
+                },
+            });
+            var ambassadors_list = new Swiper('.ambassadors_list', {
+                slidesPerView: 2,
+                navigation: {
+                    nextEl: '.swiper-control-next.swiper-ambassadors',
+                    prevEl: '.swiper-control-prev.swiper-ambassadors',
+                },
+            });
+            var swiper_discover = new Swiper('.discover_list', {
+                slidesPerView: 2,
+                navigation: {
+                    nextEl: '.swiper-button-next.swiper-discover',
+                    prevEl: '.swiper-button-prev.swiper-discover',
+                },
+            });
+        }
+        else if ($(window).width() < 1600) {
+            console.log("< 1600");
+            var swiper_discover1 = new Swiper('.home-list', {
+                slidesPerView: 3,
+                pagination: {
+                    el: '.home-list-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + '</span>';
+                    },
+                },
+                navigation: {
+                    nextEl: '.swiper-control-next.swiper-featured',
+                    prevEl: '.swiper-control-prev.swiper-featured',
+                },
+            });
+
+            var ambassadors_list = new Swiper('.ambassadors_list', {
+                slidesPerView: 4,
+                navigation: {
+                    nextEl: '.swiper-control-next.swiper-ambassadors',
+                    prevEl: '.swiper-control-prev.swiper-ambassadors',
+                },
+            });
+            var swiper_discover = new Swiper('.discover_list', {
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: '.swiper-button-next.swiper-discover',
+                    prevEl: '.swiper-button-prev.swiper-discover',
+                },
+            });
+        }
+        else {
+            console.log("Larger 1600");
+            var swiper_discover1 = new Swiper('.home-list', {
+                slidesPerView: 3,
+                pagination: {
+                    el: '.home-list-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + '</span>';
+                    },
+                },
+                navigation: {
+                    nextEl: '.swiper-control-next.swiper-featured',
+                    prevEl: '.swiper-control-prev.swiper-featured',
+                },
+            });
+
+            var ambassadors_list = new Swiper('.ambassadors_list', {
+                slidesPerView: 4,
+                navigation: {
+                    nextEl: '.swiper-control-next.swiper-ambassadors',
+                    prevEl: '.swiper-control-prev.swiper-ambassadors',
+                },
+            });
+            var swiper_discover = new Swiper('.discover_list', {
+                slidesPerView: 5,
+                navigation: {
+                    nextEl: '.swiper-button-next.swiper-discover',
+                    prevEl: '.swiper-button-prev.swiper-discover',
+                },
+            });
+        }
+    });
+
+    $(document).ready(function () {
+        $(function () {
+            var $first = $('#toppick').children().first();
+
+            $first.insertAfter($first.next())
+        });
+
+        var swiper = new Swiper('.list_videos', {
+            slidesPerView: 'auto',
+            navigation: {
+                nextEl: '.swiper-button-next.swiper-video',
+                prevEl: '.swiper-button-prev.swiper-video',
+            },
+        });
+
+        var slider_auto = new Swiper('.slider-auto', {
+            slidesPerView: 1,
+            speed: 2000,
+            loop: true,
+            effect: 'fade',
+            autoplay: {
+                delay: 3000
+            }
+        });
+    });
+
+    function getDataHomeList(obj) {
+        var p = $(obj).attr("data-p");
+
+        $.ajax({
+            url: "/Experiences/Data",
+            type: "POST",
+            data: { page: p },
+            success: function (data) {
+                var tempMore = "";
+                if (data.length > 0) {
+                    for (var i = 0; i < data.length; i++) {
+                        if (i == 9)
+                            continue;
+
+                        tempMore += genTemplateItem(data[i].routeUri, data[i].thumbnailUrl, data[i].experienceLanguage.title, data[i].tags);
+                    }
+
+                    $(tempMore).insertBefore(".list-bottom");
+                    $(obj).attr("data-p", (p * 1 + 1));
+                    if (data.length <= 9)
+                        $(".list-bottom").hide();
+                }
+            }
+        });
+    }
+
+    function genTemplateItem(uri, thumb, title, tags) {
+        var htmlTag = "";
+        for (var i = 0; i < tags.length; i++) {
+            htmlTag+= '<label>#'+ tags[i].name +' </label> '
+        }
+
+        return `<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-48 swiper-slide">
+                    <div class="home-item">
+                        <div class="w-100 p-0">
+                            <div class="thumb m-auto">
+                                <a class="expUri" href="/Experience/`+ uri + `">
+                                        <img onerror="imgError(this)" class="rounded" src="@(UrlList.FileServer)` + thumb +`" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>#N of N in Category</p>
+                                <h3><a class="expUri" href="/Experience/`+ uri + `">` + title + `</a></h3>
+                                <p>10.8km from Center Point . 15h </p>
+                                <p>N Stops By . N Saves . N Comments</p>
+                                <p>`+ htmlTag +`</p>
+                            </div>
+                            <span class="fea-rating">
+                                <label class="like"><i></i> 128</label>
+                                <label class="comment"><i></i> 100</label>
+                            </span>
+                        </div>
+                    </div>`;
+        }
+</script>

@@ -1,0 +1,770 @@
+2021-03-25T09:33:33.6946208+07:00  [WRN] Overriding address(es) '"http://localhost:6200, https://localhost:6201"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-25T09:33:33.8893925+07:00  [INF] Now listening on: "https://[::]:8211" (d826f4b8)
+2021-03-25T09:33:33.8922287+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-25T09:33:33.8948331+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-25T09:33:33.8983481+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\2.DbDataService\DbData.Service\bin\Debug\net5.0\" (b5d60022)
+2021-03-25T09:35:36.4113600+07:00 0HM7F6QLS0OND:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-03-25T09:35:36.7437486+07:00 0HM7F6QLS0OND:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-03-25T09:35:37.0246864+07:00 0HM7F6QLS0OND:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T09:35:37.8741790+07:00 0HM7F6QLS0OND:00000001 [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-03-25T09:35:38.2268869+07:00 0HM7F6QLS0OND:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-03-25T09:35:38.2480693+07:00 0HM7F6QLS0OND:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 1850.4225ms (791a596a)
+2021-03-25T10:33:36.5179096+07:00  [WRN] Overriding address(es) '"http://localhost:6200, https://localhost:6201"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-25T10:33:36.6031785+07:00  [INF] Now listening on: "https://[::]:8211" (d826f4b8)
+2021-03-25T10:33:36.6050218+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-25T10:33:36.6066951+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-25T10:33:36.6084862+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\2.DbDataService\DbData.Service\bin\Debug\net5.0\" (b5d60022)
+2021-03-25T10:52:09.0748409+07:00 0HM7F85EJNOEM:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-03-25T10:52:09.2208517+07:00 0HM7F85EJNOEM:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-03-25T10:52:09.3245390+07:00 0HM7F85EJNOEM:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T10:52:09.6876467+07:00 0HM7F85EJNOEM:00000001 [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-03-25T10:52:09.8257658+07:00 0HM7F85EJNOEM:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-03-25T10:52:09.8364605+07:00 0HM7F85EJNOEM:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 765.8412ms (791a596a)
+2021-03-25T18:37:00.1695042+07:00  [WRN] Overriding address(es) '"http://localhost:6200, https://localhost:6201"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-25T18:37:00.2535090+07:00  [INF] Now listening on: "https://[::]:8211" (d826f4b8)
+2021-03-25T18:37:00.2554378+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-25T18:37:00.2569528+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-25T18:37:00.2585046+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\2.DbDataService\DbData.Service\bin\Debug\net5.0\" (b5d60022)
+2021-03-25T18:37:50.8232788+07:00  [WRN] Overriding address(es) '"http://localhost:6200, https://localhost:6201"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-25T18:37:50.9091886+07:00  [INF] Now listening on: "https://[::]:8211" (d826f4b8)
+2021-03-25T18:37:50.9131889+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-25T18:37:50.9155953+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-25T18:37:50.9170781+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\2.DbDataService\DbData.Service\bin\Debug\net5.0\" (b5d60022)
+2021-03-25T18:38:09.5910471+07:00 0HM7FG9RFABCV:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-03-25T18:38:09.7392558+07:00 0HM7FG9RFABCV:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-03-25T18:38:09.8777116+07:00 0HM7FG9RFABCV:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T18:38:10.2719787+07:00 0HM7FG9RFABCV:00000001 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-03-25T18:38:10.4565883+07:00 0HM7FG9RFABCV:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-03-25T18:38:10.4665395+07:00 0HM7FG9RFABCV:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 882.2757ms (791a596a)
+2021-03-25T18:42:51.7943949+07:00 0HM7FG9RFABD0:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-03-25T18:42:51.8101050+07:00 0HM7FG9RFABD0:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-03-25T18:42:51.8163785+07:00 0HM7FG9RFABD0:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T18:42:51.8281929+07:00 0HM7FG9RFABD0:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-03-25T18:42:51.8319786+07:00 0HM7FG9RFABD0:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-03-25T18:42:51.8361423+07:00 0HM7FG9RFABD0:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 42.6536ms (791a596a)
+2021-03-25T18:51:47.1354896+07:00 0HM7FG9RFABD1:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-03-25T18:51:47.1406394+07:00 0HM7FG9RFABD1:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-03-25T18:51:47.1441793+07:00 0HM7FG9RFABD1:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T18:51:47.1886337+07:00 0HM7FG9RFABD1:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-03-25T18:51:47.1911004+07:00 0HM7FG9RFABD1:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-03-25T18:51:47.1938603+07:00 0HM7FG9RFABD1:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 58.2821ms (791a596a)
+2021-03-25T18:54:28.1924027+07:00 0HM7FG9RFABD2:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-03-25T18:54:28.1943317+07:00 0HM7FG9RFABD2:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-03-25T18:54:28.1971158+07:00 0HM7FG9RFABD2:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T18:54:28.2044836+07:00 0HM7FG9RFABD2:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-03-25T18:54:28.2067895+07:00 0HM7FG9RFABD2:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-03-25T18:54:28.2089276+07:00 0HM7FG9RFABD2:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 16.9249ms (791a596a)
+2021-03-25T19:07:11.0792822+07:00 0HM7FG9RFABD3:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-03-25T19:07:11.0844643+07:00 0HM7FG9RFABD3:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-03-25T19:07:11.0955380+07:00 0HM7FG9RFABD3:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:07:11.3279754+07:00 0HM7FG9RFABD3:00000001 [INF] Executed DbCommand ("145"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-03-25T19:07:11.3335335+07:00 0HM7FG9RFABD3:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-03-25T19:07:11.3370487+07:00 0HM7FG9RFABD3:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 258.6546ms (791a596a)
+2021-03-25T19:21:41.1696499+07:00 0HM7FG9RFABD4:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.DestinationServices/Get application/grpc - (ca22a1cb)
+2021-03-25T19:21:41.1765010+07:00 0HM7FG9RFABD4:00000001 [INF] Executing endpoint '"gRPC - /dbdata.DestinationServices/Get"' (500cc934)
+2021-03-25T19:21:41.3355384+07:00 0HM7FG9RFABD4:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:21:41.4864827+07:00 0HM7FG9RFABD4:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:21:41.5030329+07:00 0HM7FG9RFABD4:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:21:41.6048804+07:00 0HM7FG9RFABD4:00000001 [INF] Executed DbCommand ("40"ms) [Parameters=["@__ToLower_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[AvgRates], [d].[BannerUrl], [d].[CityId], [d].[CityName], [d].[Continent], [d].[CountryId], [d].[CountryName], [d].[DefaultGalleryId], [d].[DefaultName], [d].[Description], [d].[DestinationOverviewId], [d].[Latitude], [d].[Longitude], [d].[MapImageUri], [d].[RouteUri], [d].[StateId], [d].[StateName], [d].[ThumbnailUrl], [d].[TotalLikes], [d].[TotalRates]
+FROM [Destination] AS [d]
+WHERE [d].[RouteUri] = @__ToLower_0" (0723d8ff)
+2021-03-25T19:21:41.7851040+07:00 0HM7FG9RFABD4:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__itm_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Name]
+FROM [DestinationTag] AS [d]
+INNER JOIN [Tag] AS [t] ON [d].[TagId] = [t].[Id]
+WHERE [d].[DestinationId] = @__itm_Id_0" (0723d8ff)
+2021-03-25T19:21:41.8039958+07:00 0HM7FG9RFABD4:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__destinationId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[Description], [d].[DestinationId], [d].[LangCode], [d].[Name]
+FROM [DestinationLanguage] AS [d]
+WHERE ([d].[DestinationId] = @__destinationId_0) AND ([d].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:41.8865798+07:00 0HM7FG9RFABD4:00000001 [INF] Executed endpoint '"gRPC - /dbdata.DestinationServices/Get"' (99874f2b)
+2021-03-25T19:21:41.8894367+07:00 0HM7FG9RFABD4:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.DestinationServices/Get application/grpc - - 200 - application/grpc 722.0738ms (791a596a)
+2021-03-25T19:21:42.0115568+07:00 0HM7FG9RFABD4:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.AttractionServices/GetList application/grpc - (ca22a1cb)
+2021-03-25T19:21:42.0137974+07:00 0HM7FG9RFABD4:00000003 [INF] Executing endpoint '"gRPC - /dbdata.AttractionServices/GetList"' (500cc934)
+2021-03-25T19:21:42.0266567+07:00 0HM7FG9RFABD4:00000003 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:21:42.0378217+07:00 0HM7FG9RFABD4:00000003 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:21:42.0609977+07:00 0HM7FG9RFABD4:00000003 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:21:42.1210363+07:00 0HM7FG9RFABD4:00000003 [INF] Executed DbCommand ("8"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Attraction] AS [a]
+WHERE [a].[DestinationId] = @__filter_DestinationId_0" (0723d8ff)
+2021-03-25T19:21:42.1552256+07:00 0HM7FG9RFABD4:00000003 [INF] Executed DbCommand ("7"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[AttractionTypes], [a].[Author], [a].[AuthorId], [a].[AvgRates], [a].[Contact], [a].[CreateDate], [a].[Currency], [a].[DefaultExperienceId], [a].[DefaultGalleryId], [a].[DefaultName], [a].[Description], [a].[DestinationId], [a].[FromExperience], [a].[Latitude], [a].[Longitude], [a].[MapImageUri], [a].[PriceFrom], [a].[Priority], [a].[PropertyGroups], [a].[RouteUri], [a].[Status], [a].[ThumbnailUrl], [a].[TotalComments], [a].[TotalLikes], [a].[TotalRates], [a].[TouristClasses], [a].[TouristObjects], [a].[VisitDuration], [a].[Website]
+FROM [Attraction] AS [a]
+WHERE [a].[DestinationId] = @__filter_DestinationId_0
+ORDER BY [a].[AvgRates] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2021-03-25T19:21:42.2926288+07:00 0HM7FG9RFABD4:00000003 [INF] Executed DbCommand ("12"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.3144709+07:00 0HM7FG9RFABD4:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.3238620+07:00 0HM7FG9RFABD4:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.3309539+07:00 0HM7FG9RFABD4:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.3400130+07:00 0HM7FG9RFABD4:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.3475513+07:00 0HM7FG9RFABD4:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.3559770+07:00 0HM7FG9RFABD4:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.3647764+07:00 0HM7FG9RFABD4:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.3718918+07:00 0HM7FG9RFABD4:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.4391791+07:00 0HM7FG9RFABD4:00000003 [INF] Executed endpoint '"gRPC - /dbdata.AttractionServices/GetList"' (99874f2b)
+2021-03-25T19:21:42.4429728+07:00 0HM7FG9RFABD4:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.AttractionServices/GetList application/grpc - - 200 - application/grpc 430.9937ms (791a596a)
+2021-03-25T19:21:42.5182109+07:00 0HM7FG9RFABD4:00000005 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-03-25T19:21:42.5223881+07:00 0HM7FG9RFABD4:00000005 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-03-25T19:21:42.5320989+07:00 0HM7FG9RFABD4:00000005 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:21:42.5402289+07:00 0HM7FG9RFABD4:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:21:42.5614298+07:00 0HM7FG9RFABD4:00000005 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:21:42.5801600+07:00 0HM7FG9RFABD4:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]
+WHERE [e].[DestinationId] = @__filter_DestinationId_0" (0723d8ff)
+2021-03-25T19:21:42.5975335+07:00 0HM7FG9RFABD4:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+WHERE [e].[DestinationId] = @__filter_DestinationId_0
+ORDER BY [e].[AvgRates] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2021-03-25T19:21:42.6737032+07:00 0HM7FG9RFABD4:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.6833537+07:00 0HM7FG9RFABD4:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.7048410+07:00 0HM7FG9RFABD4:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.7145581+07:00 0HM7FG9RFABD4:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:21:42.8179923+07:00 0HM7FG9RFABD4:00000005 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-03-25T19:21:42.8211134+07:00 0HM7FG9RFABD4:00000005 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 302.2234ms (791a596a)
+2021-03-25T19:21:43.0718410+07:00 0HM7FG9RFABD5:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-03-25T19:21:43.0871873+07:00 0HM7FG9RFABD5:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-03-25T19:21:43.0957728+07:00 0HM7FG9RFABD5:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:21:43.1034779+07:00 0HM7FG9RFABD5:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-03-25T19:21:43.1056008+07:00 0HM7FG9RFABD5:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-03-25T19:21:43.1076524+07:00 0HM7FG9RFABD5:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 37.1485ms (791a596a)
+2021-03-25T19:22:02.2075092+07:00 0HM7FG9RFABD6:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.DestinationServices/Get application/grpc - (ca22a1cb)
+2021-03-25T19:22:02.2102103+07:00 0HM7FG9RFABD6:00000001 [INF] Executing endpoint '"gRPC - /dbdata.DestinationServices/Get"' (500cc934)
+2021-03-25T19:22:02.2126922+07:00 0HM7FG9RFABD6:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:02.2196422+07:00 0HM7FG9RFABD6:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:02.2219256+07:00 0HM7FG9RFABD6:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:02.2295284+07:00 0HM7FG9RFABD6:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__ToLower_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[AvgRates], [d].[BannerUrl], [d].[CityId], [d].[CityName], [d].[Continent], [d].[CountryId], [d].[CountryName], [d].[DefaultGalleryId], [d].[DefaultName], [d].[Description], [d].[DestinationOverviewId], [d].[Latitude], [d].[Longitude], [d].[MapImageUri], [d].[RouteUri], [d].[StateId], [d].[StateName], [d].[ThumbnailUrl], [d].[TotalLikes], [d].[TotalRates]
+FROM [Destination] AS [d]
+WHERE [d].[RouteUri] = @__ToLower_0" (0723d8ff)
+2021-03-25T19:22:02.2372146+07:00 0HM7FG9RFABD6:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__itm_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Name]
+FROM [DestinationTag] AS [d]
+INNER JOIN [Tag] AS [t] ON [d].[TagId] = [t].[Id]
+WHERE [d].[DestinationId] = @__itm_Id_0" (0723d8ff)
+2021-03-25T19:22:02.2445926+07:00 0HM7FG9RFABD6:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__destinationId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[Description], [d].[DestinationId], [d].[LangCode], [d].[Name]
+FROM [DestinationLanguage] AS [d]
+WHERE ([d].[DestinationId] = @__destinationId_0) AND ([d].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.2475226+07:00 0HM7FG9RFABD6:00000001 [INF] Executed endpoint '"gRPC - /dbdata.DestinationServices/Get"' (99874f2b)
+2021-03-25T19:22:02.2498543+07:00 0HM7FG9RFABD6:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.DestinationServices/Get application/grpc - - 200 - application/grpc 41.9348ms (791a596a)
+2021-03-25T19:22:02.2522044+07:00 0HM7FG9RFABD6:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-03-25T19:22:02.2555579+07:00 0HM7FG9RFABD6:00000003 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-03-25T19:22:02.2589024+07:00 0HM7FG9RFABD6:00000003 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:02.2668637+07:00 0HM7FG9RFABD6:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:02.2693613+07:00 0HM7FG9RFABD6:00000003 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:02.2814740+07:00 0HM7FG9RFABD6:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]
+WHERE [e].[DestinationId] = @__filter_DestinationId_0" (0723d8ff)
+2021-03-25T19:22:02.2999850+07:00 0HM7FG9RFABD6:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+WHERE [e].[DestinationId] = @__filter_DestinationId_0
+ORDER BY [e].[AvgRates] DESC" (0723d8ff)
+2021-03-25T19:22:02.3154350+07:00 0HM7FG9RFABD6:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.3285996+07:00 0HM7FG9RFABD6:00000003 [INF] Executed DbCommand ("9"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.3439964+07:00 0HM7FG9RFABD6:00000003 [INF] Executed DbCommand ("11"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.3529864+07:00 0HM7FG9RFABD6:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.3663371+07:00 0HM7FG9RFABD6:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.3698328+07:00 0HM7FG9RFABD6:00000003 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-03-25T19:22:02.3729125+07:00 0HM7FG9RFABD6:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 119.8796ms (791a596a)
+2021-03-25T19:22:02.3787836+07:00 0HM7FG9RFABD6:00000005 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.AttractionServices/GetList application/grpc - (ca22a1cb)
+2021-03-25T19:22:02.3842848+07:00 0HM7FG9RFABD6:00000005 [INF] Executing endpoint '"gRPC - /dbdata.AttractionServices/GetList"' (500cc934)
+2021-03-25T19:22:02.3891202+07:00 0HM7FG9RFABD6:00000005 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:02.3988152+07:00 0HM7FG9RFABD6:00000005 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:02.4016246+07:00 0HM7FG9RFABD6:00000005 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:02.4148250+07:00 0HM7FG9RFABD6:00000005 [INF] Executed DbCommand ("6"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Attraction] AS [a]
+WHERE [a].[DestinationId] = @__filter_DestinationId_0" (0723d8ff)
+2021-03-25T19:22:02.4318832+07:00 0HM7FG9RFABD6:00000005 [INF] Executed DbCommand ("6"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[AttractionTypes], [a].[Author], [a].[AuthorId], [a].[AvgRates], [a].[Contact], [a].[CreateDate], [a].[Currency], [a].[DefaultExperienceId], [a].[DefaultGalleryId], [a].[DefaultName], [a].[Description], [a].[DestinationId], [a].[FromExperience], [a].[Latitude], [a].[Longitude], [a].[MapImageUri], [a].[PriceFrom], [a].[Priority], [a].[PropertyGroups], [a].[RouteUri], [a].[Status], [a].[ThumbnailUrl], [a].[TotalComments], [a].[TotalLikes], [a].[TotalRates], [a].[TouristClasses], [a].[TouristObjects], [a].[VisitDuration], [a].[Website]
+FROM [Attraction] AS [a]
+WHERE [a].[DestinationId] = @__filter_DestinationId_0
+ORDER BY [a].[AvgRates] DESC" (0723d8ff)
+2021-03-25T19:22:02.4398252+07:00 0HM7FG9RFABD6:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.4477026+07:00 0HM7FG9RFABD6:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.4550682+07:00 0HM7FG9RFABD6:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.4624023+07:00 0HM7FG9RFABD6:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.4696137+07:00 0HM7FG9RFABD6:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.4786868+07:00 0HM7FG9RFABD6:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.4861769+07:00 0HM7FG9RFABD6:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.4948590+07:00 0HM7FG9RFABD6:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.5031591+07:00 0HM7FG9RFABD6:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:02.5076112+07:00 0HM7FG9RFABD6:00000005 [INF] Executed endpoint '"gRPC - /dbdata.AttractionServices/GetList"' (99874f2b)
+2021-03-25T19:22:02.5113562+07:00 0HM7FG9RFABD6:00000005 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.AttractionServices/GetList application/grpc - - 200 - application/grpc 131.9021ms (791a596a)
+2021-03-25T19:22:07.4243767+07:00 0HM7FG9RFABD7:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.DestinationServices/Get application/grpc - (ca22a1cb)
+2021-03-25T19:22:07.4286053+07:00 0HM7FG9RFABD7:00000001 [INF] Executing endpoint '"gRPC - /dbdata.DestinationServices/Get"' (500cc934)
+2021-03-25T19:22:07.4377171+07:00 0HM7FG9RFABD7:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:07.4448299+07:00 0HM7FG9RFABD7:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:07.4487703+07:00 0HM7FG9RFABD7:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:07.4567986+07:00 0HM7FG9RFABD7:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__ToLower_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[AvgRates], [d].[BannerUrl], [d].[CityId], [d].[CityName], [d].[Continent], [d].[CountryId], [d].[CountryName], [d].[DefaultGalleryId], [d].[DefaultName], [d].[Description], [d].[DestinationOverviewId], [d].[Latitude], [d].[Longitude], [d].[MapImageUri], [d].[RouteUri], [d].[StateId], [d].[StateName], [d].[ThumbnailUrl], [d].[TotalLikes], [d].[TotalRates]
+FROM [Destination] AS [d]
+WHERE [d].[RouteUri] = @__ToLower_0" (0723d8ff)
+2021-03-25T19:22:07.4669859+07:00 0HM7FG9RFABD7:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__itm_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Name]
+FROM [DestinationTag] AS [d]
+INNER JOIN [Tag] AS [t] ON [d].[TagId] = [t].[Id]
+WHERE [d].[DestinationId] = @__itm_Id_0" (0723d8ff)
+2021-03-25T19:22:07.4746676+07:00 0HM7FG9RFABD7:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__destinationId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[Description], [d].[DestinationId], [d].[LangCode], [d].[Name]
+FROM [DestinationLanguage] AS [d]
+WHERE ([d].[DestinationId] = @__destinationId_0) AND ([d].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.4797180+07:00 0HM7FG9RFABD7:00000001 [INF] Executed endpoint '"gRPC - /dbdata.DestinationServices/Get"' (99874f2b)
+2021-03-25T19:22:07.4827979+07:00 0HM7FG9RFABD7:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.DestinationServices/Get application/grpc - - 200 - application/grpc 58.8347ms (791a596a)
+2021-03-25T19:22:07.4848322+07:00 0HM7FG9RFABD7:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.AttractionServices/GetList application/grpc - (ca22a1cb)
+2021-03-25T19:22:07.4866646+07:00 0HM7FG9RFABD7:00000003 [INF] Executing endpoint '"gRPC - /dbdata.AttractionServices/GetList"' (500cc934)
+2021-03-25T19:22:07.4889373+07:00 0HM7FG9RFABD7:00000003 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:07.4953805+07:00 0HM7FG9RFABD7:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:07.4982301+07:00 0HM7FG9RFABD7:00000003 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:07.5088106+07:00 0HM7FG9RFABD7:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Attraction] AS [a]
+WHERE [a].[DestinationId] = @__filter_DestinationId_0" (0723d8ff)
+2021-03-25T19:22:07.5201142+07:00 0HM7FG9RFABD7:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[AttractionTypes], [a].[Author], [a].[AuthorId], [a].[AvgRates], [a].[Contact], [a].[CreateDate], [a].[Currency], [a].[DefaultExperienceId], [a].[DefaultGalleryId], [a].[DefaultName], [a].[Description], [a].[DestinationId], [a].[FromExperience], [a].[Latitude], [a].[Longitude], [a].[MapImageUri], [a].[PriceFrom], [a].[Priority], [a].[PropertyGroups], [a].[RouteUri], [a].[Status], [a].[ThumbnailUrl], [a].[TotalComments], [a].[TotalLikes], [a].[TotalRates], [a].[TouristClasses], [a].[TouristObjects], [a].[VisitDuration], [a].[Website]
+FROM [Attraction] AS [a]
+WHERE [a].[DestinationId] = @__filter_DestinationId_0
+ORDER BY [a].[AvgRates] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2021-03-25T19:22:07.5286752+07:00 0HM7FG9RFABD7:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.5373250+07:00 0HM7FG9RFABD7:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.5522787+07:00 0HM7FG9RFABD7:00000003 [INF] Executed DbCommand ("12"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.5623937+07:00 0HM7FG9RFABD7:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.5714131+07:00 0HM7FG9RFABD7:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.5799918+07:00 0HM7FG9RFABD7:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.5880532+07:00 0HM7FG9RFABD7:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.5956816+07:00 0HM7FG9RFABD7:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.6031780+07:00 0HM7FG9RFABD7:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.6057880+07:00 0HM7FG9RFABD7:00000003 [INF] Executed endpoint '"gRPC - /dbdata.AttractionServices/GetList"' (99874f2b)
+2021-03-25T19:22:07.6105168+07:00 0HM7FG9RFABD7:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.AttractionServices/GetList application/grpc - - 200 - application/grpc 123.0834ms (791a596a)
+2021-03-25T19:22:07.6119514+07:00 0HM7FG9RFABD7:00000005 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-03-25T19:22:07.6164361+07:00 0HM7FG9RFABD7:00000005 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-03-25T19:22:07.6191843+07:00 0HM7FG9RFABD7:00000005 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:07.6264123+07:00 0HM7FG9RFABD7:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:07.6301157+07:00 0HM7FG9RFABD7:00000005 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:07.6401007+07:00 0HM7FG9RFABD7:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]
+WHERE [e].[DestinationId] = @__filter_DestinationId_0" (0723d8ff)
+2021-03-25T19:22:07.6504459+07:00 0HM7FG9RFABD7:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+WHERE [e].[DestinationId] = @__filter_DestinationId_0
+ORDER BY [e].[AvgRates] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2021-03-25T19:22:07.6579993+07:00 0HM7FG9RFABD7:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.6669995+07:00 0HM7FG9RFABD7:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.6769808+07:00 0HM7FG9RFABD7:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.6850960+07:00 0HM7FG9RFABD7:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:07.6876015+07:00 0HM7FG9RFABD7:00000005 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-03-25T19:22:07.6903939+07:00 0HM7FG9RFABD7:00000005 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 78.2771ms (791a596a)
+2021-03-25T19:22:22.4460440+07:00 0HM7FG9RFABD8:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.DestinationServices/Get application/grpc - (ca22a1cb)
+2021-03-25T19:22:22.4490180+07:00 0HM7FG9RFABD8:00000001 [INF] Executing endpoint '"gRPC - /dbdata.DestinationServices/Get"' (500cc934)
+2021-03-25T19:22:22.4522778+07:00 0HM7FG9RFABD8:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:22.4605302+07:00 0HM7FG9RFABD8:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:22.4641364+07:00 0HM7FG9RFABD8:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:22.4736763+07:00 0HM7FG9RFABD8:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__ToLower_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[AvgRates], [d].[BannerUrl], [d].[CityId], [d].[CityName], [d].[Continent], [d].[CountryId], [d].[CountryName], [d].[DefaultGalleryId], [d].[DefaultName], [d].[Description], [d].[DestinationOverviewId], [d].[Latitude], [d].[Longitude], [d].[MapImageUri], [d].[RouteUri], [d].[StateId], [d].[StateName], [d].[ThumbnailUrl], [d].[TotalLikes], [d].[TotalRates]
+FROM [Destination] AS [d]
+WHERE [d].[RouteUri] = @__ToLower_0" (0723d8ff)
+2021-03-25T19:22:22.4828375+07:00 0HM7FG9RFABD8:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__itm_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Name]
+FROM [DestinationTag] AS [d]
+INNER JOIN [Tag] AS [t] ON [d].[TagId] = [t].[Id]
+WHERE [d].[DestinationId] = @__itm_Id_0" (0723d8ff)
+2021-03-25T19:22:22.4912546+07:00 0HM7FG9RFABD8:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__destinationId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[Description], [d].[DestinationId], [d].[LangCode], [d].[Name]
+FROM [DestinationLanguage] AS [d]
+WHERE ([d].[DestinationId] = @__destinationId_0) AND ([d].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:22.4941399+07:00 0HM7FG9RFABD8:00000001 [INF] Executed endpoint '"gRPC - /dbdata.DestinationServices/Get"' (99874f2b)
+2021-03-25T19:22:22.4988130+07:00 0HM7FG9RFABD8:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.DestinationServices/Get application/grpc - - 200 - application/grpc 52.7276ms (791a596a)
+2021-03-25T19:22:22.5037580+07:00 0HM7FG9RFABD8:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.AttractionServices/GetList application/grpc - (ca22a1cb)
+2021-03-25T19:22:22.5064503+07:00 0HM7FG9RFABD8:00000003 [INF] Executing endpoint '"gRPC - /dbdata.AttractionServices/GetList"' (500cc934)
+2021-03-25T19:22:22.5112788+07:00 0HM7FG9RFABD8:00000003 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:22.5188344+07:00 0HM7FG9RFABD8:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:22.5223811+07:00 0HM7FG9RFABD8:00000003 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:22.5526254+07:00 0HM7FG9RFABD8:00000003 [INF] Executed DbCommand ("10"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid), @__filter_AttractionTypes_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Attraction] AS [a]
+WHERE ([a].[DestinationId] = @__filter_DestinationId_0) AND (([a].[AttractionTypes] & @__filter_AttractionTypes_1) > 0)" (0723d8ff)
+2021-03-25T19:22:22.5808319+07:00 0HM7FG9RFABD8:00000003 [INF] Executed DbCommand ("13"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid), @__filter_AttractionTypes_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[AttractionTypes], [a].[Author], [a].[AuthorId], [a].[AvgRates], [a].[Contact], [a].[CreateDate], [a].[Currency], [a].[DefaultExperienceId], [a].[DefaultGalleryId], [a].[DefaultName], [a].[Description], [a].[DestinationId], [a].[FromExperience], [a].[Latitude], [a].[Longitude], [a].[MapImageUri], [a].[PriceFrom], [a].[Priority], [a].[PropertyGroups], [a].[RouteUri], [a].[Status], [a].[ThumbnailUrl], [a].[TotalComments], [a].[TotalLikes], [a].[TotalRates], [a].[TouristClasses], [a].[TouristObjects], [a].[VisitDuration], [a].[Website]
+FROM [Attraction] AS [a]
+WHERE ([a].[DestinationId] = @__filter_DestinationId_0) AND (([a].[AttractionTypes] & @__filter_AttractionTypes_1) > 0)
+ORDER BY [a].[AvgRates] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY" (0723d8ff)
+2021-03-25T19:22:22.5897376+07:00 0HM7FG9RFABD8:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:22.5976344+07:00 0HM7FG9RFABD8:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:22.6050943+07:00 0HM7FG9RFABD8:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:22.6078170+07:00 0HM7FG9RFABD8:00000003 [INF] Executed endpoint '"gRPC - /dbdata.AttractionServices/GetList"' (99874f2b)
+2021-03-25T19:22:22.6108511+07:00 0HM7FG9RFABD8:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.AttractionServices/GetList application/grpc - - 200 - application/grpc 107.2677ms (791a596a)
+2021-03-25T19:22:22.6138357+07:00 0HM7FG9RFABD8:00000005 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-03-25T19:22:22.6165745+07:00 0HM7FG9RFABD8:00000005 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-03-25T19:22:22.6191271+07:00 0HM7FG9RFABD8:00000005 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:22.6257632+07:00 0HM7FG9RFABD8:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:22.6282342+07:00 0HM7FG9RFABD8:00000005 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:22.6394117+07:00 0HM7FG9RFABD8:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]
+WHERE [e].[DestinationId] = @__filter_DestinationId_0" (0723d8ff)
+2021-03-25T19:22:22.6535266+07:00 0HM7FG9RFABD8:00000005 [INF] Executed DbCommand ("6"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+WHERE [e].[DestinationId] = @__filter_DestinationId_0
+ORDER BY [e].[AvgRates] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2021-03-25T19:22:22.6655330+07:00 0HM7FG9RFABD8:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:22.6723574+07:00 0HM7FG9RFABD8:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:22.6808673+07:00 0HM7FG9RFABD8:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:22.6887034+07:00 0HM7FG9RFABD8:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:22.6913924+07:00 0HM7FG9RFABD8:00000005 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-03-25T19:22:22.6939622+07:00 0HM7FG9RFABD8:00000005 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 80.4898ms (791a596a)
+2021-03-25T19:22:26.2489035+07:00 0HM7FG9RFABD9:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.DestinationServices/Get application/grpc - (ca22a1cb)
+2021-03-25T19:22:26.2507564+07:00 0HM7FG9RFABD9:00000001 [INF] Executing endpoint '"gRPC - /dbdata.DestinationServices/Get"' (500cc934)
+2021-03-25T19:22:26.2532265+07:00 0HM7FG9RFABD9:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:26.2599593+07:00 0HM7FG9RFABD9:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:26.2625118+07:00 0HM7FG9RFABD9:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:26.2737399+07:00 0HM7FG9RFABD9:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@__ToLower_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[AvgRates], [d].[BannerUrl], [d].[CityId], [d].[CityName], [d].[Continent], [d].[CountryId], [d].[CountryName], [d].[DefaultGalleryId], [d].[DefaultName], [d].[Description], [d].[DestinationOverviewId], [d].[Latitude], [d].[Longitude], [d].[MapImageUri], [d].[RouteUri], [d].[StateId], [d].[StateName], [d].[ThumbnailUrl], [d].[TotalLikes], [d].[TotalRates]
+FROM [Destination] AS [d]
+WHERE [d].[RouteUri] = @__ToLower_0" (0723d8ff)
+2021-03-25T19:22:26.2816757+07:00 0HM7FG9RFABD9:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__itm_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Name]
+FROM [DestinationTag] AS [d]
+INNER JOIN [Tag] AS [t] ON [d].[TagId] = [t].[Id]
+WHERE [d].[DestinationId] = @__itm_Id_0" (0723d8ff)
+2021-03-25T19:22:26.2947691+07:00 0HM7FG9RFABD9:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=["@__destinationId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[Description], [d].[DestinationId], [d].[LangCode], [d].[Name]
+FROM [DestinationLanguage] AS [d]
+WHERE ([d].[DestinationId] = @__destinationId_0) AND ([d].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:26.2974979+07:00 0HM7FG9RFABD9:00000001 [INF] Executed endpoint '"gRPC - /dbdata.DestinationServices/Get"' (99874f2b)
+2021-03-25T19:22:26.2998673+07:00 0HM7FG9RFABD9:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.DestinationServices/Get application/grpc - - 200 - application/grpc 50.5349ms (791a596a)
+2021-03-25T19:22:26.3020769+07:00 0HM7FG9RFABD9:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.AttractionServices/GetList application/grpc - (ca22a1cb)
+2021-03-25T19:22:26.3042695+07:00 0HM7FG9RFABD9:00000003 [INF] Executing endpoint '"gRPC - /dbdata.AttractionServices/GetList"' (500cc934)
+2021-03-25T19:22:26.3066134+07:00 0HM7FG9RFABD9:00000003 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:26.3138244+07:00 0HM7FG9RFABD9:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:26.3161948+07:00 0HM7FG9RFABD9:00000003 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:26.3254390+07:00 0HM7FG9RFABD9:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid), @__filter_AttractionTypes_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Attraction] AS [a]
+WHERE ([a].[DestinationId] = @__filter_DestinationId_0) AND (([a].[AttractionTypes] & @__filter_AttractionTypes_1) > 0)" (0723d8ff)
+2021-03-25T19:22:26.3345784+07:00 0HM7FG9RFABD9:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid), @__filter_AttractionTypes_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[AttractionTypes], [a].[Author], [a].[AuthorId], [a].[AvgRates], [a].[Contact], [a].[CreateDate], [a].[Currency], [a].[DefaultExperienceId], [a].[DefaultGalleryId], [a].[DefaultName], [a].[Description], [a].[DestinationId], [a].[FromExperience], [a].[Latitude], [a].[Longitude], [a].[MapImageUri], [a].[PriceFrom], [a].[Priority], [a].[PropertyGroups], [a].[RouteUri], [a].[Status], [a].[ThumbnailUrl], [a].[TotalComments], [a].[TotalLikes], [a].[TotalRates], [a].[TouristClasses], [a].[TouristObjects], [a].[VisitDuration], [a].[Website]
+FROM [Attraction] AS [a]
+WHERE ([a].[DestinationId] = @__filter_DestinationId_0) AND (([a].[AttractionTypes] & @__filter_AttractionTypes_1) > 0)
+ORDER BY [a].[AvgRates] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY" (0723d8ff)
+2021-03-25T19:22:26.3441792+07:00 0HM7FG9RFABD9:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:26.3514524+07:00 0HM7FG9RFABD9:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:26.3535051+07:00 0HM7FG9RFABD9:00000003 [INF] Executed endpoint '"gRPC - /dbdata.AttractionServices/GetList"' (99874f2b)
+2021-03-25T19:22:26.3560323+07:00 0HM7FG9RFABD9:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.AttractionServices/GetList application/grpc - - 200 - application/grpc 53.4338ms (791a596a)
+2021-03-25T19:22:26.3588690+07:00 0HM7FG9RFABD9:00000005 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-03-25T19:22:26.3608959+07:00 0HM7FG9RFABD9:00000005 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-03-25T19:22:26.3638438+07:00 0HM7FG9RFABD9:00000005 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:26.3736213+07:00 0HM7FG9RFABD9:00000005 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:26.3763027+07:00 0HM7FG9RFABD9:00000005 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:26.3863014+07:00 0HM7FG9RFABD9:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]
+WHERE [e].[DestinationId] = @__filter_DestinationId_0" (0723d8ff)
+2021-03-25T19:22:26.3970801+07:00 0HM7FG9RFABD9:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+WHERE [e].[DestinationId] = @__filter_DestinationId_0
+ORDER BY [e].[AvgRates] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2021-03-25T19:22:26.4050162+07:00 0HM7FG9RFABD9:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:26.4127853+07:00 0HM7FG9RFABD9:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:26.4206245+07:00 0HM7FG9RFABD9:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:26.4344557+07:00 0HM7FG9RFABD9:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:26.4402111+07:00 0HM7FG9RFABD9:00000005 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-03-25T19:22:26.4504555+07:00 0HM7FG9RFABD9:00000005 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 84.0060ms (791a596a)
+2021-03-25T19:22:38.9262131+07:00 0HM7FG9RFABDA:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.DestinationServices/Get application/grpc - (ca22a1cb)
+2021-03-25T19:22:38.9292912+07:00 0HM7FG9RFABDA:00000001 [INF] Executing endpoint '"gRPC - /dbdata.DestinationServices/Get"' (500cc934)
+2021-03-25T19:22:38.9368483+07:00 0HM7FG9RFABDA:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:38.9443889+07:00 0HM7FG9RFABDA:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:38.9493950+07:00 0HM7FG9RFABDA:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:38.9593412+07:00 0HM7FG9RFABDA:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__ToLower_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[AvgRates], [d].[BannerUrl], [d].[CityId], [d].[CityName], [d].[Continent], [d].[CountryId], [d].[CountryName], [d].[DefaultGalleryId], [d].[DefaultName], [d].[Description], [d].[DestinationOverviewId], [d].[Latitude], [d].[Longitude], [d].[MapImageUri], [d].[RouteUri], [d].[StateId], [d].[StateName], [d].[ThumbnailUrl], [d].[TotalLikes], [d].[TotalRates]
+FROM [Destination] AS [d]
+WHERE [d].[RouteUri] = @__ToLower_0" (0723d8ff)
+2021-03-25T19:22:38.9681847+07:00 0HM7FG9RFABDA:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__itm_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Name]
+FROM [DestinationTag] AS [d]
+INNER JOIN [Tag] AS [t] ON [d].[TagId] = [t].[Id]
+WHERE [d].[DestinationId] = @__itm_Id_0" (0723d8ff)
+2021-03-25T19:22:38.9757768+07:00 0HM7FG9RFABDA:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__destinationId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [d].[Id], [d].[Description], [d].[DestinationId], [d].[LangCode], [d].[Name]
+FROM [DestinationLanguage] AS [d]
+WHERE ([d].[DestinationId] = @__destinationId_0) AND ([d].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:38.9783671+07:00 0HM7FG9RFABDA:00000001 [INF] Executed endpoint '"gRPC - /dbdata.DestinationServices/Get"' (99874f2b)
+2021-03-25T19:22:38.9824510+07:00 0HM7FG9RFABDA:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.DestinationServices/Get application/grpc - - 200 - application/grpc 54.5233ms (791a596a)
+2021-03-25T19:22:38.9860691+07:00 0HM7FG9RFABDA:00000003 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.AttractionServices/GetList application/grpc - (ca22a1cb)
+2021-03-25T19:22:38.9881344+07:00 0HM7FG9RFABDA:00000003 [INF] Executing endpoint '"gRPC - /dbdata.AttractionServices/GetList"' (500cc934)
+2021-03-25T19:22:38.9908310+07:00 0HM7FG9RFABDA:00000003 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:38.9978440+07:00 0HM7FG9RFABDA:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:38.9999822+07:00 0HM7FG9RFABDA:00000003 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:39.0090248+07:00 0HM7FG9RFABDA:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Attraction] AS [a]
+WHERE [a].[DestinationId] = @__filter_DestinationId_0" (0723d8ff)
+2021-03-25T19:22:39.0258581+07:00 0HM7FG9RFABDA:00000003 [INF] Executed DbCommand ("12"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Address], [a].[AttractionTypes], [a].[Author], [a].[AuthorId], [a].[AvgRates], [a].[Contact], [a].[CreateDate], [a].[Currency], [a].[DefaultExperienceId], [a].[DefaultGalleryId], [a].[DefaultName], [a].[Description], [a].[DestinationId], [a].[FromExperience], [a].[Latitude], [a].[Longitude], [a].[MapImageUri], [a].[PriceFrom], [a].[Priority], [a].[PropertyGroups], [a].[RouteUri], [a].[Status], [a].[ThumbnailUrl], [a].[TotalComments], [a].[TotalLikes], [a].[TotalRates], [a].[TouristClasses], [a].[TouristObjects], [a].[VisitDuration], [a].[Website]
+FROM [Attraction] AS [a]
+WHERE [a].[DestinationId] = @__filter_DestinationId_0
+ORDER BY [a].[AvgRates] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2021-03-25T19:22:39.0327436+07:00 0HM7FG9RFABDA:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:39.0399171+07:00 0HM7FG9RFABDA:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:39.0472417+07:00 0HM7FG9RFABDA:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__attractionId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AttractionId], [a].[Description], [a].[LangCode], [a].[Name]
+FROM [AttractionLanguage] AS [a]
+WHERE ([a].[AttractionId] = @__attractionId_0) AND ([a].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:39.0494640+07:00 0HM7FG9RFABDA:00000003 [INF] Executed endpoint '"gRPC - /dbdata.AttractionServices/GetList"' (99874f2b)
+2021-03-25T19:22:39.0517842+07:00 0HM7FG9RFABDA:00000003 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.AttractionServices/GetList application/grpc - - 200 - application/grpc 66.4877ms (791a596a)
+2021-03-25T19:22:39.0547969+07:00 0HM7FG9RFABDA:00000005 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.ExperienceServices/GetList application/grpc - (ca22a1cb)
+2021-03-25T19:22:39.0569298+07:00 0HM7FG9RFABDA:00000005 [INF] Executing endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (500cc934)
+2021-03-25T19:22:39.0599470+07:00 0HM7FG9RFABDA:00000005 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:39.0664455+07:00 0HM7FG9RFABDA:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE ([l].[IsDefault] = CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))" (0723d8ff)
+2021-03-25T19:22:39.0696910+07:00 0HM7FG9RFABDA:00000005 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlDbDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DbData.Dal.MsSql " (9958f5bb)
+2021-03-25T19:22:39.0787751+07:00 0HM7FG9RFABDA:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Experience] AS [e]
+WHERE [e].[DestinationId] = @__filter_DestinationId_0" (0723d8ff)
+2021-03-25T19:22:39.0900222+07:00 0HM7FG9RFABDA:00000005 [INF] Executed DbCommand ("6"ms) [Parameters=["@__filter_DestinationId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Author], [e].[AuthorId], [e].[AvgRates], [e].[CreateDate], [e].[DefaultName], [e].[Description], [e].[DestinationId], [e].[FromDate], [e].[PublishDate], [e].[RefPlanId], [e].[RouteUri], [e].[Status], [e].[ThumbnailUrl], [e].[ToDate], [e].[TotalComments], [e].[TotalLikes], [e].[TotalRates]
+FROM [Experience] AS [e]
+WHERE [e].[DestinationId] = @__filter_DestinationId_0
+ORDER BY [e].[AvgRates] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2021-03-25T19:22:39.0971403+07:00 0HM7FG9RFABDA:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:39.1044666+07:00 0HM7FG9RFABDA:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:39.1179508+07:00 0HM7FG9RFABDA:00000005 [INF] Executed DbCommand ("10"ms) [Parameters=["@__experienceId_0='?' (DbType = Guid), @__ToLower_1='?' (Size = 10) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [e].[Id], [e].[Description], [e].[ExperienceId], [e].[LangCode], [e].[Title]
+FROM [ExperienceLanguage] AS [e]
+WHERE ([e].[ExperienceId] = @__experienceId_0) AND ([e].[LangCode] = @__ToLower_1)" (0723d8ff)
+2021-03-25T19:22:39.1207307+07:00 0HM7FG9RFABDA:00000005 [INF] Executed endpoint '"gRPC - /dbdata.ExperienceServices/GetList"' (99874f2b)
+2021-03-25T19:22:39.1233467+07:00 0HM7FG9RFABDA:00000005 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.ExperienceServices/GetList application/grpc - - 200 - application/grpc 68.3765ms (791a596a)
+2021-03-25T19:29:35.9894887+07:00 0HM7FG9RFABDB:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-03-25T19:29:35.9913415+07:00 0HM7FG9RFABDB:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-03-25T19:29:35.9939089+07:00 0HM7FG9RFABDB:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:29:36.1178656+07:00 0HM7FG9RFABDB:00000001 [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-03-25T19:29:36.1198519+07:00 0HM7FG9RFABDB:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-03-25T19:29:36.1222471+07:00 0HM7FG9RFABDB:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 132.4241ms (791a596a)
+2021-03-25T19:31:42.5746804+07:00 0HM7FG9RFABDC:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - (ca22a1cb)
+2021-03-25T19:31:42.5762138+07:00 0HM7FG9RFABDC:00000001 [INF] Executing endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (500cc934)
+2021-03-25T19:31:42.5779103+07:00 0HM7FG9RFABDC:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:31:42.5859452+07:00 0HM7FG9RFABDC:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LangCode], [l].[IconUrl], [l].[IsActive], [l].[IsDefault], [l].[IsRtl], [l].[Name], [l].[Native], [l].[Ordinal]
+FROM [Language] AS [l]
+WHERE [l].[IsActive] = CAST(1 AS bit)
+ORDER BY [l].[Ordinal]" (0723d8ff)
+2021-03-25T19:31:42.5873716+07:00 0HM7FG9RFABDC:00000001 [INF] Executed endpoint '"gRPC - /dbdata.LanguageServices/GetAllActive"' (99874f2b)
+2021-03-25T19:31:42.5889247+07:00 0HM7FG9RFABDC:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.LanguageServices/GetAllActive application/grpc - - 200 - application/grpc 14.3319ms (791a596a)
+2021-03-25T19:31:47.3539499+07:00 0HM7FG9RFABDD:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.UserAuthenticateServices/Signin application/grpc - (ca22a1cb)
+2021-03-25T19:31:47.3563638+07:00 0HM7FG9RFABDD:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (500cc934)
+2021-03-25T19:31:47.3772636+07:00 0HM7FG9RFABDD:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:31:47.5314958+07:00 0HM7FG9RFABDD:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-03-25T19:31:47.5375566+07:00 0HM7FG9RFABDD:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (99874f2b)
+2021-03-25T19:31:47.5413547+07:00 0HM7FG9RFABDD:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.UserAuthenticateServices/Signin application/grpc - - 200 - application/grpc 185.6109ms (791a596a)
+2021-03-25T19:32:38.2766958+07:00 0HM7FG9RFABDE:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.196:8211/dbdata.UserAuthenticateServices/Signin application/grpc - (ca22a1cb)
+2021-03-25T19:32:38.2790885+07:00 0HM7FG9RFABDE:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (500cc934)
+2021-03-25T19:32:38.2815505+07:00 0HM7FG9RFABDE:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2021-03-25T19:32:38.2888112+07:00 0HM7FG9RFABDE:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2021-03-25T19:32:38.2904428+07:00 0HM7FG9RFABDE:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticateServices/Signin"' (99874f2b)
+2021-03-25T19:32:38.2921683+07:00 0HM7FG9RFABDE:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.196:8211/dbdata.UserAuthenticateServices/Signin application/grpc - - 200 - application/grpc 15.2446ms (791a596a)

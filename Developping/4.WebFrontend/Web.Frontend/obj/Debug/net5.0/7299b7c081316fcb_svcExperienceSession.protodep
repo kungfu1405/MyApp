@@ -1,0 +1,8 @@
+obj\Debug\net5.0/SvcExperienceSession.cs \
+obj\Debug\net5.0/SvcExperienceSessionGrpc.cs: C:/Users/Dell/.nuget/packages/grpc.tools/2.34.1/build/native/include/google/protobuf/wrappers.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgDbDataCommon.proto\
+ C:/Users/Dell/.nuget/packages/grpc.tools/2.34.1/build/native/include/google/protobuf/timestamp.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgDestination.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgAttraction.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgExperienceSession.proto\
+ ../../6.libs/gRpc.Protos/DbData/svcExperienceSession.proto

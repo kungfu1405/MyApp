@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\SeftStudy\\WebMvc\\WebMvc.csproj": {}
+    "D:\\Git\\MyApp\\SeftStudy\\WebMvc\\WebMvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\SeftStudy\\WebMvc\\WebMvc.csproj": {
+    "D:\\Git\\MyApp\\SeftStudy\\WebMvc\\WebMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\WebMvc\\WebMvc.csproj",
+        "projectUniqueName": "D:\\Git\\MyApp\\SeftStudy\\WebMvc\\WebMvc.csproj",
         "projectName": "WebMvc",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\WebMvc\\WebMvc.csproj",
+        "projectPath": "D:\\Git\\MyApp\\SeftStudy\\WebMvc\\WebMvc.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\WebMvc\\obj\\",
+        "outputPath": "D:\\Git\\MyApp\\SeftStudy\\WebMvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

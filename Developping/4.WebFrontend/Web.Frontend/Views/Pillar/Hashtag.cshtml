@@ -1,0 +1,163 @@
+﻿@model HashtagModel
+@{
+    ViewData["Title"] = Model.Hashtag;
+    var banner = "adventure&exploration.png";
+    switch (Model.TypeSearch)
+    {
+        case EnumTypeSearch.Story:
+            banner = "adventure&exploration.png";
+            break;
+        case EnumTypeSearch.Collection:
+            banner = "cities&culture.png";
+            break;
+        case EnumTypeSearch.PlaceToVisit:
+            banner = "nature&preservation.png";
+            break;
+        case EnumTypeSearch.PlaceToStay:
+            banner = "wellness&retreats.png";
+            break;
+        case EnumTypeSearch.PlaceToEat:
+            banner = "wine&dine.png";
+            break;
+        default:
+            banner = "adventure&exploration.png";
+            break;
+    }
+}
+
+<div class="container-xxl m-auto container-pillar">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="pillar_banner position-relative">
+                    <img src="/img/Pillar/@(banner)" />                    
+                    <div class="position-absolute text-center bottom-0 row w-100">
+                        <div class="col-xl-8 mx-auto form-group">
+                            <form id="frmSearch" action="@(string.Format("/Pillars/{0}", Model.Hashtag))" class="position-relative">
+                                <label class="placeholder"><ion-icon name="search-outline"></ion-icon> Search anything & explore the world out there!</label>
+                                <input class="form-control w-100 position-absolute top-0" id="inpSearch" value="@(Model.Keyword)" autocomplete="off" name="q" type="text" placeholder="" />
+                                <input type="submit"
+                                       style="position: absolute; left: -9999px; width: 1px; height: 1px;"
+                                       tabindex="-1" />
+                                <input type="hidden" name="type" id="txtTypeSearch" value="@(EnumTypeSearch.Story.ToString())" />
+                                <input type="hidden" name="page" id="txtPage" value="1" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="home-txt">
+            <h3>Top Picks of #@(Model.Hashtag)</h3>
+            <p class="text-center">by Our Awesome Community!</p>
+        </div>
+        <div class="home-tab-top row mb-xl-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="offset-xl-1 col-xl-10 col-md-12 col-sm-12 text-center">
+                        @foreach (EnumTypeSearch type in (EnumTypeSearch[])Enum.GetValues(typeof(EnumTypeSearch)))
+                        {
+                            if (Model.TypeSearch.Equals(type))
+                            {
+                                <a class="btn mx-2 my-2 btn-toppick active">@(dEnum.GetDescription(type))</a>
+                            }
+                            else
+                            {
+                                <a class="btn mx-2 my-2 btn-toppick btn-type-search" data-type="@(type.ToString())">@(dEnum.GetDescription(type))</a>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row pillar-list">
+            @foreach (var itm in Model.ListExperience)
+            {
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="home-item home-item-horizontal row mb-0">
+                        <div class="col-6 py-0 px-2">
+                            <div class="thumb">
+                                <a class="" href="@string.Format("/Experience/{0}", itm.RouteUri)">
+                                    <img class="rounded" onerror="imgError(this)" src="@string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="content col-6">
+                            <a class="mb-2 d-block font-size-14">STORY</a>
+                            <h3><a href="@string.Format("/Experience/{0}", itm.RouteUri)">@itm.ExperienceLanguage.Title</a></h3>
+                            <p>#N of N Category</p>
+                            <p>N Have been there</p>
+                            <p>N Saves . @string.Format("{0} Comments", itm.TotalComments)</p>
+                        </div>
+                        <span class="fea-rating">
+                            <label>92</label>
+                            <label>95</label>
+                        </span>
+                    </div>
+                </div>
+            }
+        </div>
+        @if(Model.TotalRecords > 0){
+            <div class="pagination-list pillar-paging text-center mt-5" id="paging"></div>
+        }        
+    </div>
+</div>
+<style>
+    .heade-menu-top .nav_pillar span {
+        display: block;
+        color: #303030;
+        word-break: break-all;
+    }
+    @if (!string.IsNullOrEmpty(Model.Keyword))
+    {
+        <text>
+        .pillar_banner div input:valid {
+            background-color: #fff;
+        }
+        </text>
+    }
+    
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".nav_story").removeClass("active");
+        $(".heade-menu-top .nav_pillar span").html("#@(Model.Hashtag)");
+
+        $('.pillar-paging').pagination({
+            items: @(Model.TotalRecords), // Total number of items that will be used to calculate the pages.
+            itemsOnPage: @(Model.Items), // Number of items displayed on each page.
+            displayedPages: 3,// How many page numbers should be visible while navigating.
+            currentPage: @(Model.Page),
+            cssStyle: '',
+            prevText: '<ion-icon name="caret-back-outline"></ion-icon>',
+            nextText: '<ion-icon name="caret-forward-outline"></ion-icon>',
+            onInit: function () {
+                // fire first page loading
+            },
+            onPageClick: function (page, evt) {
+                $("#txtPage").val(page);
+                $("#frmSearch").submit();
+            }
+        });
+
+        $(".btn-type-search").on("click", function () {
+            var typeS = $(this).attr("data-type");
+            $("#txtTypeSearch").val(typeS);
+            $("#frmSearch").submit();
+        });
+
+        $("#inpSearch").on("keyup", function () {
+            if ($(this).val().length > 0)
+                $(this).css("background-color", "#fff");
+            else
+                $(this).css("background-color", "transparent");
+        });
+    });
+</script>

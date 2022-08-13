@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\SeftStudy\\NetCore\\NetCore.csproj": {}
+    "D:\\Git\\MyApp\\SeftStudy\\NetCore\\NetCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\SeftStudy\\NetCore\\NetCore.csproj": {
+    "D:\\Git\\MyApp\\SeftStudy\\NetCore\\NetCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\NetCore\\NetCore.csproj",
+        "projectUniqueName": "D:\\Git\\MyApp\\SeftStudy\\NetCore\\NetCore.csproj",
         "projectName": "NetCore",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\NetCore\\NetCore.csproj",
+        "projectPath": "D:\\Git\\MyApp\\SeftStudy\\NetCore\\NetCore.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\NetCore\\obj\\",
+        "outputPath": "D:\\Git\\MyApp\\SeftStudy\\NetCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

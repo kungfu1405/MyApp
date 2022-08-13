@@ -1,0 +1,52 @@
+﻿@model DestinationsModel
+@{
+    ViewData["Title"] = "Destination Page";
+}
+
+<div class="container home-banner">
+    <img alt="lg_banner" src="/img/Rectangle 1063.png" />
+    <h3>Technology is changing the world.<br /> Pickpack is changing the way you travel.</h3>
+</div>
+<div class="container">
+    <div class="home-txt">
+        <h3><span>A World to See.</span> What's Trending Now?</h3>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-10 offset-1">
+            <div class="row home-list">
+                @foreach (var itm in Model.ListDestination)
+                {
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="home-item">
+                            <div class="mark-icon" onclick="markItem(this)"><ion-icon name="bookmark-outline"></ion-icon></div>
+                            <a class="image" href="@(string.Format("/Destination/{0}", itm.RouteUri))">
+                                <img class="rounded" src="@string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)" />
+                            </a>
+                            <div class="content">
+                                <a>Destination</a>
+                                <h3><a href="@(string.Format("/Destination/{0}", itm.RouteUri))">@itm.DefaultName</a></h3>
+                                <p>N/10(N).N Have been there</p>
+                                <p>N Bookmarked </p>
+                            </div>
+                            <div class="action">
+                                <a>Checked</a>
+                                <a>Comment</a>
+                            </div>
+                        </div>
+
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var widthImgItem = $(".home-item").find("a.image").width()
+        $(".home-item").find("a.image").css("height", widthImgItem);
+    });
+</script>

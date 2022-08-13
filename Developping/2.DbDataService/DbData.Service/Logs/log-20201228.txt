@@ -1,0 +1,53 @@
+2020-12-28T12:12:37.7821435+07:00  [WRN] Overriding address(es) '"http://localhost:6200, https://localhost:6201"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-28T12:12:37.9243210+07:00  [INF] Now listening on: "https://[::]:5110" (d826f4b8)
+2020-12-28T12:12:37.9283687+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-28T12:12:37.9327296+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-28T12:12:37.9356428+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-28T12:47:36.3031393+07:00  [WRN] Overriding address(es) '"http://localhost:6200, https://localhost:6201"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-28T12:47:36.7795723+07:00  [INF] Now listening on: "https://[::]:5110" (d826f4b8)
+2020-12-28T12:47:36.8572149+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-28T12:47:36.8680873+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-28T12:47:36.8741573+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)
+2020-12-28T12:48:50.3539565+07:00 0HM5AUH057COJ:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5110/dbdata.UserAuthenticate/Signin application/grpc - (ca22a1cb)
+2020-12-28T12:48:50.8310112+07:00 0HM5AUH057COJ:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticate/Signin"' (500cc934)
+2020-12-28T12:48:50.9718777+07:00 0HM5AUH057COJ:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2020-12-28T12:48:51.8054002+07:00 0HM5AUH057COJ:00000001 [INF] Executed DbCommand ("130"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2020-12-28T12:48:52.2702664+07:00 0HM5AUH057COJ:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticate/Signin"' (99874f2b)
+2020-12-28T12:48:52.2895143+07:00 0HM5AUH057COJ:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5110/dbdata.UserAuthenticate/Signin application/grpc - - 200 - application/grpc 1945.7325ms (791a596a)
+2020-12-28T12:50:18.3976234+07:00 0HM5AUH057COK:00000001 [INF] Request starting HTTP/2 POST https://192.168.68.23:5110/dbdata.UserAuthenticate/Signin application/grpc - (ca22a1cb)
+2020-12-28T12:50:18.4022021+07:00 0HM5AUH057COK:00000001 [INF] Executing endpoint '"gRPC - /dbdata.UserAuthenticate/Signin"' (500cc934)
+2020-12-28T12:50:18.4073834+07:00 0HM5AUH057COK:00000001 [INF] Entity Framework Core "5.0.1" initialized '"MsSqlUserDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=Mic.UserDb.Dal.MsSql " (9958f5bb)
+2020-12-28T12:50:18.4360613+07:00 0HM5AUH057COK:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=["@__isActive_0='?' (DbType = Boolean), @__username_1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Address], [t].[CreatedDate], [t].[Deleted], [t].[Email], [t].[EmailVerified], [t].[FamilyName], [t].[FullName], [t].[GivenName], [t].[IsActive], [t].[LangCode], [t].[LastActivity], [t].[LastChangePassword], [t].[MustChangePassword], [t].[Password], [t].[PhoneNumber], [t].[PhoneNumberVerified], [t].[Picture], [t].[Timeout], [t].[Timezone], [t].[UserName], [t].[UsergroupId], [t].[Id0], [t].[Description], [t].[IsActive0], [t].[IsDefault], [t].[IsRoot], [t].[Name], [t].[Priority], [t0].[RolesId], [t0].[UsersId], [t0].[Id], [t0].[Description], [t0].[IsDefault], [t0].[IsRoot], [t0].[Name], [t0].[Priority]
+FROM (
+    SELECT TOP(2) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Deleted], [u].[Email], [u].[EmailVerified], [u].[FamilyName], [u].[FullName], [u].[GivenName], [u].[IsActive], [u].[LangCode], [u].[LastActivity], [u].[LastChangePassword], [u].[MustChangePassword], [u].[Password], [u].[PhoneNumber], [u].[PhoneNumberVerified], [u].[Picture], [u].[Timeout], [u].[Timezone], [u].[UserName], [u].[UsergroupId], [u0].[Id] AS [Id0], [u0].[Description], [u0].[IsActive] AS [IsActive0], [u0].[IsDefault], [u0].[IsRoot], [u0].[Name], [u0].[Priority]
+    FROM [User] AS [u]
+    INNER JOIN [Usergroup] AS [u0] ON [u].[UsergroupId] = [u0].[Id]
+    WHERE (([u].[Deleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = @__isActive_0)) AND ([u].[UserName] = @__username_1)
+) AS [t]
+LEFT JOIN (
+    SELECT [e].[RolesId], [e].[UsersId], [r].[Id], [r].[Description], [r].[IsDefault], [r].[IsRoot], [r].[Name], [r].[Priority]
+    FROM [ERoleEUser] AS [e]
+    INNER JOIN [Role] AS [r] ON [e].[RolesId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UsersId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[RolesId], [t0].[UsersId], [t0].[Id]" (0723d8ff)
+2020-12-28T12:50:18.5145628+07:00 0HM5AUH057COK:00000001 [INF] Executed endpoint '"gRPC - /dbdata.UserAuthenticate/Signin"' (99874f2b)
+2020-12-28T12:50:18.5211005+07:00 0HM5AUH057COK:00000001 [INF] Request finished HTTP/2 POST https://192.168.68.23:5110/dbdata.UserAuthenticate/Signin application/grpc - - 200 - application/grpc 120.0695ms (791a596a)
+2020-12-28T12:52:24.0750441+07:00  [WRN] Overriding address(es) '"http://localhost:6200, https://localhost:6201"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-28T12:52:24.4480689+07:00  [INF] Now listening on: "https://[::]:5110" (d826f4b8)
+2020-12-28T12:52:24.4546194+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-28T12:52:24.4615995+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-28T12:52:24.4695508+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\2.DbDataService\DbData.Service" (b5d60022)

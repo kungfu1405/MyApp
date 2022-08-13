@@ -1,0 +1,67 @@
+﻿@model EExperience
+@{
+    ViewData["Title"] = Model;
+}
+<div class="ex-detail col-xl-7 col-lg-7 col-md-12 col-sm-12">
+
+    @foreach (var session in Model.ExperienceSessions)
+    {
+
+        <div class="ex-content">
+            <h2>@(session.Title)</h2>
+            <p class="ex-author">By Pickpack Consultant | Published @Model.PublishDate.ToString("MMM dd, yyyy") | 3 Minute Read</p>
+            <p class="ex-date">
+                8 282 km from Hanoi . Visited in @session.CreateDate.ToString("MMM") . Lasted 3 days . Traveled by Plane . $$$
+            </p>
+            <div class="ex-thumb">
+                @if (session.Images.Count() > 1)
+                {
+                    var sessId = string.Format("Exp-slide-{0}", session.Id);
+                    var countImg = 0;
+                    var countInd = 0;
+                    <div id="@sessId" class="carousel slide" data-interval="false" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            @foreach (var imgSession in session.Images)
+                            {
+                                countInd++;
+                                <li data-target="#@sessId" data-slide-to="@countInd" class="@(countInd == 1 ? "active" : "")"></li>
+                            }
+
+                        </ol>
+                        <div class="carousel-inner">
+                            @foreach (var imgSession in session.Images)
+                            {
+                                countImg++;
+                                <div class="carousel-item @(countImg == 1 ? "active" : "")">
+                                    <img class="d-block w-100" src="@(String.Format("{0}{1}", UrlList.FileServer, imgSession.ImagerUrl))" alt="@System.IO.Path.GetFileName(imgSession.ImagerUrl)">
+                                </div>
+                            }
+                        </div>
+                        <a class="carousel-control-prev" href="#@sessId" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#@sessId" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                }
+                else
+                {
+                    var firstSession = session.Images.FirstOrDefault();
+                    <img style="margin-bottom: 5px;" src="@(firstSession != null ? String.Format("{0}{1}", UrlList.FileServer, firstSession.ImagerUrl) : "")" />
+                }
+            </div>
+
+            <div class="ex-pin">
+                <a class="pull-right">Pin to a Location</a>
+            </div>
+            <div class="ex-des">
+                @Html.Raw(session.Detail)
+            </div>
+            <a class="ex-read-more" alt-show="more" onclick="readMore(this)">[Read More]</a>
+            <div class="mark-icon" onclick="markItem(this)"><ion-icon name="bookmark-outline"></ion-icon></div>
+        </div>
+    }
+</div>

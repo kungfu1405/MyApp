@@ -1,0 +1,681 @@
+2021-02-25T09:44:37.2170203+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T09:44:37.3117297+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T09:44:37.3134660+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T09:44:37.3148569+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T09:44:37.3163064+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T09:49:09.6147294+07:00  [INF] Application is shutting down... (90f52c38)
+2021-02-25T09:49:33.1186582+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T09:49:33.1808512+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T09:49:33.1829329+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T09:49:33.1841233+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T09:49:33.1853217+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T09:51:31.4617911+07:00  [INF] Application is shutting down... (90f52c38)
+2021-02-25T09:52:23.1036012+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T09:52:23.1752803+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T09:52:23.1772707+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T09:52:23.1786793+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T09:52:23.1804613+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T09:53:28.9322947+07:00 0HM6P71S31B3G:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211) SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.", DebugException="System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211)
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Mic.Core.Website.BaseController`1.get_Languages() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 171
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 122
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-25T12:24:59.0569050+07:00 0HM6P71S31B3T:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.CompilationFailedException: One or more compilation failures occurred:
+E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\AttProperty\AddEdit.cshtml(3,1): Error RZ2001: The 'model' directive may only occur once per document.
+   at Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler.OnCacheMiss(String normalizedPath)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-25T14:29:16.4906024+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T14:29:16.5797995+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T14:29:16.5820449+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T14:29:16.5837545+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T14:29:16.5855498+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T14:49:59.1809344+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T14:49:59.2442530+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T14:49:59.2456485+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T14:49:59.2467407+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T14:49:59.2482947+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T14:53:46.8808796+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T14:53:46.9373189+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T14:53:46.9387654+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T14:53:46.9399338+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T14:53:46.9410478+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T15:11:55.1691960+07:00 0HM6PCA779J9H:00000069 [ERR] Add att Property failed! (e50791fa)
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AttPropertyStruct
+System.Object -> DbData.Protos.AttPropertyStruct
+   at lambda_method125(Closure , Object , AttPropertyStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 82
+2021-02-25T15:13:02.5574287+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T15:13:02.6272112+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T15:13:02.6287942+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T15:13:02.6302897+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T15:13:02.6321997+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T15:16:19.8499480+07:00 0HM6PCKM14RCQ:00000001 [ERR] Add att Property failed! (e50791fa)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Type Map configuration:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Destination Member:
+CssIcon
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttPropertyStruct.set_CssIcon(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttProperty.cs:line 161
+   at lambda_method90(Closure , Object , AttPropertyStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method90(Closure , Object , AttPropertyStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 82
+2021-02-25T15:16:22.2413156+07:00 0HM6PCKM14RCQ:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-25T15:21:06.8654045+07:00 0HM6PCKM14RCQ:00000007 [ERR] Add att Property failed! (e50791fa)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Type Map configuration:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Destination Member:
+CssIcon
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttPropertyStruct.set_CssIcon(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttProperty.cs:line 161
+   at lambda_method90(Closure , Object , AttPropertyStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method90(Closure , Object , AttPropertyStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 82
+2021-02-25T15:21:08.4582064+07:00 0HM6PCKM14RCQ:00000007 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-25T15:26:41.9988393+07:00 0HM6PCKM14RCR:00000001 [ERR] Add att Property failed! (e50791fa)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Type Map configuration:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Destination Member:
+CssIcon
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttPropertyStruct.set_CssIcon(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttProperty.cs:line 161
+   at lambda_method90(Closure , Object , AttPropertyStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method90(Closure , Object , AttPropertyStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 82
+2021-02-25T15:26:44.6305727+07:00 0HM6PCKM14RCR:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-25T15:28:40.2889329+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T15:28:40.3504145+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T15:28:40.3519321+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T15:28:40.3534680+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T15:28:40.3553408+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T15:33:56.1591057+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T15:33:56.2157242+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T15:33:56.2176314+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T15:33:56.2189842+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T15:33:56.2202191+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T15:35:35.0904236+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T15:35:35.1481557+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T15:35:35.1502889+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T15:35:35.1517578+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T15:35:35.1531278+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T15:37:31.5571122+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T15:37:31.6388010+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T15:37:31.6408397+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T15:37:31.6426599+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T15:37:31.6446801+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T15:40:00.9123161+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T15:40:00.9693659+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T15:40:00.9708605+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T15:40:00.9723985+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T15:40:00.9738816+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T15:42:03.2743946+07:00 0HM6PD4RUACIS:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.196:8211) SocketException: No connection could be made because the target machine actively refused it.", DebugException="System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.196:8211)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Mic.Core.Website.BaseController`1.get_Languages() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 171
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 122
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-25T15:49:32.8570312+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T15:49:32.9513753+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T15:49:32.9534532+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T15:49:32.9549809+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T15:49:32.9568932+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T15:56:38.5018388+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T15:56:38.6007987+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T15:56:38.6032592+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T15:56:38.6051075+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T15:56:38.6072867+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T15:58:43.2554031+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T15:58:43.3410630+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T15:58:43.3432490+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T15:58:43.3446989+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T15:58:43.3462419+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T16:02:02.4632417+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T16:02:02.5371651+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T16:02:02.5391154+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T16:02:02.5408842+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T16:02:02.5423142+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T16:06:12.7636613+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T16:06:12.8666580+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T16:06:12.8700305+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T16:06:12.8725103+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T16:06:12.8756122+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T16:09:30.4234573+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T16:09:30.4760433+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T16:09:30.4774866+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T16:09:30.4789045+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T16:09:30.4800055+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T16:11:30.4463195+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T16:11:30.5149071+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T16:11:30.5165822+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T16:11:30.5177618+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T16:11:30.5189717+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T16:13:14.0405946+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T16:13:14.0928720+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T16:13:14.0948859+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T16:13:14.0963985+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T16:13:14.0979094+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T16:14:03.3507097+07:00 0HM6PDMGAPQ6R:00000001 [ERR] Add att Property failed! (e50791fa)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Type Map configuration:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Destination Member:
+Name
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttPropertyStruct.set_Name(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttProperty.cs:line 139
+   at lambda_method10(Closure , Object , AttPropertyStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method10(Closure , Object , AttPropertyStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 82
+2021-02-25T16:14:06.2631137+07:00 0HM6PDMGAPQ6R:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-25T16:16:28.5300179+07:00 0HM6PDMGAPQ6R:0000001D [ERR] Add att Property failed! (e50791fa)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Type Map configuration:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Destination Member:
+Name
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttPropertyStruct.set_Name(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttProperty.cs:line 139
+   at lambda_method10(Closure , Object , AttPropertyStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method10(Closure , Object , AttPropertyStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 82
+2021-02-25T16:16:31.7848388+07:00 0HM6PDMGAPQ6R:0000001D [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-25T16:17:39.4086486+07:00 0HM6PDMGAPQ6S:00000001 [ERR] Add att Property failed! (e50791fa)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Type Map configuration:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Destination Member:
+Name
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttPropertyStruct.set_Name(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttProperty.cs:line 139
+   at lambda_method10(Closure , Object , AttPropertyStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method10(Closure , Object , AttPropertyStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 82
+2021-02-25T16:17:40.3863361+07:00 0HM6PDMGAPQ6S:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-25T16:20:12.4641022+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T16:20:12.5227996+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T16:20:12.5245410+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T16:20:12.5258672+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T16:20:12.5271667+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T16:29:17.7323931+07:00 0HM6PDQ89373D:00000001 [ERR] Add att Property failed! (e50791fa)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Type Map configuration:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Destination Member:
+Name
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttPropertyStruct.set_Name(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttProperty.cs:line 139
+   at lambda_method185(Closure , Object , AttPropertyStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method185(Closure , Object , AttPropertyStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 82
+2021-02-25T16:29:20.5143630+07:00 0HM6PDQ89373D:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-25T16:34:03.7838536+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T16:34:03.8428811+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T16:34:03.8442714+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T16:34:03.8453530+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T16:34:03.8464214+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T17:20:01.9255357+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T17:20:02.0188074+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T17:20:02.0210345+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T17:20:02.0230089+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T17:20:02.0254739+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T17:20:51.0628674+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T17:20:51.2179466+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T17:20:51.2253163+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T17:20:51.2291207+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T17:20:51.2327251+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T17:37:15.6037967+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T17:37:15.6716966+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T17:37:15.6731282+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T17:37:15.6745201+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T17:37:15.6759583+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T17:52:49.2432882+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T17:52:49.3534025+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T17:52:49.3560144+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T17:52:49.3580983+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T17:52:49.3609432+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T18:06:37.8466748+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T18:06:37.9313962+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T18:06:37.9334734+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T18:06:37.9357821+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T18:06:37.9374100+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T18:09:36.0293899+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T18:09:36.0864063+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T18:09:36.0882217+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T18:09:36.0896477+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T18:09:36.0914968+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T18:20:54.5869501+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T18:20:54.6625426+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T18:20:54.6661574+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T18:20:54.6679991+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T18:20:54.6696708+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T18:31:09.4178799+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T18:31:09.4703318+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T18:31:09.4717401+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T18:31:09.4728308+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T18:31:09.4740123+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T18:37:17.2327840+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T18:37:17.3009860+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T18:37:17.3026723+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T18:37:17.3039787+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T18:37:17.3052901+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T18:37:45.5089943+07:00 0HM6PG70E998G:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The 'Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinder' cannot bind to a model of type 'Microsoft.AspNetCore.Http.FormCollection'. Change the model type to 'Microsoft.AspNetCore.Http.IFormCollection' instead.
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider.GetBinder(ModelBinderProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory.CreateBinderCoreUncached(DefaultModelBinderProviderContext providerContext, Object token)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory.CreateBinder(ModelBinderFactoryContext context)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.GetParameterBindingInfo(IModelBinderFactory modelBinderFactory, IModelMetadataProvider modelMetadataProvider, ControllerActionDescriptor actionDescriptor, MvcOptions mvcOptions)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.CreateBinderDelegate(ParameterBinder parameterBinder, IModelBinderFactory modelBinderFactory, IModelMetadataProvider modelMetadataProvider, ControllerActionDescriptor actionDescriptor, MvcOptions mvcOptions)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-25T18:38:31.6067134+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T18:38:31.6616963+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T18:38:31.6632989+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T18:38:31.6645913+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T18:38:31.6657380+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T18:49:03.2456798+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T18:49:03.3131745+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T18:49:03.3146683+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T18:49:03.3158916+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T18:49:03.3171262+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T20:13:07.8681103+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T20:13:07.9717046+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T20:13:07.9736274+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T20:13:07.9751935+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T20:13:07.9767584+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T20:14:01.4434064+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T20:14:01.5478167+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T20:14:01.5500674+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T20:14:01.5516920+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T20:14:01.5530907+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T20:15:21.5386906+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T20:15:21.6060902+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T20:15:21.6075300+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T20:15:21.6087260+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T20:15:21.6098264+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T20:18:19.3221305+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T20:18:19.3945122+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T20:18:19.3958735+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T20:18:19.3972521+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T20:18:19.3985882+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T20:20:58.0941644+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T20:20:58.1762590+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T20:20:58.1784510+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T20:20:58.1807489+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T20:20:58.1829091+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T20:30:28.7084571+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T20:30:28.7697898+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T20:30:28.7713447+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T20:30:28.7726076+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T20:30:28.7738754+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T20:35:42.7660974+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T20:35:42.8225330+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T20:35:42.8244604+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T20:35:42.8260942+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T20:35:42.8278974+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T20:43:02.8247570+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T20:43:02.8836655+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T20:43:02.8858443+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T20:43:02.8873667+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T20:43:02.8889758+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T20:53:06.7838646+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-02-25T20:53:06.8801649+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-02-25T20:53:06.8820326+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-25T20:53:06.8837277+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-25T20:53:06.8852134+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-02-25T20:54:01.2424350+07:00 0HM6PIIQA380H:00000001 [ERR] Add att Property failed! (e50791fa)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Type Map configuration:
+EAttProperty -> AttPropertyStruct
+DbData.Entities.EAttProperty -> DbData.Protos.AttPropertyStruct
+
+Destination Member:
+Description
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttPropertyStruct.set_Description(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttProperty.cs:line 150
+   at lambda_method84(Closure , Object , AttPropertyStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method84(Closure , Object , AttPropertyStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 85
+2021-02-25T20:54:08.7691365+07:00 0HM6PIIQA380H:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Web.Backend.Controllers.AttPropertyController.AddEdit(AttPropertyViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttPropertyController.cs:line 112
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-25T20:54:23.5712857+07:00 0HM6PIIQA380I:00000003 [ERR] DForm:: Get structure of Table '34a361f0' failed! (bef4087a)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.63:8201) SocketException: No connection could be made because the target machine actively refused it.", DebugException="System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.63:8201)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.DynamicForm.DFormController.Index(String fid, String msg) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 40
+2021-02-25T20:54:29.5741853+07:00 0HM6PIIQA380I:00000007 [ERR] DForm:: Get structure of Table '9c408c55' failed! (c4a269a4)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.63:8201) SocketException: No connection could be made because the target machine actively refused it.", DebugException="System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.63:8201)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.DynamicForm.DFormController.Index(String fid, String msg) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 40

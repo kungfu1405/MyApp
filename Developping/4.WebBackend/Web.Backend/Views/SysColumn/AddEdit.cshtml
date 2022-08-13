@@ -1,0 +1,201 @@
+﻿@using DynamicData.Entities;
+@using Newtonsoft.Json;
+@model Web.Backend.Models.DynamicForm.SysColumnViewModel
+
+<form asp-controller="SysColumn" asp-action="AddEdit" method="post" class="form-vertical">
+    <div class="form-group row">
+        <div class="col-6">
+            <label class="font-weight-bold">Column Name</label>
+            <input type="text" class="form-control font-weight-bold text-uppercase" asp-for="SysColumn.Name" readonly />
+        </div>
+        <div class="col-6">
+            <label class="font-weight-bold">Nullable</label>
+            <span class="switch switch-outline switch-icon switch-brand">
+                <label>
+                    <input type="checkbox" asp-for="SysColumn.IsNulable" />
+                    <span></span>
+                </label>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="font-weight-bold">Display Name  <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" asp-for="SysColumn.DisplayName" required />
+        <span class="form-text text-muted">Name display to Web UI.</span>
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            <label class="font-weight-bold">Data Type  <span class="text-danger">*</span></label>
+            <select asp-for="SysColumn.DataType"
+                    asp-items="Html.GetEnumSelectList<EnumDataType>()"
+                    class="form-control">
+            </select>
+            <span class="form-text text-muted">Database: column's data type</span>
+        </div>
+        <div class="col-6">
+            <label class="font-weight-bold">Default Value</label>
+            <input type="text" class="form-control" asp-for="SysColumn.DefaultValue" />
+            <span class="form-text text-muted">Database: default value of column</span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            <label class="font-weight-bold">Display Type  <span class="text-danger">*</span></label>
+            <select asp-for="SysColumn.DisplayType"
+                    asp-items="Html.GetEnumSelectList<EnumFieldDisplayType>()"
+                    class="form-control">
+            </select>
+            <span class="form-text text-muted">Web Control displayed to UI</span>
+        </div>
+        <div class="col-6">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="font-weight-bold">Placeholder</label>
+        <input type="text" class="form-control" asp-for="SysColumn.PlaceHolder" />
+        <span class="form-text text-muted">Placeholder attribute for input control</span>
+    </div>
+    <div class="form-group">
+        <label class="font-weight-bold">Tooltip</label>
+        <textarea class="form-control" asp-for="SysColumn.Tooltip" rows="2"></textarea>
+        <span class="form-text text-muted">Tooltip/Description when input value</span>
+    </div>
+    <div class="form-group">
+        <label class="font-weight-bold mb-1">Field Options</label>
+        <div class="checkbox-inline row">
+            @foreach (var fieldOption in Enum.GetValues(typeof(EnumFieldOption)))
+            {
+                <label class="checkbox checkbox-outline checkbox-outline-2x checkbox-primary col-4 mr-0">
+                    <input type="checkbox" name="FieldOptions" value="@((int)fieldOption)"
+                           @(((int)fieldOption & Model.SysColumn.FieldOptions) > 0 ? "checked" : "") />
+                    <span></span>
+                    @fieldOption.ToString()
+                </label>
+            }
+        </div>
+        <span class="form-text text-muted">Display/Action of Columns in UI.</span>
+        <input type="hidden" asp-for="SysColumn.FieldOptions" />
+    </div>
+    <div class="form-group row">
+        <label class="col-12 font-weight-bold">
+            Reference to table
+            <span class="text-muted font-weight-normal">For One-to-Many reference tables.</span>
+        </label>
+        <div class="col-6 mb-1">
+            <label class="form-text">Reference Table</label>
+            <select id="ddlReferenceTableId" asp-for="SysColumn.ReferenceTableId"
+                    asp-items="@(new SelectList(Model.AllTables, "Id", "Name"))"
+                    class="form-control form-control-sm">
+                <option></option>
+            </select>
+        </div>
+        <div class="col-6 mb-1">
+            <label class="form-text">Reference Column (ID/Value)</label>
+            <select asp-for="SysColumn.ReferenceColumnId" id="ddlReferenceColumnId" class="form-control form-control-sm">
+                <option></option>
+            </select>
+        </div>
+        <div class="col-6">
+            <label class="form-text">Reference Column (Text 1)</label>
+            <select asp-for="SysColumn.ReferenceText1Id" id="ddlReferenceText1Id" class="form-control form-control-sm">
+                <option></option>
+            </select>
+        </div>
+        <div class="col-6">
+            <label class="form-text">Reference Column (Text 2)</label>
+            <select asp-for="SysColumn.ReferenceText2Id" id="ddlReferenceText2Id" class="form-control form-control-sm">
+                <option></option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-6">
+            <label class="font-weight-bold">Field Type  <span class="text-danger">*</span></label>
+            <select asp-for="SysColumn.FieldType"
+                    asp-items="Html.GetEnumSelectList<EnumFieldType>()"
+                    class="form-control">
+            </select>
+            <span class="form-text text-muted">Database: Column type</span>
+        </div>
+        <div class="col-6">
+            <label class="font-weight-bold">Custom data type</label>
+            <select asp-for="SysColumn.CustomTypeId"
+                    asp-items="@(new SelectList(Model.AllCustomTypes,"Id","Name"))"
+                    class="form-control" id="ddlCustomTypeId">
+                <option></option>
+            </select>
+            <span class="form-text text-muted">DForm: Custom data type</span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            <label class="font-weight-bold">Ordinal <span class="text-danger">*</span></label>
+            <input type="number" class="form-control" asp-for="SysColumn.Ordinal" />
+            <span class="form-text text-muted">Display order of this column in Form/List view</span>
+        </div>
+        <div class="col-6">
+            <label class="font-weight-bold">Ordinal (filter) <span class="text-danger">*</span></label>
+            <input type="number" class="form-control" asp-for="SysColumn.FilterOrdinal" />
+            <span class="form-text text-muted">Display order of this column at Filter controls</span>
+        </div>
+    </div>
+
+    <input type="hidden" asp-for="SysColumn.Id" />
+    <input type="hidden" asp-for="SysColumn.TableId" />
+    <input type="hidden" asp-for="ActionMode" />
+</form>
+
+<script type="text/javascript">
+    var allColumns = @Html.Raw(JsonConvert.SerializeObject(Model.AllColumns.Select(e=> new { e.Id, e.Name, e.TableId }))) ;
+    $(document).ready(function () {
+        bindColumnRef();
+        $('#ddlReferenceTableId').change(function () {
+            cleanColumnRef();
+            bindColumnRef();
+        });
+    });
+
+    function bindColumnRef() {
+        var refTable = $('#ddlReferenceTableId').val();
+        if (refTable == '' || refTable == null) {
+            $('#ddlCustomTypeId').removeAttr('disabled');
+            $('#ddlReferenceColumnId').removeAttr('required');
+            return;
+        }
+        else {
+            $('#ddlCustomTypeId').attr('disabled', 'disabled').val('');
+            $('#ddlReferenceColumnId').attr('required', 'required');
+        }
+
+        for (var i = 0; i < allColumns.length; i++) {
+            var col = allColumns[i];
+            if (col.TableId === refTable) {
+                var copt = $('<option></option>').val(col.Id).text(col.Name);
+                if ('@Model.SysColumn.ReferenceColumnId' == col.Id)
+                    copt.attr('selected', 'selected');
+                $('#ddlReferenceColumnId').append(copt);
+
+                var copt1 = $('<option></option>').val(col.Id).text(col.Name);
+                if ('@Model.SysColumn.ReferenceText1Id' == col.Id)
+                    copt1.attr('selected', 'selected');
+                $('#ddlReferenceText1Id').append(copt1);
+
+                var copt2 = $('<option></option>').val(col.Id).text(col.Name);
+                if ('@Model.SysColumn.ReferenceText2Id' == col.Id)
+                    copt2.attr('selected', 'selected');
+                $('#ddlReferenceText2Id').append(copt2);
+            }
+        }
+    }
+
+    function cleanColumnRef() {
+        $('#ddlReferenceColumnId option[value]').remove();
+        $('#ddlReferenceText1Id option[value]').remove();
+        $('#ddlReferenceText2Id option[value]').remove();
+
+        $('#hdnReferenceColumnId').val('');
+        $('#hdnReferenceText1Id').val('');
+        $('#hdnReferenceText2Id').val('');
+    }
+</script>

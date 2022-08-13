@@ -1,0 +1,3 @@
+sc.exe create DynamicDataServie_net5tmpl binpath= C:\Publish\net5prjTmpl\Service_DData\DynamicData.Service.exe start=auto
+
+//# SC DELETE DynamicDataServie_net5tmpl

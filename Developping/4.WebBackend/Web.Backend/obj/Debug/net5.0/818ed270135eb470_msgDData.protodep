@@ -1,0 +1,3 @@
+obj\Debug\net5.0/MsgDData.cs: C:/Users/Admin/.nuget/packages/grpc.tools/2.34.0/build/native/include/google/protobuf/wrappers.proto\
+ ../../6.libs/gRpc.Protos/DynamicData/msgCommon.proto\
+ ../../6.libs/gRpc.Protos/DynamicData/msgDData.proto

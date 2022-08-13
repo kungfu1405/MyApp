@@ -1,0 +1,15 @@
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\bin\Debug\net5.0\Space.Bussiness.deps.json
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\bin\Debug\net5.0\Space.Bussiness.dll
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\bin\Debug\net5.0\ref\Space.Bussiness.dll
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\bin\Debug\net5.0\Space.Bussiness.pdb
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\obj\Debug\net5.0\Space.Bussiness.csproj.AssemblyReference.cache
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\obj\Debug\net5.0\Space.Bussiness.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\obj\Debug\net5.0\Space.Bussiness.AssemblyInfoInputs.cache
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\obj\Debug\net5.0\Space.Bussiness.AssemblyInfo.cs
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\obj\Debug\net5.0\Space.Bussiness.csproj.CoreCompileInputs.cache
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\obj\Debug\net5.0\Space.Bussiness.dll
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\obj\Debug\net5.0\ref\Space.Bussiness.dll
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\obj\Debug\net5.0\Space.Bussiness.pdb
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\bin\Debug\net5.0\Space.Bussiness.runtimeconfig.json
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\bin\Debug\net5.0\Space.Bussiness.runtimeconfig.dev.json
+D:\Git\MyApp\Developping\New folder\Space\Space.Bussiness\obj\Debug\net5.0\Space.Bussiness.genruntimeconfig.cache

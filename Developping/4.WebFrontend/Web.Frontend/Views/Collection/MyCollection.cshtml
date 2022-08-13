@@ -1,0 +1,307 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+    .container-fluid, .row {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .menu-left {
+        display: none;
+    }
+
+    .main-content {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+    }
+    #map {
+        height: 100%;
+        background-color:aqua;
+    }
+    /**/
+</style>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLOAww4XnFx13oe0Af_Gbp7EjnUOp1ThY&callback=initMap&libraries=&v=weekly"  async></script>
+<section class="collection-container">
+    <div class="row">
+        @*<div class="title-header collection-title">
+                <a href="#" class="back-link-btn"><i class="fas fa-chevron-left"></i></a>
+                <h2 class="medium-title-text">My Collection</h2>
+            </div>*@
+        <div class="collection-main-title-0">
+            <div class="main-backlink"><a href="#" class="back-link-btn"><i class="fas fa-chevron-left"></i></a></div>
+            <div class=""><h2 class="medium-title-text">My Collection</h2></div>
+            @*<div class="avatar-list">
+                    <label class="small-title-text" style="margin-right:26px;">4 Editors</label>
+                    <div style="display:inline;">
+                        <a class="avatar-link"><img class="avatar-image" src="~/img/1277926_584434994947625_1172051136_o.jpg" /></a>
+                        <a class="avatar-link"><img class="avatar-image" src="~/img/1540307_628359783888479_2086500991_o.jpg" /></a>
+                        <a class="avatar-link"><img class="avatar-image" src="~/img/37596255_1823810847676694_7811368660320124928_o.jpg" /></a>
+                        <a class="avatar-link"><img class="avatar-image" src="~/img/37596255_1823810847676694_7811368660320124928_o.jpg" /></a>
+                        <a class="avatar-link"><img class="avatar-image" src="~/img/37596255_1823810847676694_7811368660320124928_o.jpg" /></a>
+                        <a class="avatar-link"><img class="avatar-image" src="~/img/37596255_1823810847676694_7811368660320124928_o.jpg" /></a>
+                        <a class="avatar-link"><img class="avatar-image" src="~/img/37596255_1823810847676694_7811368660320124928_o.jpg" /></a>
+                    </div>
+                </div>*@
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="collection-body">
+            <div class="col-lg-9 col-xl-9 col-md-9 collection-pin-map-container">
+                @*<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0765486987716!2d105.85491941476323!3d21.029622885997842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abea0e8934f1%3A0xa72303b62380788!2zMTk0IMSQxrDhu51uZyBUcuG6p24gUXVhbmcgS2jhuqNpLCBMw70gVGjDoWkgVOG7lSwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1615173827195!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>*@
+                <div id="map"></div>
+
+                <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+
+                <script>
+                    let map;
+
+                    function initMap() {
+                        map = new google.maps.Map(document.getElementById("map"), {
+                            center: { lat: 21.0177363, lng: 105.855505 },
+                            zoom: 17,
+                            stylers: stylesArray,
+                        });
+                    } 
+                    var stylesArray = [
+                        {
+                            "featureType": "water",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#e9e9e9"
+                                },
+                                {
+                                    "lightness": 17
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "landscape",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#f5f5f5"
+                                },
+                                {
+                                    "lightness": 20
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 17
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 29
+                                },
+                                {
+                                    "weight": 0.2
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 18
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.local",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 16
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#f5f5f5"
+                                },
+                                {
+                                    "lightness": 21
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi.park",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#dedede"
+                                },
+                                {
+                                    "lightness": 21
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                },
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 16
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "saturation": 36
+                                },
+                                {
+                                    "color": "#333333"
+                                },
+                                {
+                                    "lightness": 40
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#f2f2f2"
+                                },
+                                {
+                                    "lightness": 19
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#fefefe"
+                                },
+                                {
+                                    "lightness": 20
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#fefefe"
+                                },
+                                {
+                                    "lightness": 17
+                                },
+                                {
+                                    "weight": 1.2
+                                }
+                            ]
+                        }
+                    ]
+                </script>
+            </div>
+            <div class="col-lg-3 collection-list-container">
+                <div class="title-header collection-title">
+                    <a href="#" class="small-backlink-btn"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class=""><h2 class="small-title-text">Collection List(12)</h2></a>
+                    <a href="#" class="plus-btn">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="collection-list-item">
+                    <div class="row parent-collection collection-wrap-item">
+                        <div class="col-3 collection-image-item">
+                            <a href="~/Collection/MySubCollection"><img src="/img/2019121712070193.jpg" alt=""></a>
+                        </div>
+                        <div class="col-9 collection-content-item">
+                            <p class="card-desciption-text">Collection #2</p>
+                            <p class="card-span-text">12 items • 12/03/2020 </p>
+                            <div class="option-box">
+                                <div class="dot-item"></div>
+                                <div class="dot-item"></div>
+                                <div class="dot-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row parent-collection collection-wrap-item">
+                        <div class="col-3 collection-image-item">
+                            <a href="~/Collection/MySubCollection"><img src="/img/2019121712070193.jpg" alt=""></a>
+                        </div>
+                        <div class="col-9 collection-content-item">
+                            <p class="card-desciption-text">Collection #2</p>
+                            <p class="card-span-text">12 items • 12/03/2020</p>
+                            <div class="option-box">
+                                <div class="dot-item"></div>
+                                <div class="dot-item"></div>
+                                <div class="dot-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row parent-collection collection-wrap-item">
+                        <div class="col-3 collection-image-item">
+                            <a href="~/Collection/MySubCollection"><img src="/img/2019121712070193.jpg" alt=""></a>
+                        </div>
+                        <div class="col-9 collection-content-item">
+                            <p class="card-desciption-text">Collection #2</p>
+                            <p class="card-span-text">N Bookmarked  N Comments </p>
+                            <div class="option-box">
+                                <div class="dot-item"></div>
+                                <div class="dot-item"></div>
+                                <div class="dot-item"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,367 @@
+﻿.container{
+    max-width: 1600px;
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .col-xxl-20 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    .col-xxxl-10 {
+        flex: 0 0 1320px;
+        max-width: 1320px;
+    }
+    
+    .container {
+        max-width: 1600px;
+    }
+    .home-tab-top {
+        
+    }
+    .div-lst{
+        
+        position: relative;
+    }
+    .home_banner {
+        width: 1164px;
+    }
+    .pillar_banner {
+        width: 1272px;
+    }
+        .pillar_banner h2{
+            top: 46px;
+        }
+    
+    .discover_list .discover_item {
+        width: 364px;
+        height: 572px;
+    }
+    .container-pillar {
+        max-width: 1337px !important;
+    }
+    .div-lst-bg label {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -36px;
+        font-family: 'Montserrat-Bold';
+        color: #00000099;
+        font-size: 22px;
+        writing-mode: vertical-rl;
+        transform: rotate( 180deg );
+        line-height: 24px;
+    }
+    .home-item .content {
+        height: 151px;
+        padding-bottom: 0;
+    }
+}
+
+/** DESKTOP **/
+@media (min-width: 1280px) {
+    .container-xxl {
+        max-width: 1146px;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .main-content {
+        padding-top: 70px;
+    }
+    .home-item {
+        margin-top: 0;
+        width: 348px;
+        height: 572px;
+    }
+
+    .home-item .thumb {
+        width: 324px;
+        margin: 0 auto;
+    }
+    .home-item-horizontal {
+        width: 100%;
+        height: 321px;
+        padding-top: 12px;
+    }
+
+    .home-item-horizontal .thumb {
+        width: 100%;
+    }
+    .ex-profile {
+        position: fixed;
+        
+    }
+    
+    .ex-detail {
+        width: 921px;
+        margin-left: 390px;
+        margin-top: 0 !important;
+    }
+
+    .discover_list .discover_item .discover_thumb {
+        display: inline-block;
+        border-radius: 16px;
+        width: 340px;
+        height: 467px;
+        overflow: hidden;
+    }
+
+    .mb-xl-150 {
+        margin-bottom: 150px !important;
+    }
+
+    .mb-xl-100 {
+        margin-bottom: 100px !important;
+    }
+    .relatedStory {
+        width: 1272px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1500px) {
+    .ex-profile {
+        
+    }
+
+    .ex-profile > a {
+            
+    }
+}
+
+@media (min-width: 992px) {
+
+    .detail-left {
+        position: fixed;
+    }
+        .detail-left .ex-profile{
+            float: right;
+        }
+        .profile-left {
+            float: left;
+        }
+
+    .profile-bar, .profile-header {
+        float: right;
+    }
+
+    .ex-profile.profile-fixed {
+        position: absolute !important;
+        bottom: 57px;
+    }
+
+    .home-item .image img {
+        height: 100%;
+    }
+}
+/** Tablet **/
+@media (min-width: 768px) and (max-width: 992px) {
+    .home-item .image {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .home-banner h3 {
+        font-size: 24px;
+        top: 36px;
+        left: 36px;
+    }
+
+    .foot-list-men {
+        width: 33%;
+    }
+
+        .foot-list-men:nth-child(4), .foot-list-men:nth-child(5) {
+            width: 50%;
+        }
+
+    .profile-left {
+        float: left;
+    }
+
+    .ex-profile p {
+        display: none;
+    }
+
+    .home-item .image img {
+        height: 300px;
+    }
+    .home-txt p{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .discover_list .discover_item .discover_thumb{
+        width: 312px;
+        height: 451px;
+    }
+}
+/** Mobile **/
+@media (max-width: 768px) {
+    .home-banner h3 {
+        font-size: 24px;
+        top: 20px;
+        left: 20px;
+        width: 80%;
+    }
+
+    .home-banner img[alt="lg_banner"] {
+        display: none;
+    }
+
+    .home-banner img[alt="sm_banner"] {
+        display: block;
+    }
+
+    .navbar-brand {
+        position: static;
+    }
+
+    .foot-list-men {
+        width: 50%;
+        margin-bottom: 24px;
+    }
+    .foot-bottom{
+        margin-top: 10px;
+    }
+
+    .profile-bar > div {
+        width: 50%;
+    }
+
+        .profile-bar > div strong {
+            display: block;
+        }
+
+    .ex-profile p {
+        display: none;
+    }
+
+    .home-item .image img {
+        height: 300px;
+    }
+    .home-txt{
+        padding-left: 10px;
+    }
+    .home-txt h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .home-txt p{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .home-item{
+        width: 100%;
+        height: 583px;
+    }
+    .home-item .content h3 {
+        -webkit-line-clamp: 4;
+    }
+    .home-item .content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .container-fluid{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .div-lst-bg{
+        border-radius: 0 !important;
+    }
+    .heade-menu-top{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .heade-menu .logo{
+        margin-left: 15px;
+    }
+    .heade-menu a.nav_story,
+    .heade-menu a.nav_planer,
+    .heade-menu a.nav_search,
+    .heade-menu a.nav_pick,
+    .heade-menu a.nav_pillar,
+    .heade-menu a.nav_signin {
+        display: none;
+    }
+    .preview-detail-content{
+        margin-left: 0;
+        clear: both;
+    }
+    .btn-view-profile{
+        font-size: 14px;
+    }
+    .home-item .content {
+        height: auto;
+        padding-bottom: 24px;
+    }
+    .pillar_banner h2{
+        display: none;
+    }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+    .home-item{
+        height: auto;
+    }
+    .foot-list-men {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    form#frmSearch label.placeholder {
+        visibility: collapse;
+    }
+
+    form#frmSearch label.placeholder ion-icon {
+        visibility: visible;
+        position: relative;
+        left: calc(50% - 15px);
+    }
+
+    .home-txt {
+        padding-top: 90px;
+    }
+
+    form#frmSearch {
+        height: 60px;
+    }
+    .pillar_banner img, .home_banner img{
+        border-radius: 0;
+    }
+    .px-sm-30{
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    .section-detail {
+        width: 100%;
+        padding: 0 10px;
+    }
+        .section-detail > h1, .section-detail > h3{
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .section-detail .section-rank {
+            height: auto;
+            overflow: hidden;
+        }
+}

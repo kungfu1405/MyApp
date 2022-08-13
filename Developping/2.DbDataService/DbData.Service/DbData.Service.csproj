@@ -1,0 +1,220 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<UserSecretsId>51e904fc-1e5d-448e-adf7-cad2360cc361</UserSecretsId>
+		<ExcludeFoldersFromDeployment>Logs,certs</ExcludeFoldersFromDeployment>
+		<Platforms>AnyCPU;x64</Platforms>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="10.1.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+		<PackageReference Include="BCrypt.Net-Core" Version="1.6.0" />
+		<PackageReference Include="Crc32.NET" Version="1.2.0" />
+		<PackageReference Include="CsvHelper" Version="18.0.0" />
+		<PackageReference Include="EPPlus" Version="5.5.0" />
+		<PackageReference Include="Grpc.AspNetCore" Version="2.34.0" />
+		<PackageReference Include="IdentityServer4" Version="4.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="5.0.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.0-alpha.2" />
+		<PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Logs\" />
+		<Content Include="certs\*.*">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="certs\68_126_sscert.pfx" />
+	  <None Remove="certs\68_199_sscert.pfx" />
+	  <None Remove="certs\sscert_196.pfx" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DbData.Bll\DbData.Bll.csproj" />
+		<ProjectReference Include="..\DbData.Dal.MsSql\DbData.Dal.MsSql.csproj" />
+		<ProjectReference Include="..\DbData.Dal.MySql\DbData.Dal.MySql.csproj" />
+		<ProjectReference Include="..\DbData.Dal\DbData.Dal.csproj" />
+		<ProjectReference Include="..\DbData.Entities\DbData.Entities.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgAttProperty.proto" GrpcServices="None">
+	    <Link>Protos\DbData\msgAttProperty.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgAttraction.proto" GrpcServices="None">
+	    <Link>Protos\DbData\msgAttraction.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgAttractionLanguage.proto" GrpcServices="Both">
+	    <Link>Protos\DbData\msgAttractionLanguage.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgCity.proto" GrpcServices="None">
+	    <Link>Protos\DbData\msgCity.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgComment.proto" GrpcServices="None">
+	    <Link>Protos\DbData\msgComment.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgContinent.proto" GrpcServices="None">
+	    <Link>Protos\DbData\msgContinent.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgCountry.proto" GrpcServices="None">
+	    <Link>Protos\DbData\msgCountry.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgDbDataCommon.proto" GrpcServices="None">
+	    <Link>Protos\msgDbDataCommon.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgDestination.proto" GrpcServices="None">
+	    <Link>Protos\DbData\msgDestination.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgDestinationLanguage.proto" GrpcServices="Both">
+	    <Link>Protos\DbData\msgDestinationLanguage.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgExperience.proto" GrpcServices="None">
+	    <Link>Protos\DbData\msgExperience.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgExperienceSession.proto" GrpcServices="None">
+	    <Link>Protos\DbData\msgExperienceSession.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgLanguage.proto" GrpcServices="None">
+	    <Link>Protos\UserDb\msgLanguage.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgRole.proto" GrpcServices="None">
+	    <Link>Protos\UserDb\msgRole.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgState.proto" GrpcServices="None">
+	    <Link>Protos\DbData\msgState.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgUser.proto" GrpcServices="None">
+	    <Link>Protos\UserDb\msgUser.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgUsergroup.proto" GrpcServices="None">
+	    <Link>Protos\UserDb\msgUsergroup.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgVehicle.proto" GrpcServices="Both">
+	    <Link>Protos\DbData\msgVehicle.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgWebNavigator.proto" GrpcServices="None">
+	    <Link>Protos\UserDb\msgWebNavigator.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgWebPage.proto" GrpcServices="None">
+	    <Link>Protos\UserDb\msgWebPage.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcAttProperty.proto" GrpcServices="Server">	    
+      <Link>Protos\DbData\svcAttProperty.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcAttraction.proto" GrpcServices="Server">
+	    <Link>Protos\DbData\svcAttraction.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcAttractionLanguage.proto" GrpcServices="Both">
+	    <Link>Protos\DbData\svcAttractionLanguage.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcCity.proto" GrpcServices="Server">
+	    <Link>Protos\DbData\DbData\svcCity.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcComment.proto" GrpcServices="Server">
+	    <Link>Protos\DbData\svcComment.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcContinent.proto" GrpcServices="Server">
+	    <Link>Protos\DbData\svcContinent.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcCountry.proto" GrpcServices="Server">
+	    <Link>Protos\DbData\svcCountry.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcDestination.proto" GrpcServices="Server">
+	    <Link>Protos\DbData\svcDestination.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcDestinationLanguage.proto" GrpcServices="Both">
+	    <Link>Protos\DbData\svcDestinationLanguage.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcExperience.proto" GrpcServices="Server">
+	    <Link>Protos\DbData\svcExperience.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcExperienceSession.proto" GrpcServices="Server">
+	    <Link>Protos\DbData\svcExperienceSession.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcLanguage.proto" GrpcServices="Server">
+	    <Link>Protos\UserDb\svcLanguage.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcLanguageData.proto" GrpcServices="Server">
+	    <Link>Protos\UserDb\svcLanguageData.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcLanguageDataLocal.proto" GrpcServices="Server">
+	    <Link>Protos\UserDb\svcLanguageDataLocal.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcRole.proto" GrpcServices="Server">
+	    <Link>Protos\UserDb\svcRole.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcState.proto" GrpcServices="Server">
+	    <Link>Protos\DbData\svcState.proto</Link>
+	  </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcTag.proto" GrpcServices="Server">
+      <Link>Protos\DbData\svcTag.proto</Link>
+    </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcUser.proto" GrpcServices="Server">
+	    <Link>Protos\UserDb\svcUser.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcUserAuthenticate.proto" GrpcServices="Server">
+	    <Link>Protos\UserDb\svcUserAuthenticate.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcUsergroup.proto" GrpcServices="Server">
+	    <Link>Protos\UserDb\svcUsergroup.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcUserProfile.proto" GrpcServices="Both">
+	    <Link>Protos\DbData\svcUserProfile.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcWebNavigator.proto" GrpcServices="Server">
+	    <Link>Protos\UserDb\svcWebNavigator.proto</Link>
+	  </Protobuf>
+	  <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcWebPage.proto" GrpcServices="Server">
+	    <Link>Protos\UserDb\svcWebPage.proto</Link>
+	  </Protobuf>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Mic.Core">
+	    <HintPath>..\..\6.libs\packages\Mic.Core\net5.0\Mic.Core.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Mic.Core.Dal">
+	    <HintPath>..\..\6.libs\packages\Mic.Core.Dal\net5.0\Mic.Core.Dal.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Mic.Core.Entities">
+	    <HintPath>..\..\6.libs\packages\Mic.Core.Entities\net5.0\Mic.Core.Entities.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Mic.UserDb.Bll">
+	    <HintPath>..\..\6.libs\packages\Mic.UserDb.Bll\net5.0\Mic.UserDb.Bll.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Mic.UserDb.Dal">
+	    <HintPath>..\..\6.libs\packages\Mic.UserDb.Dal\net5.0\Mic.UserDb.Dal.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Mic.UserDb.Dal.MsSql">
+	    <HintPath>..\..\6.libs\packages\Mic.UserDb.Dal.MsSql\net5.0\Mic.UserDb.Dal.MsSql.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Mic.UserDb.Dal.MySql">
+	    <HintPath>..\..\6.libs\packages\Mic.UserDb.Dal.MySql\net5.0\Mic.UserDb.Dal.MySql.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Mic.UserDb.Entities">
+	    <HintPath>..\..\6.libs\packages\Mic.UserDb.Entities\net5.0\Mic.UserDb.Entities.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>

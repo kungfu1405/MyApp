@@ -1,0 +1,43 @@
+﻿@model LoginModel
+@{
+    Layout = "_AuthenLayout";
+}
+
+<form id="login-form" asp-action="Login" method="post" asp-controller="Account">
+    <div>
+        <h2 class="header-title-text ">Welcome to .pickpack™</h2>
+        <p class="small-title-text" style="color: #52616B;
+">Let's get you all set up so you can explore the unexplored!</p>
+    </div>
+    <div class="common-form-group">
+        <input type="text" asp-for="UserName" value="admin" placeholder="User name" class="common-form-control" id="usr" maxlength="50">
+        @*<p class="inform-text inform-unauthorize">Aw shucks, please check your credentials.</p>*@
+        <span asp-validation-for="UserName" class="inform-text"></span>
+
+
+    </div>
+    <div class="common-form-group">
+        <input type="password" maxlength="500" value="123@123Aa" class="common-form-control" asp-for="Password" placeholder="Password" id="pwd">
+        <span asp-validation-for="Password" class="inform-text"></span>
+        <div asp-validation-summary="All" class="inform-text"></div>
+
+    </div>
+    <div class="common-form-group">
+        <input type="submit" class="common-form-btn btn-common-default" value="Sign in" id="sign-in">
+    </div>
+    <div class="center-text">
+        <div class="">Or</div>
+    </div>
+    <div class="" style="margin-top:48px;">
+        <input type="button" class="common-form-btn btn-common-black" value="Continue with Apple" id="pwd">
+        <input type="button" class="common-form-btn btn-common-blue" value="Continue with Facebook" style="margin:12px 0;" id="pwd">
+        <input type="button" class="common-form-btn btn-common-transform" value="Continue with Google" id="pwd">
+
+    </div>
+    @*<input type="hidden" asp-for="ReturnUrl" value="@Model.ReturnUrl" />*@
+</form>
+<div style="margin-top: 86px; margin-bottom: 92px;text-align:center;
+color: #52616B">By continuing, you agree to our Terms of Service, Privacy policy.</div>
+
+<div class="p-bottom">Not on .pickpack yet? Sign Up</div>
+

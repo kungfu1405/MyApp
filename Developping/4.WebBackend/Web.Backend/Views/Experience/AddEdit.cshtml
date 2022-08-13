@@ -1,0 +1,236 @@
+﻿@model ExperienceViewModel
+@{
+    ViewData["Title"] = "Experience";
+    var sessionsModel = new ExperienceSessionListViewModel
+    {
+        ExperienceId = Model.Experience.Id
+    };
+}
+
+<div class="row" id="pnlForms">
+    <div class="col-lg-5">
+        <div class="card card-custom">
+            <div class="card-header">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        @Model.Experience.ExperienceLanguage.Title
+                        <small>Experience</small>
+                    </h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form asp-action="AddEdit" method="post" class="form-vertical">
+                    @for (int i = 0; i < Model.Experience.ExperienceLanguages.Count(); i++)
+                    {
+                        var lang = Model.Languages.Single(e => e.LangCode == Model.Experience.ExperienceLanguages[i].LangCode);
+                        <div class="form-group">
+                            <label class="font-weight-bolder">
+                                Language - @lang.Native
+                            </label>
+                            <input type="hidden" asp-for="Experience.ExperienceLanguages[i].Id" />
+                            <input type="hidden" asp-for="Experience.ExperienceLanguages[i].ExperienceId" />
+                            <input type="hidden" asp-for="Experience.ExperienceLanguages[i].LangCode" />
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold" asp-for="Experience.ExperienceLanguages[i].Title">
+                                Title
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" asp-for="Experience.ExperienceLanguages[i].Title"
+                                   class="form-control" autocomplete="off"
+                                   placeholder="Title - @Model.Experience.ExperienceLanguages[i].LangCode.ToUpper()" required maxlength="150" />
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold" asp-for="Experience.ExperienceLanguages[i].Description">
+                                Description
+                            </label>
+                            <textarea asp-for="Experience.ExperienceLanguages[i].Description"
+                                      id="txtExLangDesc_@Model.Experience.ExperienceLanguages[i].LangCode"
+                                      class="form-control" rows="3"
+                                      placeholder="Description - @Model.Experience.ExperienceLanguages[i].LangCode.ToUpper()" maxlength="500"></textarea>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    autosize($('#txtExLangDesc_@Model.Experience.ExperienceLanguages[i].LangCode'));
+                                });
+                            </script>
+                        </div>
+                    }
+                    <hr />
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Experience.DestinationId">
+                            Destination
+                        </label>
+                        <select asp-for="Experience.DestinationId" id="ddlDestinationId" class="form-control select2" style="width: 100%">
+                            <option></option>
+                            @{
+
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Experience.RouteUri">
+                            Route URI
+                            <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" asp-for="Experience.RouteUri"
+                               class="form-control" autocomplete="off"
+                               placeholder="Route URI" required maxlength="200" />
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Experience.ThumbnailUrl">
+                            Thumbnail
+                        </label>
+                        <input type="text" asp-for="Experience.ThumbnailUrl"
+                               class="form-control" autocomplete="off"
+                               placeholder="Thumbnail Image" maxlength="200" />
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label class="font-weight-bold" asp-for="Experience.FromDate">
+                                From Date
+                            </label>
+                            <div class='input-group date' id='datetimepicker_FromDate' data-target-input="nearest">
+                                <input type='text' asp-for="Experience.FromDate"
+                                       value="@(Model.Experience.FromDate.HasValue ? dDat.ToDateTime(Model.Experience.FromDate).ToString("dd-MMM-yyyy") : "")"
+                                       class="form-control datetimepicker-input"
+                                       data-toggle="datetimepicker" autocomplete="off"
+                                       data-target="#datetimepicker_FromDate" placeholder="From date" />
+                                <div class="input-group-append" data-target="#datetimepicker_FromDate" data-toggle="datetimepicker">
+                                    <span class="input-group-text"><i class="ki ki-calendar"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="font-weight-bold" asp-for="Experience.ToDate">
+                                To Date
+                            </label>
+                            <div class='input-group date' id='datetimepicker_ToDate' data-target-input="nearest">
+                                <input type='text' asp-for="Experience.ToDate"
+                                       value="@(Model.Experience.ToDate.HasValue ? dDat.ToDateTime(Model.Experience.ToDate).ToString("dd-MMM-yyyy") : "")"
+                                       class="form-control datetimepicker-input"
+                                       data-toggle="datetimepicker" autocomplete="off"
+                                       data-target="#datetimepicker_ToDate" placeholder="To date" />
+                                <div class="input-group-append" data-target="#datetimepicker_ToDate" data-toggle="datetimepicker">
+                                    <span class="input-group-text"><i class="ki ki-calendar"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label class="font-weight-bold" asp-for="Experience.PublishDate">
+                                Publish Date
+                            </label>
+                            <div class='input-group date' id='datetimepicker_PublishDate' data-target-input="nearest">
+                                <input type='text' asp-for="Experience.PublishDate"
+                                       value="@(dDat.ToDateTime(Model.Experience.PublishDate).ToString("dd-MMM-yyyy"))"
+                                       class="form-control datetimepicker-input"
+                                       data-toggle="datetimepicker" autocomplete="off"
+                                       data-target="#datetimepicker_PublishDate" placeholder="Publish date" />
+                                <div class="input-group-append" data-target="#datetimepicker_PublishDate" data-toggle="datetimepicker">
+                                    <span class="input-group-text"><i class="ki ki-calendar"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="font-weight-bold" asp-for="Experience.Status">
+                                Status
+                            </label>
+                            <select asp-for="Experience.Status" class="form-control">
+                                @foreach (var status in Enum.GetValues<EnumPostStatus>())
+                                {
+                                    if (Model.Experience.Status == status)
+                                    {
+                                        <option value="@status" selected>@status.ToString()</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@status">@status.ToString()</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <input type="hidden" asp-for="Experience.Id" />
+                    <input type="hidden" asp-for="ActionMode" />
+                </form>
+            </div>
+        </div>
+    </div>
+    @if (FormActionMode.Edit.Equals(Model.ActionMode))
+    {
+        <div class="col-lg-7">
+            <div class="card card-custom">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h3 class="card-label">
+                            Sessions
+                            <small></small>
+                        </h3>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <partial name="../ExperienceSession/Index" model="sessionsModel" />
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+
+<partial name="_Partials/_alertMessage" model="Model.AlertMessages" />
+
+@section Toolbar{
+    <a asp-action="Index" class="btn btn-secondary mr-2">
+        <i class="la la-undo"></i> Return
+    </a>
+    @if (Model.ActionMode == FormActionMode.Edit)
+    {
+        <a class="btn btn-danger btn-delete mr-2" data-command="delete">
+            <i class="flaticon-delete-1"></i> Delete
+        </a>
+    }
+    <a class="btn btn-warning btn-reset mr-2">
+        <i class="la la-undo-alt"></i> Reset
+    </a>
+    <div class="btn-group">
+        <a class="btn btn-primary btn-submit"><i class="la la-save"></i> Save</a>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Save Options</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item btn-submit" href="#"><i class="la la-save"></i> Save & Back</a>
+            <a class="dropdown-item btn-submit" href="#" data-command="continue"><i class="la la-save"></i> Save & Continue</a>
+        </div>
+    </div>
+}
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.input-group .date').datetimepicker({
+                format: 'DD-MMM-YYYY'
+            });
+
+            $('.btn-reset').click(function (e) {
+                e.preventDefault();
+                $('#pnlForms form').trigger("reset");
+                $('#pnlForms .select2').trigger("change");
+            });
+            $('.btn-submit').click(function (e) {
+                e.preventDefault();
+                SubmitForm($(this), '#pnlForms');
+            });
+            $('.btn-delete').click(function (e) {
+                e.preventDefault();
+                var btDelete = $(this);
+                ConfirmDelete(function () {
+                    SubmitForm(btDelete, '#pnlDForm');
+                });
+            });
+        });
+    </script>
+}

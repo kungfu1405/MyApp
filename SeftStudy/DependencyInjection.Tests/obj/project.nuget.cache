@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2OhclFUQUtDGjKfENNTLYK67AfPngHfu58tB13Cuo2YTFyGChZUIktb5B8IixpEKBSwg0VJ60JGtucAYXGcxOQ==",
+  "dgSpecHash": "/vM7CtL74FzDDUYhA1OsXxzdZuLkdEU41U3zkGd9+l4N0ZyekoIp3kLqUdBn9ECuA9zooZUR7tNMYdBsvHoImQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\DependencyInjection.Tests\\DependencyInjection.Tests.csproj",
+  "projectFilePath": "D:\\Git\\MyApp\\SeftStudy\\DependencyInjection.Tests\\DependencyInjection.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\bower\\1.3.11\\bower.1.3.11.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",

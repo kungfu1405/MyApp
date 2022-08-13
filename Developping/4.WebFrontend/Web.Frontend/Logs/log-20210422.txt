@@ -1,0 +1,129 @@
+2021-04-22T09:08:40.4693970+07:00 0HM83RVTFICMT:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unknown", Detail="Bad gRPC response. HTTP status code: 500")
+   at Mic.Core.Website.BaseController`1.get_CurrentUser() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 144
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 123
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-22T09:16:51.5626843+07:00 0HM83RVTFICMU:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unknown", Detail="Bad gRPC response. HTTP status code: 500")
+   at Mic.Core.Website.BaseController`1.get_CurrentUser() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 144
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 123
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-22T09:26:25.4955692+07:00 0HM83RVTFICMV:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unknown", Detail="Bad gRPC response. HTTP status code: 500")
+   at Mic.Core.Website.BaseController`1.get_CurrentUser() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 144
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 123
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-22T09:33:48.1324694+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-22T09:33:48.2111412+07:00  [INF] Now listening on: "https://localhost:8410" (d826f4b8)
+2021-04-22T09:33:48.2129355+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-22T09:33:48.2149601+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-22T09:33:48.2164425+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-04-22T09:34:06.5368291+07:00 0HM856SAS8SIF:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unknown", Detail="Bad gRPC response. HTTP status code: 500")
+   at Mic.Core.Website.BaseController`1.get_CurrentUser() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 146
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 125
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-22T09:39:05.7535230+07:00  [INF] Application is shutting down... (90f52c38)
+2021-04-22T09:40:08.4094315+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-22T09:40:08.5024924+07:00  [INF] Now listening on: "https://localhost:8410" (d826f4b8)
+2021-04-22T09:40:08.5050231+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-22T09:40:08.5090751+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-22T09:40:08.5114422+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-04-22T14:41:23.0615862+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-22T14:41:23.1233751+07:00  [INF] Now listening on: "https://localhost:8410" (d826f4b8)
+2021-04-22T14:41:23.1249581+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-22T14:41:23.1261650+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-22T14:41:23.1272116+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-04-22T15:46:08.6094078+07:00 0HM85C86AL9OA:00000001 [WRN] '".AspNetCore.Correlation.pplA6zK78Ud92DL_msW2YNK3BKA_AASo1Purh34IAVY"' cookie not found. (85986347)
+2021-04-22T15:46:08.8718595+07:00 0HM85C86AL9OA:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: Correlation failed.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-22T15:50:02.8166372+07:00 0HM85C86AL9OB:00000001 [WRN] '".AspNetCore.Correlation.pplA6zK78Ud92DL_msW2YNK3BKA_AASo1Purh34IAVY"' cookie not found. (85986347)
+2021-04-22T15:50:02.8223264+07:00 0HM85C86AL9OB:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: Correlation failed.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-22T16:54:36.6914672+07:00 0HM85C86AL9OR:00000001 [ERR] The remote signout request was ignored because the 'sid' parameter didn't match the expected value, which may indicate an unsolicited logout. (d0018414)
+2021-04-22T18:42:48.4638023+07:00 0HM85C86AL9P2:00000001 [WRN] '".AspNetCore.Correlation.65DEK20UjF2MA_giwXBSfEqc_JqGdN8VKiKogjj1uuc"' cookie not found. (85986347)
+2021-04-22T18:42:48.5032794+07:00 0HM85C86AL9P2:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: Correlation failed.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-22T19:15:28.9889366+07:00 0HM85C86AL9P3:00000001 [WRN] '".AspNetCore.Correlation.65DEK20UjF2MA_giwXBSfEqc_JqGdN8VKiKogjj1uuc"' cookie not found. (85986347)
+2021-04-22T19:15:28.9970618+07:00 0HM85C86AL9P3:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: Correlation failed.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-22T19:15:44.5900513+07:00 0HM85C86AL9P4:00000001 [WRN] '".AspNetCore.Correlation.65DEK20UjF2MA_giwXBSfEqc_JqGdN8VKiKogjj1uuc"' cookie not found. (85986347)
+2021-04-22T19:15:44.5939856+07:00 0HM85C86AL9P4:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: Correlation failed.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-22T20:24:25.8998524+07:00 0HM85C86AL9P7:00000001 [WRN] '".AspNetCore.Correlation.mhCn_UU6E-GO3i6NLqRzNY5RI2n1rEmErG_wOYT5xac"' cookie not found. (85986347)
+2021-04-22T20:24:25.9391140+07:00 0HM85C86AL9P7:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: Correlation failed.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

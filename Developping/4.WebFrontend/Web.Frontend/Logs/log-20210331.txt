@@ -1,0 +1,507 @@
+2021-03-31T09:52:49.7069869+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T09:52:49.8354234+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T09:52:49.8384215+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T09:52:49.8410961+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T09:52:49.8435289+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T10:02:48.2585982+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T10:02:48.3246432+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T10:02:48.3268596+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T10:02:48.3285830+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T10:02:48.3304590+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T10:03:46.8711718+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T10:03:46.9292671+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T10:03:46.9310806+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T10:03:46.9324106+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T10:03:46.9339968+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T10:04:27.7565692+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T10:04:27.8300881+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T10:04:27.8315204+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T10:04:27.8325881+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T10:04:27.8336752+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T10:06:11.5301434+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T10:06:11.6057959+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T10:06:11.6076452+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T10:06:11.6091915+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T10:06:11.6106485+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T10:08:04.8091701+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T10:08:04.8671413+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T10:08:04.8684902+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T10:08:04.8695181+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T10:08:04.8706094+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T10:10:18.9721948+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T10:10:19.0292474+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T10:10:19.0308842+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T10:10:19.0320088+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T10:10:19.0332392+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T10:12:16.4227507+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T10:12:16.4949190+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T10:12:16.4964165+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T10:12:16.4975587+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T10:12:16.4986112+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T11:08:04.5527163+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T11:08:04.6272407+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T11:08:04.6499125+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T11:08:04.6521051+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T11:08:04.6535603+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T11:12:25.7837564+07:00 0HM7JVALN95OR:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.CompilationFailedException: One or more compilation failures occurred:
+E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Views\Account\SignUp.cshtml(14,127): error CS1963: An expression tree may not contain a dynamic operation
+E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Views\Account\SignUp.cshtml(16,139): error CS1963: An expression tree may not contain a dynamic operation
+E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Views\Account\SignUp.cshtml(21,127): error CS1963: An expression tree may not contain a dynamic operation
+E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Views\Account\SignUp.cshtml(22,139): error CS1963: An expression tree may not contain a dynamic operation
+   at Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler.OnCacheMiss(String normalizedPath)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-31T15:11:09.4490780+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T15:11:09.5183634+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T15:11:09.5208104+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T15:11:09.5228955+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T15:11:09.5250023+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T15:11:35.8480791+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T15:11:35.9019030+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T15:11:35.9033265+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T15:11:35.9045876+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T15:11:35.9057621+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T15:12:13.5553360+07:00 0HM7K3IKLVA37:00000001 [ERR] Get User profile detail failed. Message: Error mapping types.
+
+Mapping types:
+SignUpModel -> SignupRequest
+DbData.Entities.Models.SignUpModel -> UserDb.Protos.SignupRequest
+
+Type Map configuration:
+SignUpModel -> SignupRequest
+DbData.Entities.Models.SignUpModel -> UserDb.Protos.SignupRequest
+
+Destination Member:
+UserName
+ (ab46c9ee)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+SignUpModel -> SignupRequest
+DbData.Entities.Models.SignUpModel -> UserDb.Protos.SignupRequest
+
+Type Map configuration:
+SignUpModel -> SignupRequest
+DbData.Entities.Models.SignUpModel -> UserDb.Protos.SignupRequest
+
+Destination Member:
+UserName
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at UserDb.Protos.SignupRequest.set_UserName(String value) in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\obj\Debug\net5.0\SvcUserAuthenticate.cs:line 877
+   at lambda_method4(Closure , Object , SignupRequest , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method4(Closure , Object , SignupRequest , ResolutionContext )
+   at Web.Frontend.Controllers.AccountController.SignUp(SignUpModel model) in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Controllers\AccountController.cs:line 140
+2021-03-31T15:12:58.2165550+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T15:12:58.2769032+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T15:12:58.2784628+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T15:12:58.2797856+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T15:12:58.2809946+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T15:14:48.9662164+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T15:14:49.0490021+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T15:14:49.0519267+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T15:14:49.0538926+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T15:14:49.0557401+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T15:14:49.9516355+07:00 0HM7K3K6S5CHF:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+Web.Frontend.Controllers.AccountController.SignUp (Web.Frontend)
+Web.Frontend.Controllers.AccountController.SignUp (Web.Frontend)
+Web.Frontend.Controllers.AccountController.SignUp (Web.Frontend)
+Web.Frontend.Controllers.AccountController.SignUp (Web.Frontend)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-31T15:23:23.5819884+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T15:23:23.6429384+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T15:23:23.6446137+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T15:23:23.6460596+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T15:23:23.6476088+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T15:23:34.0508885+07:00 0HM7K3P32UCUL:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+Web.Frontend.Controllers.AccountController.SignUp (Web.Frontend)
+Web.Frontend.Controllers.AccountController.SignUp (Web.Frontend)
+Web.Frontend.Controllers.AccountController.SignUp (Web.Frontend)
+Web.Frontend.Controllers.AccountController.SignUp (Web.Frontend)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-31T15:25:03.6813646+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T15:25:03.7439232+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T15:25:03.7456771+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T15:25:03.7471501+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T15:25:03.7486088+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T15:25:20.6280820+07:00 0HM7K3Q0EIEMJ:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Either ErrorMessageString or ErrorMessageResourceName must be set, but not both.
+   at System.ComponentModel.DataAnnotations.ValidationAttribute.SetupResourceAccessor()
+   at System.ComponentModel.DataAnnotations.MaxLengthAttribute.FormatErrorMessage(String name)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1.GetErrorMessage(ModelMetadata modelMetadata, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.MaxLengthAttributeAdapter.GetErrorMessage(ModelValidationContextBase validationContext)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.MaxLengthAttributeAdapter.AddValidation(ClientModelValidationContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultValidationHtmlAttributeProvider.AddValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ValidationHtmlAttributeProvider.AddAndTrackValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, String expression, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.AddValidationAttributes(ViewContext viewContext, TagBuilder tagBuilder, ModelExplorer modelExplorer, String expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateInput(ViewContext viewContext, InputType inputType, ModelExplorer modelExplorer, String expression, Object value, Boolean useViewData, Boolean isChecked, Boolean setId, Boolean isExplicitValue, String format, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateTextBox(ViewContext viewContext, ModelExplorer modelExplorer, String expression, Object value, String format, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.GenerateTextBox(ModelExplorer modelExplorer, String inputTypeHint, String inputType, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Account_SignUp.<ExecuteAsync>b__29_0() in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Views\Account\SignUp.cshtml:line 17
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Account_SignUp.ExecuteAsync() in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Views\Account\SignUp.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-31T15:26:17.9137963+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T15:26:17.9745721+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T15:26:17.9763519+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T15:26:17.9778582+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T15:26:17.9790930+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T15:26:27.7227049+07:00 0HM7K3QKQADO1:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Either ErrorMessageString or ErrorMessageResourceName must be set, but not both.
+   at System.ComponentModel.DataAnnotations.ValidationAttribute.SetupResourceAccessor()
+   at System.ComponentModel.DataAnnotations.MaxLengthAttribute.FormatErrorMessage(String name)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1.GetErrorMessage(ModelMetadata modelMetadata, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.MaxLengthAttributeAdapter.GetErrorMessage(ModelValidationContextBase validationContext)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.MaxLengthAttributeAdapter.AddValidation(ClientModelValidationContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultValidationHtmlAttributeProvider.AddValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ValidationHtmlAttributeProvider.AddAndTrackValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, String expression, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.AddValidationAttributes(ViewContext viewContext, TagBuilder tagBuilder, ModelExplorer modelExplorer, String expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateInput(ViewContext viewContext, InputType inputType, ModelExplorer modelExplorer, String expression, Object value, Boolean useViewData, Boolean isChecked, Boolean setId, Boolean isExplicitValue, String format, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateTextBox(ViewContext viewContext, ModelExplorer modelExplorer, String expression, Object value, String format, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.GenerateTextBox(ModelExplorer modelExplorer, String inputTypeHint, String inputType, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Account_SignUp.<ExecuteAsync>b__29_0() in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Views\Account\SignUp.cshtml:line 17
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Account_SignUp.ExecuteAsync() in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Views\Account\SignUp.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-31T15:29:52.6875894+07:00 0HM7K3QKQADO2:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Either ErrorMessageString or ErrorMessageResourceName must be set, but not both.
+   at System.ComponentModel.DataAnnotations.ValidationAttribute.SetupResourceAccessor()
+   at System.ComponentModel.DataAnnotations.MaxLengthAttribute.FormatErrorMessage(String name)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1.GetErrorMessage(ModelMetadata modelMetadata, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.MaxLengthAttributeAdapter.GetErrorMessage(ModelValidationContextBase validationContext)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.MaxLengthAttributeAdapter.AddValidation(ClientModelValidationContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultValidationHtmlAttributeProvider.AddValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ValidationHtmlAttributeProvider.AddAndTrackValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, String expression, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.AddValidationAttributes(ViewContext viewContext, TagBuilder tagBuilder, ModelExplorer modelExplorer, String expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateInput(ViewContext viewContext, InputType inputType, ModelExplorer modelExplorer, String expression, Object value, Boolean useViewData, Boolean isChecked, Boolean setId, Boolean isExplicitValue, String format, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateTextBox(ViewContext viewContext, ModelExplorer modelExplorer, String expression, Object value, String format, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.GenerateTextBox(ModelExplorer modelExplorer, String inputTypeHint, String inputType, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Account_SignUp.<ExecuteAsync>b__29_0() in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Views\Account\SignUp.cshtml:line 17
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Account_SignUp.ExecuteAsync() in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Views\Account\SignUp.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-31T15:33:11.7110513+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T15:33:11.8014294+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T15:33:11.8038303+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T15:33:11.8066613+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T15:33:11.8099165+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T15:52:06.8679580+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T15:52:06.9746532+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T15:52:06.9773206+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T15:52:06.9794854+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T15:52:06.9812603+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T15:53:14.3358841+07:00 0HM7K492526CR:00000001 [ERR] Get User profile detail failed. Message: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)") (1ad55298)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Frontend.Controllers.AccountController.SignUp(SignUpModel model) in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Controllers\AccountController.cs:line 148
+2021-03-31T15:55:02.3673927+07:00 0HM7K492526CR:00000005 [ERR] Get User profile detail failed. Message: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)") (1ad55298)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Frontend.Controllers.AccountController.SignUp(SignUpModel model) in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Controllers\AccountController.cs:line 148
+2021-03-31T16:07:05.0501469+07:00 0HM7K492526CT:00000001 [ERR] Get User profile detail failed. Message: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)") (1ad55298)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Frontend.Controllers.AccountController.SignUp(SignUpModel model) in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Controllers\AccountController.cs:line 148
+2021-03-31T16:17:00.3441772+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T16:17:00.4388465+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T16:17:00.4405204+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T16:17:00.4417381+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T16:17:00.4429262+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T16:20:14.1105448+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T16:20:14.1697411+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T16:20:14.1711736+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T16:20:14.1723247+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T16:20:14.1735761+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T17:13:51.1917621+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T17:13:51.2726170+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T17:13:51.2739466+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T17:13:51.2751372+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T17:13:51.2765239+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T17:14:12.2999299+07:00 0HM7K5MSN2HNV:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.196:8211) SocketException: No connection could be made because the target machine actively refused it.", DebugException="System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.196:8211)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Mic.Core.Website.BaseController`1.get_Languages() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 171
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 122
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-31T17:20:49.2556678+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T17:20:49.3180043+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T17:20:49.3208532+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T17:20:49.3227059+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T17:20:49.3243044+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T17:33:23.8305639+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T17:33:23.9015481+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T17:33:23.9039164+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T17:33:23.9060273+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T17:33:23.9082184+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T17:36:16.2802159+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T17:36:16.3712053+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T17:36:16.3730973+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T17:36:16.3747257+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T17:36:16.3763869+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-03-31T18:28:01.3618067+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-03-31T18:28:01.4437527+07:00  [INF] Now listening on: "https://[::]:8410" (d826f4b8)
+2021-03-31T18:28:01.4463765+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-31T18:28:01.4481930+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-31T18:28:01.4500391+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)

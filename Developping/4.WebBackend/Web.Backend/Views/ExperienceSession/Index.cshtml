@@ -1,0 +1,59 @@
+﻿@model ExperienceSessionListViewModel
+
+<div class="table-hover datatable datatable-bordered datatable-head-custom" id="ctbl_experiencesessions"></div>
+
+<script type="text/javascript">
+    var container_sessions;
+    $(document).ready(function () {
+        container_sessions = $('#ctbl_experiencesessions').KTDatatable({
+            // datasource definition
+            data: {
+                type: 'remote',
+                source: {
+                    read: {
+                        url: '@Url.Action("GetDatatable", "ExperienceSession")',
+                        params: {
+                            ExperienceId: '@Model.ExperienceId'
+                        }
+                    },
+                },
+                pageSize: 10,
+                serverPaging: false,
+                serverFiltering: true,
+                serverSorting: false,
+                saveState: false,
+            },
+            layout: {
+                scroll: false,
+                footer: false,
+            },
+            sortable: false,
+            pagination: false,
+
+            // columns definition
+            columns: [
+                { field: "title", title: "Title", width: 350, overflow: 'visible', autoHide: false }
+                , { field: "statusName", title: "Status", width: 70, sortable: true }
+                , {
+                    field: "Actions", title: "", width: 35, textAlign: "right", overflow: 'visible', autoHide: false
+                    , template: function (row) {
+                        var resultHtml = '\
+                            <a href="#" data-title="Edit session: ' + row.title + '" \
+                                    data-link="@(Url.Action("AddEdit", "ExperienceSession", new { eid = Model.ExperienceId }))&id=' + row.id + '" \
+                                    data-kt-table="ctbl_syscolumn" \
+                                    class="btn btn-sm btn-clean btn-icon btn-quickedit" title="Edit session">\
+                                <i class="la la-edit"></i>\
+                            </a>'
+                        return resultHtml;
+                    }
+                }
+            ],
+            translate: {
+                records: {
+                    noRecords: "No records found",
+                    processing: "Loading...",
+                }
+            }
+        });
+    });
+</script>

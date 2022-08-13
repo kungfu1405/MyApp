@@ -1,0 +1,32 @@
+﻿<div class="container">
+    <div class="card card-custom gutter-b example example-compact col-lg-9 col-md-9 col-xl-9 col-sm-12" style="margin: 0 auto;">
+        <div class="card-body">
+            <div class="form-group row lst-item">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            url: "https://localhost:44353/api/file",
+            type: "GET",
+            success: function (data) {
+                
+                if (data != undefined && data.data != undefined && data.data.length > 0) {
+                    var dData = data.data;
+                    for (var i = 0; i <= dData.length; i++) {
+                        if (dData[i] != undefined) {
+                            var img = $("<img />").attr("src", "https://localhost:44353" + dData[i].fileUrl);
+                            var div = $("<div/>").addClass("col-3").append(img);
+                            $(".lst-item").append(div);
+                        }                        
+                    }                    
+                }
+            }
+        });
+    });
+
+</script>

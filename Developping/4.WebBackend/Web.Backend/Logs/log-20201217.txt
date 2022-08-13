@@ -1,0 +1,140 @@
+2020-12-17T09:37:58.1790903+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T09:37:58.3364174+07:00  [INF] Now listening on: "http://localhost:5301" (d826f4b8)
+2020-12-17T09:37:58.3393777+07:00  [INF] Now listening on: "https://[::]:5300" (d826f4b8)
+2020-12-17T09:37:58.3423858+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T09:37:58.3451696+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T09:37:58.3481895+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T09:40:32.7653956+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T09:40:32.8233204+07:00  [INF] Now listening on: "http://[::]:5301" (d826f4b8)
+2020-12-17T09:40:32.8260933+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T09:40:32.8287999+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T09:40:32.8312608+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T10:10:29.8692204+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T10:10:29.9344587+07:00  [INF] Now listening on: "http://[::]:5301" (d826f4b8)
+2020-12-17T10:10:29.9371965+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T10:10:29.9400303+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T10:10:29.9427904+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T10:11:35.1272576+07:00 0HM5275HISVK6:00000004 [ERR] Message contains error: '"access_denied"', error_description: '"error_description is null"', error_uri: '"error_uri is null"'. (95c3107f)
+2020-12-17T10:11:35.3115781+07:00 0HM5275HISVK6:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'access_denied', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-17T10:12:35.2211167+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T10:12:35.2727824+07:00  [INF] Now listening on: "http://[::]:5301" (d826f4b8)
+2020-12-17T10:12:35.2755431+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T10:12:35.2777707+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T10:12:35.2798921+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T10:15:24.4840667+07:00 0HM5277QB1243:00000005 [ERR] Message contains error: '"access_denied"', error_description: '"error_description is null"', error_uri: '"error_uri is null"'. (95c3107f)
+2020-12-17T10:15:24.5574115+07:00 0HM5277QB1243:00000005 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'access_denied', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-17T10:41:23.6331105+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T10:41:23.6910765+07:00  [INF] Now listening on: "http://[::]:5301" (d826f4b8)
+2020-12-17T10:41:23.6934077+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T10:41:23.6954830+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T10:41:23.6975022+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T10:41:44.9359512+07:00 0HM527MIE3KI3:00000003 [ERR] Message contains error: '"access_denied"', error_description: '"error_description is null"', error_uri: '"error_uri is null"'. (95c3107f)
+2020-12-17T10:41:44.9932683+07:00 0HM527MIE3KI3:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'access_denied', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-17T11:58:35.2438903+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T11:58:35.3230240+07:00  [INF] Now listening on: "http://[::]:5301" (d826f4b8)
+2020-12-17T11:58:35.3260422+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T11:58:35.3286224+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T11:58:35.3312722+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T14:50:23.2992054+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T14:50:23.4634362+07:00  [INF] Now listening on: "https://[::]:5300" (d826f4b8)
+2020-12-17T14:50:23.4699389+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T14:50:23.4728335+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T14:50:23.4761101+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T14:51:22.7845236+07:00 0HM52C1U9H5JU:00000001 [ERR] Message contains error: '"access_denied"', error_description: '"error_description is null"', error_uri: '"error_uri is null"'. (95c3107f)
+2020-12-17T14:51:22.8714305+07:00 0HM52C1U9H5JU:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'access_denied', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-17T14:53:02.1940930+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T14:53:02.2840835+07:00  [INF] Now listening on: "https://[::]:5300" (d826f4b8)
+2020-12-17T14:53:02.2865788+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T14:53:02.2899057+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T14:53:02.2922399+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T15:06:17.0896755+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T15:06:17.2118144+07:00  [INF] Now listening on: "https://[::]:5300" (d826f4b8)
+2020-12-17T15:06:17.2147209+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T15:06:17.2179260+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T15:06:17.2205842+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T15:10:51.6773197+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T15:10:51.7719269+07:00  [INF] Now listening on: "https://[::]:5300" (d826f4b8)
+2020-12-17T15:10:51.7749436+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T15:10:51.7781577+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T15:10:51.7812953+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T15:11:14.9181823+07:00 0HM52CD5KAKUV:00000003 [ERR] Message contains error: '"access_denied"', error_description: '"error_description is null"', error_uri: '"error_uri is null"'. (95c3107f)
+2020-12-17T15:11:14.9838735+07:00 0HM52CD5KAKUV:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'access_denied', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-17T15:14:05.0211690+07:00 0HM52CD5KAKV1:00000059 [ERR] Message contains error: '"access_denied"', error_description: '"error_description is null"', error_uri: '"error_uri is null"'. (95c3107f)
+2020-12-17T15:14:05.0279826+07:00 0HM52CD5KAKV1:00000059 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'access_denied', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-17T15:23:58.7151125+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T15:23:58.8096239+07:00  [INF] Now listening on: "https://[::]:5300" (d826f4b8)
+2020-12-17T15:23:58.8121487+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T15:23:58.8144593+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T15:23:58.8167633+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T15:24:36.0109729+07:00 0HM52CKFPQB1E:0000004B [ERR] Message contains error: '"access_denied"', error_description: '"error_description is null"', error_uri: '"error_uri is null"'. (95c3107f)
+2020-12-17T15:24:36.0672400+07:00 0HM52CKFPQB1E:0000004B [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'access_denied', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-17T15:38:23.0633133+07:00  [INF] Application is shutting down... (90f52c38)
+2020-12-17T16:52:22.8524715+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T16:52:22.9196488+07:00  [INF] Now listening on: "http://[::]:5301" (d826f4b8)
+2020-12-17T16:52:22.9222915+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T16:52:22.9246244+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T16:52:22.9266624+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T16:52:52.4813776+07:00 0HM52E5PSJO5O:00000003 [ERR] Message contains error: '"access_denied"', error_description: '"error_description is null"', error_uri: '"error_uri is null"'. (95c3107f)
+2020-12-17T16:52:52.5720295+07:00 0HM52E5PSJO5O:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'access_denied', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-17T16:54:27.8742091+07:00 0HM52E5PSJO5O:00000007 [ERR] Message contains error: '"access_denied"', error_description: '"error_description is null"', error_uri: '"error_uri is null"'. (95c3107f)
+2020-12-17T16:54:27.8800955+07:00 0HM52E5PSJO5O:00000007 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'access_denied', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-17T17:00:26.5360840+07:00  [WRN] Overriding address(es) '"https://localhost:6301, http://localhost:6300"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2020-12-17T17:00:26.6049745+07:00  [INF] Now listening on: "http://[::]:5301" (d826f4b8)
+2020-12-17T17:00:26.6082665+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-17T17:00:26.6117634+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-17T17:00:26.6144997+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.WebBackend\Web.Backend" (b5d60022)
+2020-12-17T17:36:13.7908172+07:00  [INF] Application is shutting down... (90f52c38)

@@ -1,0 +1,5 @@
+obj\Debug\net5.0/SvcRole.cs \
+obj\Debug\net5.0/SvcRoleGrpc.cs: C:/Users/Admin/.nuget/packages/grpc.tools/2.34.0/build/native/include/google/protobuf/wrappers.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgDbDataCommon.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgRole.proto\
+ ../../6.libs/gRpc.Protos/DbData/svcRole.proto

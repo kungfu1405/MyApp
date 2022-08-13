@@ -1,0 +1,293 @@
+﻿@model AttractionListViewModel
+@{
+    ViewData["Title"] = "Attraction";
+}
+
+<div class="card card-custom">
+    <div id="pnlFilter" class="w-100 collapse">
+        <div class="card-header">
+            <div class="card-toolbar row">
+                <div class="col-lg-4 col-sm-6 d-flex flex-fill align-items-center mb-3">
+                    <label class="mr-3 mb-0 d-none d-md-block">Attraction</label>
+                    <input type="text" id="txtName" class="form-control ctrl-filter" placeholder="Attraction key" />
+                </div>
+                <div class="col-lg-4 col-sm-6 d-flex flex-fill align-items-center mb-3">
+                    <label class="mr-3 mb-0 d-none d-md-block">Destination</label>
+                    <select id="ddlDestination"
+                            class="form-control ctrl-filter" style="width: 100%">
+                        <option value="" selected>-All-</option>
+                    </select>
+                </div>
+                @*<div class="col-lg-4 col-sm-6 d-flex flex-fill align-items-center mb-3">
+                    <label class="mr-3 mb-0 d-none d-md-block">State</label>
+                    <select id="ddlState"
+                            class="form-control ctrl-filter" style="width: 100%">
+                        <option value="null" selected>-All-</option>
+                    </select>
+                </div>*@
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-hover datatable datatable-bordered datatable-head-custom" id="ctbl_attraction"></div>
+    </div>
+</div>
+
+<partial name="_Partials/_alertMessage" model="Model.AlertMessages" />
+
+@section Scripts{
+    <script type="text/javascript">
+    var ctbl_attraction;
+    $(document).ready(function () {
+
+        $("#ddlDestination").select2({
+            minimumInputLength: 2,
+            placeholder: "Search Destination",
+            allowClear: true,
+            ajax: {
+                url: '@Url.Action("Search", "Destination")',
+                dataType: 'json',
+                delay: 250,
+                cache: true,
+                data: function (params) {
+                    var queryParameters = {
+                        keyword: params.term
+                    }
+                    return queryParameters;
+                }
+            }
+        });
+        @*$("#ddlState").select2({
+            minimumInputLength: 2,
+            placeholder: "Search State",
+            allowClear: true,
+            ajax: {
+                url: '@Url.Action("Search", "State")',
+                dataType: 'json',
+                delay: 250,
+                cache: true,
+                data: function (params) {
+                    var queryParameters = {
+                        keyword: params.term,
+                        CountryId: function () { return $("#ddlCountry").val(); }
+                    }
+                    return queryParameters;
+                }
+            }
+        });*@
+
+        ctbl_attraction = $('#ctbl_attraction').KTDatatable({
+            // datasource definition
+            data: {
+                type: 'remote',
+                source: {
+                    read: {
+                        url: '@Url.Action("GetDatatable")',
+                        params: {
+                            DestinationId: function () { return $('#ddlDestination').val(); },
+                            Name: function () { return $('#txtName').val(); }
+                        }
+                    },
+                },
+                pageSize: 10,
+                serverPaging: true,
+                serverFiltering: true,
+                serverSorting: true,
+                saveState: false,
+            },
+            layout: {
+                scroll: true,
+                footer: false,
+            },
+            sortable: true,
+            pagination: true,
+
+            // columns definition
+            columns: [
+                { field: "defaultName", title: "Attraction name" }
+                , { field: "destination.defaultName", title: "Destination" }
+                , { field: "routeUri", title: "Uri" }
+                , { field: "address", title: "Address" }
+                , {
+                    field: "", title: "Attraction Type", template: function (row) {
+                        var textString = "";
+                        debugger
+                        if ((row.attractionTypes & @((int)EnumAttractionType.PlaceToEat)) != 0)
+                        { textString += "Place to eat , "; }
+                        if ((row.attractionTypes & @((int)EnumAttractionType.PlaceToStay)) != 0) { textString += "Place to stay , "; }
+                        if ((row.attractionTypes & @((int)EnumAttractionType.PlaceToVisit)) != 0) {
+                            textString += "Place to visit , ";
+                        }
+                        return textString;
+                    }
+                }
+                , {
+                    field: "Tourist", title: "Tourist Classes", template: function (row) {
+                        var textReturn = "";
+                        if ((row.touristClasses & @((int)EnumTouristClass.Budget)) !=0 ) { textReturn += "Budget , "; }
+                        if ((row.touristClasses & @((int)EnumTouristClass.Luxury)) != 0) { textReturn += "Luxury , "; }
+                        if ((row.touristClasses & @((int)EnumTouristClass.MidRange)) != 0) { textReturn += "MidRange , "; }
+                        return textReturn;
+                    }
+                }
+                , {
+                    field: "status", title: "Status", template: function (row) {
+                        if (row.status == @((int)EnumPostStatus.Spam))
+                            return "Spam"
+                        if (row.status == @((int)EnumPostStatus.Draft))
+                            return "Draft"
+                        if (row.status == @((int)EnumPostStatus.Published))
+                            return "Published"
+                          if (row.status == @((int)EnumPostStatus.Approving))
+                              return "Approving"
+                          if (row.status == @((int)EnumPostStatus.Approved))
+                              return "Approved"
+
+                    }
+                }
+
+                , {
+                    field: "Actions", title: "", sortable: false, width: 35, textAlign: "right", overflow: 'visible', autoHide: false
+                    , template: function (row) {
+                        var resultHtml = '\
+                        <div class="dropdown dropdown-inline">\
+                            <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" data-toggle="dropdown" title="Quick actions">\
+                                <i class="ki ki-bold-more-ver"></i>\
+                            </a>\
+                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">\
+                                <ul class="navi flex-column navi-hover py-2">\
+                                    <li class="navi-header font-weight-bolder text-uppercase font-size-xs text-primary pb-2">\
+                                        Choose an action:\
+                                    </li>\
+                                        ';
+                                    @*<li class="navi-item">\
+                                        <a href="#" class="navi-link btn-quickview" \
+                                            data-title="' + row.defaultName + '" \
+                                            data-link="@(Url.Action("Detail"))/' + row.id + '" > \
+                                            <span class="navi-icon"><i class="flaticon-eye"></i></span>\
+                                            <span class="navi-text">View detail</span>\
+                                        </a></li>';*@
+
+                        // TODO: check Edit permission
+                        resultHtml += '<li class="navi-item">\
+                                        <a class="navi-link" href="@(Url.Action("AddEdit"))/' + row.id + '" >\
+                                            <span class="navi-icon"><i class="flaticon-edit-1"></i></span>\
+                                            <span class="navi-text">Edit record</span>\
+                                        </a></li>';
+
+                        // TODO: check Delete permission
+                        resultHtml += '<li class="navi-item">\
+                                        <a class="navi-link btn-delete" data-toggle="confirmation" href="#" data-link="@(Url.Action("Delete"))/' + row.id + '" >\
+                                            <span class="navi-icon"><i class="flaticon-delete-1"></i></span>\
+                                            <span class="navi-text">Delete record</span>\
+                                        </a></li>';
+                        resultHtml += '</ul></div></div>';
+                        return resultHtml;
+                    }
+                }
+            ],
+            translate: {
+                records: {
+                    noRecords: "No records found",
+                    processing: "Loading...",
+                }
+            }
+        });
+
+        $('#btnReload').click(function (e) {
+            ctbl_attraction.reload();
+        });
+
+        $('.ctrl-filter').change(function (e) {
+            ctbl_attraction.reload();
+        });
+
+        $(document).on("click", ".btn-delete", function (e) {
+            e.preventDefault();
+            var thisButton = $(this);
+
+            var fndelete = function () {
+                $.ajax({
+                    url: thisButton.attr('data-link'),
+                    type: "DELETE",
+                    cache: false,
+                    contentType: "application/json",
+                    beforeSend: function () {
+                        thisButton.addClass('spinner spinner-primary spinner-right');
+                        addOverlay('#ctbl_attraction', 5000);
+                    },
+                    success: function (msg) {
+                        removeOverlay('#ctbl_attraction');
+                        Swal.fire(
+                            'Deleted!',
+                            'Your record has been deleted.',
+                            'success'
+                        )
+                        if ($('#pnlQuickView').hasClass('offcanvas-on')) {
+                            KTUtil.getById('btn-quickview-toggle').click();
+                        }
+                        ctbl_attraction.reload();
+                    },
+                    error: function (xhr) {
+                        removeOverlay('#ctbl_attraction');
+                        if ($('#pnlQuickView').hasClass('offcanvas-on')) {
+                            KTUtil.getById('btn-quickview-toggle').click();
+                        }
+                        KTUtil.find(thisButton, '.spinner').removeClass('spinner spinner-primary spinner-right');
+
+                        Swal.fire(
+                            'Delete failed!',
+                            xhr.responseText,
+                            'danger'
+                        );
+                    }
+                });
+            }
+
+            if ($(thisButton).attr('data-toggle') == 'confirmation') {
+                ConfirmDelete(fndelete);
+            } else {
+                fndelete();
+            }
+
+        });
+    });
+    </script>
+}
+
+@section Toolbar{
+    <a asp-action="AddEdit" class="btn btn-sm btn-warning mr-1">
+        <span class="svg-icon svg-icon-sm mr-0">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect x="0" y="0" width="24" height="24" />
+                    <circle fill="#000000" opacity="0.3" cx="12" cy="12" r="10" />
+                    <path d="M11,11 L11,7 C11,6.44771525 11.4477153,6 12,6 C12.5522847,6 13,6.44771525 13,7 L13,11 L17,11 C17.5522847,11 18,11.4477153 18,12 C18,12.5522847 17.5522847,13 17,13 L13,13 L13,17 C13,17.5522847 12.5522847,18 12,18 C11.4477153,18 11,17.5522847 11,17 L11,13 L7,13 C6.44771525,13 6,12.5522847 6,12 C6,11.4477153 6.44771525,11 7,11 L11,11 Z" fill="#000000" />
+                </g>
+            </svg>
+        </span>
+        <span class="d-none d-sm-inline">Add New</span>
+    </a>
+    <a class="btn btn-sm btn-primary mr-1" data-toggle="collapse" href="#pnlFilter" role="button" aria-expanded="false" title="Show/hide filters">
+        <span class="svg-icon svg-icon-sm mr-0">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect x="0" y="0" width="24" height="24" />
+                    <path d="M5,4 L19,4 C19.2761424,4 19.5,4.22385763 19.5,4.5 C19.5,4.60818511 19.4649111,4.71345191 19.4,4.8 L14,12 L14,20.190983 C14,20.4671254 13.7761424,20.690983 13.5,20.690983 C13.4223775,20.690983 13.3458209,20.6729105 13.2763932,20.6381966 L10,19 L10,12 L4.6,4.8 C4.43431458,4.5790861 4.4790861,4.26568542 4.7,4.1 C4.78654809,4.03508894 4.89181489,4 5,4 Z" fill="#000000" />
+                </g>
+            </svg>
+        </span>
+        <span class="d-none d-sm-inline">Filter</span>
+    </a>
+    <a id="btnReload" href="#" class="btn btn-sm btn-success mr-1">
+        <span class="svg-icon svg-icon-sm mr-0">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect x="0" y="0" width="24" height="24" />
+                    <path d="M8.43296491,7.17429118 L9.40782327,7.85689436 C9.49616631,7.91875282 9.56214077,8.00751728 9.5959027,8.10994332 C9.68235021,8.37220548 9.53982427,8.65489052 9.27756211,8.74133803 L5.89079566,9.85769242 C5.84469033,9.87288977 5.79661753,9.8812917 5.74809064,9.88263369 C5.4720538,9.8902674 5.24209339,9.67268366 5.23445968,9.39664682 L5.13610134,5.83998177 C5.13313425,5.73269078 5.16477113,5.62729274 5.22633424,5.53937151 C5.384723,5.31316892 5.69649589,5.25819495 5.92269848,5.4165837 L6.72910242,5.98123382 C8.16546398,4.72182424 10.0239806,4 12,4 C16.418278,4 20,7.581722 20,12 C20,16.418278 16.418278,20 12,20 C7.581722,20 4,16.418278 4,12 L6,12 C6,15.3137085 8.6862915,18 12,18 C15.3137085,18 18,15.3137085 18,12 C18,8.6862915 15.3137085,6 12,6 C10.6885336,6 9.44767246,6.42282109 8.43296491,7.17429118 Z" fill="#000000" fill-rule="nonzero" />
+                </g>
+            </svg>
+        </span>
+        <span class="d-none d-sm-inline">Reload</span>
+    </a>
+}

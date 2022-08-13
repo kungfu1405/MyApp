@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Core" Version="1.6.0" />
+    <PackageReference Include="CsvHelper" Version="18.0.0" />
+    <PackageReference Include="EPPlus" Version="5.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DbData.Dal\DbData.Dal.csproj" />
+    <ProjectReference Include="..\DbData.Entities\DbData.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mic.Core">
+      <HintPath>..\..\6.libs\packages\Mic.Core\net5.0\Mic.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mic.Core.Dal">
+      <HintPath>..\..\6.libs\packages\Mic.Core.Dal\net5.0\Mic.Core.Dal.dll</HintPath>
+    </Reference>
+    <Reference Include="Mic.Core.Entities">
+      <HintPath>..\..\6.libs\packages\Mic.Core.Entities\net5.0\Mic.Core.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Mic.UserDb.Entities">
+      <HintPath>..\..\6.libs\packages\Mic.UserDb.Entities\net5.0\Mic.UserDb.Entities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

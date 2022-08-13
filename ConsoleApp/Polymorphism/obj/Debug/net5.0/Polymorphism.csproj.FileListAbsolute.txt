@@ -1,0 +1,16 @@
+D:\Git\MyApp\ConsoleApp\Polymorphism\bin\Debug\net5.0\Polymorphism.exe
+D:\Git\MyApp\ConsoleApp\Polymorphism\bin\Debug\net5.0\Polymorphism.deps.json
+D:\Git\MyApp\ConsoleApp\Polymorphism\bin\Debug\net5.0\Polymorphism.runtimeconfig.json
+D:\Git\MyApp\ConsoleApp\Polymorphism\bin\Debug\net5.0\Polymorphism.runtimeconfig.dev.json
+D:\Git\MyApp\ConsoleApp\Polymorphism\bin\Debug\net5.0\Polymorphism.dll
+D:\Git\MyApp\ConsoleApp\Polymorphism\bin\Debug\net5.0\ref\Polymorphism.dll
+D:\Git\MyApp\ConsoleApp\Polymorphism\bin\Debug\net5.0\Polymorphism.pdb
+D:\Git\MyApp\ConsoleApp\Polymorphism\obj\Debug\net5.0\Polymorphism.csproj.AssemblyReference.cache
+D:\Git\MyApp\ConsoleApp\Polymorphism\obj\Debug\net5.0\Polymorphism.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\MyApp\ConsoleApp\Polymorphism\obj\Debug\net5.0\Polymorphism.AssemblyInfoInputs.cache
+D:\Git\MyApp\ConsoleApp\Polymorphism\obj\Debug\net5.0\Polymorphism.AssemblyInfo.cs
+D:\Git\MyApp\ConsoleApp\Polymorphism\obj\Debug\net5.0\Polymorphism.csproj.CoreCompileInputs.cache
+D:\Git\MyApp\ConsoleApp\Polymorphism\obj\Debug\net5.0\Polymorphism.dll
+D:\Git\MyApp\ConsoleApp\Polymorphism\obj\Debug\net5.0\ref\Polymorphism.dll
+D:\Git\MyApp\ConsoleApp\Polymorphism\obj\Debug\net5.0\Polymorphism.pdb
+D:\Git\MyApp\ConsoleApp\Polymorphism\obj\Debug\net5.0\Polymorphism.genruntimeconfig.cache

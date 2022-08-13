@@ -1,0 +1,4 @@
+obj\Debug\net5.0/SvcUserProfile.cs \
+obj\Debug\net5.0/SvcUserProfileGrpc.cs: C:/Users/Dell/.nuget/packages/grpc.tools/2.34.1/build/native/include/google/protobuf/wrappers.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgDbDataCommon.proto\
+ ../../6.libs/gRpc.Protos/DbData/svcUserProfile.proto

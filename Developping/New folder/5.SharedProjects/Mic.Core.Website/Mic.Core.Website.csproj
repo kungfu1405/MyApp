@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Google.Protobuf" Version="3.14.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.34.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.34.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.34.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.34.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="IdentityServer4" Version="4.1.1" />
+    <PackageReference Include="System.Runtime.Caching" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgDbDataCommon.proto" GrpcServices="None">
+      <Link>Protos\msgDbDataCommon.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgLanguage.proto" GrpcServices="None">
+      <Link>Protos\msgLanguage.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgRole.proto" GrpcServices="None">
+      <Link>Protos\msgRole.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgUser.proto" GrpcServices="None">
+      <Link>Protos\msgUser.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\msgUsergroup.proto" GrpcServices="None">
+      <Link>Protos\msgUsergroup.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcLanguage.proto" GrpcServices="Client">
+      <Link>Protos\svcLanguage.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\..\6.libs\gRpc.Protos\DbData\svcUser.proto" GrpcServices="Client">
+      <Link>Protos\svcUser.proto</Link>
+    </Protobuf>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DbData.Entities">
+      <HintPath>..\..\6.libs\packages\DbData.Entities\net5.0\DbData.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Mic.Core">
+      <HintPath>..\..\6.libs\packages\Mic.Core\net5.0\Mic.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mic.Core.Entities">
+      <HintPath>..\..\6.libs\packages\Mic.Core.Entities\net5.0\Mic.Core.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Mic.UserDb.Entities">
+      <HintPath>..\..\6.libs\packages\Mic.UserDb.Entities\net5.0\Mic.UserDb.Entities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

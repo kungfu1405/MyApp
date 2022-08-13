@@ -1,0 +1,69 @@
+﻿@using Microsoft.AspNetCore.Authentication
+@using System.Security.Claims;
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+@if (User.IsInRole("Admin"))
+{
+    <h2>You are Admin</h2>
+}
+
+@if (User.IsInRole("Operator"))
+{
+    <h2>You are Operator</h2>
+}
+
+<h2>Claims</h2>
+
+<dl>
+    @foreach (var claim in User.Claims)
+    {
+        <dt>@claim.Type</dt>
+        <dd>@claim.Value</dd>
+    }
+</dl>
+
+<h2>Identity</h2>
+
+<dl>
+    @if (User.Identity != null)
+    {
+        var identity = (ClaimsIdentity)User.Identity;
+        var roleClaims = identity.FindAll(identity.RoleClaimType).ToArray();
+        if (roleClaims != null && roleClaims.Any())
+        {
+            foreach (var existingClaim in roleClaims)
+            {
+                <dt>Role: @existingClaim.Type</dt>
+                <dt>@existingClaim.Value</dt>
+            }
+        }
+        var scopeClaims = identity.FindAll("scope").ToArray();
+        if (scopeClaims != null && roleClaims.Any())
+        {
+            foreach (var existingClaim in scopeClaims)
+            {
+                <dt>Scope: @existingClaim.Type</dt>
+                <dt>@existingClaim.Value</dt>
+            }
+        }
+    }
+</dl>
+<h2>Properties</h2>
+
+<dl>
+    @foreach (var prop in (await Context.AuthenticateAsync()).Properties.Items)
+    {
+        <dt>@prop.Key</dt>
+        <dd>@prop.Value</dd>
+    }
+</dl>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h3>
+        <a asp-controller="Account" asp-action="Logout">Logout</a>
+    </h3>
+}

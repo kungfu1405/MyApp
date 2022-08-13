@@ -1,0 +1,96 @@
+2021-04-29T09:22:08.0740994+07:00  [WRN] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-29T09:22:08.1503007+07:00  [INF] Now listening on: "https://localhost:8410" (d826f4b8)
+2021-04-29T09:22:08.1520355+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T09:22:08.1534719+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T09:22:08.1549008+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend" (b5d60022)
+2021-04-29T10:47:16.5641147+07:00 0HM8AMMTNBT0B:00000005 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid.GuidResult.SetFailure(Boolean overflow, String failureMessageID)
+   at System.Guid.TryParseExactN(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid..ctor(String g)
+   at Mic.Core.Website.BaseController.get_CurrentUserId() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 40
+   at Mic.Core.Website.BaseController`1.get_CurrentUser() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 131
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 124
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Web.Frontend.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Startup.cs:line 119
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-29T10:47:30.6033035+07:00 0HM8AMMTNBT0C:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid.GuidResult.SetFailure(Boolean overflow, String failureMessageID)
+   at System.Guid.TryParseExactN(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid..ctor(String g)
+   at Mic.Core.Website.BaseController.get_CurrentUserId() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 40
+   at Mic.Core.Website.BaseController`1.get_CurrentUser() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 131
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 124
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Web.Frontend.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Startup.cs:line 123
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-29T10:47:47.8715850+07:00 0HM8AMMTNBT0D:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid.GuidResult.SetFailure(Boolean overflow, String failureMessageID)
+   at System.Guid.TryParseExactN(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid..ctor(String g)
+   at Mic.Core.Website.BaseController.get_CurrentUserId() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 40
+   at Mic.Core.Website.BaseController`1.get_CurrentUser() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 131
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 124
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Web.Frontend.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Startup.cs:line 119
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-29T10:50:20.4629715+07:00 0HM8AMMTNBT0G:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid.GuidResult.SetFailure(Boolean overflow, String failureMessageID)
+   at System.Guid.TryParseExactN(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid..ctor(String g)
+   at Mic.Core.Website.BaseController.get_CurrentUserId() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 40
+   at Mic.Core.Website.BaseController`1.get_CurrentUser() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 131
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 124
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Web.Frontend.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in E:\Microtec\Project\travel-hub\svn\4.WebFrontend\Web.Frontend\Startup.cs:line 119
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

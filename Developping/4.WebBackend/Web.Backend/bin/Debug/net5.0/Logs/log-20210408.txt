@@ -1,0 +1,427 @@
+2021-04-08T10:11:24.5217594+07:00 0HM7PMEFSHTUP:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Views_Attraction_AddEdit.<ExecuteAsync>b__57_83() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 146
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Attraction_AddEdit.<ExecuteAsync>b__57_44() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 146
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Attraction_AddEdit.<ExecuteAsync>b__57_0() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 141
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Attraction_AddEdit.ExecuteAsync() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 18
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-08T10:20:31.9358540+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T10:20:32.0456002+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T10:20:32.0476723+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T10:20:32.0495522+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T10:20:32.0517078+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T10:33:46.4979092+07:00 0HM7Q7LTSD1VT:00000003 [ERR] Get Attraction List failed!. ERROR: Error mapping types.
+
+Mapping types:
+Object -> List`1
+System.Object -> System.Collections.Generic.List`1[[DbData.Entities.EAttraction, DbData.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] (f4e7ae95)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> List`1
+System.Object -> System.Collections.Generic.List`1[[DbData.Entities.EAttraction, DbData.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+AttractionStruct -> EAttraction
+DbData.Protos.AttractionStruct -> DbData.Entities.EAttraction
+
+Type Map configuration:
+AttractionStruct -> EAttraction
+DbData.Protos.AttractionStruct -> DbData.Entities.EAttraction
+
+Destination Member:
+AttractionLanguage
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+AttractionLanguageStruct -> EAttractionLanguage
+DbData.Protos.AttractionLanguageStruct -> DbData.Entities.EAttractionLanguage
+
+Type Map configuration:
+AttractionLanguageStruct -> EAttractionLanguage
+DbData.Protos.AttractionLanguageStruct -> DbData.Entities.EAttractionLanguage
+
+Destination Member:
+AttractionId
+
+ ---> System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid.GuidResult.SetFailure(Boolean overflow, String failureMessageID)
+   at System.Guid.TryParseExactN(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid..ctor(String g)
+   at System.ComponentModel.GuidConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+   at AutoMapper.Mappers.TypeConverterMapper.Map[TSource,TDestination](TSource source)
+   at lambda_method75(Closure , AttractionLanguageStruct , EAttractionLanguage , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , AttractionLanguageStruct , EAttractionLanguage , ResolutionContext )
+   at lambda_method73(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method73(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method73(Closure , Object , List`1 , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.GetDatatable(AttractionListViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 61
+2021-04-08T10:39:38.1706842+07:00 0HM7Q7LTSD1VU:00000003 [ERR] Get Attraction List failed!. ERROR: Error mapping types.
+
+Mapping types:
+Object -> List`1
+System.Object -> System.Collections.Generic.List`1[[DbData.Entities.EAttraction, DbData.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] (f4e7ae95)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> List`1
+System.Object -> System.Collections.Generic.List`1[[DbData.Entities.EAttraction, DbData.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+AttractionStruct -> EAttraction
+DbData.Protos.AttractionStruct -> DbData.Entities.EAttraction
+
+Type Map configuration:
+AttractionStruct -> EAttraction
+DbData.Protos.AttractionStruct -> DbData.Entities.EAttraction
+
+Destination Member:
+AttractionLanguage
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+AttractionLanguageStruct -> EAttractionLanguage
+DbData.Protos.AttractionLanguageStruct -> DbData.Entities.EAttractionLanguage
+
+Type Map configuration:
+AttractionLanguageStruct -> EAttractionLanguage
+DbData.Protos.AttractionLanguageStruct -> DbData.Entities.EAttractionLanguage
+
+Destination Member:
+AttractionId
+
+ ---> System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid.GuidResult.SetFailure(Boolean overflow, String failureMessageID)
+   at System.Guid.TryParseExactN(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid..ctor(String g)
+   at System.ComponentModel.GuidConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+   at AutoMapper.Mappers.TypeConverterMapper.Map[TSource,TDestination](TSource source)
+   at lambda_method75(Closure , AttractionLanguageStruct , EAttractionLanguage , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , AttractionLanguageStruct , EAttractionLanguage , ResolutionContext )
+   at lambda_method73(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method73(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method73(Closure , Object , List`1 , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.GetDatatable(AttractionListViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 61
+2021-04-08T10:42:59.9243045+07:00 0HM7Q7LTSD1VV:00000003 [ERR] Get Attraction List failed!. ERROR: Error mapping types.
+
+Mapping types:
+Object -> List`1
+System.Object -> System.Collections.Generic.List`1[[DbData.Entities.EAttraction, DbData.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] (f4e7ae95)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> List`1
+System.Object -> System.Collections.Generic.List`1[[DbData.Entities.EAttraction, DbData.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+AttractionStruct -> EAttraction
+DbData.Protos.AttractionStruct -> DbData.Entities.EAttraction
+
+Type Map configuration:
+AttractionStruct -> EAttraction
+DbData.Protos.AttractionStruct -> DbData.Entities.EAttraction
+
+Destination Member:
+AttractionLanguage
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+AttractionLanguageStruct -> EAttractionLanguage
+DbData.Protos.AttractionLanguageStruct -> DbData.Entities.EAttractionLanguage
+
+Type Map configuration:
+AttractionLanguageStruct -> EAttractionLanguage
+DbData.Protos.AttractionLanguageStruct -> DbData.Entities.EAttractionLanguage
+
+Destination Member:
+AttractionId
+
+ ---> System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid.GuidResult.SetFailure(Boolean overflow, String failureMessageID)
+   at System.Guid.TryParseExactN(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid..ctor(String g)
+   at System.ComponentModel.GuidConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+   at AutoMapper.Mappers.TypeConverterMapper.Map[TSource,TDestination](TSource source)
+   at lambda_method75(Closure , AttractionLanguageStruct , EAttractionLanguage , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method75(Closure , AttractionLanguageStruct , EAttractionLanguage , ResolutionContext )
+   at lambda_method73(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method73(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method73(Closure , Object , List`1 , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.GetDatatable(AttractionListViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 61
+2021-04-08T10:43:59.9072219+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T10:44:00.0337715+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T10:44:00.0360426+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T10:44:00.0379088+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T10:44:00.0401107+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T10:54:21.8214316+07:00 0HM7Q829G43T9:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Views_Attraction_AddEdit.<ExecuteAsync>b__57_83() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 146
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Attraction_AddEdit.<ExecuteAsync>b__57_44() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 146
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Attraction_AddEdit.<ExecuteAsync>b__57_0() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 141
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Attraction_AddEdit.ExecuteAsync() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 18
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-08T12:29:09.2192704+07:00 0HM7Q829G43TQ:00000005 [ERR] Get Destination List failed!. ERROR: Object reference not set to an instance of an object. (9b2c0f08)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Web.Backend.Controllers.DestinationController.GetDatatable(DestinationListViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\DestinationController.cs:line 49
+2021-04-08T15:34:25.9786214+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T15:34:26.1068123+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T15:34:26.1084649+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T15:34:26.1098360+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T15:34:26.1111551+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T15:38:13.7517364+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T15:38:13.8613833+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T15:38:13.8662696+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T15:38:13.8714941+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T15:38:13.8739501+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T15:45:31.7652027+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T15:45:31.8579529+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T15:45:31.8600350+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T15:45:31.8618067+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T15:45:31.8646653+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T16:17:50.7690912+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T16:17:50.8672049+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T16:17:50.8708783+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T16:17:50.8727895+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T16:17:50.8743781+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T17:28:28.9023734+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T17:28:29.0312982+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T17:28:29.0346465+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T17:28:29.0362959+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T17:28:29.0383077+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T17:54:11.9947424+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T17:54:12.0853824+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T17:54:12.0871378+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T17:54:12.0885403+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T17:54:12.0900258+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T18:41:27.8876166+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T18:41:28.0195222+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T18:41:28.0233745+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T18:41:28.0258416+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T18:41:28.0286028+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T18:41:36.2994165+07:00 0HM7QGD1EF1QN:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unexpected 'asp-for' expression result type 'System.Nullable`1[[System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' for <input>. 'asp-for' must be of type 'System.Boolean' or 'System.String' that can be parsed as a 'System.Boolean' if 'type' is 'checkbox'.
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.GenerateCheckBox(ModelExplorer modelExplorer, TagHelperOutput output, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Attraction_AddEdit.<ExecuteAsync>b__58_0() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 167
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Attraction_AddEdit.ExecuteAsync() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 19
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-08T18:42:18.1822125+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T18:42:18.2646176+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T18:42:18.2660055+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T18:42:18.2670559+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T18:42:18.2680925+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T18:46:06.8205542+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T18:46:06.8928978+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T18:46:06.8951188+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T18:46:06.8970665+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T18:46:06.9008328+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T18:53:42.8867956+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T18:53:42.9847278+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T18:53:42.9865877+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T18:53:43.0089340+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T18:53:43.0109220+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T19:00:18.4275844+07:00 0HM7QGJVC98QG:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unexpected 'asp-for' expression result type 'DbData.Entities.EnumAttractionType' for <input>. 'asp-for' must be of type 'System.Boolean' or 'System.String' that can be parsed as a 'System.Boolean' if 'type' is 'checkbox'.
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.GenerateCheckBox(ModelExplorer modelExplorer, TagHelperOutput output, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Attraction_AddEdit.<ExecuteAsync>b__59_0() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 168
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Attraction_AddEdit.ExecuteAsync() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 19
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-08T19:01:05.9790847+07:00 0HM7QGJVC98QH:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unexpected 'asp-for' expression result type 'DbData.Entities.EnumAttractionType' for <input>. 'asp-for' must be of type 'System.Boolean' or 'System.String' that can be parsed as a 'System.Boolean' if 'type' is 'checkbox'.
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.GenerateCheckBox(ModelExplorer modelExplorer, TagHelperOutput output, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Attraction_AddEdit.<ExecuteAsync>b__59_0() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 168
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Attraction_AddEdit.ExecuteAsync() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 19
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-08T19:01:54.0684522+07:00 0HM7QGJVC98QI:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unexpected 'asp-for' expression result type 'DbData.Entities.EnumAttractionType' for <input>. 'asp-for' must be of type 'System.Boolean' or 'System.String' that can be parsed as a 'System.Boolean' if 'type' is 'checkbox'.
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.GenerateCheckBox(ModelExplorer modelExplorer, TagHelperOutput output, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Attraction_AddEdit.<ExecuteAsync>b__59_0() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 168
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Attraction_AddEdit.ExecuteAsync() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 19
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-08T19:18:20.5578806+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T19:18:20.6590140+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T19:18:20.6609073+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T19:18:20.6629097+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T19:18:20.6681590+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-08T19:21:18.1833698+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-08T19:21:18.2729269+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-08T19:21:18.2749671+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-08T19:21:18.2766715+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-08T19:21:18.2779957+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)

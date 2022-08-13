@@ -1,0 +1,155 @@
+﻿@model  PillarModel
+@{ 
+    ViewData["Title"] = "Pillar/Theme Page";
+}
+<style>
+    .heade-menu-top .nav_pillar span {
+        display: block;
+        color: #303030;
+    }
+</style>
+
+<div class="container-xxl m-auto container-pillar">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="pillar_banner position-relative">
+                    <img />
+                    <h2 class="position-absolute text-center">Pillar/Theme <br>Description</h2>
+                    <div class="position-absolute text-center bottom-0 row w-100">
+                        <div class="col-xl-8 mx-auto form-group">
+                            <input class="form-control w-100" type="text" placeholder="Search anything & explore the world out there!" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="home-txt">
+            <h3>Pillar/Theme Top Picks</h3>
+            <p class="text-center">by Our Awesome Community!</p>
+        </div>
+        <div class="home-tab-top row mb-xl-5">
+            <div class="col-10 offset-1 text-center">
+                <a class="btn mx-2 my-2 btn-toppick active">Pick of the Day</a>
+                <a class="btn mx-2 my-2 btn-toppick">Pick of the Week</a>
+                <a class="btn mx-2 my-2 btn-toppick">Pick of the Month</a>
+                <a class="btn mx-2 my-2 btn-toppick">Pick of the Year</a>
+                <a class="btn mx-2 my-2 btn-toppick">Pick of All Time</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row pillar-list position-relative">
+            <div class="swiper-wrapper">
+                @foreach (var itm in Model.ListExperience.Take(6).ToList())
+                {
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4 swiper-slide">
+                    <div class="home-item">
+                        <a class="image" href="@string.Format("/Experience/{0}", itm.RouteUri)">
+                            <img class="rounded" src="@string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)" />
+                        </a>
+                        <div class="content">
+                            <a>STORY</a>
+                            <h3><a href="@string.Format("/Experience/{0}", itm.RouteUri)">@itm.ExperienceLanguage.Title</a></h3>
+                            <p>#N of N Category</p>
+                            <p>N Have been there</p>
+                            <p>N Saves . @string.Format("{0} Comments", itm.TotalComments)</p>
+                        </div>
+                        <span class="fea-rating">
+                            <label>92</label>
+                            <label>95</label>
+                        </span>
+                    </div>
+                </div>
+                }
+            </div>
+            <div class="swiper-button-next swiper-pillar"></div>
+            <div class="swiper-button-prev swiper-pillar"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="home-txt">
+            <h3>The Ultimate Traveler's Insights, Tips & Tricks.</h3>
+            <p class="text-center">by Our Amazing Travelers!</p>
+        </div>
+        <div class="home-tab-top row mb-xl-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="offset-xl-1 col-xl-10 col-md-12 col-sm-12 text-center">
+                        <a class="btn mx-2 btn-toppick">Places to Go</a>
+                        <a class="btn mx-2 btn-toppick">Places to Drink & Eat</a>
+                        <a class="btn mx-2 btn-toppick">Places to Stay</a>
+                        <a class="btn mx-2 btn-toppick active">Story</a>
+                        <a class="btn mx-2 btn-toppick">Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row pillar-list">
+            @foreach (var itm in Model.ListExperience.Take(6).ToList())
+            {
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-4">
+                <div class="home-item home-item-horizontal row mb-0">
+                    <div class="col-6 py-0 px-2">
+                        <div class="thumb">
+                            <a class="" href="@string.Format("/Experience/{0}", itm.RouteUri)">
+                                <img class="rounded" src="@string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="content col-6">
+                        <a class="mb-2 d-block font-size-14">STORY</a>
+                        <h3><a href="@string.Format("/Experience/{0}", itm.RouteUri)">@itm.ExperienceLanguage.Title</a></h3>
+                        <p>#N of N Category</p>
+                        <p>N Have been there</p>
+                        <p>N Saves . @string.Format("{0} Comments", itm.TotalComments)</p>
+                    </div>
+                    <span class="fea-rating">
+                        <label>92</label>
+                        <label>95</label>
+                    </span>
+                </div>
+            </div>
+            }
+        </div>
+        <div class="pagination-list pillar-paging text-center mt-5" id="paging"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".nav_story").removeClass("active");
+
+        var swiper_discover = new Swiper('.pillar-list', {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: '.swiper-button-next.swiper-pillar',
+                prevEl: '.swiper-button-prev.swiper-pillar',
+            },
+        });
+
+        $('.pillar-paging').pagination({
+            items: 20, // Total number of items that will be used to calculate the pages.
+            itemsOnPage: 9, // Number of items displayed on each page.
+            displayedPages: 3,// How many page numbers should be visible while navigating.
+            currentPage: 1,
+            cssStyle: '',
+            prevText: '<ion-icon name="caret-back-outline"></ion-icon>',
+            nextText: '<ion-icon name="caret-forward-outline"></ion-icon>',
+            onInit: function () {
+                // fire first page loading
+            },
+            onPageClick: function (page, evt) {
+                // some code
+            }
+        });
+    });
+</script>

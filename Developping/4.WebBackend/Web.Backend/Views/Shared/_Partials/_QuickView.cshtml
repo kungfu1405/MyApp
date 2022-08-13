@@ -1,0 +1,43 @@
+﻿<div id="pnlQuickView" class="offcanvas offcanvas-right p-10">
+    <!--begin::Header-->
+    <div class="offcanvas-header d-flex align-items-center justify-content-between pb-5">
+        <h3 class="font-weight-bold m-0">
+            <span id="quickview-title">User Profile</span>
+            <small id="quickview-subtitle" class="text-muted font-size-sm ml-2">12 messages</small>
+        </h3>
+        <a href="#" class="btn btn-xs btn-icon btn-light btn-hover-primary" id="pnlQuickView_close">
+            <i class="ki ki-close icon-xs text-muted"></i>
+        </a>
+    </div>
+    <!--end::Header-->
+    <div class="separator separator-dashed mt-8 mb-5"></div>
+    <!--begin::Content-->
+    <div id="quickview-body" class="offcanvas-content pr-5 mr-n5">
+        &nbsp;
+    </div>
+    <!--end::Content-->
+</div>
+<a href="#" id="btn-quickview-toggle" class="invisible">&nbsp;</a>
+
+
+<div class="modal fade" id="modalUpdateData" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="Update data" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update data</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div data-scroll="true" data-height="300">
+                    <div id="pnlUpdateDataForm" class="col-12">&nbsp;</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary font-weight-bold btn-submit">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

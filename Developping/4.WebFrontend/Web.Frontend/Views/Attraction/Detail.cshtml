@@ -1,0 +1,370 @@
+﻿@model AttractionModel
+@using DbData.Entities.Enums;
+@using Mic.Core.DataTypes;
+
+@{
+    ViewData["Title"] = Model.AttractionDetail.DefaultName;
+}
+<style>
+    .col-xl-9, .col-lg-9, .col-md-9 {
+        /*max-width: 1272px;*/
+        padding-left: 0;
+        padding-right: 0;
+    }
+</style>
+<section class="section-1 container-fluid">
+    <div class="row">
+        <div class="s1-save-btn"><button class="btn-save">Save</button></div>
+    </div>
+    <div class="row">
+        <div class="s1-header-title">
+            <h2 class="header-title-text">@Model.AttractionDetail.DefaultName </h2>
+            @*<span class="header-title-text">@Model.AttractionDetail. / @Model.DestinationDetail.CountryName</span>*@
+            <p class="s1-title-desciption">@Model.AttractionDetail.Address</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-9 col-xl-9 col-md-9 header-image">
+            <div class="col-xl-4 col-lg-4 col-md-4 header-img-item"><img src="~/img/demo/18.png" alt=""></div>
+            <div class="col-xl-4 col-lg-4 col-md-4 header-img-item"><img src="~/img/demo/19.png" alt=""></div>
+            <div class="col-xl-4 col-lg-4 col-md-4 header-img-item"><img src="~/img/demo/Photos/21.jpg" alt=""></div>
+            <a href="" class="photo-counter-box">View All 23 Photos </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="header-bar-rating" id="bar-rating">
+            <div class="rating-item"><label for="" class="rating-number">60K</label><span class="rating-text">Critical Critics Critics  Critics </span></div>
+            <div class="rating-item" style="margin:0 24px"><label for="" class="rating-number">60k</label><span class="rating-text">Audience Rating</span></div>
+            <div class="rating-item"><label for="" class="rating-number">600k</label><span class="rating-text">Questions, Tip & Tricks</span></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 header-description">
+            <p class="descrition-paragraph">
+                @Model.AttractionDetail.Description
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-9 col-xl-9 col-md-9  header-banner-map">
+            <img src="~/img/demo/Rectangle 563@2x.png" width="100%" style="object-fit:center" />
+            <div class="col-xl-5 col-lg-5 col-md-5 map-box">
+                <h3 class="map-box-title">Explore Map</h3>
+                <div>
+                    <a href="" class="category-card-text">152 Posts . </a>
+                    <a href="" class="category-card-text">471 Collections</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-2">
+
+    <div class="col-xl-12 col-lg-12 col-md-12 body-container">
+        <div class="body-header">
+            <div class="title-header">
+                <h2 class="header-title-text">Best Nearby, You May Also Like</h2>
+            </div>
+            @{ var takeVisit = (int)EnumAttractionType.PlaceToVisit;
+                var takeEat = (int)EnumAttractionType.PlaceToEat;
+                var takeStay = (int)EnumAttractionType.PlaceToStay;
+            }
+            <div class="category-header">
+
+                @*<a href="@string.Format("/destination/{0}/{1}", Model.RouteUri,takeVisit)" class="btn-text category-btn">Place to go</a>*@
+
+                @foreach (EnumAttractionType type in (EnumAttractionType[])Enum.GetValues(typeof(EnumAttractionType)))
+                {
+                    if (Model.TypeOfAtt.Equals((int)type))
+                    {
+                        <a class="btn mx-2 my-2 btn-toppick active" onclick="TypeClick()">@type.ToString()</a>
+                    }
+                    else
+                    {
+                        <a class="btn mx-2 my-2 btn-toppick" onclick="TypeClick()" href="@string.Format("/Attraction/{0}/{1}", Model.RouteUri,(int)type)">@(dEnum.GetDescription(type))</a>
+                        @*<a class="btn mx-2 my-2 btn-toppick" id="att-@((int)type)" >@(dEnum.GetDescription(type))</a>*@
+                    }
+                }
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-9 col-xl-9 col-md-9 align-center">
+                <div class="row" id="attention-container">
+                    @foreach (var itm in Model._ListAllAttraction.listAttraction.ToList())
+                    {
+                        <div class="atention-item col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-4">
+                            <div class="home-item home-item-horizontal row mb-0">
+                                <div class="col-6 py-0 px-2">
+                                    <div class="thumb">
+                                        <a class="" href="@string.Format("/Attraction/{0}", itm.RouteUri)">
+                                            <img class="rounded" src="@string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="content col-6">
+                                    <a class="mb-2 d-block font-size-14">STORY</a>
+                                    <h3><a href="@string.Format("/Attraction/{0}", itm.RouteUri)">@itm.DefaultName</a></h3>
+                                    <p>#N of N Category</p>
+                                    <p>N Have been there</p>
+                                    <p>N Saves . @string.Format("{0} Comments", itm.TotalComments)</p>
+                                </div>
+                                <span class="fea-rating">
+                                    <label>92</label>
+                                    <label>95</label>
+                                </span>
+                            </div>
+                        </div>
+                    }
+
+
+                </div>
+                <div class="pagination-list attaction-paging text-center mt-5" id="paging"></div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-9 slogan-bar">
+                <div class="slogan-sumurry">
+                    <p class="slogan-sumurry-text">Contributed by 291 People with Passion and Love!</p>
+                </div>
+                <div class="slogan-title">
+                    <h3 class="header-title-text slogan-title-text">Special Thanks!</h3>
+                </div>
+                <div class="slogan-decor">
+                    <div class="slogan-cicle-item" style="width: 48px;height: 48px;"></div>
+                    <div class="slogan-cicle-item" style="width: 72px;height: 72px;"></div>
+                    <div class="slogan-cicle-item"></div>
+                    <div class="slogan-cicle-item" style="width: 72px;height: 72px;"></div>
+                    <div class="slogan-cicle-item" style="width: 48px;height: 48px;"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="vertical-card">
+                <div class="vertical-card-title">
+                    <div class="header-title-text">The Ultimate Traveler's Insights, Trips & Tricks.</div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-lg-12 col-xl-9 col-md-12 align-center">
+                <div class="row" id="experience-container">
+
+                    @foreach (var itm in Model._ListExperience.listExperience.ToList())
+                    {
+                        <div class="experience-item col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4">
+                            <div class="home-item row">
+                                <div class="col-12 py-0 px-2">
+                                    <div class="thumb">
+                                        <a class="" href="@string.Format("/Experience/{0}", itm.RouteUri)">
+                                            <img class="rounded" src="@string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <a>STORY</a>
+                                    <h3><a href="@string.Format("/Experience/{0}", itm.RouteUri)">@(string.IsNullOrEmpty(itm.ExperienceLanguage.Title) ? itm.DefaultName : itm.ExperienceLanguage.Title )</a></h3>
+                                    <p>#N of N Category</p>
+                                    <p>N Have been there</p>
+                                    <p>N Saves . @string.Format("{0} Comments", itm.TotalComments)</p>
+                                </div>
+                                <span class="fea-rating">
+                                    <label>92</label>
+                                    <label>95</label>
+                                </span>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="pagination-list experience-paging text-center mt-5" id="paging"></div>
+            </div>
+        </div>
+        <div class="row">
+
+
+        </div>
+
+</section>
+<script>
+
+    function openCommentSide() {
+
+        var rateBar = document.getElementById("bar-rating");
+        var top = rateBar.getBoundingClientRect().top;
+        var space = window.innerHeight - top - rateBar.offsetHeight ;
+
+        var commentSide = document.getElementById("comment-section");
+        if (commentSide.style.height !== "") {
+            commentSide.style.height = "";
+
+        }
+        else {
+
+            commentSide.style.height = space + "px";
+        }
+    }
+     $(document).ready(function () {
+                    activeNavBar("nav_search");
+
+         $('.experience-paging').pagination({
+                    items: @( Math.Ceiling((decimal)((decimal)Model._ListExperience.TotalRecord/(decimal)9))  ),
+            itemOnPage: 4,
+            currentPage: 1,
+            cssStyle: '',
+            prevText: '<ion-icon name="caret-back-outline"></ion-icon>',
+            nextText: '<ion-icon name="caret-forward-outline"></ion-icon>',
+            onInit: function () {
+                            // fire first page loading
+                        },
+            onPageClick: function (page, evt) {
+                LoadExperiences(page);
+                        }
+          });
+
+        $('.attaction-paging').pagination({
+                        items: @( Math.Ceiling((decimal)((decimal)Model._ListAllAttraction.TotalRecord/(decimal)4))  ),
+                itemOnPage: 4,
+                currentPage: 1,
+                cssStyle: '',
+                prevText: '<ion-icon name="caret-back-outline"></ion-icon>',
+                nextText: '<ion-icon name="caret-forward-outline"></ion-icon>',
+                onInit: function () {
+                                // fire first page loading
+                            },
+            onPageClick: function (page, evt) {
+                console.log(page);
+                console.log(evt);
+                LoadAttractions(page, @Model.TypeOfAtt);
+                    }
+        });
+
+
+     });
+    function LoadAttractions(page, TypeOfAtt) {
+     var RouteUri = "@Model.RouteUri";
+        var TypeOfAtt = @Model.TypeOfAtt;
+        $.ajax({
+             type: 'POST',
+                dataType: 'JSON',
+            url: '/Attraction/RequestByPage',
+                data: { routeUri: RouteUri, typeOfAtt: TypeOfAtt, page: page },
+            success: function (data) {
+
+                if (data._ListAllAttraction.listAttraction.length > 0) {
+                    $('.atention-item').remove();
+
+                    for (var i = 0; i < data._ListAllAttraction.listAttraction.length; i++) {
+                        var image = data._ListAllAttraction.listAttraction[i].thumbnailUrl;
+                        var title = checkNullString(data._ListAllAttraction.listAttraction[i].defaultName);
+                        var uri = data._ListAllAttraction.listAttraction[i].routeUri;
+                        var htmlString = $(" <div class='atention-item col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-4'> "
+                            + "<div class='home-item home-item-horizontal row mb-0'>"
+                            + "<div class='col-6 py-0 px-2'>"
+                            + "  <div class='thumb'>"
+                            + "      <a class='' href='/Attraction/" + uri + "'>"
+                            + "          <img class='rounded' onerror='imgError(this)' src='@string.Format("{0}", UrlList.FileServer)" + image + "'/>"
+                            + "                      </a>"
+                            + "                  </div>"
+                            + "              </div>"
+
+                            + "              <div class='content col-6'>"
+                            + "                  <a class='mb-2 d-block font-size-14'>STORY</a>"
+                            + "                  <h3><a href='/Attraction/" + uri + "'>" + title + "</a></h3>"
+                            + "                  <p>#N of N Category</p>"
+                            + "                  <p>N Have been there</p>"
+                            + "                  <p>N Saves . </p>"
+                            + "              </div>"
+                            + "              <span class='fea-rating'>"
+                            + "                  <label>92</label>"
+                            + "                  <label>95</label>"
+                            + "              </span>"
+                            + "          </div>"
+                            + "      </div>");
+
+                        htmlString.appendTo('#attention-container');
+                    }
+                }
+            },
+            error: function (req, status, error) {
+                console.log(msg);
+            }
+        });
+    }
+    function LoadExperiences(page) {
+           var RouteUri = "@Model.RouteUri";
+        var TypeOfAtt = @Model.TypeOfAtt;
+        $.ajax({
+             type: 'POST',
+                dataType: 'JSON',
+            url: '/Attraction/RequestByPage',
+                data: { routeUri: RouteUri, typeOfAtt: TypeOfAtt, page: page },
+            success: function (data) {
+
+                if (data._ListExperience.listExperience.length > 0) {
+                    $('.experience-item').remove();
+
+                    for (var i = 0; i < data._ListExperience.listExperience.length; i++) {
+                        var image = data._ListExperience.listExperience[i].thumbnailUrl;
+                        var title = checkNullString(data._ListExperience.listExperience[i]..experienceLanguage.title);
+                        var uri = data._ListExperience.listExperience[i].routeUri;
+                        var htmlString = $(" <div class='experience-item col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4'>"
+                            + "<div class='home-item row'>"
+                            + "<div class='col-12 py-0 px-2'>"
+                            + "<div class='thumb'>"
+                            + "<a class='' href='/Experience/" + uri + "' > "
+                            + "<img class='rounded' onerror='imgError(this)' src='@string.Format("{0}", UrlList.FileServer)" + image + "' /> "
+                            + "</a>"
+                            + "</div>"
+                            + "</div>"
+                            + "<div class='content'>"
+                            + "<a>STORY</a>"
+                            + "<h3><a href='/Experience/" + uri + "'> " + title + "</a></h3>"
+                            + "<p>#N of N Category</p>"
+                            + "<p>N Have been there</p>"
+                            + "<p>N Saves ." + data._ListExperience.listExperience[i].totalComments + "</p>"
+                            + "</div>"
+                            + "<span class='fea-rating'>"
+                            + "<label>92</label>"
+                            + "<label>95</label>"
+                            + "</span>"
+                            + "</div>"
+                            + "</div>");
+
+                        //tr.appendTo("#booking_table");
+                        htmlString.appendTo('#experience-container');
+                    }
+                }
+
+            },
+            error: function (req, status, error) {
+                console.log(msg);
+            }
+        });
+    }
+
+    //function OnLoad() {
+    //    if (localStorage.getItem('pageYOffset')) {
+    //        window.scrollBy(0, localStorage.getItem('pageYOffset'));
+    //    }
+    //}
+    //function TypeClick() {
+
+    //    var pageYOffset = window.pageYOffset;
+    //    localStorage.setItem('pageYOffset', pageYOffset);
+    //}
+</script>
+
+<section id="comment-section" class="comment-section">
+    <div class="row">
+        <div class="col-9 comment-header">
+            <h3 style="color:#fff">comment section</h3>
+        </div>
+    </div>
+
+</section>

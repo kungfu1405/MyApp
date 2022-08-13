@@ -1,0 +1,96 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+    Layout = "";
+}
+
+
+
+@*<h1 class="text-danger">Error.</h1>
+    <h2 class="text-danger">An error occurred while processing your request.</h2>
+
+    @if (Model != null && Model.ShowRequestId)
+    {
+        <p>
+            <strong>Request ID:</strong> <code>@Model.RequestId</code>
+        </p>
+    }
+
+    <h3>Development Mode</h3>
+    <p>
+        Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
+    </p>
+    <p>
+        <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
+        It can result in displaying sensitive information from exceptions to end users.
+        For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
+        and restarting the app.
+    </p>*@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link href="~/css/site.css" rel="stylesheet" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</head>
+<body>
+    <style>
+        .main-container{         
+            width:1272px;
+            height:500px;
+            padding-top:100px;
+            padding-bottom:139px;
+        }
+        h2 {
+            font-size: 36px;
+            color: #303030;
+            font-family: Montserrat-Bold;
+            line-height: 54px;
+        }
+        span {
+            font-size: 16px;
+            color: #303030;
+            font-family: Montserrat-Bold;
+            line-height: 24px;
+        }
+        .error-contain {
+            margin-top: 60px;
+            height: 612px;
+            width: 100%;
+            background-color: gray;
+            padding: 12px;
+            box-shadow: 0px 0px 6px #00000014;
+            border-radius: 16px;
+            background-color:#fff;
+            overflow:hidden;
+        }
+        img {
+            border-radius: 16px;
+        }
+    </style>
+    <div class="container-fluid ">
+        <div class="main-container m-auto offset-lg-2">
+            <h2 style="margin-left:auto;margin-right:auto;text-align:center;">Oops...</h2>
+            <span style="display:block;text-align:center;margin-top:12px">Error 404 Page Not Found</span>
+            <div class="error-contain">
+                <a href="~/"> <img style="width:100%;height:100%;object-fit:cover" src="~/img/day-web-master-oops-error-page-not-found-89716972.jpg" /></a>
+            </div>
+            <span style="display:block;text-align:center;margin-top:48px;">Looks like this page went on vacation. Try out our <a href="~/">Storyboard</a> instead.</span>
+        </div>
+    </div>
+</body>
+</html>

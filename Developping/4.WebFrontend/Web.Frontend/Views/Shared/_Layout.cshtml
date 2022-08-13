@@ -1,0 +1,181 @@
+﻿
+@{
+    var currentUrl = string.Format("{0}{1}", Context.Request.Path, Context.Request.QueryString);
+    var user = (EUser)ViewBag.CurrentUser;
+    var languages = (List<ELanguage>)ViewBag.Languages;
+    var currentLang = ViewBag.Language;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Web.Frontend</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css?v=2" />
+    <link rel="stylesheet" href="~/css/destination.css" />
+    <link rel="stylesheet" href="~/css/site2.css?v=2" />
+    <link rel="stylesheet" href="~/css/site-media.css?v=2" />
+
+
+    @*<link rel="stylesheet" href="~/css/purejscarousel.css" />*@
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="~/js/swiper-bundle.min.js"></script>
+    <script src="~/js/jquery.simplePagination.js"></script>
+    <link rel="stylesheet" href="~/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="~/css/simplePagination.css" />
+    <link href="~/css/hack.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site-v2.css" />
+    @*<script src="~/js/purejscarousel.js"></script>*@
+    @await RenderSectionAsync("Scripts", required: false)
+</head>
+<body onload="OnLoad()">
+    <header></header>
+    <div class="container-fluid">
+        <div class="menu-left heade-menu">
+            <div class="heade-menu-top text-center">
+                <a class="logo float-left" href="/">.travel<strong>hub</strong></a>
+                <a class="nav_story active" href="/"><span>Story Board</span></a>
+                <a class="nav_search" asp-controller="search" asp-action=""><span>Search</span></a>
+                <a href="/Collection/MyCollection" class="nav_planer"><span>Travel Planner</span></a>
+                <a class="nav_pick"><span>More</span></a>
+                <a class="nav_pillar" asp-controller="pillar" asp-action="" hidden><span class="text-center">Pillar/<br>Theme</span></a>
+
+                <a class="nav_language float-right"><span>EN</span></a>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    @*<a class="nav_post" asp-controller="Experience" asp-action="Upload"><i></i> <span>Post Story</span></a>*@
+                    @if (!string.IsNullOrEmpty(user.Picture))
+                    {
+                        <a class="nav_user float-right">
+                            <div>
+                                <img src="@UrlList.FileUrl(user.Picture)" class="rounded-circle" alt="@user.UserName" />
+                                <label>@(!string.IsNullOrEmpty(user.FullName) ? user.FullName : user.UserName)</label>
+                            </div>
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="nav_user float-right" style="font-size: 45px;color: #C6C6C6;">
+                            <ion-icon name="person-circle-sharp"></ion-icon>
+                            <label>@(!string.IsNullOrEmpty(user.FullName) ? user.FullName : user.UserName)</label>
+                        </a>
+                    }
+                    @*<a asp-controller="account" asp-action="profile" class="nav_signin"><i></i> <span>Profile</span></a>
+            <a asp-controller="account" asp-action="logout" class="nav_signin"><i></i> <span>Sign Out</span></a>*@
+                }
+                else
+                {
+                    <a asp-controller="account" asp-action="login" asp-route-returnUrl="@currentUrl" class="nav_signin float-right"><span><i></i> Sign In/Sign Up</span></a>
+                }
+            </div>
+
+            <div class="heade-menu-bottom" hidden>                
+                <a class="nav_collection" hidden><i></i> <span>My Collection</span></a>
+                <a class="nav_lang">
+                    <label>@(currentLang)</label>
+                    <ul>
+                        @foreach (var lang in languages)
+                        {
+                            <li><span data-lang="@lang.LangCode">@lang.LangCode</span></li>
+                        }
+                    </ul>
+                </a>
+            </div>
+        </div>
+        <main class="main-content">
+            @RenderBody()
+        </main>
+
+        <a class="position-fixed uploadExp-btn" asp-controller="Experiences" asp-action="Upload">+</a>
+    </div>
+
+    <footer class="footer">
+        <div class="container-xxl p-0 m-auto">
+            <div class="foot-social">
+                <a><ion-icon name="logo-facebook"></ion-icon></a>
+                <a><ion-icon name="logo-instagram"></ion-icon></a>
+                <a><ion-icon name="logo-twitter"></ion-icon></a>
+                <a><ion-icon name="mail-outline"></ion-icon></a>
+            </div>
+
+            <div class="container">
+                <div class="foot-list-men">
+                    <strong>About TravelHub</strong>
+                    <ul>
+                        <li><a href="javascript:;">About Us</a></li>
+                        <li><a href="javascript:;">Contact Us</a></li>
+                        <li><a href="javascript:;">Press</a></li>
+                        <li><a href="javascript:;">Content Integrity</a></li>
+                    </ul>
+                </div>
+                <div class="foot-list-men">
+                    <strong>Support</strong>
+                    <ul>
+                        <li><a href="javascript:;">Terms of Use</a></li>
+                        <li><a href="javascript:;">Privacy and Cookies</a></li>
+                        <li><a href="javascript:;">Site Map</a></li>
+                        <li><a href="javascript:;">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="foot-list-men" hidden>
+                    <strong>Do Business With Us</strong>
+                    <ul>
+                        <li><a href="javascript:;">Owners</a></li>
+                        <li><a href="javascript:;">Sponsored Placements</a></li>
+                        <li><a href="javascript:;">Advertise with Us</a></li>
+                        <li><a href="javascript:;">Become an Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="foot-list-men">
+                    <strong>How to Partner</strong>
+                    <ul>
+                        <li><a href="javascript:;">Become an Affiliate</a></li>
+                        <li><a href="javascript:;">Become an Ambassador</a></li>
+                        <li><a href="javascript:;">Advertise with Us</a></li>
+                        <li><a href="javascript:;">Sponsored Placements</a></li>
+                    </ul>
+                </div>
+                <div class="foot-list-men">
+                    <strong>Get the App</strong>
+                    <ul>
+                        <li><a href="javascript:;">iPhone App</a></li>
+                        <li><a href="javascript:;">Android App</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="row foot-bottom text-center">
+                <a class="logo" href="/">.travel<strong>hub</strong></a>
+                <p class="d-block text-center w-100">
+                    Created with Love and Rice © 2020-2021 TRAVELHUB.<br />
+                    All rights reserved.
+                </p>
+            </div>
+        </div>        
+    </footer>
+    <div class="experiencePreview">
+        <div class="exp-top-fix text-center position-absolute shadow-none border-top">
+            <strong>Stories</strong>
+            <a href="javascript:;" class="float-right exp-control" onclick="downPreviewExperience(this)"><ion-icon name="chevron-down-outline"></ion-icon></a>
+        </div>
+        <iframe allowfullscreen></iframe>
+    </div>
+</body>
+</html>

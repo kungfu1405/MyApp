@@ -1,0 +1,13 @@
+﻿@model ExperienceSessionViewModel
+@{
+}
+
+@for (int i = 0; i < Model.Sessions.Count(); i++)
+{
+    var lang = Model.Languages.Single(e => e.LangCode == Model.Sessions[i].LangCode);
+    <div class="form-group">
+        <label class="font-weight-bolder">
+            Language - @lang.Native
+        </label>
+    </div>
+}

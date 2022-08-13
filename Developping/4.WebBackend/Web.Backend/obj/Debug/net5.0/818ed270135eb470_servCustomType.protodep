@@ -1,0 +1,5 @@
+obj\Debug\net5.0/ServCustomType.cs \
+obj\Debug\net5.0/ServCustomTypeGrpc.cs: C:/Users/Admin/.nuget/packages/grpc.tools/2.34.0/build/native/include/google/protobuf/wrappers.proto\
+ ../../6.libs/gRpc.Protos/DynamicData/msgCommon.proto\
+ ../../6.libs/gRpc.Protos/DynamicData/msgCustomType.proto\
+ ../../6.libs/gRpc.Protos/DynamicData/servCustomType.proto

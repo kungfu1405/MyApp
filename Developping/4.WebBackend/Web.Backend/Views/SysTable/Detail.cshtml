@@ -1,0 +1,78 @@
+﻿@using DynamicData.Entities;
+@model ESysTable
+
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Name</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.Name.ToUpper()</span>
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Display Name</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.DisplayName</span>
+    </span>
+</div>
+<div class="d-flex justify-content-between mb-3 mt-5">
+    <span class="text-dark-75 font-weight-bolder mr-2">Permissions</span>
+    <div class="checkbox-inline row">
+        @foreach (var tblPermission in Enum.GetValues(typeof(EnumTablePermission)))
+        {
+            <label class="checkbox checkbox-outline checkbox-outline-2x checkbox-primary col-4 mr-0">
+                <input type="checkbox" value="@((int)tblPermission)" disabled
+                       @(((int)tblPermission & Model.Permissions) > 0 ? "checked" : "") />
+                <span></span>
+                @dStr.CapitalizeWords(tblPermission.ToString())
+            </label>
+        }
+    </div>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Status</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.StatusText</span>
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Notes</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (string.IsNullOrWhiteSpace(Model.StatusNote))
+        {
+            <span>...</span>
+        }
+        else
+        {
+            <span>@Model.StatusNote</span>
+        }
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Enabled</span>
+    <span class="text-dark-50 text-hover-primary">
+        @if (Model.Enabled)
+        {
+            <span class="badge badge-primary">
+                YES
+            </span>
+        }
+        else
+        {
+            <span class="badge badge-light">
+                NO
+            </span>
+        }
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Last Synchronized</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.LastSyncDate.ToString("dd-MMM-yyyy HH:mm:ss")</span>
+    </span>
+</div>
+
+<div class="separator separator-dashed my-3"></div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-primary">
+        <i class="la la-edit"></i>Edit
+    </a>
+</div>

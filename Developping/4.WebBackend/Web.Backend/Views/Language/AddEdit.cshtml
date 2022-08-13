@@ -1,0 +1,145 @@
+﻿@model Web.Backend.Models.User.LanguageViewModel
+
+<form asp-action="AddEdit" method="post" class="form-vertical">
+    <div class="form-group row">
+        <div class="col-7">
+            <label class="font-weight-bold" asp-for="Language.LangCode">
+                LangCode
+                <span class="text-danger">*</span>
+            </label>
+            @if (FormActionMode.Edit.Equals(Model.ActionMode))
+            {
+                <input type="text" asp-for="Language.LangCode"
+                       class="form-control" readonly />
+            }
+            else
+            {
+                <input type="text" asp-for="Language.LangCode"
+                       class="form-control" autocomplete="off"
+                       placeholder="ex: en,vn,..." maxlength="10" />
+            }
+        </div>
+        <div class="col-5">
+            <label class="font-weight-bold mr-3 mb-0" asp-for="Language.IsDefault">
+                Default
+            </label>
+            <span class="switch switch-outline switch-icon switch-brand">
+                <label>
+                    <input type="checkbox" asp-for="Language.IsDefault" />
+                    <span></span>
+                </label>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="font-weight-bold" asp-for="Language.Name">
+            Language Name
+            <span class="text-danger">*</span>
+        </label>
+        <input type="text" asp-for="Language.Name"
+               class="form-control" autocomplete="off"
+               placeholder="ex: English, Vietnamese,..." required maxlength="50" />
+    </div>
+    <div class="form-group">
+        <label class="font-weight-bold" asp-for="Language.Native">
+            Native
+            <span class="text-danger">*</span>
+        </label>
+        <input type="text" asp-for="Language.Native"
+               class="form-control" autocomplete="off"
+               placeholder="ex: English, Việt Nam,..." maxlength="50" />
+    </div>
+    <div class="form-group">
+        <label class="font-weight-bold" asp-for="Language.IconUrl">
+            Flag Icons
+            <input type="hidden" asp-for="Language.IconUrl" />
+        </label>
+        <div></div>
+    </div>
+    <div class="form-group">
+        <label class="font-weight-bold" asp-for="Language.Ordinal">
+            Ordinal
+        </label>
+        <input type="number" asp-for="Language.Ordinal" class="form-control" />
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            <label class="font-weight-bold" asp-for="Language.IsRtl">
+                LtR Direction
+            </label>
+            <span class="switch switch-outline switch-icon switch-brand">
+                <label>
+                    <input type="checkbox" asp-for="Language.IsRtl" />
+                    <span></span>
+                </label>
+            </span>
+        </div>
+        <div class="col-6">
+            <label class="font-weight-bold mr-3 mb-0" asp-for="Language.IsActive">
+                Active
+            </label>
+            <span class="switch switch-outline switch-icon switch-brand">
+                <label>
+                    <input type="checkbox" asp-for="Language.IsActive" />
+                    <span></span>
+                </label>
+            </span>
+        </div>
+    </div>
+
+    <input type="hidden" asp-for="Language.LangCode" />
+    <input type="hidden" asp-for="ActionMode" />
+    <input type="hidden" asp-for="CommandName" />
+</form>
+
+
+
+@section Toolbar{
+    <a asp-action="Index" class="btn btn-secondary mr-2">
+        <i class="la la-undo"></i> Return
+    </a>
+    @if (Model.ActionMode == FormActionMode.Edit)
+    {
+        <a class="btn btn-danger btn-delete mr-2" data-command="delete">
+            <i class="flaticon-delete-1"></i> Delete
+        </a>
+    }
+    <a class="btn btn-warning btn-reset mr-2">
+        <i class="la la-undo-alt"></i> Reset
+    </a>
+    <div class="btn-group">
+        <a class="btn btn-primary btn-submit"><i class="la la-save"></i> Save</a>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Save Options</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item btn-submit" href="#"><i class="la la-save"></i> Save & Back</a>
+            <a class="dropdown-item btn-submit" href="#" data-command="continue"><i class="la la-save"></i> Save & Continue</a>
+        </div>
+    </div>
+}
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.btn-reset').click(function (e) {
+                e.preventDefault();
+                $('#pnlForms form').trigger("reset");
+                $('#pnlForms .select2').trigger("change");
+            });
+            $('.btn-submit').click(function (e) {
+                e.preventDefault();
+                SubmitForm($(this), '#pnlForms');
+            });
+            $('.btn-delete').click(function (e) {
+                e.preventDefault();
+                var btDelete = $(this);
+                ConfirmDelete(function () {
+                    SubmitForm(btDelete, '#pnlForms');
+                });
+            });
+        });
+    </script>
+}

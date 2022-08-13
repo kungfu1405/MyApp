@@ -1,0 +1,106 @@
+﻿@using DynamicData.Entities
+@using Mic.Core.DataTypes
+@model Web.Backend.Models.DynamicForm.DFormViewModel
+@{
+    // use for URL querystring inside datatable Edit, Delete links
+    var ktTableParams = "";
+    var listPkColumns = Model.GetPkColumns();
+    if (listPkColumns.Any())
+    {
+        for (var i = 0; i < listPkColumns.Count(); i++)
+        {
+            if (i == 0)
+                ktTableParams += string.Format("?{0}={1}", listPkColumns[i].Id, Model.Data[listPkColumns[i].Id]);
+            else
+                ktTableParams += string.Format("&{0}={1}", listPkColumns[i].Id, Model.Data[listPkColumns[i].Id]);
+        }
+    }
+}
+@foreach (var col in Model.Columns.OrderBy(e => e.Ordinal))
+{
+    string colval = "";
+    if (Model.Data != null)
+    {
+        colval = Model.Data[col.Id];
+    }
+    if ((int)EnumFieldDisplayType.Hidden == col.DisplayType)
+    {
+        continue;
+    }
+    <div class="d-flex justify-content-between align-items-center my-3">
+        <span class="text-dark-75 font-weight-bolder mr-2">@col.DisplayName</span>
+        <span class="text-dark-50 text-hover-primary">
+            @if (!string.IsNullOrEmpty(col.CustomTypeId))
+            {
+                var custType = Model.CustomTypes.SingleOrDefault(e => e.Id == col.CustomTypeId);
+                if (custType != null && !string.IsNullOrEmpty(custType.JsonKeyValue))
+                {
+                    var custItems = Newtonsoft.Json.JsonConvert.DeserializeObject<List<CustomTypeStruct>>(custType.JsonKeyValue);
+
+                    foreach (var citem in custItems.OrderBy(e => e.Ordinal))
+                    {
+                        if (citem.Value != colval)
+                        {
+                            continue;
+                        }
+                        <span class="@(string.IsNullOrEmpty(citem.ColorCode) ? "" : "badge badge-" + citem.ColorCode)">
+                            @citem.Text
+                        </span>
+                    }
+                }
+            }
+            else
+            {
+                switch ((EnumFieldDisplayType)col.DisplayType)
+                {
+                    case EnumFieldDisplayType.Checkbox:
+                        <span>@(dBin.ToBoolean(colval) ? "YES" : "NO")</span>
+                        break;
+                    case EnumFieldDisplayType.RadioButtonList:
+                    case EnumFieldDisplayType.Dropdown:
+                        @if (Model.RefTables != null && Model.RefTables[col.ReferenceTableId] != null)
+                        {
+                            var refdata = Model.RefTables[col.ReferenceTableId].Results;
+                            foreach (var row in refdata)
+                            {
+                                if (row.Id != colval)
+                                {
+                                    continue;
+                                }
+                                <span>@row.Text</span>
+                            }
+                        }
+                        break;
+                    case EnumFieldDisplayType.DateTime:
+                        <span>@dDat.ToDateTime(colval).ToString("dd-MMM-yyyy HH:mm:ss")</span>
+                        break;
+                    case EnumFieldDisplayType.Date:
+                        <span>@dDat.ToDateTime(colval).ToString("dd-MMM-yyyy")</span>
+                        break;
+                    case EnumFieldDisplayType.Time:
+                        <span>@dDat.ToDateTime(colval).ToString("HH:mm:ss")</span>
+                        break;
+                    default:
+                        <span>@colval</span>
+                        break;
+                }
+            }
+        </span>
+    </div>
+}
+<div class="separator separator-dashed my-3"></div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    @if (((int)EnumTablePermission.Edit & Model.Table.Permissions) > 0)
+    {
+        <a href="@(Url.Action("AddEdit", new { fid = Model.TableId }))@(ktTableParams)" class="btn btn-primary">
+            <i class="la la-edit"></i>Edit
+        </a>
+    }
+    @if (((int)EnumTablePermission.Delete & Model.Table.Permissions) > 0)
+    {
+        <a href="#" data-link="@(Url.Action("Delete", new { fid = Model.TableId }))@(ktTableParams)" 
+           data-toggle="confirmation" class="btn btn-danger btn-delete">
+            <i class="flaticon-delete-1"></i> Delete
+        </a>
+    }
+</div>

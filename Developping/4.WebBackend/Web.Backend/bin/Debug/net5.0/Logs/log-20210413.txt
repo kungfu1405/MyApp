@@ -1,0 +1,1021 @@
+2021-04-13T09:57:30.7411971+07:00 0HM7TKRNKDJOQ:00000001 [ERR] AddEdit:: Get RecordID 'd684a0f8-2b24-4b85-847a-0476458b2da3' failed! (1c986238)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211) SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.", DebugException="System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211)
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.AttractionController.AddEdit(String id, String msg) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 93
+2021-04-13T09:57:51.9833876+07:00 0HM7TKRNKDJOQ:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211) SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.", DebugException="System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211)
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Mic.Core.Website.BaseController`1.get_Languages() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 171
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 122
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-13T09:58:04.2478041+07:00 0HM7TKRNKDJOQ:00000003 [ERR] AddEdit:: Get RecordID 'd684a0f8-2b24-4b85-847a-0476458b2da3' failed! (1c986238)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211) SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.", DebugException="System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211)
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.AttractionController.AddEdit(String id, String msg) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 93
+2021-04-13T09:58:25.3129026+07:00 0HM7TKRNKDJOQ:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211) SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.", DebugException="System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211)
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Mic.Core.Website.BaseController`1.get_Languages() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 171
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 122
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-13T09:58:59.0577198+07:00 0HM7TKRNKDJOQ:00000007 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211) SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.", DebugException="System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211)
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Mic.Core.Website.BaseController`1.get_Languages() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 171
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 122
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-13T10:05:39.3537628+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T10:05:39.4740522+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T10:05:39.4765259+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T10:05:39.4785687+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T10:05:39.4809089+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T10:06:11.4402379+07:00 0HM7U544DGJJB:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211) SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.", DebugException="System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211)
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Mic.Core.Website.BaseController`1.get_Languages() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 171
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 122
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-13T10:09:07.6828849+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T10:09:07.7409227+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T10:09:07.7423598+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T10:09:07.7435402+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T10:09:07.7448310+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T10:09:35.6811898+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T10:09:35.7324447+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T10:09:35.7337961+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T10:09:35.7348928+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T10:09:35.7359453+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T10:10:16.3407083+07:00 0HM7U56E6N0HC:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211) SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.", DebugException="System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211)
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Mic.Core.Website.BaseController`1.get_Languages() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 171
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 122
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-13T10:15:02.6393381+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T10:15:02.6931181+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T10:15:02.6944737+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T10:15:02.6957684+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T10:15:02.6969508+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T10:15:47.1510768+07:00 0HM7U59GR8MC3:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211) SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.", DebugException="System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (192.168.68.196:8211)
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Mic.Core.Website.BaseController`1.get_Languages() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 171
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 122
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-13T10:17:13.2716921+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T10:17:13.3285086+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T10:17:13.3302382+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T10:17:13.3313876+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T10:17:13.3326491+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T10:17:39.6777852+07:00 0HM7U5AOK39NO:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Mic.Core.Website.BaseController`1.get_Languages() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 171
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 122
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-13T10:20:11.7543771+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T10:20:11.8094696+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T10:20:11.8109973+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T10:20:11.8120573+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T10:20:11.8132929+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T10:20:45.9871725+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T10:20:46.0498470+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T10:20:46.0519139+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T10:20:46.0535715+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T10:20:46.0552640+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T10:21:00.1023083+07:00 0HM7U5CKCN4AR:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Mic.Core.Website.BaseController`1.get_Languages() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 171
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 122
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-13T10:23:10.0270902+07:00 0HM7U5CKCN4AT:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Grpc.Core.RpcException: Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Mic.Core.Website.BaseController`1.get_Languages() in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 171
+   at Mic.Core.Website.BaseController`1.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\Microtec\Project\travel-hub\svn\5.SharedProjects\Mic.Core.Website\BaseController.cs:line 122
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-13T10:28:13.3808406+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T10:28:13.5053733+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T10:28:13.5083901+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T10:28:13.5108105+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T10:28:13.5128449+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T10:41:03.9109509+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T10:41:03.9960328+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T10:41:03.9976541+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T10:41:03.9989772+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T10:41:04.0002249+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T10:44:44.3898801+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T10:44:44.4914203+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T10:44:44.4933213+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T10:44:44.4952038+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T10:44:44.4970201+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T10:53:13.2454613+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T10:53:13.3783469+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T10:53:13.3819383+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T10:53:13.3840721+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T10:53:13.3867360+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T12:07:45.4816125+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T12:07:45.6247915+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T12:07:45.6271034+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T12:07:45.6289632+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T12:07:45.6413855+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T14:13:14.5793434+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T14:13:14.6911426+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T14:13:14.6929922+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T14:13:14.6942769+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T14:13:14.6956359+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T14:30:06.1747854+07:00 0HM7U9EG38PB4:00000095 [ERR] get Attraction Language failed!. ERROR: Object reference not set to an instance of an object. (9e9bae26)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageGet(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 325
+2021-04-13T14:36:02.3700487+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T14:36:02.4851743+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T14:36:02.4906600+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T14:36:02.4935156+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T14:36:02.4959710+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T15:07:36.1361555+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T15:07:36.2138422+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T15:07:36.2154447+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T15:07:36.2167065+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T15:07:36.2195551+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T16:05:27.0885663+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T16:05:27.1769425+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T16:05:27.1786079+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T16:05:27.1801442+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T16:05:27.1818059+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T16:09:54.4987749+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T16:09:54.5799651+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T16:09:54.5828119+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T16:09:54.5850446+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T16:09:54.5870542+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T16:20:37.7767165+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T16:20:37.8746556+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T16:20:37.8767139+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T16:20:37.8781582+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T16:20:37.8794940+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T16:22:26.2728398+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T16:22:26.3855989+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T16:22:26.3878804+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T16:22:26.3896674+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T16:22:26.3913220+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T16:38:20.7085423+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T16:38:20.8190280+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T16:38:20.8220156+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T16:38:20.8248340+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T16:38:20.8271355+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T16:42:10.5503079+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T16:42:10.6149711+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T16:42:10.6166233+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T16:42:10.6178321+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T16:42:10.6192915+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T16:47:09.5651530+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T16:47:09.6219608+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T16:47:09.6235496+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T16:47:09.6246781+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T16:47:09.6257607+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T16:47:16.6401387+07:00 0HM7UC4DN60LM:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot apply indexing with [] to an expression of type 'System.Dynamic.DynamicObject'
+   at CallSite.Target(Closure , CallSite , Object , String )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at AspNetCore.Views_Attraction_AddEdit.ExecuteAsync() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 275
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-13T16:56:24.1589699+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T16:56:24.2347243+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T16:56:24.2364724+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T16:56:24.2379993+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T16:56:24.2396665+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T17:04:42.1773568+07:00 0HM7UC9NBN919:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentNullException: Value cannot be null. (Parameter 'items')
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList..ctor(IEnumerable items, String dataValueField, String dataTextField, IEnumerable selectedValues, String dataGroupField)
+   at Microsoft.AspNetCore.Mvc.Rendering.SelectList..ctor(IEnumerable items, String dataValueField, String dataTextField, Object selectedValue)
+   at Microsoft.AspNetCore.Mvc.Rendering.SelectList..ctor(IEnumerable items, String dataValueField, String dataTextField)
+   at AspNetCore.Views_Attraction_AddEdit.ExecuteAsync() in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Views\Attraction\AddEdit.cshtml:line 274
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-13T17:06:02.6220506+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T17:06:02.7035669+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T17:06:02.7063207+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T17:06:02.7086529+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T17:06:02.7107615+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T17:18:19.6843404+07:00 0HM7UCEVB3GII:00000005 [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method332(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method332(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 291
+2021-04-13T17:18:41.2604376+07:00 0HM7UCEVB3GII:00000009 [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method332(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method332(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 291
+2021-04-13T17:20:20.8636397+07:00 0HM7UCEVB3GII:0000000D [ERR] add Attraction Language failed!. ERROR: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)") (e48ba801)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 292
+2021-04-13T17:20:22.9327336+07:00 0HM7UCEVB3GII:0000000F [ERR] AddEdit:: Get RecordID '3a80032d-3979-4456-9737-1dc8cf696202' failed! (c8c13b70)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.199:8211) SocketException: No connection could be made because the target machine actively refused it.", DebugException="System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (192.168.68.199:8211)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.AttractionController.AddEdit(String id, String msg) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 94
+2021-04-13T17:21:21.4497331+07:00 0HM7UCEVB3GIJ:00000003 [ERR] get Attraction Language failed!. ERROR: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)") (e3059557)
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageGet(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 359
+2021-04-13T17:54:28.1927105+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T17:54:28.2812111+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T17:54:28.2828636+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T17:54:28.2841669+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T17:54:28.2854519+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T18:00:48.6861924+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T18:00:48.7516521+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T18:00:48.7530115+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T18:00:48.7541194+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T18:00:48.7555278+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T18:03:56.4046306+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T18:03:56.4710688+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T18:03:56.4726805+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T18:03:56.4739369+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T18:03:56.4755006+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T18:07:22.0149491+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T18:07:22.0791558+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T18:07:22.0805739+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T18:07:22.0817307+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T18:07:22.0832582+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T18:21:22.7206644+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T18:21:22.8043045+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T18:21:22.8063709+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T18:21:22.8078552+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T18:21:22.8100894+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T18:25:50.7954213+07:00 0HM7UDPD9CS98:00000001 [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method139(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method139(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 299
+2021-04-13T18:30:15.7811639+07:00 0HM7UDPD9CS9B:00000001 [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method139(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method139(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 299
+2021-04-13T18:36:41.7391170+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T18:36:41.8233917+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T18:36:41.8251886+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T18:36:41.8266588+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T18:36:41.8280763+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T18:45:13.3255897+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T18:45:13.3969507+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T18:45:13.3987363+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T18:45:13.4003669+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T18:45:13.4025051+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)
+2021-04-13T18:45:57.3615266+07:00 0HM7UE6KI4VO3:00000001 [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 299
+2021-04-13T18:46:18.1539252+07:00 0HM7UE6KI4VO3:00000005 [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 299
+2021-04-13T18:46:51.5276069+07:00 0HM7UE6KI4VO3:00000009 [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 299
+2021-04-13T18:52:18.3909591+07:00 0HM7UE6KI4VO3:0000000D [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 299
+2021-04-13T18:52:44.2642287+07:00 0HM7UE6KI4VO3:00000011 [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 299
+2021-04-13T18:52:49.2369213+07:00 0HM7UE6KI4VO3:00000015 [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 299
+2021-04-13T19:00:00.8477547+07:00 0HM7UE6KI4VO4:00000009 [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 299
+2021-04-13T19:01:44.5728903+07:00 0HM7UE6KI4VO4:00000025 [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 299
+2021-04-13T19:01:47.2963420+07:00 0HM7UE6KI4VO4:00000029 [ERR] add Attraction Language failed!. ERROR: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+ (e5a90c43)
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Type Map configuration:
+EAttractionLanguage -> AttractionLanguageStruct
+DbData.Entities.EAttractionLanguage -> DbData.Protos.AttractionLanguageStruct
+
+Destination Member:
+LangCode
+
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DbData.Protos.AttractionLanguageStruct.set_LangCode(String value) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\obj\Debug\net5.0\MsgAttraction.cs:line 1660
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method129(Closure , Object , AttractionLanguageStruct , ResolutionContext )
+   at Web.Backend.Controllers.AttractionController.AttractionLanguageAdd(AttractionLanguageViewModel model) in E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend\Controllers\AttractionController.cs:line 299
+2021-04-13T19:05:01.0212529+07:00  [WRN] Overriding address(es) '"http://localhost:8503"'. Binding to endpoints defined in "UseKestrel()" instead. (1f05ff23)
+2021-04-13T19:05:01.1481025+07:00  [INF] Now listening on: "https://[::]:8310" (d826f4b8)
+2021-04-13T19:05:01.1503409+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-13T19:05:01.1520508+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-13T19:05:01.1540897+07:00  [INF] Content root path: "E:\Microtec\Project\travel-hub\svn\4.WebBackend\Web.Backend" (b5d60022)

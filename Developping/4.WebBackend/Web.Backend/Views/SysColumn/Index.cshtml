@@ -1,0 +1,74 @@
+﻿@model Web.Backend.Models.DynamicForm.DFormModel
+
+<div class="table-hover datatable datatable-bordered datatable-head-custom" id="ctbl_syscolumn"></div>
+
+<script type="text/javascript">
+    var container_syscolumn;
+    $(document).ready(function () {
+        container_syscolumn = $('#ctbl_syscolumn').KTDatatable({
+            // datasource definition
+            data: {
+                type: 'remote',
+                source: {
+                    read: {
+                        url: '@Url.Action("GetDatatable", "SysColumn")',
+                        params: {
+                            TableId: '@Model.TableId'
+                        }
+                    },
+                },
+                pageSize: 10,
+                serverPaging: false,
+                serverFiltering: true,
+                serverSorting: false,
+                saveState: false,
+            },
+            layout: {
+                scroll: false,
+                footer: false,
+            },
+            sortable: false,
+            pagination: false,
+
+            // columns definition
+            columns: [
+                { field: "ordinal", title: "#", width: 30, overflow: 'visible', autoHide: false }
+                , { field: "name", title: "Column", overflow: 'visible', autoHide: false }
+                , { field: "displayName", title: "Display" }
+                , { field: "displayType", title: "Control", width: 90 }
+                , { field: "dataType", title: "DataType", width: 90 }
+                , {
+                    field: "isNulable", title: "Required", width: 70, textAlign: "center"
+                    , template: function (row) {
+                        var returnText = row["isNulable"] ? "NO" : "YES";
+                        var resultHTML = "";
+                        if (returnText == "YES")
+                            resultHTML = '<span class="badge badge-primary">' + returnText + '</span>';
+                        else
+                            resultHTML = '<span class="badge badge-light">' + returnText + '</span>';
+                        return resultHTML;
+                    }
+                }
+                , {
+                    field: "Actions", title: "", width: 35, textAlign: "right", overflow: 'visible', autoHide: false
+                    , template: function (row) {
+                        var resultHtml = '\
+                            <a href="#" data-title="Edit Column ' + row.displayName + '" \
+                                    data-link="@(Url.Action("AddEdit", "SysColumn"))/' + row.id + '" \
+                                    data-kt-table="ctbl_syscolumn" \
+                                    class="btn btn-sm btn-clean btn-icon btn-quickedit" title="Edit column">\
+                                <i class="la la-edit"></i>\
+                            </a>'
+                        return resultHtml;
+                    }
+                }
+            ],
+            translate: {
+                records: {
+                    noRecords: "No records found",
+                    processing: "Loading...",
+                }
+            }
+        });
+    });
+</script>

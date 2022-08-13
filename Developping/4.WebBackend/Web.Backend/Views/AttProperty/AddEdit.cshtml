@@ -1,0 +1,196 @@
+﻿
+
+@model AttPropertyViewModel
+@{
+    ViewData["Title"] = "City";
+    Model.ReturnUrl = string.Format("{0}{1}", Context.Request.Path, Context.Request.QueryString);
+}
+
+<div class="row" id="pnlForms">
+    <div class="col-lg-5">
+        <div class="card card-custom">
+            <div class="card-header">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        @Model.ActionMode.ToString() Attribute Property
+
+                        @if (FormActionMode.Edit.Equals(Model.ActionMode))
+                        {
+                            <small>@Model.AttProperty.Name</small>
+                        }
+                    </h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form asp-action="AddEdit" method="post" class="form-vertical">
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="AttProperty.Name">
+                            Name
+                            <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" asp-for="AttProperty.Name"
+                               class="form-control" autocomplete="off"
+                               placeholder="Attribute propety Name" required maxlength="50" />
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="AttProperty.PropertyGroup">
+                            Property Group
+                            <span class="text-danger">*</span>
+                        </label>
+                        <select id="ddlProGroup" asp-for="AttProperty.PropertyGroup" class="form-control" required asp-items="Html.GetEnumSelectList<EnumPropertyGroup>()">
+                            <option> -- </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="AttProperty.DataType">
+                            Data Type
+                            <span class="text-danger">*</span>
+                        </label>
+                        <select id="ddlProGroup" asp-for="AttProperty.DataType" class="form-control" required asp-items="Html.GetEnumSelectList<EnumDataType>()">
+                            <option> -- </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="AttProperty.Name">
+                            Css Icon
+                            <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" asp-for="AttProperty.CssIcon"
+                               class="form-control" autocomplete="off"
+                               placeholder="CssIcon" required maxlength="50" />
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="AttProperty.Ordinal">
+                            Ordinal
+                            <span class="text-danger">*</span>
+                        </label>
+                        <input type="number" asp-for="AttProperty.Ordinal"
+                               class="form-control" autocomplete="off"
+                               placeholder="Ordinal" required maxlength="50" />
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="AttProperty.Description">
+                            Description
+                            <span class="text-danger">*</span>
+                        </label>
+
+                        <textarea asp-for="AttProperty.Description"
+                                  class="form-control" autocomplete="off"
+                                  placeholder="Description" required maxlength="50"></textarea>
+                    </div>
+                 
+                    <input type="hidden" asp-for="AttProperty.Id" />
+                    <input type="hidden" asp-for="ActionMode" />
+                    <input type="hidden" asp-for="ReturnUrl" />
+                    <input type="hidden" asp-for="CommandName" />
+                </form>
+            </div>
+        </div>
+    </div>
+    @if (FormActionMode.Edit.Equals(Model.ActionMode))
+    {
+        <div class="col-lg-7 invisible">
+            <div class="card card-custom">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h3 class="card-label">
+                            Sub panel
+                            <small></small>
+                        </h3>
+                    </div>
+                </div>
+                <div class="card-body">
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+
+<partial name="_Partials/_alertMessage" model="Model.AlertMessages" />
+
+@section Toolbar{
+    <a asp-action="Index" class="btn btn-secondary mr-2">
+        <i class="la la-undo"></i> Return
+    </a>
+    @if (Model.ActionMode == FormActionMode.Edit)
+    {
+        <a class="btn btn-danger btn-delete mr-2" data-command="delete">
+            <i class="flaticon-delete-1"></i> Delete
+        </a>
+    }
+    <a class="btn btn-warning btn-reset mr-2">
+        <i class="la la-undo-alt"></i> Reset
+    </a>
+    <div class="btn-group">
+        <a class="btn btn-primary btn-submit"><i class="la la-save"></i> Save</a>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Save Options</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item btn-submit" href="#"><i class="la la-save"></i> Save & Back</a>
+            <a class="dropdown-item btn-submit" href="#" data-command="continue"><i class="la la-save"></i> Save & Continue</a>
+        </div>
+    </div>
+}
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#ddlCountry").select2({
+                minimumInputLength: 2,
+                placeholder: "Search Country",
+                allowClear: true,
+                ajax: {
+                    url: '@Url.Action("Search", "Country")',
+                    dataType: 'json',
+                    delay: 250,
+                    cache: true,
+                    data: function (params) {
+                        var queryParameters = {
+                            keyword: params.term
+                        }
+                        return queryParameters;
+                    }
+                }
+            });
+            $("#ddlState").select2({
+                minimumInputLength: 2,
+                placeholder: "Search State",
+                allowClear: true,
+                ajax: {
+                    url: '@Url.Action("Search", "State")',
+                    dataType: 'json',
+                    delay: 250,
+                    cache: true,
+                    data: function (params) {
+                        var queryParameters = {
+                            keyword: params.term,
+                            CountryId: function () { return $("#ddlCountry").val(); }
+                        }
+                        return queryParameters;
+                    }
+                }
+            });
+
+            $('.btn-reset').click(function (e) {
+                e.preventDefault();
+                $('#pnlForms form').trigger("reset");
+                $('#pnlForms .select2').trigger("change");
+            });
+            $('.btn-submit').click(function (e) {
+                e.preventDefault();
+                SubmitForm($(this), '#pnlForms');
+            });
+            $('.btn-delete').click(function (e) {
+                e.preventDefault();
+                var btDelete = $(this);
+                ConfirmDelete(function () {
+                    SubmitForm(btDelete, '#pnlForms');
+                });
+            });
+        });
+    </script>
+}

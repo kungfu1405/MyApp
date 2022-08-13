@@ -1,0 +1,16 @@
+D:\Git\MyApp\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ConsoleApp.exe
+D:\Git\MyApp\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ConsoleApp.deps.json
+D:\Git\MyApp\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ConsoleApp.runtimeconfig.json
+D:\Git\MyApp\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ConsoleApp.runtimeconfig.dev.json
+D:\Git\MyApp\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ConsoleApp.dll
+D:\Git\MyApp\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ref\ConsoleApp.dll
+D:\Git\MyApp\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ConsoleApp.pdb
+D:\Git\MyApp\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.csproj.AssemblyReference.cache
+D:\Git\MyApp\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\MyApp\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.AssemblyInfoInputs.cache
+D:\Git\MyApp\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.AssemblyInfo.cs
+D:\Git\MyApp\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.csproj.CoreCompileInputs.cache
+D:\Git\MyApp\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.dll
+D:\Git\MyApp\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ref\ConsoleApp.dll
+D:\Git\MyApp\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.pdb
+D:\Git\MyApp\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.genruntimeconfig.cache

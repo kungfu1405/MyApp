@@ -1,0 +1,62 @@
+﻿@model DbData.Entities.Models.SignUpModel
+@{
+    Layout = "_AuthenLayout";
+}
+<form id="signup-form" asp-action="SignUp" method="post">
+    <div>
+        <h2 class="header-title-text ">Welcome to .pickpack™</h2>
+        <p class="small-title-text" style="color: #52616B;
+                ">Let's get you all set up so you can explore the unexplored!</p>
+    </div>
+    <div class="common-form-group">
+        <input type="email" asp-for="email" value="@Model.email" placeholder="Email" class="common-form-control" id="email-input" required maxlength="50">        
+        <span asp-validation-for="email" class="inform-text"></span>
+    </div>
+    <div class="common-form-group">
+        <input type="text" asp-for="userName" value="@Model.userName" placeholder="User name" autocomplete="off" class="common-form-control" id="usr-input" required maxlength="50">        
+        <span asp-validation-for="userName" class="inform-text"></span>
+    </div>
+
+    <div class="common-form-group"> 
+        <input type="password" maxlength="500" value="" class="common-form-control" autocomplete="off" asp-for="password" required placeholder="Password" id="pwd-input">
+        <span asp-validation-for="password" class="inform-text text-danger"></span>
+
+    </div>
+    <div class="common-form-group">
+        <input type="password" maxlength="500" value="" class="common-form-control" autocomplete="off" asp-for="repassword" required placeholder="Re-password" id="repwd-input">
+        <span asp-validation-for="repassword" class="inform-text inform-text-repwd text-danger"></span>
+    </div>
+    <div class="form-group">
+        <div class="inform-div inform-unauthorize text-center"><span class="text-danger">@(!string.IsNullOrEmpty(Model.Message) ? Model.Message : string.Empty)</span></div>
+    </div>
+    <div class="common-form-group">
+        <input type="submit" class="common-form-btn btn-common-default" value="Sign Up" id="sign-up">
+    </div>
+    <div class="center-text">
+        <div class="">Or</div>
+    </div>
+    <div class="" style="margin-top:48px;">
+        <input type="button" class="common-form-btn btn-common-black" value="Continue with Apple" id="apple-btn">
+        <input type="button" class="common-form-btn btn-common-blue" value="Continue with Facebook" style="margin:12px 0;" id="face-btn">
+        <input type="button" class="common-form-btn btn-common-transform" value="Continue with Google" id="google-btn">
+
+    </div>
+</form>
+<div style="margin-top: 86px; margin-bottom: 92px;text-align:center;
+        color: #52616B">By continuing, you agree to our Terms of Service, Privacy policy.</div>
+
+<div class="p-bottom">Not on .pickpack yet? Sign Up</div>
+
+<script>
+    $("#signup-form").on("submit", function (e) {
+        if ($("#repwd-input").val() != $("#pwd-input").val()) {
+            $(".inform-text-repwd").html("Re-Password Not Match Password!");
+            $("#repwd-input").focus();
+            e.preventDefault();
+            e.stopPropagation();
+            return;
+        }
+        
+        $(".inform-text-repwd").html("");
+    });
+</script>

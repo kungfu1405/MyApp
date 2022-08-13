@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../wwwroot/css/site-v2.css">
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.0/esm/ionicons.min.js"></script> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../wwwroot/css/purejscarousel.css">
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="./../wwwroot/js/purejscarousel.js"></script>
+</head>
+
+<body>
+    <section class="section-user-header">
+        <div class="row">
+            <div class="col-8 align-center map-baner">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0765486987716!2d105.85491941476323!3d21.029622885997842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abea0e8934f1%3A0xa72303b62380788!2zMTk0IMSQxrDhu51uZyBUcuG6p24gUXVhbmcgS2jhuqNpLCBMw70gVGjDoWkgVOG7lSwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1615173827195!5m2!1sen!2s"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-8 info-user-header align-center">
+                <div class="user-avatar">
+                    <img src="./../wwwroot/img/2019121712070193.jpg" alt="" class="avatar">
+                    <div class="option-box profile-option" id="profile-option">
+                        <div class="dot-item"></div>
+                        <div class="dot-item"></div>
+                        <div class="dot-item"></div>
+                    </div>
+                    <div class="option-menu">
+                        <ul>
+                            <li class="menu-item"><a href="#" class="menu-item-text">Edit profile</a></li>
+                            <li class="menu-item"><a href="#" class="menu-item-text">Copy link profile</a></li>
+                            <li class="menu-item"><a href="#" class="menu-item-text">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile-text">
+                    <h2 class="header-title-text">Lorem ipsum dolor sit </h2>
+                    <h2 class="header-title-text">(Amet, consectetur)</h2>
+                    <div class="header-description">
+                        <p class="col-lg-6 col-xl-6 col-md-6 descrition-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo.</p>
+                    </div>
+                    <div class="category-header">
+                        <a href="" class="btn-text category-btn category-btn-active">Follows</a>
+                        <a href="" class="btn-text category-btn">Message</a>                        
+                    </div>
+                    <!-- <div class="col-lg-10 header-bar-rating">
+                        <div class="col-lg-4 col-md-4 col-xl-4 rating-item"><label for="" class="rating-number">60K</label><span class="rating-text">Critical Critics</span></div>
+                        <div class="col-lg-4 col-md-4 col-xl-4 rating-item"><label for="" class="rating-number">60k</label><span class="rating-text">Audience Rating</span></div>
+                        <div class="col-lg-4 col-md-4 col-xl-4 rating-item"><label for="" class="rating-number">600k</label><span class="rating-text">Questions, Tip & Tricks</span></div>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-8 header-bar-rating">
+                <div class="col-lg-2 col-md-2 col-xl-2 rating-item"><label for="" class="rating-number">60K</label><span class="rating-text">Critical Critics</span></div>
+                <div class="col-lg-2 col-md-2 col-xl-2 rating-item"><label for="" class="rating-number">60k</label><span class="rating-text">Audience Rating</span></div>
+                <div class="col-lg-2 col-md-2 col-xl-2 rating-item"><label for="" class="rating-number">600k</label><span class="rating-text">Questions, Tip & Tricks</span></div>
+                <div class="col-lg-2 col-md-2 col-xl-2 rating-item"><label for="" class="rating-number">600k</label><span class="rating-text">Questions, Tip & Tricks</span></div>
+                <div class="col-lg-2 col-md-2 col-xl-2 rating-item"><label for="" class="rating-number">600k</label><span class="rating-text">Questions, Tip & Tricks</span></div>
+                <div class="col-lg-2 col-md-2 col-xl-2 rating-item"><label for="" class="rating-number">600k</label><span class="rating-text">Questions, Tip & Tricks</span></div>
+            </div>
+        </div>
+    </section>
+    <section class="profile-body">
+        <div class="row">
+            <div class="align-center header-title-text  vertical-card-title ">My Stories</div>
+        </div>
+        <div class="row">
+         
+            <div class="col-8 align-center">
+                <div class="wrap-verticle-card-container">
+                    <div class="vertical-card-item-wrap">
+                        <div class="vertical-card-item-flex">
+                            <div class="vertical-card-item-img">
+                                <img src="./../wwwroot/img/577ec6661b00002500f6c9f7.jpg" alt="">
+                            </div>
+                            <div class="vertical-card-text">
+                                <a href="" class="category-card-text">Category</a>
+                                <a href="" class="category-card-text">#Section</a>
+                                <p class="card-desciption-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fuga nihil
+                                    ea!
+                                    Quisquam, explicabo quasi? Ullam ex doloribus tempore recusandae.
+                                </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <div class="box-mark-number" style="bottom: -34px;">
+                                    <span class="mark-number first-mark-number">87</span>
+                                    <span class="mark-number second-mark-number">100</span>
+                                </div>
+                                <div class="option-box" style="right: 0;">
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-card-item-wrap">
+                        <div class="vertical-card-item-flex">
+                            <div class="vertical-card-item-img">
+                                <img src="./../wwwroot/img/577ec6661b00002500f6c9f7.jpg" alt="">
+                            </div>
+                            <div class="vertical-card-text">
+                                <a href="" class="category-card-text">Category</a>
+                                <a href="" class="category-card-text">#Section</a>
+                                <p class="card-desciption-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fuga nihil
+                                    ea!
+                                    Quisquam, explicabo quasi? Ullam ex doloribus tempore recusandae.
+                                </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <div class="box-mark-number" style="bottom: -34px;">
+                                    <span class="mark-number first-mark-number">87</span>
+                                    <span class="mark-number second-mark-number">100</span>
+                                </div>
+                                <div class="option-box" style="right: 0;">
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-card-item-wrap">
+                        <div class="vertical-card-item-flex">
+                            <div class="vertical-card-item-img">
+                                <img src="./../wwwroot/img/577ec6661b00002500f6c9f7.jpg" alt="">
+                            </div>
+                            <div class="vertical-card-text">
+                                <a href="" class="category-card-text">Category</a>
+                                <a href="" class="category-card-text">#Section</a>
+                                <p class="card-desciption-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fuga nihil
+                                    ea!
+                                    Quisquam, explicabo quasi? Ullam ex doloribus tempore recusandae.
+                                </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <div class="box-mark-number" style="bottom: -34px;">
+                                    <span class="mark-number first-mark-number">87</span>
+                                    <span class="mark-number second-mark-number">100</span>
+                                </div>
+                                <div class="option-box" style="right: 0;">
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-card-item-wrap">
+                        <div class="vertical-card-item-flex">
+                            <div class="vertical-card-item-img">
+                                <img src="./../wwwroot/img/577ec6661b00002500f6c9f7.jpg" alt="">
+                            </div>
+                            <div class="vertical-card-text">
+                                <a href="" class="category-card-text">Category</a>
+                                <a href="" class="category-card-text">#Section</a>
+                                <p class="card-desciption-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fuga nihil
+                                    ea!
+                                    Quisquam, explicabo quasi? Ullam ex doloribus tempore recusandae.
+                                </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <div class="box-mark-number" style="bottom: -34px;">
+                                    <span class="mark-number first-mark-number">87</span>
+                                    <span class="mark-number second-mark-number">100</span>
+                                </div>
+                                <div class="option-box" style="right: 0;">
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-card-item-wrap">
+                        <div class="vertical-card-item-flex">
+                            <div class="vertical-card-item-img">
+                                <img src="./../wwwroot/img/577ec6661b00002500f6c9f7.jpg" alt="">
+                            </div>
+                            <div class="vertical-card-text">
+                                <a href="" class="category-card-text">Category</a>
+                                <a href="" class="category-card-text">#Section</a>
+                                <p class="card-desciption-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fuga nihil
+                                    ea!
+                                    Quisquam, explicabo quasi? Ullam ex doloribus tempore recusandae.
+                                </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <div class="box-mark-number" style="bottom: -34px;">
+                                    <span class="mark-number first-mark-number">87</span>
+                                    <span class="mark-number second-mark-number">100</span>
+                                </div>
+                                <div class="option-box" style="right: 0;">
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-card-item-wrap">
+                        <div class="vertical-card-item-flex">
+                            <div class="vertical-card-item-img">
+                                <img src="./../wwwroot/img/577ec6661b00002500f6c9f7.jpg" alt="">
+                            </div>
+                            <div class="vertical-card-text">
+                                <a href="" class="category-card-text">Category</a>
+                                <a href="" class="category-card-text">#Section</a>
+                                <p class="card-desciption-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fuga nihil
+                                    ea!
+                                    Quisquam, explicabo quasi? Ullam ex doloribus tempore recusandae.
+                                </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <p class="card-span-text">Lorem ipsum dolor sit </p>
+                                <div class="box-mark-number" style="bottom: -34px;">
+                                    <span class="mark-number first-mark-number">87</span>
+                                    <span class="mark-number second-mark-number">100</span>
+                                </div>
+                                <div class="option-box" style="right: 0;">
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

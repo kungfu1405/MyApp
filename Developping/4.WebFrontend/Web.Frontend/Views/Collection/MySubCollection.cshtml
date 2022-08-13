@@ -1,0 +1,278 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*<script type="text/javascript">    
+    $(document).ready(function () {       
+        $(".menu-left").css("width", "0");
+        $(".menu-left").css("display", "none");
+        
+    });
+</script>*@
+<style>
+    .container-fluid , .row {
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .menu-left{
+        display:none;
+    }
+    .main-content{
+        padding-left:0;
+        width:100%;
+    }
+    footer {
+        display: none;
+    }
+    body{
+        overflow:hidden;
+    }
+    .col-xl-3, .col-lg-3,col-3{
+        max-width: 480px;
+    }
+
+</style>
+<section class="collection-container">
+    <div class="row ">
+        <div class="collection-main-title">
+            <div class="main-backlink"><a href="#" class="back-link-btn"><i class="fas fa-chevron-left"></i></a></div>
+            <div class=""><h2 class="medium-title-text">My Collection</h2></div>
+            <div class="avatar-list">
+                <label class="small-title-text" style="margin-right:26px;">4 Editors</label>
+                <div style="display:inline;">
+                    <a class="avatar-link"><img class="avatar-image" src="~/img/1277926_584434994947625_1172051136_o.jpg" /></a>
+                    <a class="avatar-link"><img class="avatar-image" src="~/img/1540307_628359783888479_2086500991_o.jpg" /></a>
+                    <a class="avatar-link"><img class="avatar-image" src="~/img/37596255_1823810847676694_7811368660320124928_o.jpg" /></a>
+                    <a class="avatar-link"><img class="avatar-image" src="~/img/37596255_1823810847676694_7811368660320124928_o.jpg" /></a>
+                  
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="collection-body">
+            <div class="col-lg-9 col-xl-9 col-md-9 collection-pin-map-container">
+                <img src="~/img/map_full937.jpg" />
+                @*<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0765486987716!2d105.85491941476323!3d21.029622885997842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abea0e8934f1%3A0xa72303b62380788!2zMTk0IMSQxrDhu51uZyBUcuG6p24gUXVhbmcgS2jhuqNpLCBMw70gVGjDoWkgVOG7lSwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1615173827195!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>*@
+                <div class="collection-filter">
+                    <div class="row collection-one">
+                        <button class="col-5 col-filter-btn">
+                            <i class="fas fa-stream"></i>
+                            Filter (3)
+                        </button>
+                        <input type="text" class="collection-search-input" />
+                    </div>
+                    <div class="row collection-second">
+                        <div class="collection-tab-container">
+                            <a class="collection-fillter-tab"> <i class="tab-place-togo"></i><span class="">Places to Go (35)</span>  </a>
+                            <a class="collection-fillter-tab"> <i class="tab-eat-drink"></i><span class="">Places to Eat & Drink (98)</span>  </a>
+                            <a class="collection-fillter-tab"> <i class="tab-place-tostay"></i><span class="">Places to Stay (12)</span>  </a>
+                            <a class="collection-fillter-tab"> <i class="tab-stories"></i><span class="">Stories (31)</span>  </a>
+                            <a class="collection-fillter-tab"> <i class="tab-collection"></i><span class="">Collection (45)</span>  </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $(".col-filter-btn").click(function () {                        
+                        $(".collection-second").toggle("slow", function () {                            
+                        });
+                    });                    
+                    $(".collection-search-input").click(function () {
+                        //$(".collection-search-input").toggle("slow", function () {
+                           
+                        //});
+                        //$(".collection-search-input").css("width", "170px");
+                    });
+                });
+            </script>
+            <div class="collection-list-container">
+                <div class="title-header collection-title">
+                    <a href="#" class="small-backlink-btn"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class=""><h2 class="small-title-text">Items List (12)</h2></a>
+                    <a href="#" class="plus-btn"><ion-icon name="add-circle-outline"></ion-icon></i></a>
+                </div>
+                <div class="collection-list-item">
+                    <div class="row collection-wrap-item">
+                        <div class="collection-image-item">
+                            <a href="#"><img src="/img/2019121712070193.jpg" alt=""></a>
+                        </div>
+                        <div class="col-7 collection-content-item">
+                            <a href="" class="category-card-text">Category</a>
+
+                            <p class="card-desciption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            <p class="card-span-text">#N of N Category  </p>
+                            <p class="card-span-text">N Have been there </p>
+                            <p class="card-span-text">N Bookmarked  N Comments </p>
+
+                            <div class="item-dropdown">
+
+                                <div class="item-dropbtn">
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                </div>
+
+                                <div class="big-item-dropdown-content">
+                                    <div class="">
+                                        <a href="#">Move Up</a></a>
+                                        <a href="#">Move Down</a></a>
+                                        <a href="#">Add to Later</a></a>
+                                        <a href="#">Move to > Collection</a></a>
+                                        <a href="#">Remove</a></a>
+                                        <a href="#">Bookmark</a></a>
+                                        <a href="#">Go to Detail Page</a></a>
+                                    </div>
+                                    <hr style="height:2px" />
+                                    <div class="">
+                                        <a href="#">Add Before Day 01</a></a>
+                                        <a href="#">Add to Day 01</a></a>
+                                        <a href="#">Add to Day 02</a></a>
+                                        <a href="#">Add to Day 03</a></a>
+                                        <a href="#">Create and Add to Day 04</a></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row collection-wrap-item">
+                        <div class="collection-image-item">
+                            <a href="#"><img src="/img/2019121712070193.jpg" alt=""></a>
+                        </div>
+                        <div class="col-7 collection-content-item">
+                            <a href="" class="category-card-text">Category</a>
+
+                            <p class="card-desciption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            <p class="card-span-text">#N of N Category  </p>
+                            <p class="card-span-text">N Have been there </p>
+                            <p class="card-span-text">N Bookmarked  N Comments </p>
+
+                            <div class="item-dropdown">
+
+                                <div class="item-dropbtn">
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                </div>
+
+                                <div class="big-item-dropdown-content">
+                                    <div class="">
+                                        <a href="#">Move Up</a></a>
+                                        <a href="#">Move Down</a></a>
+                                        <a href="#">Add to Later</a></a>
+                                        <a href="#">Move to > Collection</a></a>
+                                        <a href="#">Remove</a></a>
+                                        <a href="#">Bookmark</a></a>
+                                        <a href="#">Go to Detail Page</a></a>
+                                    </div>
+                                    <hr style="height:2px" />
+                                    <div class="">
+                                        <a href="#">Add Before Day 01</a></a>
+                                        <a href="#">Add to Day 01</a></a>
+                                        <a href="#">Add to Day 02</a></a>
+                                        <a href="#">Add to Day 03</a></a>
+                                        <a href="#">Create and Add to Day 04</a></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row collection-wrap-item">
+                        <div class="collection-image-item">
+                            <a href="#"><img src="/img/2019121712070193.jpg" alt=""></a>
+                        </div>
+                        <div class="col-7 collection-content-item">
+                            <a href="" class="category-card-text">Category</a>
+
+                            <p class="card-desciption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            <p class="card-span-text">#N of N Category  </p>
+                            <p class="card-span-text">N Have been there </p>
+                            <p class="card-span-text">N Bookmarked  N Comments </p>
+
+                            <div class="item-dropdown">
+
+                                <div class="item-dropbtn">
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                </div>
+
+                                <div class="big-item-dropdown-content">
+                                    <div class="">
+                                        <a href="#">Move Up</a></a>
+                                        <a href="#">Move Down</a></a>
+                                        <a href="#">Add to Later</a></a>
+                                        <a href="#">Move to > Collection</a></a>
+                                        <a href="#">Remove</a></a>
+                                        <a href="#">Bookmark</a></a>
+                                        <a href="#">Go to Detail Page</a></a>
+                                    </div>
+                                    <hr style="height:2px" />
+                                    <div class="">
+                                        <a href="#">Add Before Day 01</a></a>
+                                        <a href="#">Add to Day 01</a></a>
+                                        <a href="#">Add to Day 02</a></a>
+                                        <a href="#">Add to Day 03</a></a>
+                                        <a href="#">Create and Add to Day 04</a></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row collection-wrap-item">
+                        <div class="collection-image-item">
+                            <a href="#"><img src="/img/2019121712070193.jpg" alt=""></a>
+                        </div>
+                        <div class="col-7 collection-content-item">
+                            <a href="" class="category-card-text">Category</a>
+
+                            <p class="card-desciption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            <p class="card-span-text">#N of N Category  </p>
+                            <p class="card-span-text">N Have been there </p>
+                            <p class="card-span-text">N Bookmarked  N Comments </p>
+
+                            <div class="item-dropdown">
+
+                                <div class="item-dropbtn">
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                    <div class="dot-item"></div>
+                                </div>
+
+                                <div class="big-item-dropdown-content">
+                                    <div class="">
+                                        <a href="#">Move Up</a></a>
+                                        <a href="#">Move Down</a></a>
+                                        <a href="#">Add to Later</a></a>
+                                        <a href="#">Move to > Collection</a></a>
+                                        <a href="#">Remove</a></a>
+                                        <a href="#">Bookmark</a></a>
+                                        <a href="#">Go to Detail Page</a></a>
+                                    </div>
+                                    <hr style="height:2px" />
+                                    <div class="">
+                                        <a href="#">Add Before Day 01</a></a>
+                                        <a href="#">Add to Day 01</a></a>
+                                        <a href="#">Add to Day 02</a></a>
+                                        <a href="#">Add to Day 03</a></a>
+                                        <a href="#">Create and Add to Day 04</a></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -8125,11 +8125,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\DependencyInjection.Tests\\DependencyInjection.Tests.csproj",
+      "projectUniqueName": "D:\\Git\\MyApp\\SeftStudy\\DependencyInjection.Tests\\DependencyInjection.Tests.csproj",
       "projectName": "DependencyInjection.Tests",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\DependencyInjection.Tests\\DependencyInjection.Tests.csproj",
+      "projectPath": "D:\\Git\\MyApp\\SeftStudy\\DependencyInjection.Tests\\DependencyInjection.Tests.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\DependencyInjection.Tests\\obj\\",
+      "outputPath": "D:\\Git\\MyApp\\SeftStudy\\DependencyInjection.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8146,8 +8146,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\SeftStudy\\DependencyInjection\\DependencyInjection.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\SeftStudy\\DependencyInjection\\DependencyInjection.csproj"
+            "D:\\Git\\MyApp\\SeftStudy\\DependencyInjection\\DependencyInjection.csproj": {
+              "projectPath": "D:\\Git\\MyApp\\SeftStudy\\DependencyInjection\\DependencyInjection.csproj"
             }
           }
         }

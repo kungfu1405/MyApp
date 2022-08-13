@@ -1,0 +1,263 @@
+﻿@model ExperienceDetailModel
+@{
+    ViewData["Title"] = Model.Experience.ExperienceLanguage.Title;
+    var countSection = 0;
+    var mainSection = Model.Experience.ExperienceSessions.First();
+    //var regex = new Regex(@"(?<=#)\w*");
+    var regex = new Regex(@"#\w*");
+}
+<style>
+    .heade-menu{
+        display: none;
+    }
+</style>
+
+<div class="exp-top-fix text-center">
+    <strong>Stories</strong>
+    <a class="float-right exp-control" href="/"><ion-icon name="chevron-down-outline"></ion-icon></a>
+    <a class="btn btn-toppick position-absolute" href="@(string.Format("/Experiences/Edit/{0}", Model.Experience.RouteUri))" style="bottom: -60px; right: 60px">Edit</a>
+</div>
+<div class="container-xxl p-0 m-auto">
+    @if (mainSection.Images.Any())
+    {
+        var mainImg = mainSection.Images.FirstOrDefault();
+    <div class="row px-15">
+        <div class="w-100 exp-banner text-center">
+            <img onerror="imgError(this)" alt="@(mainSection.Title)" src="@(String.Format("{0}{1}", UrlList.FileServer, mainImg.ImagerUrl))" />
+        </div>
+    </div>
+    }
+    <div class="row">
+        <div class="exp-detail mt-60 w-100">
+            <div class="section-detail m-auto">
+                <p>@Model.Experience.PublishDate.ToString("MMM dd, yyyy") . 5 Minute Read . Wrote by @(Model.User.FullName)</p>
+                <h1>@(Model.Experience.ExperienceLanguage.Title)</h1>
+                <div hidden>@(Model.Experience.Id)</div>
+                <div class="section-content">
+                    @Html.Raw(regex.Replace(mainSection.Detail, "<a href=\"/Pillars/$&\" class=\"hashtag\">$&</a>"))
+                </div>
+                <div class="row section-rank mt-24">
+                    <div class="col-md-3 col-sm-6 col-xs-6"><strong>8K</strong><label>Views</label></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6"><strong>656</strong><label>Comments</label></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6"><strong>66</strong><label>Apprieciations</label></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6"><strong>65</strong><label>Bookmarks</label></div>
+                </div>
+            </div>
+
+            @foreach (var itm in Model.Experience.ExperienceSessions)
+            {
+                countSection++;
+                if (countSection == 1) continue;
+
+        <div class="section-detail mt-120 m-auto">
+            <h3>@(itm.Title)</h3>
+            <div class="section-content">
+                @Html.Raw(regex.Replace(itm.Detail, "<a href=\"/Pillars/$&\" class=\"hashtag\">$&</a>"))
+            </div>
+
+            @if (itm.AttractionId.HasValue && !string.IsNullOrEmpty(itm.Attraction.Address))
+            {
+                <div class="row section-rank mt-24 d-block" hidden>
+                    <div class="float-left col-md-8 px-0"><b>@(itm.Attraction.Address)</b></div>
+                    <div class="float-right col-md-4 px-0 text-right">
+                        <a href="#" class="saveCollection px-24">Save to Collection</a>
+                    </div>
+                </div>
+            }
+
+        </div>
+        <div class="section-img row m-auto mt-48 d-flex @(string.Format("section-img-{0}", itm.Id)) position-relative">
+            @if (itm.Images.Count() >= 3)
+            {
+                <div class="swiper-wrapper mb-74">
+                    @foreach (var img in itm.Images)
+                    {
+                        <div class="col-sm-6 col-xs-12 p-0 section-images swiper-slide">
+                            <div class="section-img-detail">
+                                <a>
+                                    <img class="swiper-slide" onerror="imgError(this)" alt="@(itm.Title)" src="@(String.Format("{0}{1}", UrlList.FileServer, img.ImagerUrl))" />
+                                </a>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="swiper-control-toolbar bottom-0" style="z-index: 9;">
+                    <div class="swiper-control-prev swiper-section-@(itm.Id) swiper-control"><ion-icon name="caret-back-outline"></ion-icon></div>
+                    <div class="swiper-control-next swiper-section-@(itm.Id) swiper-control"><ion-icon name="caret-forward-outline"></ion-icon></div>
+                </div>
+                <script>
+                    console.log($(window).width());
+                    if ($(window).width() > 375) {
+                        var @(string.Format("section{0}", countSection)) = new Swiper('@(string.Format(".section-img-{0}", itm.Id))', {
+                            slidesPerView: 2,
+                            loop: false,
+                            navigation: {
+                                nextEl: '.swiper-control-next.swiper-section-@(itm.Id)',
+                                prevEl: '.swiper-control-prev.swiper-section-@(itm.Id)',
+                            },
+                        });
+                    }
+                    else {
+                        var @(string.Format("section{0}", countSection)) = new Swiper('@(string.Format(".section-img-{0}", itm.Id))', {
+                            slidesPerView: 1,
+                            loop: false,
+                            navigation: {
+                                nextEl: '.swiper-control-next.swiper-section-@(itm.Id)',
+                                prevEl: '.swiper-control-prev.swiper-section-@(itm.Id)',
+                            },
+                        });
+                    }
+                </script>
+            }
+            else if (itm.Images.Count() > 0)
+            {
+                foreach (var img in itm.Images)
+                {
+                    <div class="col-md-6 col-sm-12 col-xs-12 p-0 m-auto section-images">
+                        <div class="section-img-detail @(itm.Images.Count() == 1 ? "border-radius-16" : "")">
+                            <a>
+                                <img class="swiper-slide" onerror="imgError(this)" alt="@(itm.Title)" src="@(String.Format("{0}{1}", UrlList.FileServer, img.ImagerUrl))" />
+                            </a>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-md-6 col-sm-12 col-xs-12 p-0 m-auto section-images"></div>
+            }
+        </div>
+            }
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="experience-source-infomation w-100 mt-60">
+            <div class="row">
+                <div class="col-sm-8 con-xs-12 source-per text-left p-0">
+                    Bài viết: Elessar <br />
+                    Ảnh: Quý Nguyễn, Ngô Nhật Hoàng<br />
+                    Clip: KingPro<br />
+                    Thiết kế: Tuấn Maxx, Minh Thần kì
+                </div>
+                <div class="col-sm-4 col-xs-12 source-addr text-right p-0">
+                    Theo Trí Thức Trẻ <br />
+                    08.07.2021
+                </div>
+            </div>
+        </div>
+    </div>
+    @if(Model.ListExperienceRelated.Any())
+    {
+        <div class="row px-15 px-sm-30">
+            <div class="home-txt">
+                <h3 class="text-left">Curated for You</h3>
+                <p class="text-left">Related Stories You May Like</p>
+            </div>
+        </div>
+        <div class="row experience-related mt-48 position-relative overflow-hidden">
+            <div class="swiper-wrapper">
+                @foreach (var itm in Model.ListExperienceRelated)
+                {
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-48 swiper-slide">
+                    <div class="home-item">
+                        <div class="w-100">
+                            <div class="thumb m-auto">
+                                <a class="" href="@string.Format("/Experience/{0}", itm.RouteUri)">
+                                    @if (!string.IsNullOrEmpty(itm.ThumbnailUrl))
+                                        {
+                                    <img class="rounded" onerror="imgError(this)" src="@string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)" />
+                                        }
+                                        else
+                                        {
+                                    <img class="rounded" src="~/img/icon-no-image.svg" />
+                                        }
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>#N of N Category</p>
+                            <h3><a href="@string.Format("/Experience/{0}", itm.RouteUri)">@itm.ExperienceLanguage.Title</a></h3>
+                            <p>10.8km from Center Point . 15h </p>
+                            <p>N Stops By . N Saves . @string.Format("{0} Comments", itm.TotalComments)</p>
+                            <p>
+                                @foreach(var tag in itm.Tags)
+                                {
+                                    <label>@(string.Format("#{0} ", tag.Name))</label>
+                                }
+                            </p>
+                        </div>
+                        <span class="fea-rating">
+                            <label class="like"><i></i> 128</label>
+                            <label class="comment"><i></i> 100</label>
+                        </span>
+                    </div>
+                </div>
+                }
+            </div>
+            <div class="swiper-control-toolbar bottom-0" style="z-index: 9;">
+                <div class="swiper-control-prev swiper-related swiper-control"><ion-icon name="caret-back-outline"></ion-icon></div>
+                <div class="swiper-control-next swiper-related swiper-control"><ion-icon name="caret-forward-outline"></ion-icon></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            if ($(window).width() < 768) {
+                var related = new Swiper('.experience-related', {
+                    slidesPerView: 1,
+                    navigation: {
+                        nextEl: '.swiper-control-next.swiper-related',
+                        prevEl: '.swiper-control-prev.swiper-related',
+                    },
+                });
+            }
+            else if ($(window).width() < 992) {
+                var related = new Swiper('.experience-related', {
+                    slidesPerView: 2,
+                    navigation: {
+                        nextEl: '.swiper-control-next.swiper-related',
+                        prevEl: '.swiper-control-prev.swiper-related',
+                    },
+                });
+            }
+            else {
+                var related = new Swiper('.experience-related', {
+                    slidesPerView: 3,
+                    navigation: {
+                        nextEl: '.swiper-control-next.swiper-related',
+                        prevEl: '.swiper-control-prev.swiper-related',
+                    },
+                });
+            }
+        </script>
+    }
+</div>
+
+<script>
+    window.onload = function () {
+        
+    }
+    $(document).ready(function () {      
+
+        $(".exp-control").on("click", function () {
+            parent.$(parent.document).trigger('downPreviewExperience');  
+        });
+    });
+
+    function readMore(obj) {        
+        var des = $(obj).parent().find(".ex-des");
+        var alt = $(obj).attr("alt-show");
+        if (alt == "more") {
+            des.css("height", "auto");
+            $(obj).text("[Read Less]").attr("alt-show", "less");
+        }
+        else {
+            des.css("height", "9em");
+            $(obj).text("[Read More]").attr("alt-show", "more");
+        }
+        footerPos = $(".footer").offset().top;
+    }
+
+    function goBack() {
+        window.history.back();
+    }
+</script>

@@ -1,0 +1,428 @@
+﻿@model ExperienceModel
+@{
+    if(Model.ActionMode == Mic.Core.Entities.FormActionMode.Edit)
+    {
+        ViewData["Title"] = Model.Experience.ExperienceLanguage.Title;
+    }
+    else
+    {
+        ViewData["Title"] = "Upload";
+    }
+}
+<style>
+    .uploadExp-btn{
+        display: none;
+    }
+    .main-content{
+        top: 80px;
+    }
+</style>
+<div class="container" style="margin-bottom: 120px;">
+    <div id="session-upload" class="gutter-b example example-compact col-lg-9 col-md-9 col-xl-9 col-sm-12 ex-upload exp-item" style="margin: 0 auto;position: relative;">
+        <form id="frmUpload">
+            @if(Model.ActionMode == Mic.Core.Entities.FormActionMode.Add)
+            {
+                <div class="card card-custom card-upload-section" id="main-card" style="margin-bottom: 50px;">
+                    <div class="card-body py-48 px-25">
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <input type="text" id="upload_main_title" onkeyup="checkMainText(this)" required placeholder="Add Main Title" class="form-control shadow-none upload-input text-center w-100 ml-0 mb-48" name="txtMainTitle" />
+                            </div>
+                            <div class="col-12">
+                                <div id="editorMainDescription" class="txtMainDescription text-center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }            
+
+            <div class="card card-custom card-upload-section" id="first-card" style="margin-bottom: 50px;">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <input type="text" id="upload_title" onkeyup="checkText(this)" required placeholder="Add a Title" class="form-control shadow-none upload-input" name="txtTitle" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 col-lg-6 col-md-6  my-select2">
+                            <select class="form-control" id="mySelect2_destination"></select>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-6 col-md-6 my-select2">
+                            <select class="js-example-basic-single js-states form-control" id="mySelect2_attraction"></select>
+                        </div>
+                    </div>
+                    <div class="form-group row" style="padding-left: 15px;">
+                        <div class="col-12">
+                            <div id="editor" class="txtDes"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group dropzone row dropzone-box dropzone-box_1" style="padding-left: 15px;">
+                        <div class="upload-image" style="float: left;">
+                            <div class="dropzone dropzone-default idDropzone" id="kt_dropzone_2">
+                                <div class="dropzone-msg dz-message needsclick">
+                                    <h3 class="dropzone-msg-title">+ Add Photos</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a class="btnUploadSection" id="btnUpload" style="float: right;">Publish</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        @if (Model.ActionMode == Mic.Core.Entities.FormActionMode.Add)
+        {
+        <div class="addSession">
+            <a class="addBtn" data-sess="2" onclick="addSession(this)">+</a>
+            <span onclick="scrollToUpload('#main-card')">1</span>
+            <span onclick="scrollToUpload('#first-card')">2</span>
+        </div>
+        }
+        else
+        {
+            var countSection = Model.Experience.ExperienceSessions.Count;
+            var iSection = 0;
+            <div class="addSession">
+                <a class="addBtn" data-sess="@(countSection > 0 ? countSection : "1")" onclick="addSession(this)">+</a>
+                @foreach(var section in Model.Experience.ExperienceSessions)
+                {
+                    iSection++;
+                    <span data-scroll="@(iSection)" onclick="scrollToExpSection(this)">@(iSection)</span>
+                }
+            </div>
+                }
+    </div>
+    @if (Model.ActionMode == Mic.Core.Entities.FormActionMode.Edit && Model.Experience != null)
+    {
+        @foreach (var session in Model.Experience.ExperienceSessions)
+        {
+            <div id="@(session.Id)" class="col-lg-9 col-md-9 col-xl-9 col-sm-12 ex-edit exp-item" style="margin: 0 auto;position: relative;">
+                <div class="ex-content">
+                    <h2>@(session.Title)</h2>
+                    <p class="ex-author">By @Model.Author.FullName | Published @Model.Experience.PublishDate.ToString("MMM dd, yyyy")</p>
+                    <p class="ex-date">
+                        
+                    </p>
+                    <div class="ex-thumb">
+                        @if (session.Images.Count() > 1)
+                        {
+                            var sessId = string.Format("Exp-slide-{0}", session.Id);
+                            var countImg = 0;
+                            var countInd = 0;
+                            <div id="@sessId" class="carousel slide" data-interval="false" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    @foreach (var imgSession in session.Images)
+                                    {
+                                        countInd++;
+                                        <li data-target="#@sessId" data-slide-to="@countInd" class="@(countInd == 1 ? "active" : "")"></li>
+                                    }
+                                </ol>
+                                <div class="carousel-inner">
+                                    @foreach (var imgSession in session.Images)
+                                    {
+                                        countImg++;
+                                        <div class="carousel-item @(countImg == 1 ? "active" : "")">
+                                            <img class="d-block w-100" src="@(String.Format("{0}{1}", UrlList.FileServer, imgSession.ImagerUrl))" alt="@System.IO.Path.GetFileName(imgSession.ImagerUrl)">
+                                        </div>
+                                    }
+                                </div>
+                                <a class="carousel-control-prev" href="#@sessId" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#@sessId" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        }
+                        else
+                        {
+                            var firstSession = session.Images.FirstOrDefault();
+                            <img style="margin-bottom: 5px;" src="@(firstSession != null ? String.Format("{0}{1}", UrlList.FileServer, firstSession.ImagerUrl) : "")" />
+                        }
+                    </div>
+                    <div class="ex-des">
+                        @Html.Raw(session.Detail)
+                    </div>
+                    <div class="ex-edit-setting">
+                        <a class="ex-edit-session" data-edited="0" onclick="editSession('@(session.Id)', this)">Edit</a>
+                        <a class="ex-delete-session" onclick="deleteSession('@(session.Id)')">Delete</a>
+                    </div>
+
+                    <a class="ex-read-more" alt-show="more" onclick="readMore(this)">[Read More]</a>
+                </div>
+            </div>
+        }
+        <div class="card-add">
+            <a title="Add New Session" onclick="scrollToUpload('#session-upload')">+</a>
+        </div>
+    }
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="mi-modal">
+    <div class="modal-dialog modal-lg modal-sm modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title" style="text-align: center;width: 100%;" id="myModalLabel">Are You Sure To Delete This Section ?</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="modal-btn-si">YES</button>
+                <button type="button" class="btn btn-primary" id="modal-btn-no">NO</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/js/quill.js"></script>
+<script src="~/js/dropzone.js"></script>
+<link href="~/css/dropzone.css" rel="stylesheet" type="text/css">
+<link href="~/css/quill.snow.css" rel="stylesheet" type="text/css">
+@*<script src="~/js/upload.js"></script>*@
+<script type="text/javascript">
+    Dropzone.autoDiscover = false;
+    var dataFiles = [];
+    var editFiles = [];
+    var expId = "@(Model.Experience != null && Model.Experience.Id != Guid.Empty ? Model.Experience.Id : string.Empty)";
+
+    $(document).ready(function () {
+        activeNavBar("nav_post");
+        var quill = new Quill('#editor', {
+            modules: {
+                toolbar: false
+            },
+            placeholder: 'Add a Description',
+            theme: 'snow'
+        });
+
+        @if(Model.ActionMode == Mic.Core.Entities.FormActionMode.Add)
+        {
+            <text>
+            var editorMainDescription = new Quill('#editorMainDescription', {
+                modules: {
+                    toolbar: false
+                },
+                placeholder: 'Add Description',
+                theme: 'snow'
+            });
+            </text>
+        }
+
+
+        var id = '#kt_dropzone_2';
+        // multiple file upload
+        var myDropzone2 = new Dropzone(id, {
+            url: "@(string.Format("{0}/api/file/upload", UrlList.FileServer))", // Set the url for your upload script location
+            paramName: "file", // The name that will be used to transfer the file
+            maxFiles: 10,
+            maxFilesize: 10, // MB
+            autoQueue: false,
+            addRemoveLinks: true,
+            thumbnailWidth: 250,
+            thumbnailHeight: 250,
+            acceptedFiles: ".jpeg,.jpg,.png,.gif",
+            previewsContainer: ".dropzone-box_1"
+        });
+
+        myDropzone2.on("addedfiles", function (file) {
+            var dataFr = new FormData();
+
+            $.each(myDropzone2.files, function (i, file) {
+                dataFr.append('file', file);
+            });
+
+            if (myDropzone2.files.length == 0) {
+                alert("You should be select any file");
+            } else if (myDropzone2.getRejectedFiles().length > 0) {
+                alert("The attached file is invalid");
+            } else {
+                //console.log(myDropzone2); return;
+                myDropzone2.processQueue();
+                $.ajax({
+                    url: "@(string.Format("{0}/api/file/upload", UrlList.FileServer))",
+                    type: "POST",
+                    data: dataFr,
+                    processData: false,
+                    contentType: false,
+                    enctype: "multipart/form-data",
+                    beforeSend: function () {
+
+                    },
+                    success: function (data, textStatus, xhr) {
+                        if (data.length > 0) {
+                            dataFiles = data;
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+            }
+        });
+
+        // Setup the buttons for all transfers
+        document.querySelector("#btnUpload").onclick = function (e) {
+            e.preventDefault();
+            var errMess = "";
+            var mainTitle = "";
+            var mainDes = "";
+
+            mainTitle = $("#upload_main_title").val();
+            if ($("#upload_main_title").length > 0 && mainTitle.length <= 0) {
+                errMess = "Please Input Main Title!";
+            }
+
+            if ($("#editorMainDescription").length > 0) {
+                mainDes = editorMainDescription.getText();
+                if (mainDes == undefined || mainDes == "") {
+                    errMess = "Please Input Description!";
+                }
+            }            
+
+            var txtTitle = $("input#upload_title").val();
+            if (txtTitle.length <= 0) {
+                errMess = "Please Input Title!";
+            }
+
+            //var des = $("#txtDes").val();
+            var des = quill.getText();
+            if (des == undefined || des == "") {
+                errMess = "Please Input Description!";
+            }
+            else if (myDropzone2.files.length == 0) {
+                errMess = "Please Select Any Image!";
+            }
+
+            var attraction = $("#mySelect2_attraction").val();
+            //if (attraction == undefined || attraction == "")
+            //    errMess = "Please Choose Attraction!";
+
+            if (errMess.length > 0) {
+                //$(".txtStt_Upload").empty().removeClass("text-success").addClass("text-danger").html(errMess);
+                notifi("error", errMess);
+                return;
+            }
+
+            var data = {
+                title: txtTitle,
+                description: des,
+                files: dataFiles,
+                experienceId: expId,
+                attractionId: attraction,
+                mainTitle: mainTitle,
+                mainDescription: mainDes
+            };
+
+            $.ajax({
+                url: "/Session/Upload",
+                type: "POST",
+                data: data,
+                //dataType: "json",
+                beforeSend: function () {
+                    //$(".txtStt_Upload").removeClass("text-danger").removeClass("text-success").empty().html("Uploading ...");
+                    $("#btnUpload").css("display", "none");
+                },
+                success: function (data, textStatus, xhr) {
+                    if (data.status == 1) {
+                        notifi("success", "Upload Success!");
+                        if (data.experience.routeUri != undefined)
+                            location.href = "/Experiences/Edit/" + data.experience.routeUri;
+
+                        myDropzone2.removeAllFiles(true);
+                        $("#frmUpload").trigger("reset");
+                        quill.setText('');
+                        expId = data.data.experienceId;
+
+                        if (data.data.images.length > 0) {
+                            getSession(data.data.id, data.data.title, data.data.detail, data.data.images);
+                        }
+                        else {
+                            getSession(data.data.id, data.data.title, data.data.detail, "");
+                        }
+
+                        $("#main-card").hide();
+                    }
+                    else {
+                        notifi("error", "Upload Fail!");
+                        //$(".txtStt_Upload").empty().removeClass("text-success").addClass("text-danger").html("Upload Fail!");
+                    }
+                },
+                error: function () {
+                    notifi("error", "Upload Fail. Please Contact Admin!");
+                    //$(".txtStt_Upload").empty().removeClass("text-success").addClass("text-danger").html("Upload Fail. Please Contact Admin.");
+                },
+                complete: function () {
+                    $("#btnUpload").css("display", "block");
+                }
+            });
+        };
+        myDropzone2.on("removedfile", function (file) {
+            if (myDropzone2.files.length < 1) {
+                $("form[name=kt_dropzone_2] .dropzone-upload, form[name=kt_dropzone_2] .dropzone-remove-all").css('display', 'none');
+            }
+        });
+
+        //Auto compele Destination / Attraction
+        $("#mySelect2_destination").select2({
+            minimumInputLength: 2,
+            allowClear: true,
+            placeholder: 'Pin To Your Destination',
+            ajax: {
+                url: '@Url.Action("Destination", "Search")',
+                dataType: 'json',
+                delay: 250,
+                cache: true,
+                data: function (params) {
+                    var queryParameters = {
+                        keyword: params.term,
+                    }
+                    return queryParameters;
+                },
+                processResults: function (data, params) {
+                    return { results: data };
+                }
+            }
+        }).on('change', function () {
+            $(this).trigger('blur');
+        });
+
+
+        $("#mySelect2_attraction").select2({
+            minimumInputLength: 2,
+            allowClear: true,
+            placeholder: 'Pin To Your Attraction',
+            ajax: {
+                url: '@Url.Action("Attraction", "Search")',
+                dataType: 'json',
+                delay: 250,
+                cache: true,
+                data: function (params) {
+                    var destinationId = $("#mySelect2_destination").val();
+                    //debugger
+                    var queryParameters = {
+                        keyword: params.term,
+                        destinationId: destinationId != null ? destinationId: null
+                    }
+                    return queryParameters;
+                },
+                processResults: function (data, params) {
+                    return { results: data };
+                }
+            }
+        }).on('change', function () {
+            $(this).trigger('blur');
+        });
+
+    });
+    function onSelectItem(item, element) {
+        $('#output').html(
+            'Element <b>' + $(element).attr('id') + '</b> was selected<br/>' +
+            '<b>Value:</b> ' + item.value + ' - <b>Label:</b> ' + item.label
+        );
+    }
+</script>
+@await Html.PartialAsync("../Shared/_EditSession.cshtml")

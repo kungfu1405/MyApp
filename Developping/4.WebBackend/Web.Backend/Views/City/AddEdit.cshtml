@@ -1,0 +1,203 @@
+﻿@model CityViewModel
+@{
+    ViewData["Title"] = "City";
+    Model.ReturnUrl = string.Format("{0}{1}", Context.Request.Path, Context.Request.QueryString);
+}
+
+<div class="row" id="pnlForms">
+    <div class="col-lg-5">
+        <div class="card card-custom">
+            <div class="card-header">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        @Model.ActionMode.ToString() City
+
+                        @if (FormActionMode.Edit.Equals(Model.ActionMode))
+                        {
+                            <small>@Model.City.Name</small>
+                        }
+                    </h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form asp-action="AddEdit" method="post" class="form-vertical">
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="City.Name">
+                            City Name
+                            <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" asp-for="City.Name"
+                               class="form-control" autocomplete="off"
+                               placeholder="City Name" required maxlength="50" />
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="City.CountryId">
+                            Country
+                            <span class="text-danger">*</span>
+                        </label>
+                        <select id="ddlCountry"
+                                asp-for="City.CountryId" required
+                                class="form-control" style="width: 100%">
+                            <option></option>
+                            @if (FormActionMode.Edit.Equals(Model.ActionMode))
+                            {
+                                <option value="@Model.City.CountryId" selected>@Model.City.Country.Name - @Model.City.Country.Iso2</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="City.StateId">
+                            State
+                            <span class="text-danger">*</span>
+                        </label>
+                        <select id="ddlState"
+                                asp-for="City.StateId" required
+                                class="form-control" style="width: 100%">
+                            <option></option>
+                            @if (FormActionMode.Edit.Equals(Model.ActionMode))
+                            {
+                                <option value="@Model.City.StateId" selected>@Model.City.State.Name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label class="font-weight-bold" asp-for="City.Latitude">
+                                Latitude
+                            </label>
+                            <input type="number" asp-for="City.Latitude"
+                                   class="form-control" autocomplete="off" />
+                        </div>
+                        <div class="col-6">
+                            <label class="font-weight-bold" asp-for="City.Longitude">
+                                Longitude
+                            </label>
+                            <input type="number" asp-for="City.Longitude"
+                                   class="form-control" autocomplete="off" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="City.WikiDataId">
+                            WikiData ID
+                        </label>
+                        <input type="text" asp-for="City.WikiDataId"
+                               class="form-control" autocomplete="off"
+                               placeholder="Wiki Data ID" maxlength="50" />
+                    </div>
+                    <input type="hidden" asp-for="City.Id" />
+                    <input type="hidden" asp-for="ActionMode" />
+                    <input type="hidden" asp-for="ReturnUrl" />
+                    <input type="hidden" asp-for="CommandName" />
+                    <input type="hidden" asp-for="City.CountryCode" />
+                    <input type="hidden" asp-for="City.StateCode" />
+                </form>
+            </div>
+        </div>
+    </div>
+    @if (FormActionMode.Edit.Equals(Model.ActionMode))
+    {
+        <div class="col-lg-7 invisible">
+            <div class="card card-custom">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h3 class="card-label">
+                            Sub panel
+                            <small></small>
+                        </h3>
+                    </div>
+                </div>
+                <div class="card-body">
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+
+<partial name="_Partials/_alertMessage" model="Model.AlertMessages" />
+
+@section Toolbar{
+    <a asp-action="Index" class="btn btn-secondary mr-2">
+        <i class="la la-undo"></i> Return
+    </a>
+    @if (Model.ActionMode == FormActionMode.Edit)
+    {
+        <a class="btn btn-danger btn-delete mr-2" data-command="delete">
+            <i class="flaticon-delete-1"></i> Delete
+        </a>
+    }
+    <a class="btn btn-warning btn-reset mr-2">
+        <i class="la la-undo-alt"></i> Reset
+    </a>
+    <div class="btn-group">
+        <a class="btn btn-primary btn-submit"><i class="la la-save"></i> Save</a>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Save Options</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item btn-submit" href="#"><i class="la la-save"></i> Save & Back</a>
+            <a class="dropdown-item btn-submit" href="#" data-command="continue"><i class="la la-save"></i> Save & Continue</a>
+        </div>
+    </div>
+}
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#ddlCountry").select2({
+                minimumInputLength: 2,
+                placeholder: "Search Country",
+                allowClear: true,
+                ajax: {
+                    url: '@Url.Action("Search", "Country")',
+                    dataType: 'json',
+                    delay: 250,
+                    cache: true,
+                    data: function (params) {
+                        var queryParameters = {
+                            keyword: params.term
+                        }
+                        return queryParameters;
+                    }
+                }
+            });
+            $("#ddlState").select2({
+                minimumInputLength: 2,
+                placeholder: "Search State",
+                allowClear: true,
+                ajax: {
+                    url: '@Url.Action("Search", "State")',
+                    dataType: 'json',
+                    delay: 250,
+                    cache: true,
+                    data: function (params) {
+                        var queryParameters = {
+                            keyword: params.term,
+                            CountryId: function () { return $("#ddlCountry").val(); }
+                        }
+                        return queryParameters;
+                    }
+                }
+            });
+
+            $('.btn-reset').click(function (e) {
+                e.preventDefault();
+                $('#pnlForms form').trigger("reset");
+                $('#pnlForms .select2').trigger("change");
+            });
+            $('.btn-submit').click(function (e) {
+                e.preventDefault();
+                SubmitForm($(this), '#pnlForms');
+            });
+            $('.btn-delete').click(function (e) {
+                e.preventDefault();
+                var btDelete = $(this);
+                ConfirmDelete(function () {
+                    SubmitForm(btDelete, '#pnlForms');
+                });
+            });
+        });
+    </script>
+}

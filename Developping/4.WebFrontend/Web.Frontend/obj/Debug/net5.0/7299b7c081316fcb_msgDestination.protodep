@@ -1,0 +1,4 @@
+obj\Debug\net5.0/MsgDestination.cs: C:/Users/Dell/.nuget/packages/grpc.tools/2.34.1/build/native/include/google/protobuf/wrappers.proto\
+ C:/Users/Dell/.nuget/packages/grpc.tools/2.34.1/build/native/include/google/protobuf/timestamp.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgDbDataCommon.proto\
+ ../../6.libs/gRpc.Protos/DbData/msgDestination.proto

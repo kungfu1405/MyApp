@@ -1,0 +1,684 @@
+﻿@model AttractionViewModel
+
+@{
+    ViewData["Title"] = "Attraction";
+    Model.ReturnUrl = string.Format("{0}{1}", Context.Request.Path, Context.Request.QueryString);    
+}
+<link href="~/css/tagsinput.css" rel="stylesheet" />
+
+<div class="row" id="pnlForms">
+    <div class="col-lg-6">
+        <div class="card card-custom">
+            <div class="card-header">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        @Model.ActionMode.ToString() Attraction
+
+                        @if (FormActionMode.Edit.Equals(Model.ActionMode))
+                        {
+                            <small>@Model.Attraction.DefaultName</small>
+                        }
+                    </h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form asp-action="AddEdit" method="post" class="form-vertical" id="attraction-form">
+                    @*<div class="form-group">
+
+            <span class="label label-primary label-inline font-weight-lighter mr-2">Lighter</span>
+            <span class="label label-primary label-inline font-weight-light mr-2">Light</span>
+            <span class="label label-primary label-inline font-weight-normal mr-2">Normal</span>
+            <span class="label label-primary label-inline font-weight-bold mr-2">Bold</span>
+            <span class="label label-primary label-inline font-weight-bolder mr-2">Bolder</span>
+            <span class="label label-primary label-inline font-weight-boldest mr-2">Boldest</span>
+        </div>*@
+
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.DefaultName">
+                            Title
+                            <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" asp-for="Attraction.DefaultName" value="@Model.Attraction.DefaultName" required
+                               class="form-control" autocomplete="off"
+                               placeholder="Title" maxlength="200" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.Description">
+                            Description
+
+                        </label>
+
+                        <textarea type="text" asp-for="Attraction.Description" style="height:137px;" value="@Model.Attraction.Description"
+                                  class="form-control" autocomplete="off"
+                                  placeholder="Description" maxlength="500"></textarea>
+
+                    </div>
+
+                    <div class="image-input image-input-outline" id="kt_image_1">
+                        <label class="font-weight-bold" asp-for="Attraction.Description">
+                            Thumbnail Url
+
+                        </label>
+                        @if (!FormActionMode.Edit.Equals(Model.ActionMode))
+                        {
+                            <div class="image-input-wrapper" style="overflow: hidden; background-position:center;
+                                                                height: 250px;
+                                                                width: 400px;
+                                                               background-image: url(https://www.allianceplast.com/wp-content/uploads/2017/11/no-image.png)"></div>
+                        }
+                        else
+                        {
+                            <div class="image-input-wrapper" style="overflow: hidden; height: 250px; width: 400px; background-image: url( @string.Format(" {0}{1}", UrlList.FileServer, Model.Attraction.ThumbnailUrl) )"></div>
+                        }
+
+                        <label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
+                            <i class="fa fa-pen icon-sm text-muted"></i>
+                            <input type="file" accept=".png, .jpg, .jpeg" id="thumbnailUrl" />
+
+                        </label>
+
+                        <span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="Cancel avatar">
+                            <i class="ki ki-bold-close icon-xs text-muted"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.Address">
+                            Address
+                            @*<span class="text-danger">*</span>*@
+                        </label>
+                        <input type="text" asp-for="Attraction.Address" value="@Model.Attraction.Address" id="address"
+                               class="form-control" autocomplete="off"
+                               placeholder="Address" maxlength="500" />
+
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.Contact">
+                            Contact
+                            @*<span class="text-danger">*</span>*@
+                        </label>
+                        <input type="text" asp-for="Attraction.Contact" value="@Model.Attraction.Contact"
+                               class="form-control" autocomplete="off"
+                               placeholder="Contact" maxlength="100" />
+
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.Website">
+                            Website
+                            @*<span class="text-danger">*</span>*@
+                        </label>
+                        <input type="text" asp-for="Attraction.Website"
+                               class="form-control" autocomplete="off"
+                               placeholder="Website" maxlength="200" />
+
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.PriceFrom">
+                            PriceFrom
+                            @*<span class="text-danger">*</span>*@
+                        </label>
+                        <input type="number" asp-for="Attraction.PriceFrom"
+                               class="form-control" autocomplete="off"
+                               placeholder="PriceFrom" />
+
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold " asp-for="Attraction.Latitude">
+                            Latitude
+                        </label>
+                        <input type="number" asp-for="Attraction.Latitude" id="latitude_input"
+                               class="form-control decimal-input" autocomplete="off"
+                               placeholder="Latitude" />
+
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold " asp-for="Attraction.Latitude">
+                            Longitude
+                        </label>
+                        <input type="number" asp-for="Attraction.Longitude" id="latitude_input"
+                               class="form-control decimal-input" autocomplete="off"
+                               placeholder="Latitude" />
+
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.DestinationId">
+                            In Destination
+                            <span class="text-danger">*</span>
+                        </label>
+                        <select id="ddlDestination" form="attraction-form"
+                                asp-for="Attraction.DestinationId"
+                                class="form-control" style="width: 100%">
+                            <option></option>
+                            @if (FormActionMode.Edit.Equals(Model.ActionMode))
+                            {
+                                <option value="@Model.Attraction.DestinationId" selected>@Model.Attraction.Destination.DefaultName</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-weight-bold">
+                            Attraction Type
+                        </label>
+
+                        <div class="checkbox-inline">
+                            @for (int i = 0; i < Model.AttractionTypeViews.Count; i++)
+                            {
+                                var item = Model.AttractionTypeViews[i];
+                                <label class="checkbox ">
+                                    <input id="ddlChecked-@i" class="clChecked" type="checkbox"
+                                           asp-for="@Model.AttractionTypeViews[i].Checked" />
+                                    <span></span>
+                                    @(dEnum.GetDescription(item.EnumAttractionType))
+                                </label>
+                                <input type="hidden" asp-for="@Model.AttractionTypeViews[i].EnumAttractionType" />
+                            }
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.TouristClasses">
+                            Tourist Class
+                            @*<span class="text-danger">*</span>*@
+                        </label>
+
+                        <div class="checkbox-inline">
+                            @for (int i = 0; i < Model.TouristClassViews.Count; i++)
+                            {
+                                var item = Model.TouristClassViews[i];
+                                <label class="checkbox ">
+                                    <input id="ddlChecked-@i" class="clChecked" type="checkbox"
+                                           asp-for="@Model.TouristClassViews[i].Checked" />
+                                    <span></span>
+                                    @(dEnum.GetDescription(item.EnumTouristClass))
+                                </label>
+                                <input type="hidden" asp-for="@Model.TouristClassViews[i].EnumTouristClass" />
+                            }
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.TouristObjects">
+                            Tourist Object
+                            @*<span class="text-danger">*</span>*@
+                        </label>
+
+                        <div class="checkbox-inline">
+                            @for (int i = 0; i < Model.TouristObjectViews.Count; i++)
+                            {
+                                var item = Model.TouristObjectViews[i];
+                                <label class="checkbox ">
+                                    <input id="ddlChecked-@i" class="clChecked" type="checkbox"
+                                           asp-for="@Model.TouristObjectViews[i].Checked" />
+                                    <span></span>
+                                    @(dEnum.GetDescription(item.EnumTouristObject))
+                                </label>
+                                <input type="hidden" asp-for="@Model.TouristObjectViews[i].EnumTouristObject" />
+                            }
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.PropertyGroups">
+                            Property Group
+                            @*<span class="text-danger">*</span>*@
+                        </label>
+                        <div class="checkbox-inline">
+                            @for (int i = 0; i < Model.PropertyGroupViews.Count; i++)
+                            {
+                                var item = Model.PropertyGroupViews[i];
+                                <label class="checkbox ">
+                                    <input id="ddlChecked-@i" class="clChecked" type="checkbox"
+                                           asp-for="@Model.PropertyGroupViews[i].Checked" />
+                                    <span></span>
+                                    @(dEnum.GetDescription(item.EnumPropertyGroup))
+                                </label>
+                                <input type="hidden" asp-for="@Model.PropertyGroupViews[i].EnumPropertyGroup" />
+                            }
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.PropertyGroups">
+                            Status
+                            @*<span class="text-danger">*</span>*@
+                        </label>
+                        <select id="ddlStatus" asp-for="Attraction.Status" class="form-control" required asp-items="Html.GetEnumSelectList<EnumPostStatus>()">
+                            <option value=""> -- </option>
+                        </select>
+
+                    </div>
+                    <div class="form-group ">
+                        <label class="font-weight-bold">
+                            Tags
+                            <span class="text-danger">*</span>
+                        </label>
+
+                        <input type="text" class="form-control" data-role="tagsinput" id="tag-input" value="@Model.StringTags">
+                        <input type="hidden" id="tag-hdf" asp-for="StringTags" />
+
+                    </div>
+                    <input type="hidden" id="attractionID-hdf" asp-for="Attraction.Id" />
+
+                    <input type="hidden" asp-for="Attraction.DestinationId" />
+                    <input type="hidden" asp-for="ActionMode" />
+                    <input type="hidden" asp-for="ReturnUrl" id="returnUrl-hdf" />
+                    <input type="hidden" asp-for="CommandName" />
+                    <input type="hidden" asp-for="Attraction.ThumbnailUrl" id="thumbnailUrl-hidden" />
+                </form>
+            </div>
+        </div>
+    </div>
+    @if (FormActionMode.Edit.Equals(Model.ActionMode))
+    {
+        <div class="col-lg-6">
+            <div class="card card-custom gutter-b">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-icon">
+                            <i class="flaticon2-chat-1 text-primary"></i>
+                        </span>
+                        <h3 class="card-label">
+                            Add languages
+                            <small>sub title</small>
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="card-body ">
+
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.DestinationId">
+                            Language
+                            <span class="text-danger">*</span>
+                        </label>
+
+                        <select id="languageCode" asp-for="Attraction.AttractionLanguage.LangCode" class="form-control" required asp-items="@(new SelectList(Model.Languages, "LangCode", "Name"))">
+                            <option value=""> -- </option>
+                        </select>
+                        @*<input type="text" asp-for="Attraction.DefaultName" id="languageCode" required
+                            class="form-control" autocomplete="off"
+                            placeholder="Title" maxlength="200" />*@
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.DefaultName">
+                            Title in Language
+                            <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" asp-for="Attraction.DefaultName" id="txtLangName" required
+                               class="form-control" autocomplete="off"
+                               placeholder="Title" maxlength="200" />
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" asp-for="Attraction.DefaultName">
+                            Description
+                            <span class="text-danger">*</span>
+                        </label>
+                        @*<input type="text" asp-for="Attraction.DefaultName" value="@Model.Attraction.DefaultName" required
+                            class="form-control" autocomplete="off"
+                            placeholder="Title" maxlength="200" />*@
+                        <textarea asp-for="Attraction.DefaultName" maxlength="500" id="descriptionLang" required
+                                  class="form-control" autocomplete="off">
+                        </textarea>
+                        <input type="hidden" id="attraction-lang-id-hdf" />
+                    </div>
+                    <div class="card-footer">
+                        <button id="lang-add-btn" class="btn btn-primary mr-2">Add</button>
+                        <button id="lang-update-btn" class="btn btn-primary mr-2">Update</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="card card-custom gutter-b">
+                @*<div class="card-header ">
+                        <div class="card-title">
+                            <span class="card-icon">
+                                <i class="flaticon2-chat-1 text-primary"></i>
+                            </span>
+                            <h3 class="card-label">
+                                Card Footer
+                                <small>sub title</small>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="card-body ">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                    </div>*@
+                @foreach (var item in Model.Attraction.AttractionLanguages)
+                {
+                    <div class="card-header ">
+                        <div class="card-title">
+                            <span class="card-icon">
+                                <i class="flaticon2-chat-1 text-primary"></i>
+                            </span>
+                            <h3 class="card-label">
+                                @item.Name
+                                <small>@item.LangCode</small>
+                            </h3>
+                        </div>
+                        <div class="card-toolbar">
+                            <a class="btn btn-xs btn-icon btn-danger mr-2" onclick="editClick('@item.Id','@item.LangCode')">
+                                <i class="flaticon2-edit"></i>
+                            </a>
+                            <a class="btn btn-xs btn-icon btn-success mr-2" onclick="deleteClick('@item.Id', '@item.LangCode', '@item.Name')">
+                                <i class="flaticon2-delete"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="card-body ">
+                        @item.Description
+                    </div>
+                }
+            </div>
+
+
+        </div>
+    }
+    @if (FormActionMode.Edit.Equals(Model.ActionMode))
+    {
+        <div class="col-lg-7 invisible">
+            <div class="card card-custom">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h3 class="card-label">
+                            Sub panel
+                            <small></small>
+                        </h3>
+                    </div>
+                </div>
+                <div class="card-body">
+                    @*<form ></form>
+                        <div class="form-group">
+                            <label class="font-weight-bold" asp-for="Attraction.RouteUri">
+                                Uri
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" asp-for="Attraction.RouteUri" value="@Model.Attraction.RouteUri"
+                                   class="form-control" autocomplete="off"
+                                   placeholder="Uri" required maxlength="200" />
+                        </div>*@
+
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+
+<partial name="_Partials/_alertMessage" model="Model.AlertMessages" />
+
+@section Toolbar{
+    <a asp-action="Index" class="btn btn-secondary mr-2">
+        <i class="la la-undo"></i> Return
+    </a>
+    @if (Model.ActionMode == FormActionMode.Edit)
+    {
+        <a class="btn btn-danger btn-delete mr-2" data-command="delete">
+            <i class="flaticon-delete-1"></i> Delete
+        </a>
+    }
+    <a class="btn btn-warning btn-reset mr-2">
+        <i class="la la-undo-alt"></i> Reset
+    </a>
+    <div class="btn-group">
+        <a class="btn btn-primary btn-submit"><i class="la la-save"></i> Save</a>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Save Options</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item btn-submit" href="#"><i class="la la-save"></i> Save & Back</a>
+            @*<a class="dropdown-item btn-submit" href="#" data-command="continue"><i class="la la-save"></i> Save & Continue</a>*@
+        </div>
+    </div>
+}
+<script src="~/plugins/tagInput/tagsinput.js"></script>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#ddlDestination").select2({
+                minimumInputLength: 2,
+                placeholder: "Search Destination",
+                allowClear: true,
+                ajax: {
+                    url: '@Url.Action("Search", "Destination")',
+                    dataType: 'json',
+                    delay: 250,
+                    cache: true,
+                    data: function (params) {
+                        var queryParameters = {
+                            keyword: params.term
+                        }
+                        return queryParameters;
+                    }
+                }
+            });
+
+            $('#ddlAtType').select2({
+                placeholder: " - Select - ",
+                allowClear: true,
+                minimumResultsForSearch: 10
+            });
+
+            $('#ddlTouClass').select2({
+                placeholder: " - Select - ",
+                allowClear: true,
+                minimumResultsForSearch: 10
+            });
+            $('#ddlTourObject').select2({
+                placeholder: " - Select - ",
+                allowClear: true,
+                minimumResultsForSearch: 10
+            });
+            $('#ddlProGroup').select2({
+                placeholder: " - Select - ",
+                allowClear: true,
+                minimumResultsForSearch: 10
+            });
+            $('#ddlStatus').select2({
+                placeholder: " - Select - ",
+                allowClear: true,
+                minimumResultsForSearch: 10
+            });
+
+
+
+            $('.btn-reset').click(function (e) {
+                e.preventDefault();
+                $('#pnlForms form').trigger("reset");
+                $('#pnlForms .select2').trigger("change");
+            });
+            $('.btn-submit').click(function (e) {
+                e.preventDefault();
+                SubmitForm($(this), '#pnlForms');
+            });
+            $('.btn-delete').click(function (e) {
+                e.preventDefault();
+                var btDelete = $(this);
+                ConfirmDelete(function () {
+                    SubmitForm(btDelete, '#pnlForms');
+                });
+            });
+
+
+            var avatar1 = new KTImageInput('kt_image_1');
+
+            var dataFr = new FormData();
+
+            $(':file').on('change', function () {
+                var file = this.files[0];
+
+                if (file.size > 1024) {
+                    dataFr.append('file', file);
+                  $.ajax({
+                    url: "@(string.Format("{0}/api/file/upload", UrlList.FileServer))",
+                    type: "POST",
+                      data: dataFr,
+                    processData: false,
+                    contentType: false,
+                    enctype: "multipart/form-data",
+                    beforeSend: function () {
+
+                    },
+                    success: function (data, textStatus, xhr) {
+                        if (data.length > 0) {
+
+                            $('#thumbnailUrl-hidden').val(data);
+                            dataFiles = data;
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+                }
+            });
+
+
+            $('#latitude_input').on("change keyup", function (event) {
+
+                var value = $(this).val().replace(/[\W\s\_\-]+/g, '');
+
+                var split = 4;
+                var chunk = [];
+
+                for (var i = 0, len = value.length; i < len; i += split) {
+
+                    split = (i >= 8 && i <= 16) ? 4 : 8;
+                    chunk.push(value.substr(i, split));
+                }
+                $(this).val(function () {
+                    return chunk.join("-").toUpperCase();
+                });
+            });
+            $('#lang-add-btn').click(function () {
+
+                var dataForm = {
+                    attractionLanguage: {
+                                    attractionId: $('#attractionID-hdf').val(),
+                                    langCode: $('#languageCode').val(),
+                                    name: $('#txtLangName').val(),
+                                        description: $('#descriptionLang').val()
+                    },
+                    actionMode: "@FormActionMode.Add",
+                    returnUrl: $('#returnUrl-hdf').val(),
+                };
+                 $.ajax({
+                     url: "/Attraction/AttractionLanguageAddEdit",
+                    type: "POST",
+                     data: dataForm,
+                    //processData: false,
+                    //contentType: false,
+                    //enctype: "multipart/form-data",
+                    beforeSend: function () {
+
+                    },
+                    success: function (data) {
+                        if (data.length > 0) {
+                            location.href = data;
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+            });
+            $('#lang-update-btn').click(function () {
+
+                var dataForm = {
+                    attractionLanguage: {
+                                    id:$('#attraction-lang-id-hdf').val(),
+                                    attractionId: $('#attractionID-hdf').val(),
+                                    langCode: $('#languageCode').val(),
+                                    name: $('#txtLangName').val(),
+                                        description: $('#descriptionLang').val()
+                    },
+                    actionMode: "@FormActionMode.Edit",
+                    returnUrl: $('#returnUrl-hdf').val(),
+                };
+                 $.ajax({
+                     url: "/Attraction/AttractionLanguageAddEdit",
+                    type: "POST",
+                     data: dataForm,
+                    beforeSend: function () {
+                    },
+                    success: function (data) {
+                        if (data.length > 0) {
+                            location.href = data;
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+            });
+
+        });
+        function editClick(id, langcode) {
+            var editData = {
+                            attractionLanguage: { id: id, attractionId: $('#attractionID-hdf').val(), langCode: langcode },
+                                actionMode: "@FormActionMode.Edit"
+                            };
+            $.ajax({
+                url: "/Attraction/AttractionLanguageGet",
+                type: "POST",
+                data: editData,
+                beforeSend: function () {
+                },
+                success: function (data) {
+                    if (data.attractionLanguage != null) {
+                        $('#attraction-lang-id-hdf').val(data.attractionLanguage.id);
+                        $('#languageCode').val(data.attractionLanguage.langCode);
+                        $('#txtLangName').val(data.attractionLanguage.name);
+                        $('#descriptionLang').val(data.attractionLanguage.description);
+                    }
+                },
+                error: function () {
+
+                }
+            });
+        }
+        function deleteClick(id, langcode,name) {
+
+            var deleteData = {
+                attractionLanguage: {
+                    id: id, attractionId: $('#attractionID-hdf').val(), langCode: langcode,
+                    name: name,
+                    description: ""
+                },
+                returnUrl: $('#returnUrl-hdf').val(),
+                actionMode: "@FormActionMode.Delete"
+            };
+            $.ajax({
+                url: "/Attraction/AttractionLanguageAddEdit",
+                type: "POST",
+                data: deleteData,
+                beforeSend: function () {
+                },
+                success: function (data) {
+                    if (data.length > 0) {
+                        location.href = data;
+                    }
+                },
+                error: function () {
+
+                }
+            });
+        }
+      
+        var listTags = $('.badge-info');
+
+        $('#tag-input').on('change', function () {
+            debugger
+            var tagInput = $(this).val();
+            
+            $('#tag-hdf').val(tagInput);
+        });
+
+    </script>
+}
+
+

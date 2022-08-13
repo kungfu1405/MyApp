@@ -1,0 +1,146 @@
+2020-12-04T09:25:10.4346586+07:00  [INF] Now listening on: "https://localhost:5301" (d826f4b8)
+2020-12-04T09:25:10.4413408+07:00  [INF] Now listening on: "http://localhost:5300" (d826f4b8)
+2020-12-04T09:25:10.4446874+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-04T09:25:10.4485580+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-04T09:25:10.4508148+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend" (b5d60022)
+2020-12-04T17:19:46.2281977+07:00  [INF] Now listening on: "https://localhost:5301" (d826f4b8)
+2020-12-04T17:19:46.2330549+07:00  [INF] Now listening on: "http://localhost:5300" (d826f4b8)
+2020-12-04T17:19:46.2356493+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-04T17:19:46.2377125+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-04T17:19:46.2397606+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend" (b5d60022)
+2020-12-04T17:23:11.6619230+07:00  [INF] Now listening on: "https://localhost:5301" (d826f4b8)
+2020-12-04T17:23:11.6714647+07:00  [INF] Now listening on: "http://localhost:5300" (d826f4b8)
+2020-12-04T17:23:11.6752227+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-04T17:23:11.6798607+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-04T17:23:11.6832945+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend" (b5d60022)
+2020-12-04T17:26:41.0997862+07:00  [INF] Now listening on: "https://localhost:5301" (d826f4b8)
+2020-12-04T17:26:41.1409158+07:00  [INF] Now listening on: "http://localhost:5300" (d826f4b8)
+2020-12-04T17:26:41.1455707+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-04T17:26:41.1489390+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-04T17:26:41.1594038+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend" (b5d60022)
+2020-12-04T17:30:38.4785556+07:00  [INF] Now listening on: "https://localhost:5301" (d826f4b8)
+2020-12-04T17:30:38.4832901+07:00  [INF] Now listening on: "http://localhost:5300" (d826f4b8)
+2020-12-04T17:30:38.4855157+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-04T17:30:38.4905916+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-04T17:30:38.4929885+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend" (b5d60022)
+2020-12-04T17:33:40.5839276+07:00  [INF] Now listening on: "https://localhost:5301" (d826f4b8)
+2020-12-04T17:33:40.5897261+07:00  [INF] Now listening on: "http://localhost:5300" (d826f4b8)
+2020-12-04T17:33:40.6186954+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-04T17:33:40.6240600+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-04T17:33:40.6277156+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend" (b5d60022)
+2020-12-04T17:41:52.5386322+07:00  [INF] Now listening on: "https://localhost:5301" (d826f4b8)
+2020-12-04T17:41:52.5469263+07:00  [INF] Now listening on: "http://localhost:5300" (d826f4b8)
+2020-12-04T17:41:52.5501157+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-04T17:41:52.5529406+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-04T17:41:52.5564095+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend" (b5d60022)
+2020-12-04T18:17:02.6970213+07:00  [INF] Now listening on: "https://localhost:5301" (d826f4b8)
+2020-12-04T18:17:02.7019149+07:00  [INF] Now listening on: "http://localhost:5300" (d826f4b8)
+2020-12-04T18:17:02.7043184+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-04T18:17:02.7069580+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-04T18:17:02.7102646+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend" (b5d60022)
+2020-12-04T18:35:12.4804029+07:00  [INF] Application is shutting down... (90f52c38)
+2020-12-04T18:36:30.7332342+07:00  [INF] Now listening on: "https://localhost:5301" (d826f4b8)
+2020-12-04T18:36:30.7380611+07:00  [INF] Now listening on: "http://localhost:5300" (d826f4b8)
+2020-12-04T18:36:30.7406125+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-04T18:36:30.7441188+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-04T18:36:30.7463140+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend" (b5d60022)
+2020-12-04T18:37:01.3482608+07:00  [INF] Now listening on: "https://localhost:5301" (d826f4b8)
+2020-12-04T18:37:01.3556608+07:00  [INF] Now listening on: "http://localhost:5300" (d826f4b8)
+2020-12-04T18:37:01.3608459+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-12-04T18:37:01.3635014+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-12-04T18:37:01.3658301+07:00  [INF] Content root path: "D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend" (b5d60022)
+2020-12-04T18:37:28.6946439+07:00 0HM4O93LBHC99:00000009 [ERR] Get ref data of Table '' failed! (c7266f86)
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DynamicData.Protos.QueryColData.set_ColumnId(String value) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\obj\Debug\net5.0\MsgDData.cs:line 99
+   at Web.Backend.Controllers.DynamicForm.DFormController.searcRefTableData(SysColumnStruct refCol, String keyword, Boolean allowCached) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 174
+2020-12-04T18:38:04.5701446+07:00 0HM4O93LBHC99:0000000B [ERR] Get ref data of Table '' failed! (c7266f86)
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DynamicData.Protos.QueryColData.set_ColumnId(String value) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\obj\Debug\net5.0\MsgDData.cs:line 99
+   at Web.Backend.Controllers.DynamicForm.DFormController.searcRefTableData(SysColumnStruct refCol, String keyword, Boolean allowCached) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 174
+2020-12-04T18:38:14.5477215+07:00 0HM4O93LBHC99:0000000D [ERR] Get ref data of Table '' failed! (c7266f86)
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DynamicData.Protos.QueryColData.set_ColumnId(String value) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\obj\Debug\net5.0\MsgDData.cs:line 99
+   at Web.Backend.Controllers.DynamicForm.DFormController.searcRefTableData(SysColumnStruct refCol, String keyword, Boolean allowCached) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 174
+2020-12-04T18:38:43.6234046+07:00 0HM4O93LBHC99:0000000F [ERR] Get ref data of Table '' failed! (c7266f86)
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DynamicData.Protos.QueryColData.set_ColumnId(String value) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\obj\Debug\net5.0\MsgDData.cs:line 99
+   at Web.Backend.Controllers.DynamicForm.DFormController.searcRefTableData(SysColumnStruct refCol, String keyword, Boolean allowCached) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 174
+2020-12-04T18:38:53.8045831+07:00 0HM4O93LBHC99:0000002B [ERR] Get ref data of Table '' failed! (c7266f86)
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DynamicData.Protos.QueryColData.set_ColumnId(String value) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\obj\Debug\net5.0\MsgDData.cs:line 99
+   at Web.Backend.Controllers.DynamicForm.DFormController.searcRefTableData(SysColumnStruct refCol, String keyword, Boolean allowCached) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 174
+2020-12-04T18:40:26.0729082+07:00 0HM4O93LBHC99:0000004B [ERR] Get ref data of Table '' failed! (c7266f86)
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DynamicData.Protos.QueryColData.set_ColumnId(String value) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\obj\Debug\net5.0\MsgDData.cs:line 99
+   at Web.Backend.Controllers.DynamicForm.DFormController.searcRefTableData(SysColumnStruct refCol, String keyword, Boolean allowCached) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 174
+2020-12-04T18:40:33.8909930+07:00 0HM4O93LBHC99:0000004D [ERR] Get ref data of Table '' failed! (c7266f86)
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DynamicData.Protos.QueryColData.set_ColumnId(String value) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\obj\Debug\net5.0\MsgDData.cs:line 99
+   at Web.Backend.Controllers.DynamicForm.DFormController.searcRefTableData(SysColumnStruct refCol, String keyword, Boolean allowCached) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 174
+2020-12-04T18:40:49.6466345+07:00 0HM4O93LBHC99:0000004F [ERR] Get ref data of Table '' failed! (c7266f86)
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DynamicData.Protos.QueryColData.set_ColumnId(String value) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\obj\Debug\net5.0\MsgDData.cs:line 99
+   at Web.Backend.Controllers.DynamicForm.DFormController.searcRefTableData(SysColumnStruct refCol, String keyword, Boolean allowCached) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 174
+2020-12-04T18:41:19.3225278+07:00 0HM4O93LBHC99:0000006F [ERR] Get ref data of Table '' failed! (c7266f86)
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DynamicData.Protos.QueryColData.set_ColumnId(String value) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\obj\Debug\net5.0\MsgDData.cs:line 99
+   at Web.Backend.Controllers.DynamicForm.DFormController.searcRefTableData(SysColumnStruct refCol, String keyword, Boolean allowCached) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 174
+2020-12-04T18:42:34.9299878+07:00 0HM4O93LBHC99:00000071 [ERR] Get ref data of Table '' failed! (c7266f86)
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DynamicData.Protos.QueryColData.set_ColumnId(String value) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\obj\Debug\net5.0\MsgDData.cs:line 99
+   at Web.Backend.Controllers.DynamicForm.DFormController.searcRefTableData(SysColumnStruct refCol, String keyword, Boolean allowCached) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 174
+2020-12-04T18:43:19.5593370+07:00 0HM4O93LBHC99:00000073 [ERR] Get ref data of Table '' failed! (c7266f86)
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name)
+   at DynamicData.Protos.QueryColData.set_ColumnId(String value) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\obj\Debug\net5.0\MsgDData.cs:line 99
+   at Web.Backend.Controllers.DynamicForm.DFormController.searcRefTableData(SysColumnStruct refCol, String keyword, Boolean allowCached) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 174
+2020-12-04T19:07:52.5966914+07:00 0HM4O93LBHC99:000001E7 [ERR] Get datatable of Table '977b21be' failed!. ERROR: Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)") (a31ae579)
+Grpc.Core.RpcException: Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: An error occurred while sending the request. IOException: The request was aborted. IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.. SocketException: An existing connection was forcibly closed by the remote host.", DebugException="System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The request was aborted.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.CheckResponseBodyState()
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)")
+   at Web.Backend.Controllers.DynamicForm.DFormController.GetDatatable(DFormListViewModel model) in D:\BaseProjects\SVN\dotNet5Templates\4.Websites\WebBackend\Web.Backend\Controllers\DynamicForm\DFormController.cs:line 102
+2020-12-04T19:17:51.3806135+07:00  [INF] Application is shutting down... (90f52c38)

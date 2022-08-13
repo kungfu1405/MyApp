@@ -1,0 +1,35 @@
+﻿@model List<AlertMessage>
+
+@if (Model.Any())
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            @foreach (var msg in Model)
+            {
+                switch (msg.StatusValue)
+                {
+                    case EnumMessageStatus.Info:
+            <text>
+            toastr.info("@msg.Message");
+            </text>
+                        break;
+                    case EnumMessageStatus.Success:
+            <text>
+            toastr.success("@msg.Message");
+            </text>
+                        break;
+                    case EnumMessageStatus.Warning:
+            <text>
+            toastr.warning("@msg.Message");
+            </text>
+                        break;
+                    case EnumMessageStatus.Danger:
+            <text>
+            toastr.error("@msg.Message");
+            </text>
+                        break;
+                }
+            }
+        });
+    </script>
+}

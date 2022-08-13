@@ -1,0 +1,200 @@
+﻿@model ExperienceDetailModel
+@{
+    ViewData["Title"] = Model.Experience.ExperienceLanguage.Title;
+    var countSection = 0;
+    var countSectionScroll = 0;
+    var mainSection = Model.Experience.ExperienceSessions.First();
+    //var regex = new Regex(@"(?<=#)\w*");
+    var regex = new Regex(@"#\w*");
+}
+<div class="container previewStory m-auto mt-48">
+    <div class="offset-xl-1 col-xl-10">
+        <div class="text-center w-100">
+            <a class="btn btn-toppick active">Save All</a>
+            <a class="btn btn-toppick mx-3 deactive" href="@(string.Format("/Experience/Edit/{0}", Model.Experience.RouteUri))">Edit</a>
+        </div>
+
+        <div class="home-txt pt-36">
+            <p class="text-center mb-12 font-size-14 font-weight-light">@Model.Experience.PublishDate.ToString("MMM dd, yyyy") . 5 Minute Read . Wrote by @(Model.User.FullName)</p>
+            <h1 class="mb-24">@(Model.Experience.ExperienceLanguage.Title)</h1>
+            <div class="text-center">
+                @Html.Raw(regex.Replace(mainSection.Detail, "<a href=\"/Pillars/$&\" class=\"hashtag\">$&</a>"))
+            </div>
+        </div>
+
+        <div class="preview-rating row d-flex">
+            <div class="col-4 text-center">
+                <label class="color-yel">87</label>
+                <span>Critical Critics</span>
+            </div>
+            <div class="col-4 text-center">
+                <label>100</label>
+                <span>Audience Rating</span>
+            </div>
+            <div class="col-4 text-center">
+                <label>651K</label>
+                <span>Questions, Tip & Tricks</span>
+            </div>
+        </div>
+    </div>
+
+    @foreach (var session in Model.Experience.ExperienceSessions)
+    {
+        var firstImg = session.Images.FirstOrDefault();
+        countSection++;
+        if (countSection == 1) continue;
+        <div class="w-100 preview-detail section-@(countSection)">
+            <div class="preview-detail-thumb" id="thumb-@(session.Id)">
+                <div class="swiper-wrapper">
+                    @if (session.Images.Count() > 0)
+                    {
+                        foreach (var img in session.Images)
+                        {
+                            <img class="swiper-slide" onerror="imgError(this)" alt="@(session.Title)" src="@(String.Format("{0}{1}", UrlList.FileServer, img.ImagerUrl))" />
+                        }
+                    }
+                    else
+                    {
+                        <img src="/img/icon-no-image.svg" />
+                    }
+                </div>
+                <div class="swiper-pagination swiper-pagination-image-experience"></div>
+            </div>
+            <div class="preview-detail-content">
+                <h2>@(session.Title)</h2>
+                @if (session.Attraction != null)
+                {
+                    <p hidden><a class="color-yel" href="@(string.Format("/Attraction/{0}", session.Attraction.RouteUri))">@(session.Attraction.DefaultName)</a></p>
+                }
+                <div class="preview-detail-destination">
+                    @Html.Raw(regex.Replace(session.Detail, "<a href=\"/Pillars/$&\" class=\"hashtag\">$&</a>"))
+                </div>
+                <div class="preview-detail-author text-right mb-48">
+                    <p class="font-size-14">
+                        <a class="preview-detail-author-img" href="@(string.Format("/Account/Profile/{0}", Model.User.Id))">
+                            @if (!string.IsNullOrEmpty(Model.User.Picture))
+                            {
+                                <img onerror="imgError(this)" src="@(String.Format("{0}{1}", UrlList.FileServer, Model.User.Picture))" />
+                            }
+                            else
+                            {
+                                <img src="~/img/user-default.png" />
+                            }
+                        </a>
+                        @session.CreateDate.ToString("MMM dd, yyyy") . By
+                        <a class="preview-detail-author-name" href="@(string.Format("/Account/Profile/{0}", Model.User.Id))">
+                            @(Model.User.FullName)
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="preview-detail-social">
+                <a class="btn btn-toppick">Save</a>
+                <a class="btn btn-toppick btn-preview-detail-share"><ion-icon name="share-social-outline"></ion-icon></a>
+            </div>
+        </div>
+    }
+
+</div>
+<div class="container relatedStory m-auto p-0">
+    <div class="home-txt">
+        <h3 class="mb-48">Related Stories You May Like, Curated for You</h3>
+    </div>
+    <div class="container p-0">
+        <div class="row related-list position-relative p-0">
+            @foreach (var itm in Model.ListExperienceRelated.Take(3).ToList())
+            {
+                if (itm.Id.Equals(Model.Experience.Id))
+                {
+                    continue;
+                }
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-48">
+                    <div class="home-item">
+                        <div class="w-100">
+                            <div class="thumb m-auto">
+                                <a class="" href="@string.Format("/Experience/{0}", itm.RouteUri)">
+                                    @if (!string.IsNullOrEmpty(itm.ThumbnailUrl))
+                                    {
+                                        <img class="rounded" onerror="imgError(this)" src="@string.Format("{0}{1}", UrlList.FileServer, itm.ThumbnailUrl)" />
+                                    }
+                                    else
+                                    {
+                                        <img class="rounded" src="~/img/icon-no-image.svg" />
+                                    }
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>#N of N Category</p>
+                            <h3><a href="@string.Format("/Experience/{0}", itm.RouteUri)">@itm.ExperienceLanguage.Title</a></h3>
+                            <p>10.8km from Center Point . 15h </p>
+                            <p>N Stops By . N Saves . @string.Format("{0} Comments", itm.TotalComments)</p>
+                            <p>#Adventure #Cities&Culture #Vietnam</p>
+                        </div>
+                        <span class="fea-rating">
+                            <label class="like"><i></i> 128</label>
+                            <label class="comment"><i></i> 100</label>
+                        </span>
+                    </div>
+                </div>
+            }
+        </div>
+        @if (Model.ListExperienceRelated.Count > 0)
+        {
+            <div class="pagination-list related-paging text-center mt-5" id="paging"></div>
+        }
+    </div>
+</div>
+
+<div class="simple-pagination pagination-list previewStory-pagination" hidden>
+    <ul>
+        @foreach (var session in Model.Experience.ExperienceSessions)
+        {
+            countSectionScroll++;
+            if (countSectionScroll == 1) continue;
+            <li><a data-section="@(countSectionScroll)" onclick="scrollToSection(this)" class="@((countSectionScroll - 1) == 1 ? "current" : "") my-2">@(countSectionScroll - 1)</a></li>
+        }
+        <li><a class="mt-16"><ion-icon name="flame-outline"></ion-icon></a></li>
+        <li><a><ion-icon name="earth-outline"></ion-icon></a></li>
+    </ul>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.preview-detail-thumb', {
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+
+        $(".previewStory-pagination a").on("click", function () {
+            $(".previewStory-pagination a").removeClass("current");
+            $(this).addClass("current");
+        });
+
+        $('.related-paging').pagination({
+            items: @(Model.ListExperienceRelated.Count()), // Total number of items that will be used to calculate the pages.
+            itemsOnPage: 3, // Number of items displayed on each page.
+            displayedPages: 3,// How many page numbers should be visible while navigating.
+            currentPage: 1,
+            cssStyle: '',
+            prevText: '<ion-icon name="caret-back-outline"></ion-icon>',
+            nextText: '<ion-icon name="caret-forward-outline"></ion-icon>',
+            onInit: function () {
+                // fire first page loading
+            },
+            onPageClick: function (page, evt) {
+                // some code
+            }
+        });
+    });
+
+    function scrollToSection(obj) {
+        var section = $(obj).attr("data-section");
+        var topScroll = $(".section-" + section).offset().top - 50;
+        $("html, body").stop().animate({ scrollTop: topScroll }, 500, 'swing');
+    }
+</script>

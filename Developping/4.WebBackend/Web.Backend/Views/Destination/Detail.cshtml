@@ -1,0 +1,53 @@
+﻿@model EDestination
+
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Name</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.DefaultName</span>
+    </span>
+</div>
+
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Country</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.CountryName</span>
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">State</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.StateName</span>
+    </span>
+</div>
+
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">City</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.CityName</span>
+    </span>
+</div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Latitude</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.Latitude</span>
+    </span>
+</div>
+
+<div class="d-flex justify-content-between align-items-center my-3">
+    <span class="text-dark-75 font-weight-bolder mr-2">Longitude</span>
+    <span class="text-dark-50 text-hover-primary">
+        <span>@Model.Longitude</span>
+    </span>
+</div>
+
+
+<div class="separator separator-dashed my-3"></div>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <a href="@(Url.Action("AddEdit", new { id = Model.Id }))" class="btn btn-primary">
+        <i class="la la-edit"></i>Edit
+    </a>
+    <a href="#" data-link="@(Url.Action("Delete", new { id = Model.Id }))"
+       data-toggle="confirmation" class="btn btn-danger btn-delete">
+        <i class="flaticon-delete-1"></i> Delete
+    </a>
+</div>

@@ -1,0 +1,86 @@
+﻿@using Web.Backend.Models.DynamicForm
+@model SysTableViewModel
+
+@{
+    ViewData["Title"] = "System Tables Info";
+    Model.ReturnUrl = string.Format("{0}{1}", Context.Request.Path, Context.Request.QueryString);
+    var columnModel = new DFormModel { TableId = Model.SysTable.Id };
+}
+
+<div class="row" id="pnlForms">
+    <div class="col-lg-5">
+        <div class="card card-custom">
+            <div class="card-header">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        @Model.SysTable.DisplayName
+                        <small>Table: @Model.SysTable.Name</small>
+                    </h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <partial name="_Edit" model="Model" />
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="card card-custom">
+            <div class="card-header">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        Columns
+                        <small>configurations</small>
+                    </h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <partial name="../SysColumn/Index" model="columnModel" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<partial name="_Partials/_alertMessage" model="Model.AlertMessages" />
+
+@section Toolbar{
+    <a asp-action="Index" class="btn btn-secondary mr-2">
+        <i class="la la-undo"></i> Return
+    </a>
+    <a class="btn btn-warning btn-reset mr-2">
+        <i class="la la-undo-alt"></i> Reset
+    </a>
+    <div class="btn-group">
+        <a class="btn btn-primary btn-submit"><i class="la la-save"></i> Save</a>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Save Options</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item btn-submit" href="#"><i class="la la-save"></i> Save</a>
+            <a class="dropdown-item btn-submit" href="#" data-command="continue"><i class="la la-save"></i> Save & Continue</a>
+        </div>
+    </div>
+}
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.btn-reset').click(function (e) {
+                e.preventDefault();
+                $('#pnlForms form').trigger("reset");
+            });
+            $('.btn-submit').click(function (e) {
+                e.preventDefault();
+                var cmdname = $(this).attr('data-command');
+
+                $("#pnlForms form").each(function () {
+                    if (cmdname !== undefined) {
+                        $(this).find('input[name="CommandName"]').val(cmdname);
+                    }
+                    $(this).submit();
+                });
+            });
+        });
+    </script>
+}
