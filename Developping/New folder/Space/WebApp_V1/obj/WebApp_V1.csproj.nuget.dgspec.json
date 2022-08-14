@@ -4,17 +4,83 @@
     "D:\\Git\\MyApp\\Developping\\New folder\\Space\\WebApp_V1\\WebApp_V1.csproj": {}
   },
   "projects": {
+    "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Bussiness\\Space.Bussiness.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Bussiness\\Space.Bussiness.csproj",
+        "projectName": "Space.Bussiness",
+        "projectPath": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Bussiness\\Space.Bussiness.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Bussiness\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Dal\\Space.Dal.csproj": {
+                "projectPath": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Dal\\Space.Dal.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Dal.MsSql\\Space.Dal.MsSql.csproj": {
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Dal.MsSql\\Space.Dal.MsSql.csproj",
         "projectName": "Space.Dal.MsSql",
         "projectPath": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Dal.MsSql\\Space.Dal.MsSql.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
         "outputPath": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Dal.MsSql\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -88,11 +154,11 @@
         "projectUniqueName": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Dal\\Space.Dal.csproj",
         "projectName": "Space.Dal",
         "projectPath": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Dal\\Space.Dal.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
         "outputPath": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Dal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,7 +216,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -160,11 +226,11 @@
         "projectUniqueName": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\WebApp_V1\\WebApp_V1.csproj",
         "projectName": "WebApp_V1",
         "projectPath": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\WebApp_V1\\WebApp_V1.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
         "outputPath": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\WebApp_V1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -178,6 +244,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Bussiness\\Space.Bussiness.csproj": {
+                "projectPath": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Bussiness\\Space.Bussiness.csproj"
+              },
               "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Dal.MsSql\\Space.Dal.MsSql.csproj": {
                 "projectPath": "D:\\Git\\MyApp\\Developping\\New folder\\Space\\Space.Dal.MsSql\\Space.Dal.MsSql.csproj"
               }
@@ -229,7 +298,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
