@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git-2\\MyApp\\WebMvc\\EntityStudy\\EntityStudy.csproj": {}
+    "D:\\Git\\New folder\\MyApp\\WebMvc\\EntityStudy\\EntityStudy.csproj": {}
   },
   "projects": {
-    "D:\\Git-2\\MyApp\\WebMvc\\EntityStudy\\EntityStudy.csproj": {
+    "D:\\Git\\New folder\\MyApp\\WebMvc\\EntityStudy\\EntityStudy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git-2\\MyApp\\WebMvc\\EntityStudy\\EntityStudy.csproj",
+        "projectUniqueName": "D:\\Git\\New folder\\MyApp\\WebMvc\\EntityStudy\\EntityStudy.csproj",
         "projectName": "EntityStudy",
-        "projectPath": "D:\\Git-2\\MyApp\\WebMvc\\EntityStudy\\EntityStudy.csproj",
+        "projectPath": "D:\\Git\\New folder\\MyApp\\WebMvc\\EntityStudy\\EntityStudy.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\Git-2\\MyApp\\WebMvc\\EntityStudy\\obj\\",
+        "outputPath": "D:\\Git\\New folder\\MyApp\\WebMvc\\EntityStudy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

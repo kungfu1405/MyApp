@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = EntityStudy
-build_property.ProjectDir = D:\Git-2\MyApp\WebMvc\EntityStudy\
+build_property.ProjectDir = D:\Git\New folder\MyApp\WebMvc\EntityStudy\
